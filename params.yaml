@@ -1,0 +1,4 @@
+data:
+  subgraph: https://api.thegraph.com/subgraphs/name/thenaursa/thena-v1
+  day_data_query: {"operationName": "dayDatas", "variables": {"startTime": 1672790400, "skip": 0}, "query": "query dayDatas($startTime: Int!, $skip: Int!) {\n  dayDatas(first: 1000, skip: $skip, where: {date_gt: $startTime}, orderBy: date, orderDirection: asc) {\n    id\n    date\n    totalVolumeUSD\n    dailyVolumeUSD\n    dailyVolumeETH\n    totalLiquidityUSD\n    totalLiquidityETH\n    __typename\n  }\n}\n"}
+  sheetkey: 1g6MRebRn_kI1Pm4-7cuRYhAwmWVtqPV_CeWaPlf-1Ao
