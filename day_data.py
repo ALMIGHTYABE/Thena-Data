@@ -44,7 +44,7 @@ try:
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive",
     ]
-    key = os.environ["GKey"]
+    key = os.environ["GKEY"]
     credentials = Credentials.from_service_account_file(filename=key, scopes=scopes)
     gc = gspread.authorize(credentials)
 
