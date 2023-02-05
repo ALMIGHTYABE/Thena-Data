@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Script
         env: |
-          GKEY:: ${{ secrets.GKEY}}
+          GKEY: ${{ secrets.GKEY}}
         run: |
           python day_data.py
       - name: Commit and Push Changes
