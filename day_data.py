@@ -44,12 +44,8 @@ try:
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive",
     ]
-    key = os.environ["GKEY"]
-    credentials = Credentials.from_service_account_file(filename=key, scopes=scopes)
-    gc = gspread.authorize(credentials)
-
-    gauth = GoogleAuth()
-    drive = GoogleDrive(gauth)
+    credentials = os.environ["GKEY"]
+    gc = gspread.service_account_from_dict(credentials)
 
     # Open a google sheet
     sheetkey = config["data"]["sheetkey"]
