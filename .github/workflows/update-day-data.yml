@@ -22,7 +22,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Script
-        env: |
+        env:
           GKEY: ${{ secrets.GKEY}}
         run: |
           python day_data.py
