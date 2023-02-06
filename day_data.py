@@ -39,7 +39,7 @@ try:
     df["epoch"] = np.divmod(np.arange(len(df)), 7)[0]
 
     # Write to GSheets
-    credentials = os.environ["GKey"]
+    credentials = os.environ["GKEY"]
     credentials = json.loads(credentials)
     gc = gspread.service_account_from_dict(credentials)
 
