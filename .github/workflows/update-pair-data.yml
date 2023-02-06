@@ -1,4 +1,4 @@
-name: Update Day Data
+name: Update Pair Data
 on:
   schedule:
     - cron: '0 */12 * * *'
@@ -6,7 +6,7 @@ on:
 
 jobs:
   update_symbol_list:
-    name: Update Day Data periodically
+    name: Update Pair Data periodically
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -25,11 +25,11 @@ jobs:
         env:
           GKEY: ${{ secrets.GKEY }}
         run: |
-          python day_data.py
+          python pair_data.py
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add logs
-          git commit -m "Updated Day Data on `date` with GitHub Actions" || echo "No Changes to Commit"
+          git commit -m "Updated Pair Data on `date` with GitHub Actions" || echo "No Changes to Commit"
           git push origin main || echo "No Changes to Commit"
