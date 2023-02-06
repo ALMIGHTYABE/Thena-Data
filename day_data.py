@@ -23,7 +23,7 @@ def read_params(config_path):
 config = read_params(params_path)
 
 try:
-    logger.info("Process Started")
+    logger.info("Day Data Started")
 
     # Params Data
     subgraph = config["data"]["subgraph"]
@@ -58,6 +58,6 @@ try:
         resize=True,
     )
 
-    logger.info("Process Ended")
+    logger.info("Day Data Ended")
 except Exception as e:
-    logger.error("Error occurred during the process. Error: %s" % e)
+    logger.error("Error occurred during Day Data process. Error: %s" % e)
