@@ -84,7 +84,6 @@ try:
         df["name"] = name
         drop_index = df[df["date"].astype("str") == "1672790400"].index
         df.drop(drop_index, inplace=True)
-        df["epoch"] = np.divmod(np.arange(len(df)), 7)[0]
         pairdata_df = pd.concat([pairdata_df, df], axis=0, ignore_index=True)
 
     pairdata_df["date"] = pairdata_df["date"].apply(

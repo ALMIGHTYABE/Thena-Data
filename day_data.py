@@ -36,7 +36,6 @@ try:
     df["date"] = df["date"].apply(
         lambda timestamp: datetime.utcfromtimestamp(timestamp).date()
     )
-    df["epoch"] = np.divmod(np.arange(len(df)), 7)[0]
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
