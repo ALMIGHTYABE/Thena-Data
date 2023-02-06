@@ -44,7 +44,7 @@ try:
     gc = gspread.service_account_from_dict(credentials)
 
     # Open a google sheet
-    sheetkey = config["data"]["sheetkey"]
+    sheetkey = config["data"]["sheetkey1"]
     gs = gc.open_by_key(sheetkey)
 
     # Select a work sheet from its name

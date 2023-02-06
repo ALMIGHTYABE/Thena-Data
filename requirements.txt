@@ -1,6 +1,7 @@
-requests
-pandas
-numpy
-gspread
-gspread_dataframe
-pyyaml
+requests==2.28.2
+pandas==1.5.3
+numpy==1.24.1
+gspread==5.7.2
+gspread-dataframe==3.3.0
+PyYAML==6.0
+web3==5.31.3
