@@ -32,5 +32,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add logs
-          git commit -m "Updated Traits on `date` with GitHub Actions" || echo "No Changes to Commit"
+          git commit -m "Updated Data on `date` with GitHub Actions" || echo "No Changes to Commit"
           git push origin main || echo "No Changes to Commit"
