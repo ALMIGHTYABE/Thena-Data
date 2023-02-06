@@ -2,14 +2,13 @@ import requests
 import pandas as pd
 import numpy as np
 import yaml
+import json
 import os
 from datetime import datetime
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
-from google.oauth2.service_account import Credentials
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
+
 
 # Params
 params_path = "params.yaml"
@@ -40,11 +39,8 @@ try:
     df["epoch"] = np.divmod(np.arange(len(df)), 7)[0]
 
     # Write to GSheets
-    scopes = [
-        "https://www.googleapis.com/auth/spreadsheets",
-        "https://www.googleapis.com/auth/drive",
-    ]
-    credentials = os.environ["GKEY"]
+    credentials = os.environ("GKey")
+    credentials = json.loads(credentials)
     gc = gspread.service_account_from_dict(credentials)
 
     # Open a google sheet
