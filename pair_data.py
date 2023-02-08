@@ -63,16 +63,22 @@ try:
 
     # Request and Edit Pair Data
     pairdata_df = pd.DataFrame()
-    for name, contract_address in zip(ids_df["name"], ids_df["address"]):
-        myobj2["variables"]["pairAddress"] = contract_address
 
-        response = requests.post(subgraph, json=myobj2)
-        data = response.json()["data"]["pairDayDatas"]
-        df = pd.json_normalize(data)
-        df["name"] = name
-        drop_index = df[df["date"].astype("str") == "1672790400"].index
-        df.drop(drop_index, inplace=True)
-        pairdata_df = pd.concat([pairdata_df, df], axis=0, ignore_index=True)
+    for name, contract_address in zip(ids_df["name"], ids_df["address"]):
+        try:
+            myobj2["variables"]["pairAddress"] = contract_address
+            response = requests.post(subgraph, json=myobj2)
+            data = response.json()["data"]["pairDayDatas"]
+            df = pd.json_normalize(data)
+            df["name"] = name
+            drop_index = df[df["date"].astype("str") == "1672790400"].index
+            df.drop(drop_index, inplace=True)
+            pairdata_df = pd.concat([pairdata_df, df], axis=0, ignore_index=True)
+        except Exception as e:
+            logger.error(
+                "Error occurred during Pair Data process. Pair: %s, Address: %s, Error: %s"
+                % (name, contract_address, e)
+            )
 
     pairdata_df["date"] = pairdata_df["date"].apply(
         lambda timestamp: datetime.utcfromtimestamp(timestamp).date()
