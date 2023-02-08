@@ -4,3 +4,7 @@
 [2023-02-08 00:29:06,772] 	ERROR 	139 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: 'date'
 [2023-02-08 00:54:02,156] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
 [2023-02-08 00:54:04,956] 	INFO 	60 	day_data.py 	<module>() 	Day Data Ended
+[2023-02-08 06:08:00,318] 	INFO 	28 	pair_data.py 	<module>() 	ID Data Started
+[2023-02-08 06:08:20,427] 	INFO 	68 	pair_data.py 	<module>() 	ID Data Ended
+[2023-02-08 06:08:20,427] 	INFO 	71 	pair_data.py 	<module>() 	Pair Data Started
+[2023-02-08 06:08:40,853] 	ERROR 	139 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: 'date'
