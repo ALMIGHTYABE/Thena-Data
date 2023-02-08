@@ -46,23 +46,11 @@ try:
         address = w3.toChecksumAddress(address)
         contract_instance = w3.eth.contract(address=address, abi=abi)
         names.append(
-            {"name": contract_instance.functions.name().call(), "address": address}
+            {"name": contract_instance.functions.symbol().call(), "address": address}
         )
 
     ids_df = pd.DataFrame(names)
-    ids_df[["type", "pair"]] = ids_df["name"].str.split(" ", 1, expand=True)
-    ids_df.replace(
-        to_replace=["StableV1 ", "VolatileV1 "],
-        value=["s", "v"],
-        regex=True,
-        inplace=True,
-    )
-    ids_df.replace(
-        to_replace=["StableV1", "VolatileV1"],
-        value=["sAMM", "vAMM"],
-        regex=True,
-        inplace=True,
-    )
+    ids_df[["type", "pair"]] = ids_df["name"].str.split("-", 1, expand=True)
     ids_df.drop(["pair"], axis=1, inplace=True)
 
     logger.info("ID Data Ended")
