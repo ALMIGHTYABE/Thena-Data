@@ -19,3 +19,8 @@
 [2023-02-09 03:15:31,938] 	INFO 	131 	pair_data.py 	<module>() 	Pair Data Ended
 [2023-02-09 03:17:57,046] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
 [2023-02-09 03:17:59,013] 	INFO 	60 	day_data.py 	<module>() 	Day Data Ended
+[2023-02-09 04:13:11,986] 	INFO 	28 	pair_data.py 	<module>() 	ID Data Started
+[2023-02-09 04:14:04,460] 	INFO 	56 	pair_data.py 	<module>() 	ID Data Ended
+[2023-02-09 04:14:04,460] 	INFO 	59 	pair_data.py 	<module>() 	Pair Data Started
+[2023-02-09 04:14:22,137] 	ERROR 	78 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-FFH/WBNB, Address: 0x3d3F41D3Faaa4F3e91F9dc65A2790F809e045bB7, Error: 'date'
+[2023-02-09 04:14:26,251] 	INFO 	131 	pair_data.py 	<module>() 	Pair Data Ended
