@@ -1,10 +1,12 @@
-name: Update Day Data
+name: Update Data
 on:
+  schedule:
+    - cron: '0 */1 * * *'
   workflow_dispatch:
 
 jobs:
   update_symbol_list:
-    name: Update Day Data periodically
+    name: Update Data periodically
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -24,10 +26,11 @@ jobs:
           GKEY: ${{ secrets.GKEY }}
         run: |
           python day_data.py
+          python pair_data.py
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add logs
-          git commit -m "Updated Day Data on `date` with GitHub Actions" || echo "No Changes to Commit"
+          git commit -m "Updated Data on `date` with GitHub Actions" || echo "No Changes to Commit"
           git push origin main || echo "No Changes to Commit"
