@@ -118,3 +118,9 @@
 [2023-02-12 20:05:38,488] 	INFO 	56 	pair_data.py 	<module>() 	ID Data Ended
 [2023-02-12 20:05:38,488] 	INFO 	59 	pair_data.py 	<module>() 	Pair Data Started
 [2023-02-12 20:05:58,724] 	INFO 	131 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-02-12 21:03:10,366] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-02-12 21:03:11,392] 	ERROR 	62 	day_data.py 	<module>() 	Error occurred during Day Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2023-02-12 21:03:12,410] 	INFO 	28 	pair_data.py 	<module>() 	ID Data Started
+[2023-02-12 21:03:27,580] 	INFO 	56 	pair_data.py 	<module>() 	ID Data Ended
+[2023-02-12 21:03:27,580] 	INFO 	59 	pair_data.py 	<module>() 	Pair Data Started
+[2023-02-12 21:03:52,582] 	INFO 	131 	pair_data.py 	<module>() 	Pair Data Ended
