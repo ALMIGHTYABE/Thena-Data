@@ -75,3 +75,9 @@
   <p><b>502.</b> <ins>That’s an error.</ins>
   <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
 
+[2023-02-13 17:06:39,542] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-02-13 17:06:42,224] 	INFO 	60 	day_data.py 	<module>() 	Day Data Ended
+[2023-02-13 17:06:43,043] 	INFO 	28 	pair_data.py 	<module>() 	ID Data Started
+[2023-02-13 17:06:57,272] 	INFO 	56 	pair_data.py 	<module>() 	ID Data Ended
+[2023-02-13 17:06:57,272] 	INFO 	59 	pair_data.py 	<module>() 	Pair Data Started
+[2023-02-13 17:07:22,132] 	INFO 	131 	pair_data.py 	<module>() 	Pair Data Ended
