@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import numpy as np
 import yaml
 import json
 import os
@@ -39,7 +38,7 @@ try:
     # Web3
     provider_url = config["data"]["provider_url"]
     w3 = Web3(Web3.HTTPProvider(provider_url))
-    abi = config["data"]["abi"]
+    abi = config["data"]["abi1"]
 
     names = []
     for address in id_df["id"]:
