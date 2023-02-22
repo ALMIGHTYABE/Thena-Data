@@ -7,6 +7,7 @@ from datetime import datetime, date, timezone
 from dateutil.relativedelta import relativedelta, TH
 from application_logging.logger import logger
 import gspread
+from gspread_dataframe import set_with_dataframe
 from web3 import Web3
 
 
@@ -36,6 +37,7 @@ try:
     ve_contract = config["data"]["ve_contract"]
     epoch_csv = config["data"]["epoch_data"]
     price_api = config["data"]["price_api"]
+    bribe_csv = config["data"]["bribe_data"]
 
     # Request
     response = requests.post(url=subgraph, json=myobj1)
@@ -75,7 +77,7 @@ try:
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
-    lastThursday = todayDate + relativedelta(weekday=TH(-1))
+    lastThursday = todayDate + relativedelta(weekday=TH(0))
     my_time = datetime.min.time()
     my_datetime = datetime.combine(lastThursday, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
@@ -122,7 +124,12 @@ try:
     bribe_df = bribe_df.groupby(by="name")["bribe_amount"].sum().reset_index()
     bribe_df["epoch"] = epoch
     print(bribe_df)
-    df_values = bribe_df.values.tolist()
+
+    # Rewriting current Epoch's Bribe Data
+    bribor = pd.read_csv(bribe_csv)
+    current_bribe_index = bribor[bribor['epoch'] == epoch].index
+    bribor.drop(current_bribe_index, inplace = True)
+    bribe_df = pd.concat([bribor, bribe_df], ignore_index=True, axis=0)
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
@@ -133,8 +140,16 @@ try:
     sheetkey = config["data"]["sheetkey3"]
     gs = gc.open_by_key(sheetkey)
 
-    # Append to Worksheet
-    gs.values_append("Master", {"valueInputOption": "RAW"}, {"values": df_values})
+    # Select a work sheet from its name
+    worksheet1 = gs.worksheet("Master")
+    worksheet1.clear()
+    set_with_dataframe(
+        worksheet=worksheet1,
+        dataframe=bribe_df,
+        include_index=False,
+        include_column_header=True,
+        resize=True,
+    )
 
     logger.info("Bribe Data Ended")
 except Exception as e:
