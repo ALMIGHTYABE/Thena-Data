@@ -1,9 +1,10 @@
 import requests
 import pandas as pd
+import numpy as np
 import yaml
 import json
 import os
-from datetime import datetime, date, timezone
+from datetime import datetime, timezone
 from dateutil.relativedelta import relativedelta, TH
 from application_logging.logger import logger
 import gspread
@@ -119,7 +120,7 @@ try:
 
     # Bribe Amounts
     bribe_df = bribe_df.merge(price_df[["address", "price"]], on="address", how="left")
-    bribe_df["bribe_amount"] = (bribe_df["price"] * bribe_df["bribes"]) / 1000000000000000000
+    bribe_df["bribe_amount"] = np.where(bribe_df["address"] == "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65", (bribe_df["price"] * bribe_df["bribes"]) / 1000000, (bribe_df["price"] * bribe_df["bribes"]) / 1000000000000000000)
     print(bribe_df)
     bribe_df = bribe_df.groupby(by="name")["bribe_amount"].sum().reset_index()
     bribe_df["epoch"] = epoch
@@ -127,8 +128,8 @@ try:
 
     # Rewriting current Epoch's Bribe Data
     bribor = pd.read_csv(bribe_csv)
-    current_bribe_index = bribor[bribor['epoch'] == epoch].index
-    bribor.drop(current_bribe_index, inplace = True)
+    current_bribe_index = bribor[bribor["epoch"] == epoch].index
+    bribor.drop(current_bribe_index, inplace=True)
     bribe_df = pd.concat([bribor, bribe_df], ignore_index=True, axis=0)
 
     # Write to GSheets
