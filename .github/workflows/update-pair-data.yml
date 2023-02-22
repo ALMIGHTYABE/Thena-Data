@@ -4,7 +4,7 @@ on:
 
 jobs:
   update_symbol_list:
-    name: Update Pair Data periodically
+    name: Update Pair Data
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

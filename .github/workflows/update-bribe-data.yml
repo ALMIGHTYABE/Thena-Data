@@ -1,12 +1,12 @@
 name: Update Bribe Data
 on:
-  schedule:
-    - cron: '0 0 * * THU'
+  # schedule:
+    # - cron: '0 0 * * THU'
   workflow_dispatch:
 
 jobs:
   update_symbol_list:
-    name: Update Bribe Data Thursday
+    name: Update Bribe Data
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
