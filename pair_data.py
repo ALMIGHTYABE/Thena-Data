@@ -29,6 +29,8 @@ try:
     # Params Data
     subgraph = config["data"]["subgraph"]
     myobj1 = config["data"]["id_data_query"]
+    myobj2 = config["data"]["pair_data_query"]
+    epoch_daily_csv = config["data"]["epoch_daily_data"]
 
     # Request
     response = requests.post(url=subgraph, json=myobj1)
@@ -44,9 +46,7 @@ try:
     for address in id_df["id"]:
         address = w3.toChecksumAddress(address)
         contract_instance = w3.eth.contract(address=address, abi=abi)
-        names.append(
-            {"name": contract_instance.functions.symbol().call(), "address": address}
-        )
+        names.append({"name": contract_instance.functions.symbol().call(), "address": address})
 
     ids_df = pd.DataFrame(names)
     ids_df[["type", "pair"]] = ids_df["name"].str.split("-", 1, expand=True)
@@ -56,9 +56,6 @@ try:
 
     # Pulling Pair Data
     logger.info("Pair Data Started")
-
-    # Params Data
-    myobj2 = config["data"]["pair_data_query"]
 
     # Request and Edit Pair Data
     pairdata_df = pd.DataFrame()
@@ -74,32 +71,21 @@ try:
             df.drop(drop_index, inplace=True)
             pairdata_df = pd.concat([pairdata_df, df], axis=0, ignore_index=True)
         except Exception as e:
-            logger.error(
-                "Error occurred during Pair Data process. Pair: %s, Address: %s, Error: %s"
-                % (name, contract_address, e)
-            )
+            logger.error("Error occurred during Pair Data process. Pair: %s, Address: %s, Error: %s" % (name, contract_address, e))
 
-    pairdata_df["date"] = pairdata_df["date"].apply(
-        lambda timestamp: datetime.utcfromtimestamp(timestamp).date()
-    )
+    epoch_data = pd.read_csv("https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/epoch_daily.csv")
+    epoch_data["date"] = epoch_data["date"].apply(lambda date: datetime.strptime(date, "%d-%m-%Y").date())
+
+    pairdata_df["date"] = pairdata_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
     pairdata_df = pd.merge(pairdata_df, ids_df, how="left", on="name")
+    pairdata_df = pd.merge(pairdata_df, epoch_data[["date", "epoch"]], how="left", on="date")
 
     pairdata_df["fee %"] = pairdata_df["type"]
     pairdata_df["fee %"].replace({"vAMM": 0.20, "sAMM": 0.01}, inplace=True)
 
-    edit_index_1 = pairdata_df[
-        (pairdata_df["type"] == "sAMM")
-        & (pairdata_df["date"] > date(2023, 1, 1))
-        & (pairdata_df["date"] < date(2023, 1, 19))
-    ].index
-    edit_index_2 = pairdata_df[
-        (pairdata_df["type"] == "sAMM")
-        & (pairdata_df["date"] >= date(2023, 1, 19))
-        & (pairdata_df["date"] < date(2023, 1, 23))
-    ].index
-    edit_index_3 = pairdata_df[
-        (pairdata_df["type"] == "sAMM") & (pairdata_df["date"] == date(2023, 1, 23))
-    ].index
+    edit_index_1 = pairdata_df[(pairdata_df["type"] == "sAMM") & (pairdata_df["date"] > date(2023, 1, 1)) & (pairdata_df["date"] < date(2023, 1, 19))].index
+    edit_index_2 = pairdata_df[(pairdata_df["type"] == "sAMM") & (pairdata_df["date"] >= date(2023, 1, 19)) & (pairdata_df["date"] < date(2023, 1, 23))].index
+    edit_index_3 = pairdata_df[(pairdata_df["type"] == "sAMM") & (pairdata_df["date"] == date(2023, 1, 23))].index
     pairdata_df.loc[edit_index_1, "fee %"] = 0.04
     pairdata_df.loc[edit_index_2, "fee %"] = 0.03
     pairdata_df.loc[edit_index_3, "fee %"] = 0.02
