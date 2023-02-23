@@ -78,10 +78,18 @@ try:
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
-    lastThursday = todayDate + relativedelta(weekday=TH(0))
-    my_time = datetime.min.time()
-    my_datetime = datetime.combine(lastThursday, my_time)
-    timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
+    if todayDate.isoweekday() == 4:
+        nextThursday = todayDate + relativedelta(weekday=TH(2))
+        my_time = datetime.min.time()
+        my_datetime = datetime.combine(nextThursday, my_time)
+        timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
+        print("Yes, The next Thursday date:", my_datetime, timestamp)
+    else:
+        nextThursday = todayDate + relativedelta(weekday=TH(0))
+        my_time = datetime.min.time()
+        my_datetime = datetime.combine(nextThursday, my_time)
+        timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
+        print("No, The next Thursday date:", my_datetime, timestamp)
 
     # Read Epoch Data
     epoch_data = pd.read_csv(epoch_csv)
