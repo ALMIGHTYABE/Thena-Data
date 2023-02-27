@@ -38,3 +38,14 @@
 [2023-02-27 04:09:51,710] 	INFO 	61 	bribe_data.py 	<module>() 	ID Data Ended
 [2023-02-27 04:09:51,711] 	INFO 	64 	bribe_data.py 	<module>() 	Bribe Data Started
 [2023-02-27 04:11:59,820] 	INFO 	163 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-02-27 05:07:08,414] 	INFO 	25 	day_data.py 	<module>() 	Day Data Started
+[2023-02-27 05:07:11,459] 	INFO 	59 	day_data.py 	<module>() 	Day Data Ended
+[2023-02-27 05:07:12,329] 	INFO 	27 	pair_data.py 	<module>() 	ID Data Started
+[2023-02-27 05:07:25,829] 	INFO 	55 	pair_data.py 	<module>() 	ID Data Ended
+[2023-02-27 05:07:25,829] 	INFO 	58 	pair_data.py 	<module>() 	Pair Data Started
+[2023-02-27 05:07:46,886] 	ERROR 	74 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDC/THE, Address: 0xC6376e5452EBd75cD4dE8e0d597f66cA38c1FA77, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Max retries exceeded with url: /subgraphs/name/thenaursa/thena-v1 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1131)')))
+[2023-02-27 05:07:53,089] 	INFO 	116 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-02-27 05:07:53,989] 	INFO 	29 	bribe_data.py 	<module>() 	ID Data Started
+[2023-02-27 05:08:06,135] 	INFO 	61 	bribe_data.py 	<module>() 	ID Data Ended
+[2023-02-27 05:08:06,136] 	INFO 	64 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-02-27 05:09:25,930] 	INFO 	163 	bribe_data.py 	<module>() 	Bribe Data Ended
