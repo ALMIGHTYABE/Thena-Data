@@ -8,3 +8,13 @@
 [2023-02-27 00:37:32,907] 	INFO 	61 	bribe_data.py 	<module>() 	ID Data Ended
 [2023-02-27 00:37:32,907] 	INFO 	64 	bribe_data.py 	<module>() 	Bribe Data Started
 [2023-02-27 00:39:22,295] 	INFO 	163 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-02-27 02:16:19,852] 	INFO 	25 	day_data.py 	<module>() 	Day Data Started
+[2023-02-27 02:16:23,561] 	INFO 	59 	day_data.py 	<module>() 	Day Data Ended
+[2023-02-27 02:16:24,505] 	INFO 	27 	pair_data.py 	<module>() 	ID Data Started
+[2023-02-27 02:16:39,373] 	INFO 	55 	pair_data.py 	<module>() 	ID Data Ended
+[2023-02-27 02:16:39,373] 	INFO 	58 	pair_data.py 	<module>() 	Pair Data Started
+[2023-02-27 02:17:07,300] 	INFO 	116 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-02-27 02:17:08,217] 	INFO 	29 	bribe_data.py 	<module>() 	ID Data Started
+[2023-02-27 02:17:22,585] 	INFO 	61 	bribe_data.py 	<module>() 	ID Data Ended
+[2023-02-27 02:17:22,585] 	INFO 	64 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-02-27 02:18:40,348] 	ERROR 	165 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: HTTPSConnectionPool(host='rpc.ankr.com', port=443): Read timed out. (read timeout=10)
