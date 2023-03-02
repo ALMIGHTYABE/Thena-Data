@@ -1,0 +1,10 @@
+[2023-03-02 00:39:23,463] 	INFO 	25 	day_data.py 	<module>() 	Day Data Started
+[2023-03-02 00:39:26,834] 	INFO 	59 	day_data.py 	<module>() 	Day Data Ended
+[2023-03-02 00:39:27,699] 	INFO 	27 	pair_data.py 	<module>() 	ID Data Started
+[2023-03-02 00:39:52,495] 	INFO 	55 	pair_data.py 	<module>() 	ID Data Ended
+[2023-03-02 00:39:52,495] 	INFO 	58 	pair_data.py 	<module>() 	Pair Data Started
+[2023-03-02 00:40:31,764] 	INFO 	116 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-03-02 00:40:32,680] 	INFO 	29 	bribe_data.py 	<module>() 	ID Data Started
+[2023-03-02 00:40:55,300] 	INFO 	61 	bribe_data.py 	<module>() 	ID Data Ended
+[2023-03-02 00:40:55,300] 	INFO 	64 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-03-02 00:43:22,843] 	ERROR 	165 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'address'
