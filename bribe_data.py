@@ -10,6 +10,7 @@ from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
 from web3 import Web3
+import itertools
 
 
 # Params
@@ -41,15 +42,25 @@ try:
     bribe_csv = config["data"]["bribe_data"]
 
     # Request
-    response = requests.post(url=subgraph, json=myobj1)
-    data = response.json()["data"]["pairs"]
-    id_df = pd.json_normalize(data)
+    ids_df = pd.DataFrame()
+    for i in itertools.count(0, 100):
+        myobj1["variables"]["skip"] = i
+        response = requests.post(url=subgraph, json=myobj1)
+        data = response.json()["data"]["pairs"]
+
+        # Checking if empty data
+        if data == []:
+            break
+        else:
+            temp_df = pd.json_normalize(data)
+            ids_df = pd.concat([ids_df, temp_df], axis=0)
+    ids_df.reset_index(drop=True, inplace=True)
 
     # Web3
     w3 = Web3(Web3.HTTPProvider(provider_url))
 
     names = []
-    for address in id_df["id"]:
+    for address in ids_df["id"]:
         address = w3.toChecksumAddress(address)
         contract_instance = w3.eth.contract(address=address, abi=abi1)
         names.append({"name": contract_instance.functions.symbol().call(), "address": address})
