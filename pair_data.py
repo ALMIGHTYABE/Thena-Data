@@ -92,7 +92,7 @@ try:
         except Exception as e:
             logger.error("Error occurred during Pair Data process. Pair: %s, Address: %s, Error: %s" % (name, contract_address, e))
 
-    epoch_data = pd.read_csv("https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/epoch_daily.csv")
+    epoch_data = pd.read_csv(epoch_daily_csv)
     epoch_data["date"] = epoch_data["date"].apply(lambda date: datetime.strptime(date, "%d-%m-%Y").date())
 
     pairdata_df["date"] = pairdata_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
