@@ -8,6 +8,7 @@ from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
 from web3 import Web3
+import itertools
 
 
 # Params
@@ -33,9 +34,19 @@ try:
     epoch_daily_csv = config["data"]["epoch_daily_data"]
 
     # Request
-    response = requests.post(url=subgraph, json=myobj1)
-    data = response.json()["data"]["pairs"]
-    id_df = pd.json_normalize(data)
+    ids_df = pd.DataFrame()
+    for i in itertools.count(0, 100):
+        myobj1["variables"]["skip"] = i
+        response = requests.post(url=subgraph, json=myobj1)
+        data = response.json()["data"]["pairs"]
+
+        # Checking if empty data
+        if data == []:
+            break
+        else:
+            temp_df = pd.json_normalize(data)
+            ids_df = pd.concat([ids_df, temp_df], axis=0)
+    ids_df.reset_index(drop=True, inplace=True)
 
     # Web3
     provider_url = config["data"]["provider_url"]
@@ -43,7 +54,7 @@ try:
     abi = config["data"]["abi1"]
 
     names = []
-    for address in id_df["id"]:
+    for address in ids_df["id"]:
         address = w3.toChecksumAddress(address)
         contract_instance = w3.eth.contract(address=address, abi=abi)
         names.append({"name": contract_instance.functions.symbol().call(), "address": address})
@@ -63,13 +74,21 @@ try:
     for name, contract_address in zip(ids_df["name"], ids_df["address"]):
         try:
             myobj2["variables"]["pairAddress"] = contract_address
-            response = requests.post(subgraph, json=myobj2)
-            data = response.json()["data"]["pairDayDatas"]
-            df = pd.json_normalize(data)
-            df["name"] = name
-            drop_index = df[df["date"].astype("str") == "1672790400"].index
-            df.drop(drop_index, inplace=True)
-            pairdata_df = pd.concat([pairdata_df, df], axis=0, ignore_index=True)
+            for i in itertools.count(0, 100):
+                myobj2["variables"]["skip"] = i
+                response = requests.post(subgraph, json=myobj2)
+                data = response.json()["data"]["pairDayDatas"]
+
+                # Checking if empty data
+                if data == []:
+                    break
+                else:
+                    df = pd.json_normalize(data)
+                    df["name"] = name
+                    drop_index = df[df["date"].astype("str") == "1672790400"].index
+                    df.drop(drop_index, inplace=True)
+                    pairdata_df = pd.concat([pairdata_df, df], axis=0, ignore_index=True)
+            pairdata_df.reset_index(drop=True, inplace=True)
         except Exception as e:
             logger.error("Error occurred during Pair Data process. Pair: %s, Address: %s, Error: %s" % (name, contract_address, e))
 

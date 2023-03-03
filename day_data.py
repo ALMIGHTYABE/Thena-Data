@@ -7,6 +7,7 @@ from datetime import datetime
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
+import itertools
 
 
 # Params
@@ -29,12 +30,20 @@ try:
     myobj = config["data"]["day_data_query"]
 
     # Request
-    response = requests.post(url=subgraph, json=myobj)
-    data = response.json()["data"]["dayDatas"]
-    df = pd.json_normalize(data)
-    df["date"] = df["date"].apply(
-        lambda timestamp: datetime.utcfromtimestamp(timestamp).date()
-    )
+    day_data_df = pd.DataFrame()
+    for i in itertools.count(0, 100):
+        myobj["variables"]["skip"] = i
+        response = requests.post(url=subgraph, json=myobj)
+        data = response.json()["data"]["dayDatas"]
+
+        # Checking if empty data
+        if data == []:
+            break
+        else:
+            temp_df = pd.json_normalize(data)
+            day_data_df = pd.concat([day_data_df, temp_df], axis=0)
+    day_data_df.reset_index(drop=True, inplace=True)
+    day_data_df["date"] = day_data_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
@@ -50,7 +59,7 @@ try:
     worksheet1.clear()
     set_with_dataframe(
         worksheet=worksheet1,
-        dataframe=df,
+        dataframe=day_data_df,
         include_index=False,
         include_column_header=True,
         resize=True,
