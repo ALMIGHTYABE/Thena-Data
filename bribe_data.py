@@ -139,6 +139,7 @@ try:
 
     # Bribe Amounts
     bribe_df = bribe_df.merge(price_df[["address", "price"]], on="address", how="left")
+    bribe_df["bribe_amount"] = bribe_df["price"] * bribe_df["bribes"]
     bribe_df["bribe_amount"] = np.where((bribe_df["address"] != "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65") | (bribe_df["address"] != "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb"), bribe_df['bribe_amount'] / 1000000000000000000, bribe_df['bribe_amount'])
     
     four_decimal_index = bribe_df[(bribe_df["address"] == "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb")].index
