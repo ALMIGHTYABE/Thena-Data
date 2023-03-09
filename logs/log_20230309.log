@@ -154,3 +154,11 @@
 [2023-03-09 14:15:35,354] 	ERROR 	112 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: 'id_data'
 [2023-03-09 14:15:36,435] 	INFO 	30 	bribe_data.py 	<module>() 	ID Data Started
 [2023-03-09 14:15:36,436] 	ERROR 	143 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'id_data'
+[2023-03-09 14:17:34,542] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-03-09 14:17:37,177] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-03-09 14:17:38,131] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-03-09 14:17:38,584] 	ERROR 	109 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: Error tokenizing data. C error: Expected 1 fields in line 27, saw 367
+
+[2023-03-09 14:17:39,558] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-03-09 14:17:39,800] 	ERROR 	140 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Error tokenizing data. C error: Expected 1 fields in line 27, saw 367
+
