@@ -25,9 +25,6 @@ def read_params(config_path):
 config = read_params(params_path)
 
 try:
-    # Pulling IDs
-    logger.info("ID Data Started")
-
     # Params Data
     subgraph = config["query"]["subgraph"]
     id_data = config["files"]["id_data"]
