@@ -45,7 +45,7 @@ try:
     epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
 
     # Read IDS Data
-    ids_df = pd.read_csv("id_data")
+    ids_df = pd.read_csv(id_data)
     ids_df["epoch"] = epoch
 
     # Web3
