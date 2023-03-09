@@ -29,15 +29,15 @@ try:
 
     # Params Data
     subgraph = config["query"]["subgraph"]
-    myobj1 = config["query"]["id_data_query"]
-    myobj2 = config["query"]["pair_data_query"]
+    id_data_query = config["query"]["id_data_query"]
+    pair_data_query = config["query"]["pair_data_query"]
     epoch_daily_csv = config["files"]["epoch_daily_data"]
 
     # Request
     ids_df = pd.DataFrame()
     for i in itertools.count(0, 100):
-        myobj1["variables"]["skip"] = i
-        response = requests.post(url=subgraph, json=myobj1)
+        id_data_query["variables"]["skip"] = i
+        response = requests.post(url=subgraph, json=id_data_query)
         data = response.json()["data"]["pairs"]
 
         # Checking if empty data
@@ -73,10 +73,10 @@ try:
 
     for name, contract_address in zip(ids_df["name"], ids_df["address"]):
         try:
-            myobj2["variables"]["pairAddress"] = contract_address
+            pair_data_query["variables"]["pairAddress"] = contract_address
             for i in itertools.count(0, 100):
-                myobj2["variables"]["skip"] = i
-                response = requests.post(subgraph, json=myobj2)
+                pair_data_query["variables"]["skip"] = i
+                response = requests.post(subgraph, json=pair_data_query)
                 data = response.json()["data"]["pairDayDatas"]
 
                 # Checking if empty data

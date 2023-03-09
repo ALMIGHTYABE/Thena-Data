@@ -36,7 +36,7 @@ try:
     amm_abi = config["web3"]["amm_abi"]
     voter_abi = config["web3"]["voter_abi"]
     bribe_abi = config["web3"]["bribe_abi"]
-    ve_contract = config["data"]["ve_contract"]
+    ve_contract = config["web3"]["ve_contract"]
     epoch_csv = config["files"]["epoch_data"]
     price_api = config["api"]["price_api"]
     bribe_csv = config["files"]["bribe_data"]
@@ -44,7 +44,7 @@ try:
     # Request
     ids_df = pd.DataFrame()
     for i in itertools.count(0, 100):
-        myobj1["variables"]["skip"] = i
+        id_data_query["variables"]["skip"] = i
         response = requests.post(url=subgraph, json=id_data_query)
         data = response.json()["data"]["pairs"]
 
@@ -140,11 +140,11 @@ try:
     # Bribe Amounts
     bribe_df = bribe_df.merge(price_df[["address", "price"]], on="address", how="left")
     bribe_df["bribe_amount"] = bribe_df["price"] * bribe_df["bribes"]
-    bribe_df["bribe_amount"] = np.where((bribe_df["address"] != "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65") | (bribe_df["address"] != "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb"), bribe_df['bribe_amount'] / 1000000000000000000, bribe_df['bribe_amount'])
-    
+    bribe_df["bribe_amount"] = np.where((bribe_df["address"] != "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65") | (bribe_df["address"] != "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb"), bribe_df["bribe_amount"] / 1000000000000000000, bribe_df["bribe_amount"])
+
     four_decimal_index = bribe_df[(bribe_df["address"] == "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb")].index
     bribe_df.loc[four_decimal_index, "bribe_amount"] = bribe_df.loc[four_decimal_index, "bribes"] * bribe_df.loc[four_decimal_index, "price"] / 10000
-    
+
     six_decimal_index = bribe_df[(bribe_df["address"] == "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65")].index
     bribe_df.loc[six_decimal_index, "bribe_amount"] = bribe_df.loc[six_decimal_index, "bribes"] * bribe_df.loc[six_decimal_index, "price"] / 1000000
 

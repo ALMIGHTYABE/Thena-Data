@@ -27,13 +27,13 @@ try:
 
     # Params Data
     subgraph = config["query"]["subgraph"]
-    myobj = config["query"]["day_data_query"]
+    day_data_query = config["query"]["day_data_query"]
 
     # Request
     day_data_df = pd.DataFrame()
     for i in itertools.count(0, 100):
-        myobj["variables"]["skip"] = i
-        response = requests.post(url=subgraph, json=myobj)
+        day_data_query["variables"]["skip"] = i
+        response = requests.post(url=subgraph, json=day_data_query)
         data = response.json()["data"]["dayDatas"]
 
         # Checking if empty data
