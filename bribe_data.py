@@ -10,7 +10,7 @@ from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
 from web3 import Web3
-import itertools
+from web3.middleware import validation
 
 
 # Params
@@ -31,61 +31,17 @@ try:
 
     # Params Data
     subgraph = config["query"]["subgraph"]
-    id_data_query = config["query"]["id_data_query"]
+    id_data = config["files"]["id_data"]
     provider_url = config["web3"]["provider_url"]
-    amm_abi = config["web3"]["amm_abi"]
-    voter_abi = config["web3"]["voter_abi"]
     bribe_abi = config["web3"]["bribe_abi"]
-    ve_contract = config["web3"]["ve_contract"]
     epoch_csv = config["files"]["epoch_data"]
     price_api = config["api"]["price_api"]
     bribe_csv = config["files"]["bribe_data"]
 
-    # Request
-    ids_df = pd.DataFrame()
-    for i in itertools.count(0, 100):
-        id_data_query["variables"]["skip"] = i
-        response = requests.post(url=subgraph, json=id_data_query)
-        data = response.json()["data"]["pairs"]
-
-        # Checking if empty data
-        if data == []:
-            break
-        else:
-            temp_df = pd.json_normalize(data)
-            ids_df = pd.concat([ids_df, temp_df], axis=0)
-    ids_df.reset_index(drop=True, inplace=True)
-
-    # Web3
-    w3 = Web3(Web3.HTTPProvider(provider_url))
-
-    names = []
-    for address in ids_df["id"]:
-        address = w3.toChecksumAddress(address)
-        contract_instance = w3.eth.contract(address=address, abi=amm_abi)
-        names.append({"name": contract_instance.functions.symbol().call(), "address": address})
-
-    ids_df = pd.DataFrame(names)
-    ids_df[["type", "pair"]] = ids_df["name"].str.split("-", 1, expand=True)
-    ids_df.drop(["pair"], axis=1, inplace=True)
-
-    logger.info("ID Data Ended")
-
     # Pulling Bribe Data
     logger.info("Bribe Data Started")
 
-    # Web3
-    contract_instance = w3.eth.contract(address=ve_contract, abi=voter_abi)
-
-    gauges = []
-    bribe_ca = []
-    for address in ids_df["address"]:
-        address = w3.toChecksumAddress(address)
-        gauge = contract_instance.functions.gauges(address).call()
-        gauges.append(gauge)
-        bribe_ca.append(contract_instance.functions.external_bribes(gauge).call())
-    ids_df["gauges"] = gauges
-    ids_df["bribe_ca"] = bribe_ca
+    ids_df = pd.read_csv(id_data)
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
@@ -107,6 +63,9 @@ try:
     epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
 
     # Pull Bribes Web3
+    validation.METHODS_TO_VALIDATE = []
+    w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 60}))
+
     bribes_list = []
     for name, bribe_ca in zip(ids_df["name"], ids_df["bribe_ca"]):
         if bribe_ca == "0x0000000000000000000000000000000000000000":
