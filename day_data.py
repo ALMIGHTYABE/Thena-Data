@@ -26,8 +26,8 @@ try:
     logger.info("Day Data Started")
 
     # Params Data
-    subgraph = config["data"]["subgraph"]
-    myobj = config["data"]["day_data_query"]
+    subgraph = config["query"]["subgraph"]
+    myobj = config["query"]["day_data_query"]
 
     # Request
     day_data_df = pd.DataFrame()
@@ -51,7 +51,7 @@ try:
     gc = gspread.service_account_from_dict(credentials)
 
     # Open a google sheet
-    sheetkey = config["data"]["sheetkey1"]
+    sheetkey = config["gsheets"]["daily_data_sheet_key"]
     gs = gc.open_by_key(sheetkey)
 
     # Select a work sheet from its name

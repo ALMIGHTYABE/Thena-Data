@@ -28,10 +28,10 @@ try:
     logger.info("ID Data Started")
 
     # Params Data
-    subgraph = config["data"]["subgraph"]
-    myobj1 = config["data"]["id_data_query"]
-    myobj2 = config["data"]["pair_data_query"]
-    epoch_daily_csv = config["data"]["epoch_daily_data"]
+    subgraph = config["query"]["subgraph"]
+    myobj1 = config["query"]["id_data_query"]
+    myobj2 = config["query"]["pair_data_query"]
+    epoch_daily_csv = config["files"]["epoch_daily_data"]
 
     # Request
     ids_df = pd.DataFrame()
@@ -49,14 +49,14 @@ try:
     ids_df.reset_index(drop=True, inplace=True)
 
     # Web3
-    provider_url = config["data"]["provider_url"]
+    provider_url = config["web3"]["provider_url"]
     w3 = Web3(Web3.HTTPProvider(provider_url))
-    abi = config["data"]["abi1"]
+    amm_abi = config["web3"]["amm_abi"]
 
     names = []
     for address in ids_df["id"]:
         address = w3.toChecksumAddress(address)
-        contract_instance = w3.eth.contract(address=address, abi=abi)
+        contract_instance = w3.eth.contract(address=address, abi=amm_abi)
         names.append({"name": contract_instance.functions.symbol().call(), "address": address})
 
     ids_df = pd.DataFrame(names)
@@ -118,7 +118,7 @@ try:
     gc = gspread.service_account_from_dict(credentials)
 
     # Open a google sheet
-    sheetkey = config["data"]["sheetkey2"]
+    sheetkey = config["gsheets"]["pair_data_sheet_key"]
     gs = gc.open_by_key(sheetkey)
 
     # Select a work sheet from its name

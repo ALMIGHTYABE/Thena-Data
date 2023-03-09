@@ -30,22 +30,22 @@ try:
     logger.info("ID Data Started")
 
     # Params Data
-    subgraph = config["data"]["subgraph"]
-    myobj1 = config["data"]["id_data_query"]
-    provider_url = config["data"]["provider_url"]
-    abi1 = config["data"]["abi1"]
-    abi2 = config["data"]["abi2"]
-    abi3 = config["data"]["abi3"]
+    subgraph = config["query"]["subgraph"]
+    id_data_query = config["query"]["id_data_query"]
+    provider_url = config["web3"]["provider_url"]
+    amm_abi = config["web3"]["amm_abi"]
+    voter_abi = config["web3"]["voter_abi"]
+    bribe_abi = config["web3"]["bribe_abi"]
     ve_contract = config["data"]["ve_contract"]
-    epoch_csv = config["data"]["epoch_data"]
-    price_api = config["data"]["price_api"]
-    bribe_csv = config["data"]["bribe_data"]
+    epoch_csv = config["files"]["epoch_data"]
+    price_api = config["api"]["price_api"]
+    bribe_csv = config["files"]["bribe_data"]
 
     # Request
     ids_df = pd.DataFrame()
     for i in itertools.count(0, 100):
         myobj1["variables"]["skip"] = i
-        response = requests.post(url=subgraph, json=myobj1)
+        response = requests.post(url=subgraph, json=id_data_query)
         data = response.json()["data"]["pairs"]
 
         # Checking if empty data
@@ -62,7 +62,7 @@ try:
     names = []
     for address in ids_df["id"]:
         address = w3.toChecksumAddress(address)
-        contract_instance = w3.eth.contract(address=address, abi=abi1)
+        contract_instance = w3.eth.contract(address=address, abi=amm_abi)
         names.append({"name": contract_instance.functions.symbol().call(), "address": address})
 
     ids_df = pd.DataFrame(names)
@@ -75,7 +75,7 @@ try:
     logger.info("Bribe Data Started")
 
     # Web3
-    contract_instance = w3.eth.contract(address=ve_contract, abi=abi2)
+    contract_instance = w3.eth.contract(address=ve_contract, abi=voter_abi)
 
     gauges = []
     bribe_ca = []
@@ -113,7 +113,7 @@ try:
             pass
         else:
             contract_address = bribe_ca
-            contract_instance = w3.eth.contract(address=contract_address, abi=abi3)
+            contract_instance = w3.eth.contract(address=contract_address, abi=bribe_abi)
 
             rewardsListLength = contract_instance.functions.rewardsListLength().call()
 
@@ -165,7 +165,7 @@ try:
     gc = gspread.service_account_from_dict(credentials)
 
     # Open a google sheet
-    sheetkey = config["data"]["sheetkey3"]
+    sheetkey = config["gsheets"]["bribe_data_sheet_key"]
     gs = gc.open_by_key(sheetkey)
 
     # Select a work sheet from its name
