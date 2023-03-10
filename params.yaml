@@ -17,6 +17,7 @@ gsheets:
   pair_data_sheet_key: 1CW8lvPLAFUU874D1hi_ZN4X-Uhes8aOCwZn1OwNPdXU
   bribe_data_sheet_key: 1HMAY4L1hN0xh1Y9CggkEXzAMlrpKLNkV9etLmby6eFU
   emissions_data_sheet_key: 1bAUAPu5XhXcxAhBbO33TupX8Q25smE7c4ArZjnAlUGY
+  revenue_data_sheet_key: 1UShBZolQOux_WVIUChwE2JWyYWtVR1NlpX5bqT3_HCA
 
 api:
   price_api: https://api.thena.fi/api/v1/baseAssets
@@ -26,3 +27,5 @@ files:
   epoch_daily_data: https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/epoch_daily.csv
   bribe_data: https://docs.google.com/spreadsheets/d/1HMAY4L1hN0xh1Y9CggkEXzAMlrpKLNkV9etLmby6eFU/export?format=csv&id=1HMAY4L1hN0xh1Y9CggkEXzAMlrpKLNkV9etLmby6eFU&gid=811019535
   id_data: https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/ids_data.csv
+  pair_data: https://docs.google.com/spreadsheets/d/1CW8lvPLAFUU874D1hi_ZN4X-Uhes8aOCwZn1OwNPdXU/export?format=csv
+  emissions_data: https://docs.google.com/spreadsheets/d/1bAUAPu5XhXcxAhBbO33TupX8Q25smE7c4ArZjnAlUGY/export?format=csv
