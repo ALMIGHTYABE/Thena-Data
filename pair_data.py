@@ -68,7 +68,7 @@ try:
     epoch_data["date"] = epoch_data["date"].apply(lambda date: datetime.strptime(date, "%d-%m-%Y").date())
 
     pairdata_df["date"] = pairdata_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
-    pairdata_df = pd.merge(pairdata_df, ids_df["name", "address", "type"], how="left", on="name")
+    pairdata_df = pd.merge(pairdata_df, ids_df[["name", "address", "type"]], how="left", on="name")
     pairdata_df = pd.merge(pairdata_df, epoch_data[["date", "epoch"]], how="left", on="date")
 
     pairdata_df["fee %"] = pairdata_df["type"]
