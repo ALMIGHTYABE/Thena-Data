@@ -1,10 +1,10 @@
-name: Update Pair Data
+name: Update Revenue Data
 on:
   workflow_dispatch:
 
 jobs:
   update_symbol_list:
-    name: Update Pair Data
+    name: Update Revenue Data
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,11 +23,11 @@ jobs:
         env:
           GKEY: ${{ secrets.GKEY }}
         run: |
-          python pair_data.py
+          python revenue_data.py
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add logs
-          git commit -m "Updated Pair Data on `date` with GitHub Actions" || echo "No Changes to Commit"
+          git commit -m "Updated Revenue Data on `date` with GitHub Actions" || echo "No Changes to Commit"
           git push origin main || echo "No Changes to Commit"
