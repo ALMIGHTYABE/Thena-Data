@@ -92,3 +92,11 @@
 [2023-03-10 11:08:38,735] 	INFO 	138 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-03-10 11:08:39,589] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-03-10 11:08:41,903] 	ERROR 	67 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: Master
+[2023-03-10 11:11:51,721] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-03-10 11:11:54,594] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-03-10 11:11:55,809] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-03-10 11:13:30,352] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-03-10 11:13:31,547] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-03-10 11:15:11,276] 	INFO 	138 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-03-10 11:15:12,083] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-03-10 11:15:15,677] 	INFO 	65 	revenue_data.py 	<module>() 	Revenue Data Ended
