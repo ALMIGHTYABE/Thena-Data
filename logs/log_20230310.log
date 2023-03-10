@@ -12,3 +12,5 @@
 [2023-03-10 02:24:55,638] 	ERROR 	109 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
 [2023-03-10 02:24:56,532] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
 [2023-03-10 02:26:20,007] 	INFO 	138 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-03-10 02:58:10,374] 	INFO 	23 	id_data.py 	<module>() 	ID Data Started
+[2023-03-10 02:58:57,258] 	INFO 	74 	id_data.py 	<module>() 	ID Data Ended
