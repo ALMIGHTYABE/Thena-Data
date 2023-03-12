@@ -38,6 +38,10 @@ try:
     df = pd.merge(epoch_wise_fees, bribe_df, on=["epoch", "name"], how="outer")
     df.replace(np.nan, 0, inplace=True)
     df["revenue"] = df["fee"] + df["bribe_amount"]
+    bribe_df_offset = bribe_df.copy(deep=True)
+    bribe_df_offset["epoch"] = bribe_df_offset["epoch"] + 1
+    bribe_df_offset.columns = ["name", "bribe_amount_offset", "epoch"]
+    df = pd.merge(df, bribe_df_offset, on=["epoch", "name"], how="outer")
     final_df = pd.merge(df, emissions_df, on=["epoch", "name"], how="outer")
     final_df.replace(np.nan, 0, inplace=True)
     final_df.sort_values(by="epoch", axis=0, ignore_index=True, inplace=True)
