@@ -45,6 +45,9 @@ try:
     final_df = pd.merge(df, emissions_df, on=["epoch", "name"], how="outer")
     final_df.replace(np.nan, 0, inplace=True)
     final_df.sort_values(by="epoch", axis=0, ignore_index=True, inplace=True)
+    latest_epoch = final_df["epoch"].iloc[-1]
+    latest_data_index = final_df[final_df["epoch"] == latest_epoch].index
+    final_df.drop(latest_data_index, inplace=True)
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
