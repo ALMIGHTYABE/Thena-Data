@@ -8,3 +8,11 @@
 [2023-03-13 00:41:23,406] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
 [2023-03-13 01:36:52,459] 	INFO 	23 	id_data.py 	<module>() 	ID Data Started
 [2023-03-13 01:37:47,940] 	INFO 	74 	id_data.py 	<module>() 	ID Data Ended
+[2023-03-13 02:07:11,632] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-03-13 02:07:15,145] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-03-13 02:07:16,060] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-03-13 02:08:48,435] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-03-13 02:08:49,418] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-03-13 02:10:36,111] 	INFO 	138 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-03-13 02:10:36,804] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-03-13 02:10:40,930] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
