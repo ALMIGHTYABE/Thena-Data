@@ -89,9 +89,9 @@ try:
     response = requests.get(price_api)
     pricelist = []
     for i in response.json()["data"]:
-        pricelist.append([i["name"], i["address"], i["price"]])
+        pricelist.append([i["name"], i["address"], i["price"], i["decimals"]])
 
-    price_df = pd.DataFrame(pricelist, columns=["name", "address", "price"])
+    price_df = pd.DataFrame(pricelist, columns=["name", "address", "price", "decimals"])
 
     # Bribe Amounts
     bribe_df = bribe_df.merge(price_df[["address", "price"]], on="address", how="left")
