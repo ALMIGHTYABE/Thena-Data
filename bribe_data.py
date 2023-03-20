@@ -94,7 +94,7 @@ try:
     price_df = pd.DataFrame(pricelist, columns=["name", "address", "price", "decimals"])
 
     # Bribe Amounts
-    bribe_df = bribe_df.merge(price_df[["address", "price"]], on="address", how="left")
+    bribe_df = bribe_df.merge(price_df[["address", "price", "decimals"]], on="address", how="left")
     bribe_df["bribe_amount"] = bribe_df["price"] * bribe_df["bribes"]
 
     bribe_amount = []
