@@ -96,13 +96,25 @@ try:
     # Bribe Amounts
     bribe_df = bribe_df.merge(price_df[["address", "price"]], on="address", how="left")
     bribe_df["bribe_amount"] = bribe_df["price"] * bribe_df["bribes"]
-    bribe_df["bribe_amount"] = np.where((bribe_df["address"] != "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65") | (bribe_df["address"] != "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb"), bribe_df["bribe_amount"] / 1000000000000000000, bribe_df["bribe_amount"])
 
-    four_decimal_index = bribe_df[(bribe_df["address"] == "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb")].index
-    bribe_df.loc[four_decimal_index, "bribe_amount"] = bribe_df.loc[four_decimal_index, "bribes"] * bribe_df.loc[four_decimal_index, "price"] / 10000
+    bribe_amount = []
+    for dec, amt in zip(bribe_df["decimals"], bribe_df["bribe_amount"]):
+        decimal = "1"
+        decimal = decimal.ljust(dec + 1, "0")
+        bribe_amount.append((amt / int(decimal)))
 
-    six_decimal_index = bribe_df[(bribe_df["address"] == "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65")].index
-    bribe_df.loc[six_decimal_index, "bribe_amount"] = bribe_df.loc[six_decimal_index, "bribes"] * bribe_df.loc[six_decimal_index, "price"] / 1000000
+    bribe_df["bribe_amount"] = bribe_amount
+
+    # bribe_df["bribe_amount"] = np.where((bribe_df["address"] != "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65") | (bribe_df["address"] != "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb"), bribe_df["bribe_amount"] / 1000000000000000000, bribe_df["bribe_amount"])
+
+    # four_decimal_index = bribe_df[(bribe_df["address"] == "0x71be881e9c5d4465b3fff61e89c6f3651e69b5bb")].index
+    # bribe_df.loc[four_decimal_index, "bribe_amount"] = bribe_df.loc[four_decimal_index, "bribes"] * bribe_df.loc[four_decimal_index, "price"] / 10000
+
+    # six_decimal_index = bribe_df[(bribe_df["address"] == "0xe80772eaf6e2e18b651f160bc9158b2a5cafca65")].index
+    # bribe_df.loc[six_decimal_index, "bribe_amount"] = bribe_df.loc[six_decimal_index, "bribes"] * bribe_df.loc[six_decimal_index, "price"] / 1000000
+
+    # nine_decimal_index = bribe_df[(bribe_df["address"] == "0x2952beb1326accbb5243725bd4da2fc937bca087")].index
+    # bribe_df.loc[nine_decimal_index, "bribe_amount"] = bribe_df.loc[nine_decimal_index, "bribes"] * bribe_df.loc[nine_decimal_index, "price"] / 1000000000
 
     print(bribe_df)
     bribe_df = bribe_df.groupby(by="name")["bribe_amount"].sum().reset_index()
