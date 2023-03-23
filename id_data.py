@@ -60,8 +60,8 @@ try:
 
     xcad = ["0x8dDc543CB4Be74D8A4979DcCFC79C18BdEFd2Dad", "0x3Ec80A1f547ee6FD5D7FC0DC0C1525Ff343D087C", "0xe2d25A87e97a1016c35F736Ea77A4d6Bd1919E74", "0x46C69a989DC56747F007acfA4d6BC7c9FA8137bF", "0x6190E79064213E6A2997355153f57904FB4910C3", "0x3f4d5c667D918DcE84c89cC63998776d21081089", "0xd9F7096625B65Ac37c09d05c1c4548edfcCe9fBE", "0x3A569CeF2c6445d198F90d3D87DbFa3C7977cEb2", "0x2127bd04dDc9d8d1a4fAfCd96b4D4D81153831BC", "0xe200B5B3F08d1254d05d8797FFA1f99730C0025c", "0x6c03177eb78EbDe271B24FD6E446b301db1AEdb1", "0x7c7Ed76Dd95ffA7b899EE8Cc61aA8362d58aC420"]
     for pool in xcad:
-    index = ids_df[ids_df['address'] == pool].index
-    ids_df.loc[index, 'name'] = ids_df.loc[index, 'name'].values[0] + " OLD"
+        index = ids_df[ids_df["address"] == pool].index
+        ids_df.loc[index, "name"] = ids_df.loc[index, "name"].values[0] + " OLD"
 
     contract_instance = w3.eth.contract(address=ve_contract, abi=voter_abi)
     gauges = []
