@@ -182,3 +182,11 @@
 [2023-03-24 19:15:34,319] 	INFO 	79 	id_data.py 	<module>() 	ID Data Ended
 [2023-03-24 20:18:44,709] 	INFO 	23 	id_data.py 	<module>() 	ID Data Started
 [2023-03-24 20:19:12,657] 	ERROR 	81 	id_data.py 	<module>() 	Error occurred during ID Data process. Error: Expecting value: line 1 column 1 (char 0)
+[2023-03-24 21:03:58,345] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-03-24 21:04:02,266] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-03-24 21:04:03,182] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-03-24 21:05:46,030] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-03-24 21:05:46,889] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-03-24 21:07:22,532] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-03-24 21:07:23,127] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-03-24 21:07:29,208] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
