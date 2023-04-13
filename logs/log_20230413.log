@@ -10,3 +10,11 @@
 [2023-04-13 00:41:39,589] 	INFO 	87 	emissions_data.py 	<module>() 	Emissions Data Ended
 [2023-04-13 01:20:44,951] 	INFO 	23 	id_data.py 	<module>() 	ID Data Started
 [2023-04-13 01:21:38,253] 	INFO 	79 	id_data.py 	<module>() 	ID Data Ended
+[2023-04-13 01:56:00,910] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-04-13 01:56:05,078] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-04-13 01:56:05,920] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-04-13 01:58:23,745] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-04-13 01:58:24,604] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-04-13 02:00:52,950] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'address'
+[2023-04-13 02:00:53,576] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-04-13 02:01:01,161] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
