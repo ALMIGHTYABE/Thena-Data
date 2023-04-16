@@ -2,7 +2,7 @@ query:
   subgraph: https://api.thegraph.com/subgraphs/name/thenaursa/thena-v1
   day_data_query: {"operationName": "dayDatas", "variables": {"startTime": 1672790400, "skip": 0}, "query": "query dayDatas($startTime: Int!, $skip: Int!) {\n  dayDatas(skip: $skip, where: {date_gt: $startTime}, orderBy: date, orderDirection: asc) {\n    id\n    date\n    totalVolumeUSD\n    dailyVolumeUSD\n    dailyVolumeETH\n    totalLiquidityUSD\n    totalLiquidityETH\n    __typename\n  }\n}\n"}
   pair_data_query: {"operationName":"pairDayDatas","variables":{"pairAddress":"0","skip":0},"query":"query pairDayDatas($pairAddress: Bytes!, $skip: Int!) {\n  pairDayDatas(skip: $skip, orderBy: date, orderDirection: asc, where: {pairAddress: $pairAddress}) {\n    id\n    date\n    dailyVolumeToken0\n    dailyVolumeToken1\n    dailyVolumeUSD\n    reserveUSD\n    __typename\n  }\n}"}
-  id_data_query: {"operationName": "pairs", "variables": {"skip": 0}, "query": "query pairs($skip: Int!) {\n  pairs(skip: $skip, orderBy: trackedReserveETH, orderDirection: desc) {\n    id\n    __typename\n  }\n}"}
+  id_data_query: {"operationName": "pairs", "variables": {"skip": 0}, "query": "query pairs($skip: Int!) {\n  pairs(skip: $skip) {\n    id\n    __typename\n  }\n}"}
   
 web3:
   provider_url: https://rpc.ankr.com/bsc
