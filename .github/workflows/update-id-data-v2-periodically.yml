@@ -1,6 +1,7 @@
 name: Update ID Data
 on:
   schedule:
+    - cron: '0 */1 * * *'
   workflow_dispatch:
 
 jobs:
@@ -22,7 +23,7 @@ jobs:
 
       - name: Run Script
         run: |
-          python id_data.py
+          python id_data_v2.py
       - name: Commit and Push Changes
         run: |
           git config --local user.email "actions@github.com"

@@ -57,8 +57,6 @@ try:
                 else:
                     df = pd.json_normalize(data)
                     df["name"] = name
-                    drop_index = df[df["date"].astype("str") == "1672790400"].index
-                    df.drop(drop_index, inplace=True)
                     pairdata_df = pd.concat([pairdata_df, df], axis=0, ignore_index=True)
             pairdata_df.reset_index(drop=True, inplace=True)
         except Exception as e:
