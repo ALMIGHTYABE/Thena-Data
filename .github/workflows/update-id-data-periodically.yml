@@ -1,6 +1,5 @@
 name: Update ID Data
 on:
-  schedule:
   workflow_dispatch:
 
 jobs:
