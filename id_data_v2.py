@@ -84,19 +84,19 @@ try:
 
     # CL Pools
     contract_instance = w3.eth.contract(address=cl_gauges_contract, abi=cl_gauges_abi)
-    cl_gauges = contract_instance.functions.gauges.call()
+    cl_gauges = contract_instance.functions.gauges().call()
     tokens = []
     bribe_ca = []
     fee_ca = []
     for gauge in cl_gauges:
         contract_instance = w3.eth.contract(address=gauge, abi=cl_gauge_abi)
-        tokens.append(contract_instance.functions.TOKEN.call())
+        tokens.append(contract_instance.functions.TOKEN().call())
         bribe_ca.append(contract_instance.functions.external_bribes(gauge).call())
         fee_ca.append(contract_instance.functions.internal_bribes(gauge).call())
     name = []
     for token in tokens:
         contract_instance = w3.eth.contract(address=token, abi=cl_token_abi)
-        name.append(contract_instance.functions.symbol.call())
+        name.append(contract_instance.functions.symbol().call())
 
     cl_df = pd.DataFrame(
         {'name' : name,
