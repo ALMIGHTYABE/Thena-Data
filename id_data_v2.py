@@ -99,11 +99,11 @@ try:
         name.append(contract_instance.functions.symbol.call())
 
     cl_df = pd.DataFrame(
-        'name' : name,
+        {'name' : name,
         'address' : address,
         'gauges' : cl_gauges,
         'bribe_ca' : bribe_ca,
-        'fee_ca' : fee_ca
+        'fee_ca' : fee_ca}
     )
     cl_df['type'] = "CL"
     cl_df = cl_df[['name', 'address', 'type', 'gauges', 'bribe_ca', 'fee_ca']]
