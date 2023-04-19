@@ -95,3 +95,5 @@
 Could not identify the intended function with name `external_bribe`, positional argument(s) of type `(<class 'str'>,)` and keyword argument(s) of type `{}`.
 Found 1 function(s) with the name `external_bribe`: ['external_bribe()']
 Function invocation failed due to improper number of arguments.
+[2023-04-19 14:12:36,397] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-04-19 14:13:51,454] 	INFO 	115 	id_data_v2.py 	<module>() 	ID Data Ended
