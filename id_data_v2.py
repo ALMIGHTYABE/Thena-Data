@@ -29,6 +29,10 @@ try:
     amm_abi = config["web3"]["amm_abi"]
     ve_contract = config["web3"]["ve_contract"]
     voter_abi = config["web3"]["voter_abi"]
+    cl_gauges_contract = config["web3"]["cl_gauges_contract"]
+    cl_gauges_abi = config["web3"]["cl_gauges_abi"]
+    cl_gauge_abi = config["web3"]["cl_gauge_abi"]
+    cl_token_abi = config["web3"]["cl_token_abi"]
 
     # Request
     ids_df = pd.DataFrame()
@@ -63,16 +67,48 @@ try:
         index = ids_df[ids_df["address"] == pool].index
         ids_df.loc[index, "name"] = ids_df.loc[index, "name"].values[0] + " OLD"
 
+    # Solidly Pools
     contract_instance = w3.eth.contract(address=ve_contract, abi=voter_abi)
     gauges = []
     bribe_ca = []
+    fee_ca = []
     for address in ids_df["address"]:
         address = w3.toChecksumAddress(address)
         gauge = contract_instance.functions.gauges(address).call()
         gauges.append(gauge)
         bribe_ca.append(contract_instance.functions.external_bribes(gauge).call())
+        fee_ca.append(contract_instance.functions.internal_bribes(gauge).call())
     ids_df["gauges"] = gauges
     ids_df["bribe_ca"] = bribe_ca
+    ids_df["fee_ca"] = fee_ca
+
+    # CL Pools
+    contract_instance = w3.eth.contract(address=cl_gauges_contract, abi=cl_gauges_abi)
+    cl_gauges = contract_instance.functions.gauges.call()
+    tokens = []
+    bribe_ca = []
+    fee_ca = []
+    for gauge in cl_gauges:
+        contract_instance = w3.eth.contract(address=gauge, abi=cl_gauge_abi)
+        tokens.append(contract_instance.functions.TOKEN.call())
+        bribe_ca.append(contract_instance.functions.external_bribes(gauge).call())
+        fee_ca.append(contract_instance.functions.internal_bribes(gauge).call())
+    name = []
+    for token in tokens:
+        contract_instance = w3.eth.contract(address=token, abi=cl_token_abi)
+        name.append(contract_instance.functions.symbol.call())
+
+    cl_df = pd.DataFrame(
+        'name' : name,
+        'address' : address,
+        'gauges' : cl_gauges,
+        'bribe_ca' : bribe_ca,
+        'fee_ca' : fee_ca
+    )
+    cl_df['type'] = "CL"
+    cl_df = cl_df[['name', 'address', 'type', 'gauges', 'bribe_ca', 'fee_ca']]
+    ids_df = pd.concat([ids_df, cl_df], axis=0)
+    ids_df.reset_index(drop=True, inplace=True)
 
     ids_df.to_csv("data/ids_data_v2.csv", index=False)
 
