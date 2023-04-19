@@ -97,10 +97,11 @@ try:
     for token in tokens:
         contract_instance = w3.eth.contract(address=token, abi=cl_token_abi)
         name.append(contract_instance.functions.symbol().call())
+        
 
     cl_df = pd.DataFrame(
         {'name' : name,
-        'address' : address,
+        'address' : tokens,
         'gauges' : cl_gauges,
         'bribe_ca' : bribe_ca,
         'fee_ca' : fee_ca}
