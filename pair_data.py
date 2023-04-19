@@ -48,7 +48,7 @@ try:
             pair_data_query["variables"]["pairAddress"] = contract_address
             for i in itertools.count(0, 100):
                 pair_data_query["variables"]["skip"] = i
-                response = requests.post(subgraph, json=pair_data_query)
+                response = requests.post(subgraph, json=pair_data_query, timeout=60)
                 data = response.json()["data"]["pairDayDatas"]
 
                 # Checking if empty data
