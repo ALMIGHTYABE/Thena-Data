@@ -91,8 +91,8 @@ try:
     for gauge in cl_gauges:
         contract_instance = w3.eth.contract(address=gauge, abi=cl_gauge_abi)
         tokens.append(contract_instance.functions.TOKEN().call())
-        bribe_ca.append(contract_instance.functions.external_bribe(gauge).call())
-        fee_ca.append(contract_instance.functions.internal_bribe(gauge).call())
+        bribe_ca.append(contract_instance.functions.external_bribe().call())
+        fee_ca.append(contract_instance.functions.internal_bribe().call())
     name = []
     for token in tokens:
         contract_instance = w3.eth.contract(address=token, abi=cl_token_abi)
