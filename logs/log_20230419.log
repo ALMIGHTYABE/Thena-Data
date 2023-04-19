@@ -88,3 +88,5 @@
 [2023-04-19 12:47:17,713] 	ERROR 	117 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: call_contract_function() argument after * must be an iterable, not NoneType
 [2023-04-19 13:14:20,243] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-04-19 13:15:41,401] 	ERROR 	117 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: call_contract_function() argument after * must be an iterable, not NoneType
+[2023-04-19 13:27:51,644] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-04-19 13:29:43,689] 	ERROR 	117 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: ("The function 'external_bribes' was not found in this contract's abi. ", 'Are you sure you provided the correct contract abi?')
