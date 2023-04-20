@@ -6,3 +6,5 @@
 [2023-04-20 00:36:27,174] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'address'
 [2023-04-20 00:36:28,002] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-04-20 00:36:33,897] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-04-20 00:42:02,920] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-04-20 00:42:59,631] 	ERROR 	89 	emissions_data.py 	<module>() 	Error occurred during Emissions Data process. Error: Expecting value: line 1 column 1 (char 0)
