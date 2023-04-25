@@ -94,9 +94,11 @@ try:
         bribe_ca.append(contract_instance.functions.external_bribe().call())
         fee_ca.append(contract_instance.functions.internal_bribe().call())
     name = []
+    algebra_pool = []
     for token in tokens:
         contract_instance = w3.eth.contract(address=token, abi=cl_token_abi)
         name.append(contract_instance.functions.symbol().call() + " " + str(token[-4:]))
+        algebra_pool.append(contract_instance.functions.pool().call())
         
 
     cl_df = pd.DataFrame(
@@ -104,10 +106,11 @@ try:
         'address' : tokens,
         'gauges' : cl_gauges,
         'bribe_ca' : bribe_ca,
-        'fee_ca' : fee_ca}
+        'fee_ca' : fee_ca,
+        'algebra_pool' : algebra_pool}
     )
     cl_df['type'] = "CL"
-    cl_df = cl_df[['name', 'address', 'type', 'gauges', 'bribe_ca', 'fee_ca']]
+    cl_df = cl_df[['name', 'address', 'type', 'gauges', 'bribe_ca', 'fee_ca', 'algebra_pool']]
     ids_df = pd.concat([ids_df, cl_df], axis=0)
     ids_df.reset_index(drop=True, inplace=True)
 
