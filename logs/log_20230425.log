@@ -96,3 +96,11 @@
 [2023-04-25 16:10:23,724] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-04-25 16:13:29,565] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-04-25 16:15:49,800] 	INFO 	119 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-04-25 17:04:25,234] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-04-25 17:04:30,500] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-04-25 17:04:31,775] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-04-25 17:06:47,047] 	INFO 	105 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-04-25 17:06:48,273] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-04-25 17:11:16,079] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+[2023-04-25 17:11:17,002] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-04-25 17:11:21,527] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
