@@ -98,7 +98,7 @@ try:
     for token in tokens:
         contract_instance = w3.eth.contract(address=token, abi=cl_token_abi)
         name.append(contract_instance.functions.symbol().call() + " " + str(token[-4:]))
-        algebra_pool.append(contract_instance.functions.pool().call())
+        algebra_pool.append((contract_instance.functions.pool().call()).lower())
         
 
     cl_df = pd.DataFrame(
