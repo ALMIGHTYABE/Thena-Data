@@ -85,3 +85,11 @@
 [2023-04-27 12:19:53,303] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-04-27 13:13:32,172] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-04-27 13:16:13,335] 	INFO 	119 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-04-27 14:04:44,615] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-04-27 14:04:49,369] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-04-27 14:04:50,606] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-04-27 14:07:07,313] 	INFO 	105 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-04-27 14:07:08,238] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-04-27 14:11:04,119] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Expecting value: line 1 column 1 (char 0)
+[2023-04-27 14:11:04,822] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-04-27 14:11:10,352] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
