@@ -28,3 +28,11 @@
 [2023-04-27 03:12:40,060] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'address'
 [2023-04-27 03:12:40,762] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-04-27 03:12:47,692] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-04-27 04:07:12,673] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-04-27 04:07:17,472] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-04-27 04:07:18,506] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-04-27 04:09:34,101] 	INFO 	105 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-04-27 04:09:35,090] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-04-27 04:13:26,705] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'address'
+[2023-04-27 04:13:27,397] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-04-27 04:13:34,170] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
