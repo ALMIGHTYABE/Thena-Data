@@ -58,3 +58,12 @@
 [2023-04-27 09:11:28,822] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'address'
 [2023-04-27 09:11:29,444] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-04-27 09:11:37,787] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-04-27 10:06:43,090] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-04-27 10:06:49,512] 	INFO 	68 	day_data.py 	<module>() 	Day Data Ended
+[2023-04-27 10:06:50,709] 	INFO 	36 	pair_data.py 	<module>() 	Pair Data Started
+[2023-04-27 10:07:35,366] 	ERROR 	63 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/USDC, Address: 0x618f9Eb0E1a698409621f4F487B563529f003643, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Max retries exceeded with url: /subgraphs/name/thenaursa/thena-v1 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1131)')))
+[2023-04-27 10:09:02,294] 	INFO 	105 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-04-27 10:09:03,284] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-04-27 10:12:55,397] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-04-27 10:12:56,111] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-04-27 10:13:07,745] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
