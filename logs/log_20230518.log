@@ -74,3 +74,5 @@
 [2023-05-18 16:10:25,387] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-05-18 16:12:59,675] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-05-18 16:13:06,405] 	ERROR 	121 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: Could not decode contract function call to symbol with return data: b'', output_types: ['string']
+[2023-05-18 17:08:46,503] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-05-18 17:10:57,014] 	INFO 	119 	id_data_v2.py 	<module>() 	ID Data Ended
