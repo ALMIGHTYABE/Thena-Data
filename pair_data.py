@@ -3,7 +3,7 @@ import pandas as pd
 import yaml
 import json
 import os
-from datetime import datetime, date, timedelta
+from datetime import datetime, timezone, date, timedelta
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
