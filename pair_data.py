@@ -38,6 +38,7 @@ try:
 
     # Request and Edit Pair Data
     ids_df = pd.read_csv(id_data)
+    ids_df = ids_df[ids_df['type'] != "CL"]
     
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
