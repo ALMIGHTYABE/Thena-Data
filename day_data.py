@@ -30,11 +30,11 @@ try:
     day_data_query = config["query"]["day_data_query"]
     daily_data_csv = config["files"]["daily_data"]
     
-    # Today and 2 Day Ago
+    # Date Stuff
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(2)
+    threedayago = todayDate - timedelta(3)
     my_time = datetime.min.time()
-    my_datetime = datetime.combine(twodayago, my_time)
+    my_datetime = datetime.combine(threedayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
     
     # Request
@@ -45,7 +45,7 @@ try:
     day_data_df["date"] = day_data_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
     
     day_data_old = pd.read_csv(daily_data_csv)
-    drop_index = day_data_old[day_data_old['date']>=datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
+    drop_index = day_data_old[day_data_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
     day_data_old.drop(drop_index, inplace=True)
     day_data_df = pd.concat([day_data_old, day_data_df], ignore_index=True, axis=0)
     
