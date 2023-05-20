@@ -3,7 +3,7 @@ import pandas as pd
 import yaml
 import json
 import os
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
@@ -30,6 +30,7 @@ try:
     id_data = config["files"]["id_data"]
     pair_data_query = config["query"]["pair_data_query"]
     epoch_daily_csv = config["files"]["epoch_daily_data"]
+    pair_data_csv = config["files"]["pair_data"]
     provider_url = config["web3"]["provider_url"]
 
     # Pulling Pair Data
@@ -37,6 +38,13 @@ try:
 
     # Request and Edit Pair Data
     ids_df = pd.read_csv(id_data)
+    
+    # Today and 2 Day Ago
+    todayDate = datetime.utcnow()
+    twodayago = todayDate - timedelta(2)
+    my_time = datetime.min.time()
+    my_datetime = datetime.combine(twodayago, my_time)
+    timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
 
     # Web3
     validation.METHODS_TO_VALIDATE = []
@@ -46,6 +54,7 @@ try:
     for name, contract_address in zip(ids_df["name"], ids_df["address"]):
         try:
             pair_data_query["variables"]["pairAddress"] = contract_address
+            pair_data_query["variables"]["startTime"] = timestamp
             for i in itertools.count(0, 100):
                 pair_data_query["variables"]["skip"] = i
                 response = requests.post(subgraph, json=pair_data_query, timeout=60)
@@ -72,15 +81,13 @@ try:
     pairdata_df["fee %"] = pairdata_df["type"]
     pairdata_df["fee %"].replace({"vAMM": 0.20, "sAMM": 0.01}, inplace=True)
 
-    edit_index_1 = pairdata_df[(pairdata_df["type"] == "sAMM") & (pairdata_df["date"] > date(2023, 1, 1)) & (pairdata_df["date"] < date(2023, 1, 19))].index
-    edit_index_2 = pairdata_df[(pairdata_df["type"] == "sAMM") & (pairdata_df["date"] >= date(2023, 1, 19)) & (pairdata_df["date"] < date(2023, 1, 23))].index
-    edit_index_3 = pairdata_df[(pairdata_df["type"] == "sAMM") & (pairdata_df["date"] == date(2023, 1, 23))].index
-    pairdata_df.loc[edit_index_1, "fee %"] = 0.04
-    pairdata_df.loc[edit_index_2, "fee %"] = 0.03
-    pairdata_df.loc[edit_index_3, "fee %"] = 0.02
-
     pairdata_df["dailyVolumeUSD"] = pd.to_numeric(pairdata_df["dailyVolumeUSD"])
     pairdata_df["fee"] = (pairdata_df["dailyVolumeUSD"] * pairdata_df["fee %"]) / 100
+    
+    pairdata_old = pd.read_csv(pair_data_csv)
+    drop_index = pairdata_full[pairdata_full['date']>=datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
+    pairdata_old.drop(drop_index, inplace=True)
+    pairdata_df = pd.concat([pairdata_old, pairdata_df], ignore_index=True, axis=0)
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
