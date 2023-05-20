@@ -116,7 +116,7 @@ try:
     worksheet1.clear()
     set_with_dataframe(
         worksheet=worksheet1,
-        dataframe=day_data_df,
+        dataframe=day_data_fusion_df,
         include_index=False,
         include_column_header=True,
         resize=True,
