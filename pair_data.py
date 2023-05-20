@@ -42,7 +42,7 @@ try:
     
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(2)
+    twodayago = todayDate - timedelta(3)
     my_time = datetime.min.time()
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
@@ -86,7 +86,7 @@ try:
     pairdata_df["fee"] = (pairdata_df["dailyVolumeUSD"] * pairdata_df["fee %"]) / 100
     
     pairdata_old = pd.read_csv(pair_data_csv)
-    drop_index = pairdata_old[pairdata_old['date']>=datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
+    drop_index = pairdata_old[pairdata_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
     pairdata_old.drop(drop_index, inplace=True)
     pairdata_df = pd.concat([pairdata_old, pairdata_df], ignore_index=True, axis=0)
 
