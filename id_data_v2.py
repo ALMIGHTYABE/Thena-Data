@@ -111,6 +111,7 @@ try:
     )
     cl_df['type'] = "CL"
     cl_df = cl_df[['name', 'address', 'type', 'gauges', 'bribe_ca', 'fee_ca', 'algebra_pool']]
+    cl_df = cl_df[cl_df['gauges'] != '0x53886c1C70627DaFC42258dBF9EC5D4D4CB0080e']
     ids_df = pd.concat([ids_df, cl_df], axis=0)
     ids_df.reset_index(drop=True, inplace=True)
 
