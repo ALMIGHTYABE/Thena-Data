@@ -4,6 +4,7 @@ query:
   pair_data_query: {"operationName":"pairDayDatas","variables":{"startTime": 1672790400,"pairAddress":"0","skip":0},"query":"query pairDayDatas($startTime: Int!, $pairAddress: Bytes!, $skip: Int!) {\n  pairDayDatas(skip: $skip, orderBy: date, orderDirection: asc, where: {date_gt: $startTime, pairAddress: $pairAddress}) {\n    id\n    date\n    dailyVolumeToken0\n    dailyVolumeToken1\n    dailyVolumeUSD\n    reserveUSD\n    __typename\n  }\n}"}
   id_data_query: {"operationName": "pairs", "variables": {"skip": 0}, "query": "query pairs($skip: Int!) {\n  pairs(skip: $skip) {\n    id\n    __typename\n  }\n}"}
   fusion_subgraph: https://api.thegraph.com/subgraphs/name/thenaursa/thena-fusion
+  day_data_fusion_query: {"operationName": "fusionDayDatas", "variables": {"startTime": 1672790400, "skip": 0}, "query": "query fusionDayDatas($startTime: Int!, $skip: Int!) {\n  fusionDayDatas(skip: $skip, where: {date_gt: $startTime}, orderBy: date, orderDirection: asc) {\n    id\n    date\n    volumeUSD\n    feesUSD\n    tvlUSD\n    __typename\n  }\n}\n"}
   
 web3:
   provider_url: https://rpc.ankr.com/bsc
