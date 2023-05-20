@@ -3,6 +3,7 @@ query:
   day_data_query: {"operationName": "dayDatas", "variables": {"startTime": 1672790400, "skip": 0}, "query": "query dayDatas($startTime: Int!, $skip: Int!) {\n  dayDatas(skip: $skip, where: {date_gt: $startTime}, orderBy: date, orderDirection: asc) {\n    id\n    date\n    totalVolumeUSD\n    dailyVolumeUSD\n    dailyVolumeETH\n    totalLiquidityUSD\n    totalLiquidityETH\n    __typename\n  }\n}\n"}
   pair_data_query: {"operationName":"pairDayDatas","variables":{"startTime": 1672790400,"pairAddress":"0","skip":0},"query":"query pairDayDatas($startTime: Int!, $pairAddress: Bytes!, $skip: Int!) {\n  pairDayDatas(skip: $skip, orderBy: date, orderDirection: asc, where: {date_gt: $startTime, pairAddress: $pairAddress}) {\n    id\n    date\n    dailyVolumeToken0\n    dailyVolumeToken1\n    dailyVolumeUSD\n    reserveUSD\n    __typename\n  }\n}"}
   id_data_query: {"operationName": "pairs", "variables": {"skip": 0}, "query": "query pairs($skip: Int!) {\n  pairs(skip: $skip) {\n    id\n    __typename\n  }\n}"}
+  fusion_subgraph: https://api.thegraph.com/subgraphs/name/thenaursa/thena-fusion
   
 web3:
   provider_url: https://rpc.ankr.com/bsc
@@ -22,7 +23,9 @@ gsheets:
   bribe_data_sheet_key: 1HMAY4L1hN0xh1Y9CggkEXzAMlrpKLNkV9etLmby6eFU
   emissions_data_sheet_key: 1bAUAPu5XhXcxAhBbO33TupX8Q25smE7c4ArZjnAlUGY
   revenue_data_sheet_key: 1UShBZolQOux_WVIUChwE2JWyYWtVR1NlpX5bqT3_HCA
-
+  daily_data_fusion_sheet_key: 1cE9gN2DkEVVe9nSQ06kntdyC0la7gmUmLYxWD2vfmc0
+  pair_data_fusion_sheet_key: 1l7WC3L8vjm9GIZHhySCyLEGISE4hIhXppVd74uKFGUU
+  
 api:
   price_api: https://api.thena.fi/api/v1/assets
   
@@ -34,3 +37,5 @@ files:
   daily_data: https://docs.google.com/spreadsheets/d/1g6MRebRn_kI1Pm4-7cuRYhAwmWVtqPV_CeWaPlf-1Ao/export?format=csv
   pair_data: https://docs.google.com/spreadsheets/d/1CW8lvPLAFUU874D1hi_ZN4X-Uhes8aOCwZn1OwNPdXU/export?format=csv
   emissions_data: https://docs.google.com/spreadsheets/d/1bAUAPu5XhXcxAhBbO33TupX8Q25smE7c4ArZjnAlUGY/export?format=csv
+  daily_data_fusion: https://docs.google.com/spreadsheets/d/1cE9gN2DkEVVe9nSQ06kntdyC0la7gmUmLYxWD2vfmc0/export?format=csv
+  pair_data_fusion: https://docs.google.com/spreadsheets/d/1l7WC3L8vjm9GIZHhySCyLEGISE4hIhXppVd74uKFGUU/export?format=csv
