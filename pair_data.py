@@ -86,7 +86,7 @@ try:
     pairdata_df["fee"] = (pairdata_df["dailyVolumeUSD"] * pairdata_df["fee %"]) / 100
     
     pairdata_old = pd.read_csv(pair_data_csv)
-    drop_index = pairdata_full[pairdata_full['date']>=datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
+    drop_index = pairdata_old[pairdata_old['date']>=datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
     pairdata_old.drop(drop_index, inplace=True)
     pairdata_df = pd.concat([pairdata_old, pairdata_df], ignore_index=True, axis=0)
 
