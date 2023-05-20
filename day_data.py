@@ -3,7 +3,7 @@ import pandas as pd
 import yaml
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timezone, date, timedelta
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
@@ -28,23 +28,28 @@ try:
     # Params Data
     subgraph = config["query"]["subgraph"]
     day_data_query = config["query"]["day_data_query"]
-
+    daily_data_csv = config["files"]["daily_data"]
+    
+    # Today and 2 Day Ago
+    todayDate = datetime.utcnow()
+    twodayago = todayDate - timedelta(2)
+    my_time = datetime.min.time()
+    my_datetime = datetime.combine(twodayago, my_time)
+    timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
+    
     # Request
     day_data_df = pd.DataFrame()
-    for i in itertools.count(0, 100):
-        day_data_query["variables"]["skip"] = i
-        response = requests.post(url=subgraph, json=day_data_query)
-        data = response.json()["data"]["dayDatas"]
-
-        # Checking if empty data
-        if data == []:
-            break
-        else:
-            temp_df = pd.json_normalize(data)
-            day_data_df = pd.concat([day_data_df, temp_df], axis=0)
+    day_data_query["variables"]["startTime"] = timestamp
+    response = requests.post(url=subgraph, json=day_data_query)
+    data = response.json()["data"]["dayDatas"]
     day_data_df.reset_index(drop=True, inplace=True)
     day_data_df["date"] = day_data_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
-
+    
+    day_data_old = pd.read_csv(daily_data_csv)
+    drop_index = day_data_old[day_data_old['date']>=datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
+    day_data_old.drop(drop_index, inplace=True)
+    day_data_df = pd.concat([day_data_old, day_data_df], ignore_index=True, axis=0)
+    
     # Write to GSheets
     credentials = os.environ["GKEY"]
     credentials = json.loads(credentials)
