@@ -74,3 +74,5 @@
 [2023-05-20 14:10:16,101] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-05-20 15:09:15,725] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-05-20 15:10:58,663] 	INFO 	119 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-05-20 16:06:55,053] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-05-20 16:06:55,205] 	ERROR 	114 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: name 'timezone' is not defined
