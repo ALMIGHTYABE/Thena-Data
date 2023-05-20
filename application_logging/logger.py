@@ -2,10 +2,11 @@ import logging
 from datetime import datetime
 import os
 LOG_DIR = "logs"
-TIMESTAMP = datetime.now().strftime("%Y%m%d")
+TODAY = datetime.now()
+LOGNAME = str(TODAY.strftime("%B")) + "_" + str(TODAY.year)
 
 def get_log_file_name():
-    return f"log_{TIMESTAMP}.log"
+    return f"log_{LOGNAME}.log"
 
 
 LOG_FILE_NAME = get_log_file_name()
