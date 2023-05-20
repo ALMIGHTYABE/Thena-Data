@@ -7,7 +7,6 @@ from datetime import datetime, timezone, date, timedelta
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
-import itertools
 
 
 # Params
