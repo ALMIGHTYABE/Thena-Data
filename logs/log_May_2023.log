@@ -362,3 +362,15 @@
 [2023-05-22 21:10:12,646] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-05-22 21:10:13,507] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-05-22 21:10:24,130] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-05-22 22:04:20,974] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-05-22 22:04:24,830] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-05-22 22:04:24,830] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-05-22 22:04:28,490] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-05-22 22:04:29,671] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-05-22 22:05:33,686] 	INFO 	106 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-05-22 22:05:33,686] 	INFO 	122 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-05-22 22:05:46,734] 	INFO 	188 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-05-22 22:05:47,675] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-05-22 22:07:35,349] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Could not decode contract function call to rewardData with return data: b'', output_types: ['uint256', 'uint256', 'uint256']
+[2023-05-22 22:07:36,004] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-05-22 22:07:40,815] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
