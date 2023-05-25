@@ -880,3 +880,9 @@
 [2023-05-25 16:46:32,978] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
 [2023-05-25 16:46:32,978] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
 [2023-05-25 16:46:32,978] 	ERROR 	230 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: float division by zero
+[2023-05-25 16:51:37,112] 	INFO 	38 	pair_data.py 	<module>() 	Pair Data Started
+[2023-05-25 16:52:43,662] 	INFO 	108 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-05-25 16:52:43,663] 	INFO 	124 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-05-25 16:52:58,621] 	INFO 	191 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-05-25 16:52:58,621] 	INFO 	198 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-05-25 16:52:58,622] 	ERROR 	231 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: can only concatenate str (not "float") to str
