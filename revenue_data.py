@@ -24,7 +24,7 @@ try:
     logger.info("Revenue Data Started")
 
     # Params Data
-    pair_data = config["files"]["pair_data"]
+    pair_data = config["files"]["pair_data_combined"]
     bribe_data = config["files"]["bribe_data"]
     emissions_data = config["files"]["emissions_data"]
 
