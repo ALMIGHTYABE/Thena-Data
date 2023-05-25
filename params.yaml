@@ -28,6 +28,7 @@ gsheets:
   daily_data_fusion_sheet_key: 1cE9gN2DkEVVe9nSQ06kntdyC0la7gmUmLYxWD2vfmc0
   pair_data_fusion_sheet_key: 1l7WC3L8vjm9GIZHhySCyLEGISE4hIhXppVd74uKFGUU
   daily_data_combined_sheet_key: 1TDFr8PbFI6MzPPP2sQr6BHbneBk6U3YmZUTbLCVCkJc
+  pair_data_combined_sheet_key: 1aCNjqVqsbAotWAWZyGgJF6c_Mgq9ZvjGXHOrr8vqqMA
   
 api:
   price_api: https://api.thena.fi/api/v1/assets
@@ -43,3 +44,4 @@ files:
   daily_data_fusion: https://docs.google.com/spreadsheets/d/1cE9gN2DkEVVe9nSQ06kntdyC0la7gmUmLYxWD2vfmc0/export?format=csv
   pair_data_fusion: https://docs.google.com/spreadsheets/d/1l7WC3L8vjm9GIZHhySCyLEGISE4hIhXppVd74uKFGUU/export?format=csv
   daily_data_combined: https://docs.google.com/spreadsheets/d/1TDFr8PbFI6MzPPP2sQr6BHbneBk6U3YmZUTbLCVCkJc/export?format=csv
+  pair_data_combined: https://docs.google.com/spreadsheets/d/1aCNjqVqsbAotWAWZyGgJF6c_Mgq9ZvjGXHOrr8vqqMA/export?format=csv
