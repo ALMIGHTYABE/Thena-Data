@@ -197,7 +197,7 @@ try:
     logger.info("Pair Data Combined Started")
 
     # Data Manipulation
-    df1 = pair_data_df
+    df1 = pairdata_df
     df2 = pairdata_fusion_df[['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD', '__typename', 'name', 'algebra_pool', 'type',  'epoch', 'fee %', 'feesUSD']]
     df2['fee %'] = df2['feesUSD']/df2['volumeUSD']*100
     df2.fillna(0, inplace=True)
