@@ -124,3 +124,38 @@ try:
     logger.info("Day Data Fusion Ended")
 except Exception as e:
     logger.error("Error occurred during Day Data Fusion process. Error: %s" % e)
+    
+    
+    # Combined  
+try:
+    logger.info("Day Data Combined Started")
+
+    # Data Manipulation
+    df1 = day_data_df[['id', 'date', 'dailyVolumeUSD', 'totalLiquidityUSD', '__typename']]
+    df2 = day_data_fusion_df[['id', 'date', 'volumeUSD', 'tvlUSD', '__typename']]
+    df2.columns = ['id', 'date', 'dailyVolumeUSD', 'totalLiquidityUSD', '__typename']
+    day_data_combined_df = pd.concat([df1, df2], ignore_index=True, axis=0)
+    
+    # Write to GSheets
+    credentials = os.environ["GKEY"]
+    credentials = json.loads(credentials)
+    gc = gspread.service_account_from_dict(credentials)
+
+    # Open a google sheet
+    sheetkey = config["gsheets"]["daily_data_combined_sheet_key"]
+    gs = gc.open_by_key(sheetkey)
+
+    # Select a work sheet from its name
+    worksheet1 = gs.worksheet("Master")
+    worksheet1.clear()
+    set_with_dataframe(
+        worksheet=worksheet1,
+        dataframe=day_data_combined_df,
+        include_index=False,
+        include_column_header=True,
+        resize=True,
+    )
+
+    logger.info("Day Data Combined Ended")
+except Exception as e:
+    logger.error("Error occurred during Day Data Combined process. Error: %s" % e)
