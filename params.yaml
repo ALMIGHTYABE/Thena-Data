@@ -27,6 +27,7 @@ gsheets:
   revenue_data_sheet_key: 1UShBZolQOux_WVIUChwE2JWyYWtVR1NlpX5bqT3_HCA
   daily_data_fusion_sheet_key: 1cE9gN2DkEVVe9nSQ06kntdyC0la7gmUmLYxWD2vfmc0
   pair_data_fusion_sheet_key: 1l7WC3L8vjm9GIZHhySCyLEGISE4hIhXppVd74uKFGUU
+  daily_data_combined_sheet_key: 1TDFr8PbFI6MzPPP2sQr6BHbneBk6U3YmZUTbLCVCkJc
   
 api:
   price_api: https://api.thena.fi/api/v1/assets
@@ -41,3 +42,4 @@ files:
   emissions_data: https://docs.google.com/spreadsheets/d/1bAUAPu5XhXcxAhBbO33TupX8Q25smE7c4ArZjnAlUGY/export?format=csv
   daily_data_fusion: https://docs.google.com/spreadsheets/d/1cE9gN2DkEVVe9nSQ06kntdyC0la7gmUmLYxWD2vfmc0/export?format=csv
   pair_data_fusion: https://docs.google.com/spreadsheets/d/1l7WC3L8vjm9GIZHhySCyLEGISE4hIhXppVd74uKFGUU/export?format=csv
+  daily_data_combined: https://docs.google.com/spreadsheets/d/1TDFr8PbFI6MzPPP2sQr6BHbneBk6U3YmZUTbLCVCkJc/export?format=csv
