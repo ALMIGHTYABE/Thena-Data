@@ -48,7 +48,7 @@ try:
     drop_index = day_data_old[day_data_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
     day_data_old.drop(drop_index, inplace=True)
     day_data_df = pd.concat([day_data_old, day_data_df], ignore_index=True, axis=0)
-    daydata_df['__typename'] = 'V1'
+    day_data_df['__typename'] = 'V1'
     
     # Write to GSheets
     credentials = os.environ["GKEY"]
