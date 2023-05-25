@@ -846,3 +846,19 @@
 [2023-05-25 15:38:58,859] 	INFO 	159 	day_data.py 	<module>() 	Day Data Combined Ended
 [2023-05-25 16:12:59,340] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-05-25 16:15:03,959] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-05-25 16:29:53,326] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-05-25 16:29:54,450] 	ERROR 	75 	day_data.py 	<module>() 	Error occurred during Day Data process. Error: name 'daydata_df' is not defined
+[2023-05-25 16:29:54,450] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-05-25 16:30:06,949] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-05-25 16:30:06,949] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-05-25 16:30:18,324] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-05-25 16:30:19,256] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-05-25 16:31:22,500] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-05-25 16:31:22,501] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-05-25 16:31:37,212] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-05-25 16:31:37,212] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-05-25 16:31:37,212] 	ERROR 	229 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: name 'pair_data_df' is not defined
+[2023-05-25 16:31:38,111] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-05-25 16:36:46,307] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-05-25 16:36:46,972] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-05-25 16:36:54,476] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
