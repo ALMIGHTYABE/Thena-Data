@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import numpy as np
 import yaml
 import json
 import os
@@ -200,8 +199,7 @@ try:
     # Data Manipulation
     df1 = pairdata_df
     df2 = pairdata_fusion_df
-    df2['fee %'] = df2['feesUSD']/(df2['volumeUSD']+np.finfo(np.float32).eps)*100
-    df2.fillna(0, inplace=True)
+    df2['fee %'] = 0
     df2 = df2[['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD', '__typename', 'name', 'algebra_pool', 'type',  'epoch', 'fee %', 'feesUSD']]
     df2.columns = ['id', 'date', 'dailyVolumeToken0', 'dailyVolumeToken1', 'dailyVolumeUSD', 'reserveUSD', '__typename', 'name', 'address', 'type', 'epoch', 'fee %', 'fee']
     pairdata_combined_df = pd.concat([df1, df2], ignore_index=True, axis=0)
