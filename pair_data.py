@@ -82,6 +82,7 @@ try:
     drop_index = pairdata_old[pairdata_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
     pairdata_old.drop(drop_index, inplace=True)
     pairdata_df = pd.concat([pairdata_old, pairdata_df], ignore_index=True, axis=0)
+    pairdata_df['__typename'] = 'V1'
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
@@ -164,6 +165,7 @@ try:
     drop_index = pairdata_fusion_old[pairdata_fusion_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
     pairdata_fusion_old.drop(drop_index, inplace=True)
     pairdata_fusion_df = pd.concat([pairdata_fusion_old, pairdata_fusion_df], ignore_index=True, axis=0)
+    pairdata_fusion_df['__typename'] = 'Fusion'
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
@@ -188,3 +190,41 @@ try:
     logger.info("Pair Data Fusion Ended")
 except Exception as e:
     logger.error("Error occurred during Pair Data Fusion process. Error: %s" % e)
+    
+    
+    # Combined
+try:
+    logger.info("Pair Data Combined Started")
+
+    # Data Manipulation
+    df1 = pair_data_df
+    df2 = pairdata_fusion_df[['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD', '__typename', 'name', 'algebra_pool', 'type',  'epoch', 'fee %', 'feesUSD']]
+    df2['fee %'] = df2['feesUSD']/df2['volumeUSD']*100
+    df2.fillna(0, inplace=True)
+    df2.columns = ['id', 'date', 'dailyVolumeToken0', 'dailyVolumeToken1', 'dailyVolumeUSD', 'reserveUSD', '__typename', 'name', 'address', 'type', 'epoch', 'fee %', 'fee']
+    pairdata_combined_df = pd.concat([df1, df2], ignore_index=True, axis=0)
+
+    # Write to GSheets
+    credentials = os.environ["GKEY"]
+    credentials = json.loads(credentials)
+    gc = gspread.service_account_from_dict(credentials)
+
+    # Open a google sheet
+    sheetkey = config["gsheets"]["pair_data_combined_sheet_key"]
+    gs = gc.open_by_key(sheetkey)
+
+    # Select a work sheet from its name
+    worksheet1 = gs.worksheet("Master")
+    worksheet1.clear()
+    set_with_dataframe(
+        worksheet=worksheet1,
+        dataframe=pairdata_combined_df,
+        include_index=False,
+        include_column_header=True,
+        resize=True,
+    )
+
+    logger.info("Pair Data Combined Ended")
+except Exception as e:
+    logger.error("Error occurred during Pair Data Combined process. Error: %s" % e)
+
