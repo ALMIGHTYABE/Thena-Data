@@ -64,7 +64,7 @@ try:
     w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 60}))
 
     fees_list = []
-    for name, Fee_ca in zip(ids_df["name"], ids_df["fee_ca"]):
+    for name, fee_ca in zip(ids_df["name"], ids_df["fee_ca"]):
         if fee_ca == "0x0000000000000000000000000000000000000000":
             pass
         else:
@@ -136,6 +136,6 @@ try:
         resize=True,
     )
 
-    logger.info("FEE Data Ended")
+    logger.info("Fee Data Ended")
 except Exception as e:
-    logger.error("Error occurred during FEE Data process. Error: %s" % e)
+    logger.error("Error occurred during Fee Data process. Error: %s" % e)
