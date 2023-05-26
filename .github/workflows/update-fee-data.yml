@@ -1,7 +1,7 @@
 name: Update Fee Data
 on:
-  # schedule:
-    # - cron: '0 0 * * THU'
+schedule:
+    - cron: '0 */1 * * *'
   workflow_dispatch:
 
 jobs:
