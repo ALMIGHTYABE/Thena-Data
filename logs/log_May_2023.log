@@ -1144,3 +1144,5 @@
 [2023-05-26 17:18:24,002] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during FEE Data process. Error: name 'fee_ca' is not defined
 [2023-05-26 17:31:34,497] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-05-26 17:37:27,713] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: No columns to parse from file
+[2023-05-26 17:48:45,676] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-05-26 17:53:40,792] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
