@@ -20,3 +20,19 @@
 [2023-06-01 01:18:02,821] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
 [2023-06-01 01:44:55,822] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-06-01 01:49:50,176] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2023-06-01 02:44:14,265] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-06-01 02:44:18,340] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-06-01 02:44:18,340] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-06-01 02:44:21,848] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-06-01 02:44:21,848] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-06-01 02:44:23,403] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-06-01 02:44:24,634] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-06-01 02:45:33,967] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-06-01 02:45:33,967] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-06-01 02:45:51,288] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-06-01 02:45:51,288] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-06-01 02:45:59,368] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-06-01 02:46:00,590] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-06-01 02:53:51,393] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-06-01 02:53:52,349] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-06-01 02:54:01,715] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
