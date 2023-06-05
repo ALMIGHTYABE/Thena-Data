@@ -1340,3 +1340,5 @@
 [2023-06-05 16:10:43,060] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 0, 'message': "we can't execute this request"}
 [2023-06-05 16:10:43,720] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-06-05 16:10:49,968] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-06-05 16:13:25,673] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-06-05 16:15:56,097] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
