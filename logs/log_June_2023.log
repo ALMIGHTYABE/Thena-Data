@@ -1444,3 +1444,5 @@
 [2023-06-06 02:31:32,695] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-06-06 02:31:33,359] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-06-06 02:34:50,306] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2023-06-06 02:51:34,942] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-06-06 02:53:38,758] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
