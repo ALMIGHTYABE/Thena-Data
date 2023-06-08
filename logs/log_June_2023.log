@@ -1926,3 +1926,5 @@
 [2023-06-08 00:52:50,793] 	INFO 	87 	emissions_data.py 	<module>() 	Emissions Data Ended
 [2023-06-08 01:02:30,443] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-06-08 01:04:37,552] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-06-08 01:19:38,277] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-06-08 01:24:35,498] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
