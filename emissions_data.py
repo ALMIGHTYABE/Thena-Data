@@ -32,6 +32,7 @@ try:
     price_api = config["api"]["price_api"]
     provider_url = config["web3"]["provider_url"]
     gauge_abi = config["web3"]["gauge_abi"]
+    bribe_abi = config["web3"]["bribe_abi"]
 
     # Get Epoch Timestamp
     todayDate = datetime.utcnow()
@@ -61,15 +62,26 @@ try:
             weeklyreward.append(contract_instance.functions.rewardForDuration().call() / 1000000000000000000)
 
     ids_df["emissions"] = weeklyreward
-
+    
+    voteweight = []
+    for bribe in ids_df["bribe_ca"]:
+    if bribe == "0x0000000000000000000000000000000000000000":
+        voteweight.append(0)
+    else:
+        contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+        voteweight.append(contract_instance.functions._totalSupply(timestamp).call() / 1000000000000000000
+                          
+    ids_df["voteweight"] = voteweight
+    
     # Pull Prices
     response = requests.get(price_api)
     THE_price = jmespath.search("data[?name == 'THENA'].price", response.json())[0]
 
     # Cleanup
-    ids_df["value"] = ids_df["emissions"] * THE_price
-    ids_df = ids_df[["epoch", "name", "emissions", "value"]]
-    ids_df = ids_df[ids_df["emissions"] > 0]
+    ids_df["THE_price"] = THE_price
+    ids_df["value"] = ids_df["emissions"] * ids_df["THE_price"]
+    ids_df = ids_df[["epoch", "name", "voteweight","emissions", "value", "THE_price"]]
+    ids_df = ids_df[ids_df["voteweight"] > 0]
     df_values = ids_df.values.tolist()
 
     # Write to GSheets
