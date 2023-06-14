@@ -3526,3 +3526,20 @@
 [2023-06-14 06:13:58,523] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-06-14 06:16:58,695] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-06-14 06:21:16,447] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-06-14 07:05:21,626] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-06-14 07:05:24,497] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-06-14 07:05:24,497] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-06-14 07:05:27,086] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-06-14 07:05:27,086] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-06-14 07:05:29,384] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-06-14 07:05:30,768] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-06-14 07:05:31,022] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/FITFI, Address: 0x0348D8fabbcB84069662e454E4f714DcD5d0C412, Error: Expecting value: line 1 column 1 (char 0)
+[2023-06-14 07:06:33,195] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-06-14 07:06:33,195] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-06-14 07:06:51,908] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-06-14 07:06:51,909] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-06-14 07:07:10,245] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-06-14 07:07:11,309] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-06-14 07:11:39,399] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-06-14 07:11:40,139] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-06-14 07:11:46,098] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
