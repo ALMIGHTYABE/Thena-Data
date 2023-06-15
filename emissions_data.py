@@ -65,11 +65,11 @@ try:
     
     voteweight = []
     for bribe in ids_df["bribe_ca"]:
-    if bribe == "0x0000000000000000000000000000000000000000":
-        voteweight.append(0)
-    else:
-        contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
-        voteweight.append(contract_instance.functions._totalSupply(timestamp).call() / 1000000000000000000
+        if bribe == "0x0000000000000000000000000000000000000000":
+            voteweight.append(0)
+        else:
+            contract_instance = w3.eth.contract(address=bribe, abi=bribe_abi)
+            voteweight.append(contract_instance.functions._totalSupply(timestamp).call() / 1000000000000000000
                           
     ids_df["voteweight"] = voteweight
     
