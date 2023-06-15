@@ -3751,3 +3751,5 @@
 [2023-06-15 03:18:26,148] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
 [2023-06-15 04:12:13,018] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-06-15 04:14:07,599] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-06-15 04:15:42,050] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-06-15 04:20:12,263] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
