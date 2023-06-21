@@ -5141,3 +5141,20 @@
 [2023-06-21 11:10:32,798] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-06-21 11:10:33,702] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-06-21 11:10:39,263] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-06-21 12:12:04,766] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-06-21 12:12:08,978] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-06-21 12:12:08,979] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-06-21 12:12:12,329] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-06-21 12:12:12,329] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-06-21 12:12:15,180] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-06-21 12:12:16,876] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-06-21 12:13:20,554] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-06-21 12:13:20,555] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-06-21 12:13:27,199] 	ERROR 	155 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aHAY-FRXETH, Address: 0xf8A4cDf9eFc4B9b38eaa6e27eE281cB2111fa664, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Max retries exceeded with url: /subgraphs/name/thenaursa/thena-fusion (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1131)')))
+[2023-06-21 12:13:39,478] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-06-21 12:13:39,478] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-06-21 12:13:59,019] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-06-21 12:14:00,080] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-06-21 12:18:46,964] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-06-21 12:18:47,728] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-06-21 12:18:58,779] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
