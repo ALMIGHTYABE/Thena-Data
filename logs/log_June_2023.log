@@ -5346,3 +5346,20 @@
 [2023-06-22 05:12:14,413] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
 [2023-06-22 05:12:53,781] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-06-22 05:17:34,307] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2023-06-22 06:08:32,032] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-06-22 06:08:34,794] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-06-22 06:08:34,794] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-06-22 06:08:36,692] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-06-22 06:08:36,692] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-06-22 06:08:39,351] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-06-22 06:08:40,672] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-06-22 06:08:44,167] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-MAI/FXS, Address: 0x10F9f7355Fb75C73718Afad8AdBc7BF72c5A0715, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Max retries exceeded with url: /subgraphs/name/thenaursa/thena-v1 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1131)')))
+[2023-06-22 06:09:48,247] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-06-22 06:09:48,247] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-06-22 06:10:04,285] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-06-22 06:10:04,286] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-06-22 06:10:17,666] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-06-22 06:10:18,584] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-06-22 06:15:02,565] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-06-22 06:15:03,226] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-06-22 06:15:09,497] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
