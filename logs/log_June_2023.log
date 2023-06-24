@@ -5931,3 +5931,19 @@
 [2023-06-24 19:11:02,306] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
 [2023-06-24 19:11:39,651] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-06-24 19:16:38,804] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-06-24 20:06:43,321] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-06-24 20:06:45,989] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-06-24 20:06:45,989] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-06-24 20:06:47,989] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-06-24 20:06:48,169] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-06-24 20:06:49,991] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-06-24 20:06:50,968] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-06-24 20:07:53,447] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-06-24 20:07:53,448] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-06-24 20:08:11,695] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-06-24 20:08:11,695] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-06-24 20:08:36,244] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-06-24 20:08:37,193] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-06-24 20:13:56,843] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-06-24 20:13:57,495] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-06-24 20:14:07,542] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: HTTP Error 503: Service Unavailable
