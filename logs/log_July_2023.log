@@ -380,3 +380,20 @@
 [2023-07-02 15:12:56,521] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-07-02 15:13:51,199] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-07-02 15:19:33,750] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-02 16:06:55,602] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-07-02 16:06:57,477] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-07-02 16:06:57,477] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-02 16:06:59,258] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-02 16:06:59,258] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-07-02 16:07:01,503] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-07-02 16:07:02,590] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-07-02 16:08:07,212] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-07-02 16:08:07,212] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-02 16:08:14,722] 	ERROR 	155 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aHAY-FRXETH, Address: 0xf8A4cDf9eFc4B9b38eaa6e27eE281cB2111fa664, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Max retries exceeded with url: /subgraphs/name/thenaursa/thena-fusion (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1131)')))
+[2023-07-02 16:08:23,855] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-02 16:08:23,855] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-07-02 16:08:34,294] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-07-02 16:08:35,285] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-02 16:14:23,817] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-02 16:14:24,586] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-02 16:14:32,190] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
