@@ -1064,3 +1064,5 @@
 [2023-07-06 00:49:31,313] 	ERROR 	152 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'address'
 [2023-07-06 00:49:31,993] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-07-06 00:49:38,099] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-06 00:57:31,748] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-07-06 00:59:05,013] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
