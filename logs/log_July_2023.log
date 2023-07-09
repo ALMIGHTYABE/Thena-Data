@@ -1794,3 +1794,20 @@
 [2023-07-09 10:23:34,423] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-07-09 11:09:02,150] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-07-09 11:11:28,366] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-07-09 12:12:00,969] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-07-09 12:12:03,488] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-07-09 12:12:03,489] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-09 12:12:05,979] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-09 12:12:05,979] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-07-09 12:12:07,930] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-07-09 12:12:09,245] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-07-09 12:12:55,955] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-FITFI/WBNB, Address: 0xd9f88F54a73B37463fb8F15ece98e0D1DcdCAAB6, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Max retries exceeded with url: /subgraphs/name/thenaursa/thena-v1 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1131)')))
+[2023-07-09 12:13:19,601] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-07-09 12:13:19,601] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-09 12:13:37,254] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-09 12:13:37,254] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-07-09 12:13:55,705] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-07-09 12:13:56,887] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-09 12:19:57,256] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-09 12:19:58,112] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-09 12:20:05,737] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
