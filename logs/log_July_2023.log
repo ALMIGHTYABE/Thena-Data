@@ -2603,3 +2603,5 @@
 [2023-07-14 00:54:10,085] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-07-14 01:09:42,526] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-07-14 01:13:39,064] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-07-14 01:26:33,650] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-14 01:31:39,667] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
