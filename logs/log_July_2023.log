@@ -3061,3 +3061,20 @@
 [2023-07-16 01:18:38,887] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
 [2023-07-16 01:44:16,307] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-07-16 01:49:14,697] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-16 02:40:15,983] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-07-16 02:40:19,855] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-07-16 02:40:19,855] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-16 02:40:23,207] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-16 02:40:23,207] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-07-16 02:40:25,134] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-07-16 02:40:28,026] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-07-16 02:41:06,387] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-FRAX/BUSD, Address: 0xa91f86362E75c62512C6E790aB0784040f211179, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Max retries exceeded with url: /subgraphs/name/thenaursa/thena-v1 (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1131)')))
+[2023-07-16 02:41:39,610] 	INFO 	107 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-07-16 02:41:39,610] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-16 02:42:03,412] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-16 02:42:03,413] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-07-16 02:42:16,916] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-07-16 02:42:18,200] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-16 02:47:46,645] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-16 02:47:47,476] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-16 02:47:54,916] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
