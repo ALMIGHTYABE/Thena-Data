@@ -3867,3 +3867,5 @@
 [2023-07-20 12:22:42,269] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-07-20 12:22:43,167] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-07-20 12:23:02,735] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-20 12:28:23,545] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-20 12:34:48,637] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
