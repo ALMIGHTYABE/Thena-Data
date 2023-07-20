@@ -3789,3 +3789,5 @@
 [2023-07-20 00:48:48,826] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
 [2023-07-20 00:59:53,250] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-07-20 01:03:28,975] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-07-20 01:13:09,094] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-20 01:15:26,791] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': 0, 'message': "we can't execute this request"}
