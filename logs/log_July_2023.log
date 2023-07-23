@@ -4374,3 +4374,19 @@
 [2023-07-23 01:05:22,093] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
 [2023-07-23 01:18:14,542] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-07-23 01:23:17,430] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+[2023-07-23 02:06:35,352] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-07-23 02:06:37,858] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-07-23 02:06:37,858] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-23 02:06:40,307] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-23 02:06:40,307] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-07-23 02:06:42,376] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-07-23 02:06:43,572] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-07-23 02:07:38,102] 	ERROR 	109 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: No columns to parse from file
+[2023-07-23 02:07:38,103] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-23 02:07:58,156] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-23 02:07:58,156] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-07-23 02:08:05,308] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-07-23 02:08:06,288] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-23 02:13:30,878] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-23 02:13:31,558] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-23 02:13:48,889] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
