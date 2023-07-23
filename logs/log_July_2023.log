@@ -4448,3 +4448,19 @@
 [2023-07-23 11:09:47,295] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-07-23 11:09:48,075] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-07-23 11:10:01,780] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-07-23 12:09:52,509] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-07-23 12:09:55,700] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-07-23 12:09:55,701] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-07-23 12:09:58,258] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-07-23 12:09:58,258] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-07-23 12:10:00,098] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-07-23 12:10:01,108] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-07-23 12:10:57,821] 	ERROR 	109 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: No columns to parse from file
+[2023-07-23 12:10:57,821] 	INFO 	123 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-07-23 12:11:16,405] 	INFO 	190 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-07-23 12:11:16,405] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-07-23 12:11:28,091] 	INFO 	227 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-07-23 12:11:29,112] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-07-23 12:16:10,888] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-07-23 12:16:11,586] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-07-23 12:16:21,213] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
