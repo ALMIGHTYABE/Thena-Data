@@ -4372,3 +4372,5 @@
 [2023-07-23 00:46:07,773] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-07-23 01:03:23,058] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
 [2023-07-23 01:05:22,093] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-07-23 01:18:14,542] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-07-23 01:23:17,430] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': 0, 'message': "we can't execute this request"}
