@@ -5503,3 +5503,5 @@
 [2023-07-28 17:09:38,240] 	ERROR 	122 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: {'code': 0, 'message': "we can't execute this request"}
 [2023-07-28 17:11:27,618] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-07-28 17:17:08,446] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-07-28 18:11:41,061] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-07-28 18:14:15,356] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
