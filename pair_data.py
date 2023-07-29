@@ -106,7 +106,7 @@ try:
 
     logger.info("Pair Data Ended")
 except Exception as e:
-    logger.error("Error occurred during Pair Data process. Error: %s" % e)
+    logger.error("Error occurred during Pair Data process. Error: %s" % e, exc_info=True)
     
    
 # Fusion
@@ -226,5 +226,5 @@ try:
 
     logger.info("Pair Data Combined Ended")
 except Exception as e:
-    logger.error("Error occurred during Pair Data Combined process. Error: %s" % e)
+    logger.error("Error occurred during Pair Data Combined process. Error: %s" % e, exc_info=True)
 
