@@ -84,6 +84,9 @@ try:
     pairdata_df = pd.concat([pairdata_old, pairdata_df], ignore_index=True, axis=0)
     pairdata_df['__typename'] = 'V1'
 
+    if pairdata_df.empty():
+        raise Exception("Dataframe is empty")
+
     # Write to GSheets
     credentials = os.environ["GKEY"]
     credentials = json.loads(credentials)
