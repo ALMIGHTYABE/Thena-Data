@@ -189,7 +189,7 @@ try:
 
     logger.info("Pair Data Fusion Ended")
 except Exception as e:
-    logger.error("Error occurred during Pair Data Fusion process. Error: %s" % e)
+    logger.error("Error occurred during Pair Data Fusion process. Error: %s" % e, exc_info=True)
     
     
     # Combined
