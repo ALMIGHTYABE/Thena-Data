@@ -1400,3 +1400,25 @@ TypeError: 'bool' object is not callable
 [2023-08-06 18:20:31,996] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-08-06 19:09:34,110] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-08-06 19:14:22,662] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-06 20:04:44,471] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-06 20:07:00,728] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-06 20:07:01,482] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-06 20:07:04,390] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-06 20:07:04,390] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-06 20:07:06,359] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-06 20:07:06,359] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-06 20:07:09,146] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-06 20:07:10,103] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-06 20:08:08,079] 	ERROR 	112 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: 'bool' object is not callable
+Traceback (most recent call last):
+  File "pair_data.py", line 87, in <module>
+    if pairdata_df.empty():
+TypeError: 'bool' object is not callable
+[2023-08-06 20:08:08,079] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-06 20:08:31,977] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-06 20:08:31,977] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-06 20:08:42,275] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-06 20:08:43,287] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-06 20:14:13,649] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-06 20:14:14,369] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-06 20:14:25,080] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
