@@ -2098,3 +2098,25 @@ TypeError: 'bool' object is not callable
 [2023-08-08 07:15:13,954] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-08-08 07:15:14,801] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-08 07:15:23,788] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-08 08:08:36,035] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-08 08:10:39,219] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-08 08:10:40,086] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-08 08:10:43,491] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-08 08:10:43,491] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-08 08:10:46,734] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-08 08:10:46,734] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-08 08:10:48,571] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-08 08:10:49,640] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-08 08:11:49,952] 	ERROR 	112 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: 'bool' object is not callable
+Traceback (most recent call last):
+  File "pair_data.py", line 87, in <module>
+    if pairdata_df.empty():
+TypeError: 'bool' object is not callable
+[2023-08-08 08:11:49,952] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-08 08:12:23,525] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-08 08:12:23,526] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-08 08:12:41,373] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-08 08:12:42,488] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-08 08:17:43,527] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-08 08:17:44,296] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-08 08:17:56,543] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
