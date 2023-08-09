@@ -2650,3 +2650,25 @@ TypeError: 'bool' object is not callable
 [2023-08-09 16:19:03,085] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-09 17:12:02,709] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-08-09 17:17:40,561] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-09 18:08:31,439] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-09 18:12:24,901] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-09 18:12:25,738] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-09 18:12:28,324] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-09 18:12:28,324] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-09 18:12:32,010] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-09 18:12:32,010] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-09 18:12:34,017] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-09 18:12:35,113] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-09 18:13:42,981] 	ERROR 	112 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: 'bool' object is not callable
+Traceback (most recent call last):
+  File "pair_data.py", line 87, in <module>
+    if pairdata_df.empty():
+TypeError: 'bool' object is not callable
+[2023-08-09 18:13:42,981] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-09 18:14:07,579] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-09 18:14:07,580] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-09 18:14:18,342] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-09 18:14:19,479] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-09 18:25:01,050] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-09 18:25:01,879] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-09 18:25:11,386] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
