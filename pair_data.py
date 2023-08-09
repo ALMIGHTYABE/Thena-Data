@@ -42,7 +42,7 @@ try:
     
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(2)
+    twodayago = todayDate - timedelta(7)
     my_time = datetime.min.time()
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
@@ -84,7 +84,7 @@ try:
     pairdata_df = pd.concat([pairdata_old, pairdata_df], ignore_index=True, axis=0)
     pairdata_df['__typename'] = 'V1'
 
-    if pairdata_df.empty():
+    if pairdata_df.empty:
         raise Exception("Dataframe is empty")
 
     # Write to GSheets
