@@ -2788,3 +2788,21 @@ TypeError: 'bool' object is not callable
 [2023-08-10 00:45:53,944] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-10 01:09:22,601] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-08-10 01:14:26,721] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2023-08-10 01:59:51,778] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-10 02:05:57,215] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-10 02:05:58,101] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-10 02:06:01,220] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-10 02:06:01,221] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-10 02:06:05,290] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-10 02:06:05,291] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-10 02:06:07,632] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-10 02:06:08,802] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-10 02:07:40,679] 	INFO 	110 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-10 02:07:40,680] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-10 02:08:07,682] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-10 02:08:07,682] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-10 02:08:20,559] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-10 02:08:21,758] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-10 02:21:43,164] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-10 02:21:43,996] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-10 02:21:54,746] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
