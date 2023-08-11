@@ -3941,3 +3941,5 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-11 21:14:58,633] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-08-11 21:14:59,522] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-11 21:15:08,894] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-11 22:11:50,351] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-11 22:18:11,765] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
