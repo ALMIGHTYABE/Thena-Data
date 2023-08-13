@@ -4559,3 +4559,40 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-13 00:45:02,242] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-13 00:58:52,206] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-08-13 01:04:37,394] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-13 01:39:55,165] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-13 01:42:14,834] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-13 01:42:15,754] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-13 01:42:18,579] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-13 01:42:18,580] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-13 01:42:20,667] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-13 01:42:20,667] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-13 01:42:22,642] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-13 01:42:23,633] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-13 01:43:23,327] 	ERROR 	112 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: No columns to parse from file
+Traceback (most recent call last):
+  File "pair_data.py", line 81, in <module>
+    pairdata_old = pd.read_csv(pair_data_csv)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1753, in _make_engine
+    return mapping[engine](f, **self.options)
+  File "/opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages/pandas/io/parsers/c_parser_wrapper.py", line 79, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
+pandas.errors.EmptyDataError: No columns to parse from file
+[2023-08-13 01:43:23,328] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-13 01:43:48,434] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-13 01:43:48,434] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-13 01:43:59,752] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-13 01:44:00,774] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-13 01:49:39,772] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-13 01:49:40,577] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-13 01:49:49,343] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
