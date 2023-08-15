@@ -6245,3 +6245,101 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-15 16:22:25,034] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-08-15 17:11:23,349] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-08-15 17:21:07,908] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-15 18:07:11,454] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-15 18:09:33,203] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-15 18:09:33,975] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-15 18:09:36,511] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-15 18:09:36,511] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-15 18:10:37,585] 	ERROR 	128 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+[2023-08-15 18:10:37,585] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-15 18:10:37,586] 	ERROR 	163 	day_data.py 	<module>() 	Error occurred during Day Data Combined process. Error: name 'day_data_fusion_df' is not defined
+[2023-08-15 18:10:38,522] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-15 18:10:41,748] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-MULTI/WBNB, Address: 0x075E794F631eE81df1aadB510aC6Ec8803B0FA35, Error: 'data'
+[2023-08-15 18:10:42,087] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDT/PENDLE, Address: 0x094B905Cca7B4Afe244B1cB85361d463A280aAF5, Error: 'data'
+[2023-08-15 18:10:42,808] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-cpTHE/WBNB, Address: 0x0C32b95142eD07e07b95F6c2EC8Ef05EDb0c4F45, Error: 'data'
+[2023-08-15 18:10:43,455] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-MULTI/WBNB, Address: 0x0dB08Af3BfEE2083C702b20c89Cbcadad68eB51a, Error: 'data'
+[2023-08-15 18:10:44,576] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-C98/CUSD, Address: 0x12D06Ce4Bf2149909F6E4808A48c254d9C07102b, Error: 'data'
+[2023-08-15 18:10:45,553] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT+/USD+, Address: 0x1561D9618dB2Dcfe954f5D51f4381fa99C8E5689, Error: 'data'
+[2023-08-15 18:10:45,727] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDC/PLAY, Address: 0x16184EC3a17285B33c22B6252c2D94Ca54D03341, Error: 'data'
+[2023-08-15 18:10:46,081] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-ID/WBNB, Address: 0x1663786974fecF742BdEA32222C96BaE58d0Fc65, Error: 'data'
+[2023-08-15 18:10:47,179] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-sfrxETH/frxETH, Address: 0x1964f694B722045D8cF757e19c9439E38810b5DB, Error: 'data'
+[2023-08-15 18:10:47,916] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-CSIX/USDT, Address: 0x1d439EbD512480598582e2b1257FB83BDc1d24F4, Error: 'data'
+[2023-08-15 18:10:48,474] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-ETH/frxETH, Address: 0x1ed421aa33fFd165423B33E17568626B40eBd25C, Error: 'data'
+[2023-08-15 18:10:49,262] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-XRP/XCAD OLD, Address: 0x2127bd04dDc9d8d1a4fAfCd96b4D4D81153831BC, Error: 'data'
+[2023-08-15 18:10:49,608] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-dXCAD/BUSD, Address: 0x238a45C2c6531356aE60DA6123340DD203D5336A, Error: 'data'
+[2023-08-15 18:10:50,315] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-DOLA/WBNB, Address: 0x271bF92185D0Dc68EC700010789791d303f6A558, Error: 'data'
+[2023-08-15 18:10:50,675] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-XRP/WBNB, Address: 0x29203F0a3C733E9B605717f9b2ABFbb140740f58, Error: 'data'
+[2023-08-15 18:10:51,790] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-HAY/WBNB, Address: 0x307936b725272Ec6Eb19d4d539207554f31E6231, Error: 'data'
+[2023-08-15 18:10:52,549] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-FRAX/CUSD, Address: 0x338cA7eD1D6BeDe03799a36a6f90E107d24Dc6aD, Error: 'data'
+[2023-08-15 18:10:52,902] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDT/SEC, Address: 0x34915f659f820Bee9247956CaB4277A632cFA230, Error: 'data'
+[2023-08-15 18:10:54,144] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-liveThe/THE, Address: 0x3765476BfFE43Cf4c0656bF3A7529c54ae247056, Error: 'data'
+[2023-08-15 18:10:57,746] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-JRT/WBNB, Address: 0x4DbcF190cbdf69f3b013DA6FBB911943237ab913, Error: 'data'
+[2023-08-15 18:10:58,111] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDC/FRAX, Address: 0x512909b2bCeA4348Ea3284Bd167095deA10F2F40, Error: 'data'
+[2023-08-15 18:11:01,018] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDT/FEAR, Address: 0x5980f099EE0584ff7F840a3672983bbF71E69a36, Error: 'data'
+[2023-08-15 18:11:01,800] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-WBNB/BUSD, Address: 0x6167c86326d3d088d6EBba415aAf172613BB579c, Error: 'data'
+[2023-08-15 18:11:01,965] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/USDC, Address: 0x618f9Eb0E1a698409621f4F487B563529f003643, Error: 'data'
+[2023-08-15 18:11:02,320] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/BUSD, Address: 0x6321B57b6fdc14924be480c54e93294617E672aB, Error: 'data'
+[2023-08-15 18:11:02,490] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDT/PLAY, Address: 0x6357f7A66e0A251E1B7aCAa54CF754a14b54ed80, Error: 'data'
+[2023-08-15 18:11:02,841] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-FS/BUSD, Address: 0x6440889ed931cA08a0A06b064CB233138e8a263A, Error: 'data'
+[2023-08-15 18:11:03,364] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-PSTAKE/BUSD, Address: 0x67e51F1DE32318f3a27265287ed766839A62Cf13, Error: 'data'
+[2023-08-15 18:11:04,687] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-XCAD/dXCAD OLD, Address: 0x6c03177eb78EbDe271B24FD6E446b301db1AEdb1, Error: 'data'
+[2023-08-15 18:11:05,188] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BNBx/WBNB, Address: 0x6c83E45fE3Be4A9c12BB28cB5BA4cD210455fb55, Error: 'data'
+[2023-08-15 18:11:05,581] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-AVAX/CHAM, Address: 0x6dc3C6efDeaF592C2d82Add41d7D42e00097Cf4f, Error: 'data'
+[2023-08-15 18:11:06,120] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BTCB/multiBTC, Address: 0x706458510e841970F96061F43DAD4F654F06157f, Error: 'data'
+[2023-08-15 18:11:06,519] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-PRIMAL/BUSD, Address: 0x721f0607e3B3ad025c3f996EF412A62AE461b15F, Error: 'data'
+[2023-08-15 18:11:06,873] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-ETH/KOL, Address: 0x74A4f4722A4C105eCb9Be131A86d1e0344D4E6aA, Error: 'data'
+[2023-08-15 18:11:07,397] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-HAY/CUSD, Address: 0x793b5Ec33596CC5dCde59f909f87B558cCc9f392, Error: 'data'
+[2023-08-15 18:11:07,739] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-AVAX/WBNB, Address: 0x7B2F91d226aD214Ac42ba21a597d99896311eCD1, Error: 'data'
+[2023-08-15 18:11:09,075] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/PRIMAL, Address: 0x7F17A57BB90D45Ca66C58dC9E562Fa93DE9d84A4, Error: 'data'
+[2023-08-15 18:11:09,627] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-FRAX/BUSD, Address: 0x7fCfE6b06C1F6AAd14884bA24A7f315C1c0C2cEf, Error: 'data'
+[2023-08-15 18:11:10,704] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-FRAX/CUSD, Address: 0x85D65c1cE99B2639985166C4A25d4c44EE1601bc, Error: 'data'
+[2023-08-15 18:11:12,602] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDT/TAROT, Address: 0x8efeeAE90E67051c4F9130DD4f27d5D443E58A8b, Error: 'data'
+[2023-08-15 18:11:12,975] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-TAROT/BUSD, Address: 0x928FE97eEe1f921D80F25DC2EeA1dF280704fD03, Error: 'data'
+[2023-08-15 18:11:14,751] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-ETH/PLAY, Address: 0x9938256DD2C6A436233685E910EFaA44F6d8e81C, Error: 'data'
+[2023-08-15 18:11:16,450] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-GRAIN/WBNB, Address: 0xa6Da07730D7E9E5732E6483ceC67573e00ef45E7, Error: 'data'
+[2023-08-15 18:11:17,204] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-ankrMATIC/MATIC, Address: 0xAcc047c2D898BD36bA24d34Fe197d4AbC82C7E3c, Error: 'data'
+[2023-08-15 18:11:17,752] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-WBNB/OATH, Address: 0xAF6389e0281337cf810b5843EBaE12dbF5A0eAf4, Error: 'data'
+[2023-08-15 18:11:18,852] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-WBNB/BIFI, Address: 0xB8C1557ddfc61C6c48a7d12F11cC1F8CF3b4d4E6, Error: 'data'
+[2023-08-15 18:11:19,021] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-jBRL/BRZ, Address: 0xB95c58277DdE24801C2A460BceA25a2d28A1591B, Error: 'data'
+[2023-08-15 18:11:19,387] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-CHAM/THE, Address: 0xbA3bAe25efa78F91ffF0dB3A649DB70d33ca1380, Error: 'data'
+[2023-08-15 18:11:20,120] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDC/BUSD, Address: 0xbb6CD6EfFB4861971Af675ca5fb8964873bdab2d, Error: 'data'
+[2023-08-15 18:11:21,227] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-WBNB/NFTB, Address: 0xC03D86b6685Aec46909eA5c54943e2a1238E02Ac, Error: 'data'
+[2023-08-15 18:11:21,954] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-OATH/BUSD, Address: 0xc2dc97A4afE061186Ad5Ca5231f964a97Ce305eb, Error: 'data'
+[2023-08-15 18:11:22,296] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-XCAD/WBNB, Address: 0xC53fe45E0047965da638aa70E9B6be3d68E2f80f, Error: 'data'
+[2023-08-15 18:11:22,848] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDC/THE, Address: 0xC6376e5452EBd75cD4dE8e0d597f66cA38c1FA77, Error: 'data'
+[2023-08-15 18:11:23,189] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-HAY/ankrBNB, Address: 0xC6dB38F34DA75393E9aac841c08104348997D509, Error: 'data'
+[2023-08-15 18:11:24,119] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-fBOMB/WBNB, Address: 0xCcDEdaC1973b6d2542fB1b7EcE843b81A9ee7070, Error: 'data'
+[2023-08-15 18:11:25,282] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-FRAX/FXS, Address: 0xd6C883ABA697b33110e42077D28361aa3E48f26A, Error: 'data'
+[2023-08-15 18:11:26,151] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-FITFI/WBNB, Address: 0xd9f88F54a73B37463fb8F15ece98e0D1DcdCAAB6, Error: 'data'
+[2023-08-15 18:11:27,044] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/THE, Address: 0xdC81698F98e275785741F96961f246368FDd5866, Error: 'data'
+[2023-08-15 18:11:27,611] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-ETS Alpha/BUSD, Address: 0xde34Df68795f0D2b07F64285Ba83601889A6995C, Error: 'data'
+[2023-08-15 18:11:28,159] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-CHAM/BUSD, Address: 0xDf63A43aEFb5c1Aa4040a3a121d2a8C00EeBE7d8, Error: 'data'
+[2023-08-15 18:11:28,855] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-ETH/XCAD OLD, Address: 0xe2d25A87e97a1016c35F736Ea77A4d6Bd1919E74, Error: 'data'
+[2023-08-15 18:11:29,405] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-WBNB/MATIC, Address: 0xE47cF3AeFF7a07dbEfEf391339CAd4988B162EA0, Error: 'data'
+[2023-08-15 18:11:29,928] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USD+/BUSD, Address: 0xe6eAb9B5B0A27866f30091DC76AFE1Ffe70a8507, Error: 'data'
+[2023-08-15 18:11:30,299] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-LVL/WBNB, Address: 0xea3f8926fA9Ead0B4B05569AD21FD1DCEA06b1D4, Error: 'data'
+[2023-08-15 18:11:30,467] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/USD+, Address: 0xea9abc7AD420bDA7dD42FEa3C4ACd058902A5845, Error: 'data'
+[2023-08-15 18:11:30,636] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-MATIC/BUSD, Address: 0xEB58A4D07990fF50b9F8289701cBdDf9052570B5, Error: 'data'
+[2023-08-15 18:11:47,617] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/WBNB, Address: 0xF048CF3EAc3c17aD47ae1C4e37408040177a8554, Error: 'data'
+[2023-08-15 18:11:47,790] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-IDIA/BUSD, Address: 0xf10c6a25A0fe12B69BE26281259EE5994BbCdB9c, Error: 'data'
+[2023-08-15 18:11:47,976] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-wUSDR/DOLA, Address: 0xF2aeE9f346Ba227d0C8a06479386e0e39fdEFf5f, Error: 'data'
+[2023-08-15 18:11:48,520] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-GHNY/THE, Address: 0xf581b44FFD48eb84d984CaBABe7221F3fc85FbE0, Error: 'data'
+[2023-08-15 18:12:04,855] 	INFO 	110 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-15 18:12:04,855] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-15 18:13:27,575] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRAX-ERN, Address: 0x1C2D4F310aeA872C5BD55790D2D78Ca7B31992a3, Error: 'data'
+[2023-08-15 18:13:27,820] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBTCB-STKBNB, Address: 0x16736fdaB466f69E11Ba5fC294Be17D2FB8c3b02, Error: 'data'
+[2023-08-15 18:13:28,118] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-STKBNB, Address: 0x8b41d72def3867E19f2285B45DA655e24928018F, Error: 'data'
+[2023-08-15 18:13:28,326] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-PENDLE, Address: 0x8e3ae967604DC4B4ba676e6D34ac603Fb07fc921, Error: 'data'
+[2023-08-15 18:13:28,543] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aARKEN-WBNB, Address: 0xCB995DaE5238c1e08C7289b335c80ED8d129A46b, Error: 'data'
+[2023-08-15 18:13:28,731] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFIL-ANKRBNB, Address: 0xE6A2a77cA6B6c51103FBCA83D3f171a920DF42B4, Error: 'data'
+[2023-08-15 18:13:28,904] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aANKRBNB-USDT, Address: 0xc1716bEa36140Fa08476742d80cb28CEcD492A6F, Error: 'data'
+[2023-08-15 18:13:29,071] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aTWT-ANKRBNB, Address: 0x80c264189DD38F4Fa5d6e424C1bf879B3b176076, Error: 'data'
+[2023-08-15 18:13:29,258] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aID-ANKRBNB, Address: 0x1d56CBcc160D9f5fe56ba184bDb847Dc209F7243, Error: 'data'
+[2023-08-15 18:13:38,578] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aEQB-FRXETH, Address: 0xe6385768234224CF79d84c390E346d43bC812824, Error: 'data'
+[2023-08-15 18:14:12,839] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-15 18:14:12,840] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-15 18:14:31,255] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-15 18:14:32,237] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-15 18:20:26,682] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-15 18:20:27,371] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-15 18:20:39,495] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
