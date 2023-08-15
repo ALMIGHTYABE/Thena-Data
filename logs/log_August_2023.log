@@ -6165,3 +6165,21 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-15 10:16:57,469] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-08-15 10:16:58,118] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-15 10:17:06,970] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-15 11:03:24,711] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-15 11:05:36,506] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-15 11:05:37,291] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-15 11:05:39,499] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-15 11:05:39,499] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-15 11:05:42,876] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-15 11:05:42,876] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-15 11:05:45,534] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-15 11:05:46,459] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-15 11:06:58,723] 	INFO 	110 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-15 11:06:58,723] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-15 11:07:31,159] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-15 11:07:31,159] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-15 11:07:49,713] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-15 11:07:50,685] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-15 11:13:09,864] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-15 11:13:10,569] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-15 11:13:16,508] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
