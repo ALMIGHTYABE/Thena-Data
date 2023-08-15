@@ -6343,3 +6343,30 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-15 18:20:26,682] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-08-15 18:20:27,371] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-15 18:20:39,495] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-15 19:03:13,923] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-15 19:05:43,585] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-15 19:05:44,287] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-15 19:05:48,788] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-15 19:05:48,788] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-15 19:06:02,342] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-15 19:06:02,342] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-15 19:06:04,241] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-15 19:06:05,190] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-15 19:07:20,853] 	INFO 	110 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-15 19:07:20,853] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-15 19:08:32,106] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-WBNB, Address: 0xD405b976Ac01023c9064024880999fC450A8668b, Error: 'data'
+[2023-08-15 19:08:32,339] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-WBNB, Address: 0x1123E75b71019962CD4d21b0F3018a6412eDb63C, Error: 'data'
+[2023-08-15 19:08:32,531] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBTCB-WBNB, Address: 0x6B67112aa7b45E8CdC0a93B8D66A6A36e68ae8e5, Error: 'data'
+[2023-08-15 19:08:32,732] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFTM-WBNB, Address: 0xf6814792050cCD1c603d8a95468d6D9587eCBDAF, Error: 'data'
+[2023-08-15 19:08:32,928] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-THE, Address: 0x51Bd5e6d3da9064D59BcaA5A76776560aB42cEb8, Error: 'data'
+[2023-08-15 19:09:27,801] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCGPT-BUSD, Address: 0x8731bB0202dEb31a93B3178b674e51c3Cc49b285, Error: 'data'
+[2023-08-15 19:09:28,503] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-RDNT, Address: 0x0f28AE1Eea69ddA12Bc89419f7E8552dD191c98e, Error: 'data'
+[2023-08-15 19:09:28,708] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aANKRBNB-RDNT, Address: 0x09547029e78413571c79791654667c4c4d3322D6, Error: 'data'
+[2023-08-15 19:09:38,991] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-STKBNB, Address: 0x84b78452A97C5afDa1400943333F691448069A29, Error: 'data'
+[2023-08-15 19:10:16,055] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-15 19:10:16,056] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-15 19:10:36,563] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-15 19:10:37,561] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-15 19:18:56,248] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-15 19:18:57,147] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-15 19:19:13,289] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
