@@ -6796,3 +6796,62 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-16 22:14:03,023] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-08-16 22:14:03,877] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-16 22:14:10,830] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-16 23:05:12,097] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-16 23:07:25,350] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-16 23:07:26,341] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-16 23:07:30,921] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-16 23:07:30,922] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-16 23:07:44,292] 	INFO 	126 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-16 23:07:44,292] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-16 23:07:45,813] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-16 23:07:47,049] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-16 23:09:01,917] 	INFO 	110 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-16 23:09:01,917] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-16 23:09:12,861] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-USDC, Address: 0x1b9a1120a17617D8eC4dC80B921A9A1C50Caef7d, Error: 'data'
+[2023-08-16 23:09:17,619] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-WBNB, Address: 0x1123E75b71019962CD4d21b0F3018a6412eDb63C, Error: 'data'
+[2023-08-16 23:09:22,504] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFTM-WBNB, Address: 0xf6814792050cCD1c603d8a95468d6D9587eCBDAF, Error: 'data'
+[2023-08-16 23:09:22,686] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-THE, Address: 0x51Bd5e6d3da9064D59BcaA5A76776560aB42cEb8, Error: 'data'
+[2023-08-16 23:09:22,859] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCGPT-BUSD, Address: 0x8731bB0202dEb31a93B3178b674e51c3Cc49b285, Error: 'data'
+[2023-08-16 23:09:23,047] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-RDNT, Address: 0x0f28AE1Eea69ddA12Bc89419f7E8552dD191c98e, Error: 'data'
+[2023-08-16 23:09:23,221] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aANKRBNB-RDNT, Address: 0x09547029e78413571c79791654667c4c4d3322D6, Error: 'data'
+[2023-08-16 23:09:33,253] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-MATIC, Address: 0x775CAc1c1b47250121291934d15912Efb69213E9, Error: 'data'
+[2023-08-16 23:09:33,439] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aID-WBNB, Address: 0xB66566fD115CAf17633504A5165a319F17D9F096, Error: 'data'
+[2023-08-16 23:09:42,686] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aXCAD-WBNB, Address: 0xe2624920C88b470B78EFAdfdE51Dd0E2C841934B, Error: 'data'
+[2023-08-16 23:09:42,861] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aGRAIN-WBNB, Address: 0x1f060bE9D1D3Bd3ACC5392aC066C6B437780ABe0, Error: 'data'
+[2023-08-16 23:09:43,038] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-FLOKI, Address: 0x5135c813d5f9d3624221b3BdBaC805339Fa5a591, Error: 'data'
+[2023-08-16 23:09:43,226] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-USDC, Address: 0x3f8062cf591a918Bc3B183fa241ec49efBd30e2b, Error: 'data'
+[2023-08-16 23:09:43,626] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aHAY-USDT, Address: 0x5B0BAf66718caaBDa49A4Af32eB455c3b99B5821, Error: 'data'
+[2023-08-16 23:09:43,819] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-USDT, Address: 0xa60a504d92a1C95bda729C3F745B361cA822d6dd, Error: 'data'
+[2023-08-16 23:09:43,995] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-EDU, Address: 0x4bD39cfb05545c4238316dA69eCadA1b4CaABC05, Error: 'data'
+[2023-08-16 23:09:44,171] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-FRAX, Address: 0x8aB8FD902039A48e51735452b1f97c93cB034E80, Error: 'data'
+[2023-08-16 23:09:45,028] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aDAO-BUSD, Address: 0x604a99F4c5e46aDD74dBA10C21B5e26374A1162F, Error: 'data'
+[2023-08-16 23:09:45,229] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aMULTI-WBNB, Address: 0x972E8BE53425DbcaF3446c7aC130ADB48ba3E125, Error: 'data'
+[2023-08-16 23:09:45,662] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aHAY-FRXETH, Address: 0xf8A4cDf9eFc4B9b38eaa6e27eE281cB2111fa664, Error: 'data'
+[2023-08-16 23:09:45,859] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-ANKRETH, Address: 0xC9dF4aE113fA7CB67CE1779cB1560D1f43c2D373, Error: 'data'
+[2023-08-16 23:09:46,047] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-OATH, Address: 0x055557c6606f7b0d34e617653c447f079B0B0a73, Error: 'data'
+[2023-08-16 23:09:46,234] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aXCAD-BUSD, Address: 0x0Cd7F0d5478FEFe59F2B9F5aBa623706f2924e77, Error: 'data'
+[2023-08-16 23:09:46,927] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aANKRBNB-ANKR, Address: 0xC8Cbf9b12552c0B85fc368AA530cc31E00526E2F, Error: 'data'
+[2023-08-16 23:09:47,135] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-RBNB, Address: 0x3cAd1CBA60f695Ec7FA522Ec486f55D77C270b18, Error: 'data'
+[2023-08-16 23:09:47,347] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aJBRL-USDC, Address: 0xd63bBA6078a328b93758Cc7556e21D3380397D41, Error: 'data'
+[2023-08-16 23:09:47,599] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aSFRXETH-FRXETH, Address: 0xd9e98A73102391b3D7d1D94C0c58541aBf99a14F, Error: 'data'
+[2023-08-16 23:09:48,842] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRXETH-WBETH, Address: 0x3bc0Fc25aD4456cdd4e4805ED89Ec0d80Db5e2c4, Error: 'data'
+[2023-08-16 23:09:49,616] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aSTKBNB-THE, Address: 0xF1b7007694DBcba004DB73473CCa3c5aDd3803E4, Error: 'data'
+[2023-08-16 23:09:51,244] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-ETH, Address: 0x6B32E9178a6670dc9b19a74FE5080C54ea5347C7, Error: 'data'
+[2023-08-16 23:09:52,071] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aANKRBNB-LINK, Address: 0x643d9573c78599c8451a90794D34dD1aAB0663cd, Error: 'data'
+[2023-08-16 23:09:52,262] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aLVL-WBNB, Address: 0x011077b8199cAb999e895AED7f8A78755A678106, Error: 'data'
+[2023-08-16 23:09:52,658] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aANKRBNB-ANKRMATIC, Address: 0x73A2B0fDE4F8F8a2800fDdcFd967a70b4B594abd, Error: 'data'
+[2023-08-16 23:09:53,058] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-ERN, Address: 0xc7426Dce489E6b2d580Fd480Ef72D57e5d7643f5, Error: 'data'
+[2023-08-16 23:09:53,237] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-ERN, Address: 0x8DCDF3CbD3a588a2e2FB607BdC9180e4FefA583b, Error: 'data'
+[2023-08-16 23:09:54,624] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFIL-ANKRBNB, Address: 0xE6A2a77cA6B6c51103FBCA83D3f171a920DF42B4, Error: 'data'
+[2023-08-16 23:09:55,460] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aEQB-FRXETH, Address: 0xe6385768234224CF79d84c390E346d43bC812824, Error: 'data'
+[2023-08-16 23:09:56,598] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aAXLLQDR-WBNB, Address: 0x8171E3aa02f684bd4E8E04Dad286451318cf27a9, Error: 'data'
+[2023-08-16 23:09:56,773] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRXETH-WBNB, Address: 0x6eb8A743723216a0De043c554c85E447B0D59E2e, Error: 'data'
+[2023-08-16 23:09:56,979] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRXETH-RDNT, Address: 0x403e786B4168eC718E2e6cB4FA874aaDE73D54f0, Error: 'data'
+[2023-08-16 23:09:58,219] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-FDUSD, Address: 0x7B879963ae083732f4514d564f4e4613e24E1f67, Error: 'data'
+[2023-08-16 23:10:04,350] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-16 23:10:04,351] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-16 23:10:18,912] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-16 23:10:20,099] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-16 23:15:37,007] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-16 23:15:37,905] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-16 23:15:46,358] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
