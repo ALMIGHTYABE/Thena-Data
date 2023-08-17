@@ -6905,3 +6905,21 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-17 01:47:42,925] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-08-17 02:15:56,225] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
 [2023-08-17 02:22:10,708] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2023-08-17 03:06:30,027] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-17 03:08:56,327] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-17 03:08:57,244] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-17 03:09:00,398] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-17 03:09:00,398] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-17 03:09:07,914] 	ERROR 	128 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+[2023-08-17 03:09:07,914] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-17 03:09:07,915] 	ERROR 	163 	day_data.py 	<module>() 	Error occurred during Day Data Combined process. Error: name 'day_data_fusion_df' is not defined
+[2023-08-17 03:09:08,896] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-17 03:10:23,041] 	INFO 	110 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-17 03:10:23,041] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-17 03:10:58,757] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-17 03:10:58,758] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-17 03:11:08,683] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-17 03:11:09,736] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-17 03:17:09,839] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-17 03:17:10,646] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-17 03:17:18,989] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
