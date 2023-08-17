@@ -7247,3 +7247,5 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-17 22:21:48,505] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-08-17 22:21:49,322] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-17 22:22:00,712] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-17 23:12:31,835] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-17 23:19:22,967] 	ERROR 	141 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
