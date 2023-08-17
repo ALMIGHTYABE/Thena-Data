@@ -6923,3 +6923,34 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-17 03:17:09,839] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
 [2023-08-17 03:17:10,646] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-17 03:17:18,989] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-17 04:07:36,763] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-17 04:10:00,101] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-17 04:10:01,192] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-17 04:10:04,365] 	INFO 	73 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-17 04:10:04,365] 	INFO 	79 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-17 04:10:04,551] 	ERROR 	128 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+[2023-08-17 04:10:04,552] 	INFO 	133 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-17 04:10:04,555] 	ERROR 	163 	day_data.py 	<module>() 	Error occurred during Day Data Combined process. Error: name 'day_data_fusion_df' is not defined
+[2023-08-17 04:10:05,800] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-17 04:11:22,434] 	INFO 	110 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-17 04:11:22,435] 	INFO 	126 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-17 04:11:34,267] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aGRAIN-WBNB, Address: 0x1f060bE9D1D3Bd3ACC5392aC066C6B437780ABe0, Error: 'data'
+[2023-08-17 04:11:34,477] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-FLOKI, Address: 0x5135c813d5f9d3624221b3BdBaC805339Fa5a591, Error: 'data'
+[2023-08-17 04:11:34,684] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-USDC, Address: 0x3f8062cf591a918Bc3B183fa241ec49efBd30e2b, Error: 'data'
+[2023-08-17 04:11:34,878] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-THE, Address: 0x98A0004b8E9fE161369528A2e07De56c15A27D76, Error: 'data'
+[2023-08-17 04:12:06,052] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-USDT, Address: 0xa60a504d92a1C95bda729C3F745B361cA822d6dd, Error: 'data'
+[2023-08-17 04:12:06,248] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-EDU, Address: 0x4bD39cfb05545c4238316dA69eCadA1b4CaABC05, Error: 'data'
+[2023-08-17 04:12:35,208] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-OOE, Address: 0x3401Cf94c6F81347b426Df1D0f6269b7A24fEb2E, Error: 'data'
+[2023-08-17 04:12:35,397] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCSIX-USDT, Address: 0xC9Fd6dE6e25De1B0e18B1e7EEb19b3D391614fF5, Error: 'data'
+[2023-08-17 04:12:35,583] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRXETH-STKBNB, Address: 0xde0559d2720436978d8cEdc0144Ceba075BbfA1D, Error: 'data'
+[2023-08-17 04:12:35,771] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aAXLLQDR-WBNB, Address: 0x8171E3aa02f684bd4E8E04Dad286451318cf27a9, Error: 'data'
+[2023-08-17 04:12:35,960] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRXETH-WBNB, Address: 0x6eb8A743723216a0De043c554c85E447B0D59E2e, Error: 'data'
+[2023-08-17 04:12:36,133] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRXETH-RDNT, Address: 0x403e786B4168eC718E2e6cB4FA874aaDE73D54f0, Error: 'data'
+[2023-08-17 04:12:36,317] 	ERROR 	158 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aPNP-WBNB, Address: 0x187784bC6812b056f4a54d84CDC98075F2d2eec6, Error: 'data'
+[2023-08-17 04:13:16,670] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-17 04:13:16,670] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-17 04:13:27,621] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-17 04:13:28,894] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-17 04:19:10,597] 	INFO 	150 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-17 04:19:11,516] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-17 04:19:19,542] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
