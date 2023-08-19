@@ -29,6 +29,7 @@ jobs:
           python day_data.py
           python pair_data.py
           python bribe_data.py
+          python fee_data.py
           python revenue_data.py
       - name: Commit and Push Changes
         run: |
