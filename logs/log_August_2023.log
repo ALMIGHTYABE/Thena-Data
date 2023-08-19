@@ -7899,3 +7899,23 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-19 19:27:36,734] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-08-19 19:27:37,553] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-19 19:28:05,767] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-19 20:04:20,786] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-19 20:06:34,882] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-19 20:06:35,649] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-19 20:06:38,871] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-19 20:06:38,871] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-19 20:06:40,772] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-19 20:06:40,772] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-19 20:06:43,666] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-19 20:06:44,640] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-19 20:07:48,247] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-19 20:07:48,247] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-19 20:08:08,934] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-19 20:08:08,934] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-19 20:08:33,898] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-19 20:08:34,913] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-19 20:14:07,578] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-19 20:14:08,606] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-19 20:17:33,690] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-08-19 20:17:34,414] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-19 20:18:01,804] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
