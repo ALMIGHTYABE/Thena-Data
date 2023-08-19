@@ -7779,3 +7779,5 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-19 14:05:01,463] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
 [2023-08-19 14:05:01,463] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
 [2023-08-19 14:05:03,380] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-19 14:10:21,339] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-19 14:15:37,749] 	INFO 	139 	fee_data.py 	<module>() 	Fee Data Ended
