@@ -7787,3 +7787,9 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-19 14:25:27,468] 	INFO 	193 	pair_data.py 	<module>() 	Pair Data Fusion Ended
 [2023-08-19 14:25:27,468] 	INFO 	200 	pair_data.py 	<module>() 	Pair Data Combined Started
 [2023-08-19 14:25:44,423] 	INFO 	230 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-19 14:33:06,549] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-19 14:34:13,536] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-19 14:34:13,536] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-19 14:34:34,186] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-19 14:34:34,186] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-19 14:34:52,981] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
