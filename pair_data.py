@@ -77,12 +77,15 @@ try:
 
     pairdata_df["dailyVolumeUSD"] = pd.to_numeric(pairdata_df["dailyVolumeUSD"])
     pairdata_df["fee"] = (pairdata_df["dailyVolumeUSD"] * pairdata_df["fee %"]) / 100
+    pairdata_df.sort_values("date", ascending=True, inplace=True)
+    pairdata_df["date"] = pairdata_df["date"].apply(lambda date: datetime.strftime(date, "%Y-%m-%d"))
     
     pairdata_old = pd.read_csv(pair_data_csv)
     drop_index = pairdata_old[pairdata_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
-    pairdata_old.drop(drop_index, inplace=True)
-    pairdata_df = pd.concat([pairdata_old, pairdata_df], ignore_index=True, axis=0)
+    index_list = drop_index.to_list()
+    index_list = list(map(lambda x: x + 2, index_list))
     pairdata_df['__typename'] = 'V1'
+    df_values = pairdata_df.values.tolist()
 
     if pairdata_df.empty:
         raise Exception("Dataframe is empty")
@@ -98,14 +101,11 @@ try:
 
     # Select a work sheet from its name
     worksheet1 = gs.worksheet("Master")
-    worksheet1.clear()
-    set_with_dataframe(
-        worksheet=worksheet1,
-        dataframe=pairdata_df,
-        include_index=False,
-        include_column_header=True,
-        resize=True,
-    )
+    if index_list != []:
+        worksheet1.delete_rows(index_list[0], index_list[-1])
+
+    # Append to Worksheet
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
 
     logger.info("Pair Data Ended")
 except Exception as e:
@@ -163,12 +163,15 @@ try:
     pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
     pairdata_fusion_df = pd.merge(pairdata_fusion_df, ids_df[["name", "algebra_pool", "type"]], how="left", on="name")
     pairdata_fusion_df = pd.merge(pairdata_fusion_df, epoch_data[["date", "epoch"]], how="left", on="date")
+    pairdata_fusion_df.sort_values("date", ascending=True, inplace=True)
+    pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(lambda date: datetime.strftime(date, "%Y-%m-%d"))
     
     pairdata_fusion_old = pd.read_csv(pair_data_fusion_csv)
     drop_index = pairdata_fusion_old[pairdata_fusion_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
-    pairdata_fusion_old.drop(drop_index, inplace=True)
-    pairdata_fusion_df = pd.concat([pairdata_fusion_old, pairdata_fusion_df], ignore_index=True, axis=0)
+    index_list = drop_index.to_list()
+    index_list = list(map(lambda x: x + 2, index_list))
     pairdata_fusion_df['__typename'] = 'Fusion'
+    df_values = pairdata_fusion_df.values.tolist()
 
     # Write to GSheets
     credentials = os.environ["GKEY"]
@@ -181,14 +184,11 @@ try:
 
     # Select a work sheet from its name
     worksheet1 = gs.worksheet("Master")
-    worksheet1.clear()
-    set_with_dataframe(
-        worksheet=worksheet1,
-        dataframe=pairdata_fusion_df,
-        include_index=False,
-        include_column_header=True,
-        resize=True,
-    )
+    if index_list != []:
+        worksheet1.delete_rows(index_list[0], index_list[-1])
+
+    # Append to Worksheet
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
 
     logger.info("Pair Data Fusion Ended")
 except Exception as e:
@@ -200,8 +200,8 @@ try:
     logger.info("Pair Data Combined Started")
 
     # Data Manipulation
-    df1 = pairdata_df
-    df2 = pairdata_fusion_df
+    df1 = pd.read_csv(pair_data_csv)
+    df2 = pd.read_csv(pair_data_fusion_csv)
     df2['fee %'] = 0
     df2 = df2[['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD', '__typename', 'name', 'algebra_pool', 'type',  'epoch', 'fee %', 'feesUSD']]
     df2.columns = ['id', 'date', 'dailyVolumeToken0', 'dailyVolumeToken1', 'dailyVolumeUSD', 'reserveUSD', '__typename', 'name', 'address', 'type', 'epoch', 'fee %', 'fee']
