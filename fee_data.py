@@ -105,17 +105,17 @@ try:
 
     fee_df["fee_amount"] = fee_amount
 
-    print(fee_df)
     fee_df = fee_df.groupby(by="name")["fee_amount"].sum().reset_index()
     fee_df["epoch"] = epoch
     print(fee_df)
 
     # Rewriting current Epoch's Fee Data
     feeor = pd.read_csv(fee_csv)
-    current_fee_index = feeor[feeor["epoch"] == epoch].index
-    feeor.drop(current_fee_index, inplace=True)
-    fee_df = pd.concat([feeor, fee_df], ignore_index=True, axis=0)
-
+    drop_index = feeor[feeor["epoch"] == epoch].index
+    index_list = drop_index.to_list()
+    index_list = list(map(lambda x: x + 2, index_list))
+    df_values = fee_df.values.tolist()
+    
     # Write to GSheets
     credentials = os.environ["GKEY"]
     credentials = json.loads(credentials)
@@ -127,14 +127,11 @@ try:
 
     # Select a work sheet from its name
     worksheet1 = gs.worksheet("Master")
-    worksheet1.clear()
-    set_with_dataframe(
-        worksheet=worksheet1,
-        dataframe=fee_df,
-        include_index=False,
-        include_column_header=True,
-        resize=True,
-    )
+    if index_list != []:
+        worksheet1.delete_rows(index_list[0], index_list[-1])
+        
+    # Append to Worksheet
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
 
     logger.info("Fee Data Ended")
 except Exception as e:
