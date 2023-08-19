@@ -7767,3 +7767,9 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-19 13:55:42,692] 	INFO 	123 	day_data.py 	<module>() 	Day Data Fusion Ended
 [2023-08-19 13:55:42,692] 	INFO 	130 	day_data.py 	<module>() 	Day Data Combined Started
 [2023-08-19 13:55:44,153] 	ERROR 	160 	day_data.py 	<module>() 	Error occurred during Day Data Combined process. Error: name 'set_with_dataframe' is not defined
+[2023-08-19 14:00:33,300] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-19 14:00:34,777] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-19 14:00:34,777] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-19 14:00:36,141] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-19 14:00:36,142] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-19 14:00:37,973] 	INFO 	159 	day_data.py 	<module>() 	Day Data Combined Ended
