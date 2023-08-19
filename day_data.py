@@ -131,8 +131,10 @@ try:
     logger.info("Day Data Combined Started")
 
     # Data Manipulation
-    df1 = day_data_df[['id', 'date', 'dailyVolumeUSD', 'totalLiquidityUSD', '__typename']]
-    df2 = day_data_fusion_df[['id', 'date', 'volumeUSD', 'tvlUSD', '__typename']]
+    day_data_old = pd.read_csv(daily_data_csv)
+    day_data_fusion_old = pd.read_csv(daily_data_fusion_csv)
+    df1 = day_data_old[['id', 'date', 'dailyVolumeUSD', 'totalLiquidityUSD', '__typename']]
+    df2 = day_data_fusion_old[['id', 'date', 'volumeUSD', 'tvlUSD', '__typename']]
     df2.columns = ['id', 'date', 'dailyVolumeUSD', 'totalLiquidityUSD', '__typename']
     day_data_combined_df = pd.concat([df1, df2], ignore_index=True, axis=0)
     
