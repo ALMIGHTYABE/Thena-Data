@@ -8079,3 +8079,23 @@ pandas.errors.EmptyDataError: No columns to parse from file
 [2023-08-20 04:19:14,648] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
 [2023-08-20 04:19:15,602] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-20 04:19:23,939] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-20 05:04:09,173] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-20 05:06:38,572] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-20 05:06:39,549] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-20 05:06:41,242] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-20 05:06:41,243] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-20 05:06:43,110] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-20 05:06:43,111] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-20 05:06:46,278] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-20 05:06:47,277] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-20 05:07:47,995] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-20 05:07:47,995] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-20 05:08:09,571] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-20 05:08:09,571] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-20 05:08:28,935] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-20 05:08:29,962] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-20 05:13:53,651] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-20 05:13:54,693] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-20 05:16:46,783] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-08-20 05:16:47,539] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-20 05:16:58,384] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
