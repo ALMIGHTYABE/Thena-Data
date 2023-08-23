@@ -9672,3 +9672,23 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-08-23 10:28:02,084] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-08-23 10:28:02,788] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-23 10:28:29,510] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-23 11:03:26,121] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-23 11:06:54,249] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-23 11:06:55,011] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-23 11:06:57,872] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-23 11:06:57,872] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-23 11:07:00,886] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-23 11:07:00,886] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-23 11:07:03,574] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-23 11:07:04,504] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-23 11:08:13,085] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-23 11:08:13,085] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-23 11:08:36,406] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-23 11:08:36,406] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-23 11:08:56,371] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-23 11:08:57,349] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-23 11:17:49,286] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-23 11:17:50,295] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-23 11:26:23,463] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-08-23 11:26:24,133] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-23 11:26:49,187] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
