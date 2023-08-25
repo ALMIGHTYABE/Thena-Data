@@ -10396,3 +10396,23 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-08-24 23:31:25,802] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
 [2023-08-24 23:31:26,776] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-08-24 23:31:47,179] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-08-25 00:28:25,625] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-08-25 00:32:21,484] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-08-25 00:32:22,505] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-08-25 00:32:25,329] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-08-25 00:32:25,330] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-08-25 00:32:27,858] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-08-25 00:32:27,859] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-08-25 00:32:30,863] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-08-25 00:32:32,122] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-08-25 00:33:46,388] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-08-25 00:33:46,388] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-08-25 00:34:13,237] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-08-25 00:34:13,237] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-08-25 00:34:39,182] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-08-25 00:34:40,578] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-08-25 00:44:28,823] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-08-25 00:44:30,333] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-08-25 00:54:00,803] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2023-08-25 00:54:01,773] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-08-25 00:54:08,875] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
