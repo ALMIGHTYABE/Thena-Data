@@ -771,3 +771,23 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-09-02 12:32:59,682] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-09-02 12:33:00,562] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-02 12:33:19,644] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-02 13:04:32,274] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-02 13:06:32,641] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-02 13:06:33,328] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-02 13:06:35,815] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-02 13:06:35,815] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-02 13:06:38,000] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-02 13:06:38,000] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-02 13:06:40,977] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-02 13:06:41,905] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-02 13:07:45,086] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-02 13:07:45,086] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-02 13:08:08,279] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-02 13:08:08,279] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-02 13:08:24,878] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-02 13:08:25,839] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-02 13:13:09,271] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-02 13:13:10,282] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-02 13:15:06,263] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-09-02 13:15:06,941] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-02 13:15:20,115] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
