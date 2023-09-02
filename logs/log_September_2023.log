@@ -538,3 +538,23 @@
 [2023-09-02 02:19:56,791] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
 [2023-09-02 02:19:57,478] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-02 02:20:07,238] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-02 03:06:30,682] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-02 03:10:26,293] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-02 03:10:27,206] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-02 03:10:29,749] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-02 03:10:29,749] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-02 03:10:32,264] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-02 03:10:32,264] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-02 03:10:35,148] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-02 03:10:36,362] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-02 03:11:44,346] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-02 03:11:44,346] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-02 03:12:09,700] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-02 03:12:09,701] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-02 03:12:22,870] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-02 03:12:24,126] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-02 03:22:25,576] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-02 03:22:26,802] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-02 03:32:05,735] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-02 03:32:06,608] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-02 03:32:21,290] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
