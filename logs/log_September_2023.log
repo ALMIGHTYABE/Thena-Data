@@ -2792,3 +2792,26 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-09-06 19:23:43,757] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-09-06 19:23:44,473] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-06 19:23:58,571] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-06 20:06:40,528] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-06 20:09:24,646] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-06 20:09:25,469] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-06 20:09:27,494] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-06 20:09:27,494] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-06 20:09:29,232] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-06 20:09:29,232] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-06 20:09:31,573] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-06 20:09:32,629] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-06 20:10:36,709] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-06 20:10:36,709] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-06 20:11:17,287] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-MATIC, Address: 0x775CAc1c1b47250121291934d15912Efb69213E9, Error: 'data'
+[2023-09-06 20:11:17,443] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aID-WBNB, Address: 0xB66566fD115CAf17633504A5165a319F17D9F096, Error: 'data'
+[2023-09-06 20:12:59,750] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-FLOKI, Address: 0x5135c813d5f9d3624221b3BdBaC805339Fa5a591, Error: 'data'
+[2023-09-06 20:13:38,976] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-06 20:13:38,976] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-06 20:13:52,709] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-06 20:13:53,863] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-06 20:22:49,018] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-06 20:22:50,143] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-06 20:30:36,045] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-06 20:30:36,890] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-06 20:30:44,679] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
