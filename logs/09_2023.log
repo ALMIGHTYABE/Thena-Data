@@ -3698,3 +3698,24 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-09-07 22:18:17,650] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
 [2023-09-07 22:18:18,327] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-07 22:18:28,932] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-07 23:06:23,976] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-07 23:08:50,264] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-07 23:08:51,291] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-07 23:08:53,444] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-07 23:08:53,444] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-07 23:08:56,257] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-07 23:08:56,257] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-07 23:08:59,685] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-07 23:09:00,843] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-07 23:09:54,369] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-CSIX/USDT, Address: 0xCE7C38ECe02b55070208b2e070585eA5321748e1, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Max retries exceeded with url: /subgraphs/name/thenaursa/thena-v1 (Caused by SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1131)')))
+[2023-09-07 23:10:09,303] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-07 23:10:09,303] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-07 23:10:32,126] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-07 23:10:32,126] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-07 23:10:47,610] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-07 23:10:48,810] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-07 23:16:36,608] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-07 23:16:37,842] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-07 23:18:44,812] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-09-07 23:18:45,680] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-07 23:19:02,745] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
