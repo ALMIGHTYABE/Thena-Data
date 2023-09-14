@@ -6907,3 +6907,24 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-09-14 13:36:50,803] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
 [2023-09-14 13:36:51,521] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-14 13:37:10,924] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-14 14:05:17,017] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-14 14:08:05,426] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-14 14:08:06,349] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-14 14:08:08,540] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-14 14:08:08,540] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-14 14:08:10,979] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-14 14:08:10,979] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-14 14:08:15,490] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-14 14:08:16,500] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-14 14:09:32,859] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-14 14:09:32,859] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-14 14:09:41,662] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-USDC, Address: 0x1b9a1120a17617D8eC4dC80B921A9A1C50Caef7d, Error: 'data'
+[2023-09-14 14:10:28,574] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-14 14:10:28,574] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-14 14:10:56,750] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-14 14:10:57,807] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-14 14:17:49,612] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-14 14:17:50,721] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-14 14:21:36,401] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-09-14 14:21:37,152] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-14 14:21:44,643] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
