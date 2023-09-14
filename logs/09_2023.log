@@ -6645,3 +6645,5 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-09-13 23:17:58,453] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
 [2023-09-13 23:17:59,197] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-13 23:18:07,733] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-14 00:37:39,872] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-09-14 00:38:45,145] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
