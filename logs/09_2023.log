@@ -9417,3 +9417,26 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2023-09-19 16:27:05,958] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-09-19 16:27:06,853] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-19 16:27:26,426] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-19 17:04:16,363] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-19 17:07:12,112] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-19 17:07:12,857] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-19 17:07:14,367] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-19 17:07:14,367] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-19 17:07:16,234] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-19 17:07:16,235] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-19 17:07:19,081] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-19 17:07:20,068] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-19 17:08:48,695] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-19 17:08:48,695] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-19 17:08:50,477] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFTM-WBNB, Address: 0xf6814792050cCD1c603d8a95468d6D9587eCBDAF, Error: 'data'
+[2023-09-19 17:08:50,650] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-THE, Address: 0x51Bd5e6d3da9064D59BcaA5A76776560aB42cEb8, Error: 'data'
+[2023-09-19 17:09:05,112] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-WBNB, Address: 0xf2A4e4261FCDfBB891BCF703640Fbe713c6cD0fE, Error: 'data'
+[2023-09-19 17:11:13,925] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-19 17:11:13,925] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-19 17:11:37,412] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-19 17:11:38,433] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-19 17:18:36,531] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-19 17:18:37,564] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-19 17:25:21,069] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-19 17:25:21,835] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-19 17:25:44,463] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
