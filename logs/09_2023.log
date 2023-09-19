@@ -9288,3 +9288,72 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-09-19 12:27:49,840] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
 [2023-09-19 12:27:50,603] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-19 12:28:06,967] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-19 13:09:29,717] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-19 13:11:52,058] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-19 13:11:53,019] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-19 13:11:55,203] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-19 13:11:55,203] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-19 13:11:59,789] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-19 13:11:59,789] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-19 13:12:02,694] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-19 13:12:03,954] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-19 13:13:39,315] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-19 13:13:39,316] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-19 13:14:24,490] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFTM-WBNB, Address: 0xf6814792050cCD1c603d8a95468d6D9587eCBDAF, Error: 'data'
+[2023-09-19 13:14:24,760] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-THE, Address: 0x51Bd5e6d3da9064D59BcaA5A76776560aB42cEb8, Error: 'data'
+[2023-09-19 13:14:25,262] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-RDNT, Address: 0x0f28AE1Eea69ddA12Bc89419f7E8552dD191c98e, Error: 'data'
+[2023-09-19 13:14:25,744] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-STKBNB, Address: 0x84b78452A97C5afDa1400943333F691448069A29, Error: 'data'
+[2023-09-19 13:14:25,961] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-WBNB, Address: 0xf2A4e4261FCDfBB891BCF703640Fbe713c6cD0fE, Error: 'data'
+[2023-09-19 13:23:32,910] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-19 13:23:32,910] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-19 13:23:33,984] 	ERROR 	233 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: HTTP Error 502: Bad Gateway
+Traceback (most recent call last):
+  File "pair_data.py", line 204, in <module>
+    df1 = pd.read_csv(pair_data_csv)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 563, in error
+    result = self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 755, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 502: Bad Gateway
+[2023-09-19 13:23:35,353] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-19 13:29:27,162] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-19 13:29:28,516] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-19 13:35:15,129] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-09-19 13:35:16,089] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-19 13:35:28,472] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
