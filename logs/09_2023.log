@@ -10000,3 +10000,23 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2023-09-20 22:34:29,651] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
 [2023-09-20 22:34:30,313] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-20 22:34:45,895] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-20 23:05:47,947] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-20 23:10:07,787] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-20 23:10:08,773] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-20 23:10:14,820] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-20 23:10:14,820] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-20 23:10:17,599] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-20 23:10:17,599] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-20 23:10:21,189] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-20 23:10:22,523] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-20 23:11:41,505] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-20 23:11:41,505] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-20 23:12:09,188] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-20 23:12:09,188] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-20 23:12:29,392] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-20 23:12:30,740] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-20 23:24:00,659] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-20 23:24:01,985] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-20 23:34:37,594] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-09-20 23:34:38,576] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-20 23:34:48,801] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
