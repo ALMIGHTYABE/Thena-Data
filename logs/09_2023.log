@@ -9560,3 +9560,23 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2023-09-19 23:18:15,728] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
 [2023-09-19 23:18:16,594] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2023-09-19 23:18:30,883] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-20 01:40:39,330] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-20 01:43:11,749] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-20 01:43:12,681] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-20 01:43:15,237] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-20 01:43:15,237] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-20 01:43:17,179] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-20 01:43:17,179] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-20 01:43:21,244] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-20 01:43:22,397] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-20 01:44:30,252] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-20 01:44:30,252] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-20 01:44:54,639] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-20 01:44:54,639] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-20 01:45:19,208] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-20 01:45:20,416] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-20 01:51:16,105] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-20 01:51:17,385] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-20 01:54:09,666] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-09-20 01:54:10,623] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-20 01:54:33,457] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
