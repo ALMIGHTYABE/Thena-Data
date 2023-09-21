@@ -31,7 +31,7 @@ try:
     # Read Data
     pair_df = pd.read_csv(pair_data)
     bribe_df = pd.read_csv(bribe_data)
-    emissions_df = pd.read_csv(emissions_data)
+    emissions_df = pd.read_csv(emissions_data, thousands=r',')
     
     # Merge strats
     def modify_value(value):
@@ -43,6 +43,9 @@ try:
     bribe_df['name'] = bribe_df['name'].apply(modify_value)
     bribe_df =  bribe_df.groupby(["name", "epoch"])['bribe_amount'].sum().reset_index()
     bribe_df = bribe_df[["name", "bribe_amount", "epoch"]]
+
+    emissions_df['name'] = emissions_df['name'].apply(modify_value)
+    emissions_df =  emissions_df.groupby(["name", "epoch"])[['voteweight', 'emissions', 'value']].sum().reset_index()
 
     # Data Wrangling
     epoch_wise_fees = pair_df.groupby(["epoch", "name"], as_index=False)["fee"].sum()
