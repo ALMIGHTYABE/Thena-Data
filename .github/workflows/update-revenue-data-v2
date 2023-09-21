@@ -1,10 +1,10 @@
-name: Update Revenue Data
+name: Update Revenue Data V2
 on:
   workflow_dispatch:
 
 jobs:
   update_symbol_list:
-    name: Update Revenue Data
+    name: Update Revenue Data V2
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,5 +29,5 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add logs
-          git commit -m "Updated Revenue Data on `date` with GitHub Actions" || echo "No Changes to Commit"
+          git commit -m "Updated Revenue Data V2 on `date` with GitHub Actions" || echo "No Changes to Commit"
           git push origin main || echo "No Changes to Commit"
