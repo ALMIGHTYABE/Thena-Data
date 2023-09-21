@@ -10420,3 +10420,28 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2023-09-21 20:24:22,590] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-09-21 20:24:23,231] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-09-21 20:24:30,936] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-09-21 21:04:14,002] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-21 21:09:32,610] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-21 21:09:33,538] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-21 21:09:36,221] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-21 21:09:36,221] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-21 21:09:39,111] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-21 21:09:39,111] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-21 21:09:42,837] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-21 21:09:43,808] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-21 21:10:24,191] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-XCAD/dXCAD OLD, Address: 0x6c03177eb78EbDe271B24FD6E446b301db1AEdb1, Error: Expecting value: line 1 column 1 (char 0)
+[2023-09-21 21:10:24,319] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BNBx/WBNB, Address: 0x6c83E45fE3Be4A9c12BB28cB5BA4cD210455fb55, Error: Expecting value: line 1 column 1 (char 0)
+[2023-09-21 21:10:30,395] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-AVAX/CHAM, Address: 0x6dc3C6efDeaF592C2d82Add41d7D42e00097Cf4f, Error: Expecting value: line 1 column 1 (char 0)
+[2023-09-21 21:12:01,978] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-21 21:12:01,978] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-21 21:12:32,225] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-21 21:12:32,225] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-21 21:12:57,591] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-21 21:12:58,597] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-21 21:24:31,301] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-21 21:24:32,303] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-21 21:36:50,005] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2023-09-21 21:36:50,758] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-21 21:37:10,844] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-21 21:37:11,503] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-09-21 21:37:20,930] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
