@@ -14143,3 +14143,25 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2023-09-28 22:18:36,751] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-09-28 22:18:37,624] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-09-28 22:18:45,603] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-09-28 23:06:29,559] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-09-28 23:09:27,005] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-09-28 23:09:27,763] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-09-28 23:09:30,157] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-09-28 23:09:30,157] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-09-28 23:09:33,657] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-09-28 23:09:33,657] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-09-28 23:09:37,473] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-09-28 23:09:38,471] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-09-28 23:10:45,883] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-09-28 23:10:45,883] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-09-28 23:11:08,204] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-09-28 23:11:08,204] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-09-28 23:11:26,671] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-09-28 23:11:27,719] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-09-28 23:18:36,045] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-09-28 23:18:37,163] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-09-28 23:25:32,719] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2023-09-28 23:25:33,474] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-09-28 23:25:50,055] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-09-28 23:25:50,761] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-09-28 23:25:57,501] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
