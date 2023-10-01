@@ -1,0 +1,22 @@
+[2023-10-01 00:34:18,585] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-10-01 00:36:48,556] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-10-01 00:36:49,402] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-10-01 00:36:52,089] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-10-01 00:36:52,089] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-01 00:36:53,843] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-01 00:36:53,843] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-10-01 00:36:57,727] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-10-01 00:36:58,934] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-10-01 00:38:06,127] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-10-01 00:38:06,127] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-01 00:38:29,949] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-01 00:38:29,949] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-10-01 00:38:50,542] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-10-01 00:38:51,819] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-01 00:39:38,843] 	ERROR 	148 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-10-01 00:39:40,026] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-01 00:39:40,338] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-10-01 00:39:41,182] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-01 00:39:58,177] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-01 00:39:58,967] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-10-01 00:40:10,762] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
