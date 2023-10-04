@@ -1835,3 +1835,26 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-10-04 09:32:30,729] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-04 09:32:31,362] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-10-04 09:32:37,593] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-10-04 10:07:00,226] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-10-04 10:09:50,974] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-10-04 10:09:51,667] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-10-04 10:09:53,465] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-10-04 10:09:53,465] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-04 10:09:55,672] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-04 10:09:55,672] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-10-04 10:09:59,471] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-10-04 10:10:00,369] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-10-04 10:11:11,717] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-10-04 10:11:11,717] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-04 10:11:21,870] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-ANKRETH, Address: 0xC9dF4aE113fA7CB67CE1779cB1560D1f43c2D373, Error: Expecting value: line 1 column 1 (char 0)
+[2023-10-04 10:11:39,452] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-04 10:11:39,452] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-10-04 10:11:52,697] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-10-04 10:11:53,638] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-04 10:18:36,058] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-04 10:18:37,012] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-04 10:25:15,921] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-10-04 10:25:16,576] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-04 10:25:31,181] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-04 10:25:31,802] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-10-04 10:25:46,241] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
