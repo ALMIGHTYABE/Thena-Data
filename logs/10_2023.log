@@ -11568,3 +11568,25 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2023-10-22 21:26:00,286] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-10-22 21:26:00,993] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-10-22 21:26:13,720] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-10-22 22:04:10,542] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-10-22 22:07:26,012] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-10-22 22:07:26,779] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-10-22 22:07:28,282] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-10-22 22:07:28,282] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-10-22 22:07:30,143] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-10-22 22:07:30,143] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-10-22 22:07:32,612] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-10-22 22:07:33,562] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-10-22 22:08:40,708] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-10-22 22:08:40,708] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-10-22 22:09:05,712] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-10-22 22:09:05,712] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-10-22 22:09:28,570] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-10-22 22:09:29,627] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-10-22 22:16:39,064] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-10-22 22:16:40,148] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-10-22 22:24:45,249] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-10-22 22:24:45,988] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-10-22 22:25:06,471] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-10-22 22:25:07,128] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-10-22 22:25:19,156] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
