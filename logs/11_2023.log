@@ -4213,3 +4213,25 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-11-08 19:25:22,866] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
 [2023-11-08 19:25:23,616] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-11-08 19:25:24,099] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2023-11-08 20:06:43,945] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-11-08 20:10:02,545] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-11-08 20:10:03,118] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-11-08 20:10:05,903] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-11-08 20:10:05,903] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-08 20:10:08,199] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-08 20:10:08,199] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-11-08 20:10:12,011] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-11-08 20:10:12,763] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-11-08 20:11:36,721] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-11-08 20:11:36,722] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-08 20:11:58,876] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-08 20:11:58,876] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-11-08 20:12:18,644] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-11-08 20:12:19,456] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-08 20:20:37,852] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-08 20:20:38,668] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-08 20:28:58,953] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-11-08 20:28:59,523] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-08 20:29:14,948] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-08 20:29:15,481] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-11-08 20:29:26,643] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
