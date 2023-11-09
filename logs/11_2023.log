@@ -4611,3 +4611,37 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-11-09 14:16:41,573] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-09 14:16:42,090] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-11-09 14:16:50,241] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-11-09 15:06:26,430] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-11-09 15:10:53,503] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-11-09 15:10:54,180] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-11-09 15:10:58,495] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-11-09 15:10:58,495] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-09 15:10:59,948] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-09 15:10:59,948] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-11-09 15:11:03,020] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-11-09 15:11:03,812] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-11-09 15:13:40,313] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-11-09 15:13:40,313] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-09 15:14:00,453] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-09 15:14:00,453] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-11-09 15:14:19,882] 	ERROR 	233 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "pair_data.py", line 223, in <module>
+    set_with_dataframe(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread_dataframe.py", line 371, in set_with_dataframe
+    resp = worksheet.update_cells(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 723, in update_cells
+    data = self.spreadsheet.values_update(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 226, in values_update
+    r = self.client.request("put", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2023-11-09 15:14:20,785] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-09 15:24:11,015] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-09 15:24:11,855] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-09 15:33:51,767] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2023-11-09 15:33:52,352] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-09 15:33:54,052] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2023-11-09 15:33:54,590] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-11-09 15:33:55,085] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
