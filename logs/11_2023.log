@@ -5855,3 +5855,25 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2023-11-11 22:33:09,342] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-11-11 22:33:10,094] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-11-11 22:33:23,248] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-11-11 23:05:09,089] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-11-11 23:10:17,853] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-11-11 23:10:18,605] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-11-11 23:10:24,209] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-11-11 23:10:24,209] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-11-11 23:10:26,051] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-11-11 23:10:26,051] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-11-11 23:10:29,061] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-11-11 23:10:30,018] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-11-11 23:13:43,488] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-11-11 23:13:43,488] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-11-11 23:14:10,773] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-11-11 23:14:10,773] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-11-11 23:14:28,757] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-11-11 23:14:29,758] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-11-11 23:25:53,623] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-11-11 23:25:54,621] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-11-11 23:37:08,528] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-11-11 23:37:09,234] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-11-11 23:37:29,438] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-11-11 23:37:30,091] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-11-11 23:37:46,574] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
