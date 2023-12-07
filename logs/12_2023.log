@@ -3322,3 +3322,25 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-12-07 04:11:35,926] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-07 04:11:36,440] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-12-07 04:11:46,488] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-12-07 05:06:58,875] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-12-07 05:07:22,603] 	ERROR 	122 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+[2023-12-07 05:07:23,328] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-12-07 05:07:25,312] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-12-07 05:07:25,312] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-07 05:07:27,212] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-07 05:07:27,212] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-12-07 05:07:30,917] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-12-07 05:07:31,675] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-12-07 05:08:26,100] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-12-07 05:08:26,100] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-07 05:08:51,865] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-07 05:08:51,865] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-12-07 05:09:20,846] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-12-07 05:09:21,646] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-07 05:13:08,931] 	ERROR 	148 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+[2023-12-07 05:13:09,740] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-07 05:13:22,377] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: {'code': 0, 'message': "we can't execute this request"}
+[2023-12-07 05:13:22,950] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-07 05:13:35,734] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-07 05:13:36,260] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-12-07 05:13:49,186] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
