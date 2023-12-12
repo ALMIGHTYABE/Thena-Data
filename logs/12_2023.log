@@ -6348,3 +6348,33 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2023-12-12 21:26:56,357] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-12 21:26:56,876] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-12-12 21:27:02,888] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-12-12 22:06:28,606] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-12-12 22:09:36,753] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-12-12 22:09:37,340] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-12-12 22:09:40,638] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-12-12 22:09:40,638] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-12 22:09:42,384] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-12 22:09:42,384] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-12-12 22:09:45,297] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-12-12 22:09:46,062] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-12-12 22:13:45,011] 	ERROR 	113 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "pair_data.py", line 109, in <module>
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 150, in values_append
+    r = self.client.request("post", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2023-12-12 22:13:45,011] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-12 22:14:08,554] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-12 22:14:08,554] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-12-12 22:14:36,168] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-12-12 22:14:36,968] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-12 22:22:10,092] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-12 22:22:10,898] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-12 22:29:49,822] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2023-12-12 22:29:50,380] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-12 22:30:04,047] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-12 22:30:04,571] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-12-12 22:30:12,341] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
