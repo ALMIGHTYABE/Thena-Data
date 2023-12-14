@@ -6928,3 +6928,5 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2023-12-13 23:28:25,907] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-13 23:28:26,457] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-12-13 23:28:40,663] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-12-14 00:40:11,237] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2023-12-14 00:41:30,308] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
