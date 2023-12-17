@@ -8811,3 +8811,25 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2023-12-17 12:25:11,943] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2023-12-17 12:25:12,460] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2023-12-17 12:25:30,414] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2023-12-17 13:06:45,168] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2023-12-17 13:09:29,698] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2023-12-17 13:09:30,436] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2023-12-17 13:09:32,208] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2023-12-17 13:09:32,208] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2023-12-17 13:09:33,995] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2023-12-17 13:09:33,995] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2023-12-17 13:09:36,434] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2023-12-17 13:09:37,183] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2023-12-17 13:10:29,590] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2023-12-17 13:10:29,590] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2023-12-17 13:10:50,152] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2023-12-17 13:10:50,152] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2023-12-17 13:11:08,094] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2023-12-17 13:11:08,894] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2023-12-17 13:17:48,107] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2023-12-17 13:17:48,888] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2023-12-17 13:19:33,450] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2023-12-17 13:19:34,005] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2023-12-17 13:19:49,319] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2023-12-17 13:19:49,838] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2023-12-17 13:20:00,702] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
