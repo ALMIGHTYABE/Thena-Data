@@ -394,3 +394,25 @@
 [2024-01-01 17:27:31,653] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-01 17:27:32,187] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-01 17:27:45,253] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-01 18:08:43,711] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-01 18:11:39,686] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-01 18:11:40,418] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-01 18:11:42,609] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-01 18:11:42,609] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-01 18:11:44,775] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-01 18:11:44,775] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-01 18:11:48,181] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-01 18:11:48,970] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-01 18:12:44,421] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-01 18:12:44,421] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-01 18:13:08,013] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-01 18:13:08,014] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-01 18:13:27,851] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-01 18:13:28,699] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-01 18:20:37,877] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-01 18:20:38,698] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-01 18:24:23,843] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-01 18:24:24,394] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-01 18:24:33,250] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-01 18:24:33,769] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-01 18:24:45,464] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
