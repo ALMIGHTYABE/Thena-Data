@@ -823,3 +823,38 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-02 11:17:52,255] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-02 11:17:52,787] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-02 11:18:01,200] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-02 12:11:28,720] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-02 12:14:48,328] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-02 12:14:48,882] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-02 12:14:51,340] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-02 12:14:51,340] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-02 12:14:53,813] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-02 12:14:53,813] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-02 12:14:56,807] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-02 12:14:57,557] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-02 12:15:57,989] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-02 12:15:57,989] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-02 12:19:33,599] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aXCAD-WBNB, Address: 0xe2624920C88b470B78EFAdfdE51Dd0E2C841934B, Error: 'data'
+[2024-01-02 12:20:33,720] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aGRAIN-WBNB, Address: 0x1f060bE9D1D3Bd3ACC5392aC066C6B437780ABe0, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:20:33,863] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-FLOKI, Address: 0x5135c813d5f9d3624221b3BdBaC805339Fa5a591, Error: 'data'
+[2024-01-02 12:21:33,984] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-USDC, Address: 0x3f8062cf591a918Bc3B183fa241ec49efBd30e2b, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:22:34,100] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-THE, Address: 0x98A0004b8E9fE161369528A2e07De56c15A27D76, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:23:34,225] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aHAY-USDT, Address: 0x5B0BAf66718caaBDa49A4Af32eB455c3b99B5821, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:24:34,347] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-USDT, Address: 0xa60a504d92a1C95bda729C3F745B361cA822d6dd, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:25:34,469] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-EDU, Address: 0x4bD39cfb05545c4238316dA69eCadA1b4CaABC05, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:26:34,591] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-FRAX, Address: 0x8aB8FD902039A48e51735452b1f97c93cB034E80, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:27:34,695] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aOKSE-WBNB, Address: 0x088c568dc3123FC40dd153918125ee27027Dd6E7, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:28:35,178] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aDAO-BUSD, Address: 0x604a99F4c5e46aDD74dBA10C21B5e26374A1162F, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:29:35,300] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aMULTI-WBNB, Address: 0x972E8BE53425DbcaF3446c7aC130ADB48ba3E125, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:30:35,422] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-ANKR, Address: 0x90D43f6e920Ab9500AE0473d6f67A95126ca4091, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-02 12:31:01,609] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-02 12:31:01,609] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-02 12:32:07,150] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-02 12:32:07,948] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-02 12:40:55,697] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-02 12:40:56,513] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-02 12:48:24,469] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-01-02 12:48:25,085] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-02 12:49:03,398] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-02 12:49:03,970] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-02 12:49:13,745] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
