@@ -1562,3 +1562,25 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-03 20:29:00,942] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-03 20:29:01,566] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-03 20:29:24,184] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-03 21:05:15,234] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-03 21:07:46,639] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-03 21:07:47,210] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-03 21:07:50,136] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-03 21:07:50,136] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-03 21:07:52,490] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-03 21:07:52,490] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-03 21:07:54,658] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-03 21:07:55,423] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-03 21:08:49,815] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-03 21:08:49,815] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-03 21:09:13,878] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-03 21:09:13,879] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-03 21:09:31,813] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-03 21:09:32,612] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-03 21:15:36,425] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-03 21:15:37,262] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-03 21:16:36,254] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-03 21:16:36,840] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-03 21:18:22,126] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: HTTP Error 400: Bad Request
+[2024-01-03 21:18:22,665] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-03 21:20:22,540] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: HTTP Error 500: Internal Server Error
