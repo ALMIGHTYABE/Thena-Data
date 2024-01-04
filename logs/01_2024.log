@@ -1628,3 +1628,5 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-03 23:19:04,041] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-03 23:19:04,608] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-03 23:19:29,911] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-04 00:40:52,606] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-01-04 00:42:09,659] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
