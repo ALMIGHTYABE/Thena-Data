@@ -1890,3 +1890,26 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-04 11:18:25,402] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-04 11:18:25,919] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-04 11:18:38,738] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-04 12:11:28,051] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-04 12:14:15,960] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-04 12:14:16,773] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-04 12:14:19,325] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-04 12:14:19,325] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-04 12:16:36,344] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-04 12:16:36,344] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-04 12:16:39,922] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-04 12:16:40,676] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-04 12:17:32,861] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-04 12:17:32,862] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-04 12:18:32,989] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-USDC, Address: 0x1b9a1120a17617D8eC4dC80B921A9A1C50Caef7d, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-04 12:19:10,168] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-04 12:19:10,168] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-04 12:19:41,107] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-04 12:19:41,895] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-04 12:26:45,187] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-04 12:26:45,977] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-04 12:28:04,297] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-04 12:28:04,843] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-04 12:28:25,847] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-04 12:28:26,384] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-04 12:28:37,574] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
