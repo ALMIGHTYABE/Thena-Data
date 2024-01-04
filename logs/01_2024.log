@@ -1822,3 +1822,27 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-04 08:46:30,372] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-04 08:46:30,921] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-04 08:46:41,042] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-04 09:06:54,402] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-04 09:09:30,955] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-04 09:09:31,691] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-04 09:09:33,841] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-04 09:09:33,841] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-04 09:10:35,999] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-04 09:10:35,999] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-04 09:10:38,363] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-04 09:10:39,119] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-04 09:11:33,391] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-04 09:11:33,391] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-04 09:11:33,529] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-USDC, Address: 0x1b9a1120a17617D8eC4dC80B921A9A1C50Caef7d, Error: 'data'
+[2024-01-04 09:12:33,638] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-WBNB, Address: 0xD405b976Ac01023c9064024880999fC450A8668b, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-04 09:13:54,259] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-04 09:13:54,259] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-04 09:14:15,605] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-04 09:14:16,393] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-04 09:20:50,025] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-04 09:20:50,873] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-04 09:25:34,748] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-04 09:25:35,320] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-04 09:25:48,938] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-04 09:25:49,478] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-04 09:26:00,174] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
