@@ -2166,3 +2166,25 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-04 23:19:26,886] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-04 23:19:27,406] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-04 23:19:38,566] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-05 00:32:02,681] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-05 00:35:21,902] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-05 00:35:22,605] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-05 00:35:24,065] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-05 00:35:24,065] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-05 00:35:25,680] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-05 00:35:25,680] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-05 00:35:29,051] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-05 00:35:29,834] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-05 00:36:30,029] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-05 00:36:30,029] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-05 00:36:54,798] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-05 00:36:54,798] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-05 00:37:18,075] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-05 00:37:18,885] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-05 00:45:16,152] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-05 00:45:16,968] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-05 00:49:23,081] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-05 00:49:23,644] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-05 00:50:24,514] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-01-05 00:50:25,042] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-05 00:50:43,884] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
