@@ -7269,3 +7269,37 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-14 06:21:19,799] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-14 06:21:20,309] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-14 06:21:28,986] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-14 07:05:20,782] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-14 07:07:58,391] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-14 07:07:59,031] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-14 07:08:00,389] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-14 07:08:00,389] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-14 07:08:02,137] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-14 07:08:02,137] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-14 07:08:05,712] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-14 07:08:06,464] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-14 07:08:59,913] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-14 07:08:59,913] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-14 07:09:21,358] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-14 07:09:21,358] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-14 07:12:35,638] 	ERROR 	233 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "pair_data.py", line 223, in <module>
+    set_with_dataframe(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread_dataframe.py", line 277, in set_with_dataframe
+    worksheet.resize(y, x)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 1316, in resize
+    return self.spreadsheet.batch_update(body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 131, in batch_update
+    r = self.client.request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-01-14 07:12:36,431] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-14 07:19:35,891] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-14 07:19:36,690] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-14 07:23:29,470] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-14 07:23:30,015] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-14 07:23:35,044] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-01-14 07:23:35,550] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-14 07:23:36,166] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
