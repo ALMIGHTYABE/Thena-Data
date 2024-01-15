@@ -7941,3 +7941,25 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-01-15 13:19:47,225] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-15 13:19:47,746] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-15 13:20:14,852] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-15 14:06:33,896] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-15 14:06:42,985] 	ERROR 	122 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-15 14:06:43,618] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-15 14:06:45,751] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-15 14:06:45,751] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-15 14:06:47,275] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-15 14:06:47,275] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-15 14:06:49,822] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-15 14:06:50,599] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-15 14:08:09,612] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-15 14:08:09,612] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-15 14:08:39,436] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-15 14:08:39,436] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-15 14:09:02,852] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-15 14:09:03,663] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-15 14:09:04,094] 	ERROR 	148 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-15 14:09:04,895] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-15 14:09:05,038] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-15 14:09:05,607] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-15 14:09:21,312] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-15 14:09:21,856] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-15 14:09:44,578] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
