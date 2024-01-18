@@ -9505,3 +9505,25 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2024-01-18 11:16:09,204] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-18 11:16:09,746] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-18 11:16:31,629] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-18 12:12:30,477] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-18 12:15:31,923] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-18 12:15:32,643] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-18 12:15:33,991] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-18 12:15:33,991] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-18 12:15:35,735] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-18 12:15:35,735] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-18 12:20:22,762] 	ERROR 	163 	day_data.py 	<module>() 	Error occurred during Day Data Combined process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-01-18 12:20:23,523] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-18 12:21:15,713] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-18 12:21:15,713] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-18 12:21:38,562] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-18 12:21:38,562] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-18 12:22:10,674] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-18 12:22:11,462] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-18 12:29:33,184] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-18 12:29:33,972] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-18 12:36:13,633] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-18 12:36:14,178] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-18 12:36:33,182] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-18 12:36:33,701] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-18 12:36:51,777] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
