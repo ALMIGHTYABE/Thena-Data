@@ -10584,3 +10584,25 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2024-01-20 12:20:49,213] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-20 12:20:49,764] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-20 12:20:57,431] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-20 13:06:56,139] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-20 13:09:33,665] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-20 13:09:34,309] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-20 13:09:37,189] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-20 13:09:37,189] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-20 13:09:40,206] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-20 13:09:40,206] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-20 13:09:43,260] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-20 13:09:44,034] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-20 13:10:38,894] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-20 13:10:38,894] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-20 13:11:00,089] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-20 13:11:00,089] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-20 13:11:26,307] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-20 13:11:27,139] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-20 13:17:15,920] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-20 13:17:16,729] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-20 13:18:15,307] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-20 13:18:15,877] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-20 13:18:24,026] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-20 13:18:24,553] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-20 13:18:32,747] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
