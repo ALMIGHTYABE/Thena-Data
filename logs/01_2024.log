@@ -11046,3 +11046,26 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2024-01-21 09:29:04,820] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-21 09:29:05,338] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-21 09:29:24,107] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-21 10:07:02,889] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-21 10:10:03,758] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-21 10:10:04,481] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-21 10:10:07,796] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-21 10:10:07,796] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-21 10:10:10,794] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-21 10:10:10,794] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-21 10:10:13,656] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-21 10:10:14,444] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-21 10:11:39,483] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BNBx/BTCB, Address: 0x64bb2C54dCe689078478c6D40DC2A22d3AC25BcC, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-01-21 10:12:16,108] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-21 10:12:16,108] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-21 10:12:42,119] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-21 10:12:42,119] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-21 10:13:11,585] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-21 10:13:12,407] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-21 10:20:28,344] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-21 10:20:29,201] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-21 10:26:48,859] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-21 10:26:49,425] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-21 10:27:12,038] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-21 10:27:12,580] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-21 10:27:28,452] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
