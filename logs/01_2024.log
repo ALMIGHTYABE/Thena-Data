@@ -12939,3 +12939,5 @@ urllib.error.HTTPError: HTTP Error 502: Bad Gateway
 [2024-01-24 23:29:00,717] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-24 23:29:01,243] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-24 23:29:20,833] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-25 00:42:13,881] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-01-25 00:43:59,089] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
