@@ -14950,3 +14950,44 @@ KeyError: 'date'
 [2024-01-27 22:29:15,167] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-27 22:29:15,679] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-27 22:29:31,023] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-27 23:06:39,664] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-27 23:09:54,963] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-27 23:09:55,669] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-27 23:09:56,770] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-27 23:09:56,770] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-27 23:09:56,910] 	ERROR 	126 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'date'
+[2024-01-27 23:09:56,911] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-27 23:10:00,119] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-27 23:10:00,886] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-27 23:10:52,498] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-27 23:10:52,498] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-27 23:11:09,761] 	ERROR 	196 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: 'date'
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "pair_data.py", line 164, in <module>
+    pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'date'
+[2024-01-27 23:11:09,763] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-27 23:11:33,616] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-27 23:11:34,423] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-27 23:19:32,738] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-27 23:19:33,565] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-27 23:27:16,016] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-01-27 23:27:16,578] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-27 23:27:42,773] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-27 23:27:43,297] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-27 23:27:59,559] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
