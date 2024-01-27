@@ -14418,3 +14418,44 @@ KeyError: 'date'
 [2024-01-27 09:27:30,095] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-27 09:27:30,633] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-27 09:27:42,023] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-27 10:04:09,979] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-27 10:07:04,004] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-27 10:07:04,659] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-27 10:07:04,821] 	ERROR 	74 	day_data.py 	<module>() 	Error occurred during Day Data process. Error: 'date'
+[2024-01-27 10:07:04,821] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-27 10:07:06,596] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-27 10:07:06,596] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-27 10:07:08,829] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-27 10:07:09,586] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-27 10:07:59,126] 	ERROR 	113 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: 'date'
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3802, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'date'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "pair_data.py", line 71, in <module>
+    pairdata_df["date"] = pairdata_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3807, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3804, in get_loc
+    raise KeyError(key) from err
+KeyError: 'date'
+[2024-01-27 10:07:59,128] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-27 10:08:22,184] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-27 10:08:22,184] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-27 10:08:44,524] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-27 10:08:45,318] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-27 10:15:44,964] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-27 10:15:45,767] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-27 10:17:41,621] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-27 10:17:42,177] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-27 10:17:57,910] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-27 10:17:58,433] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-27 10:18:09,844] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
