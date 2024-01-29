@@ -15552,3 +15552,25 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-28 23:20:49,883] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-28 23:20:50,420] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-28 23:20:58,059] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-29 00:30:22,359] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-29 00:34:17,624] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-29 00:34:18,250] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-29 00:34:20,529] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-29 00:34:20,530] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-29 00:34:22,449] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-29 00:34:22,449] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-29 00:34:25,692] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-29 00:34:26,469] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-29 00:35:26,433] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-29 00:35:26,434] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-29 00:35:49,380] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-29 00:35:49,380] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-29 00:36:15,608] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-29 00:36:16,420] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-29 00:45:01,257] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-29 00:45:02,059] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-29 00:53:39,756] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-01-29 00:53:40,319] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-29 00:54:19,997] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-29 00:54:20,521] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-29 00:57:29,617] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
