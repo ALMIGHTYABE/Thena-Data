@@ -15684,3 +15684,25 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-29 05:27:58,314] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-29 05:27:58,874] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-29 05:28:06,783] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-29 06:08:54,052] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-29 06:12:04,462] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-29 06:12:05,117] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-29 06:12:08,003] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-29 06:12:08,003] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-29 06:12:09,730] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-29 06:12:09,730] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-29 06:12:13,195] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-29 06:12:13,961] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-29 06:13:07,873] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-29 06:13:07,873] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-29 06:13:31,392] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-29 06:13:31,392] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-29 06:14:03,590] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-29 06:14:04,435] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-29 06:21:05,554] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-29 06:21:06,347] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-29 06:25:47,648] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-29 06:25:48,203] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-29 06:29:10,259] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-01-29 06:29:10,780] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-29 06:29:21,066] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
