@@ -16080,3 +16080,37 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-01-29 23:28:30,220] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-29 23:28:30,748] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-29 23:28:48,709] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-30 00:30:16,184] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-30 00:34:49,597] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-30 00:34:50,195] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-30 00:34:52,228] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-30 00:34:52,228] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-30 00:34:53,578] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-30 00:34:53,578] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-30 00:34:56,637] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-01-30 00:34:57,431] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-30 00:35:44,777] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-30 00:35:44,778] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-30 00:36:05,229] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-30 00:36:05,229] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-30 00:37:44,281] 	ERROR 	233 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: {'code': 409, 'message': 'The operation was aborted.', 'status': 'ABORTED'}
+Traceback (most recent call last):
+  File "pair_data.py", line 223, in <module>
+    set_with_dataframe(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread_dataframe.py", line 371, in set_with_dataframe
+    resp = worksheet.update_cells(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 723, in update_cells
+    data = self.spreadsheet.values_update(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 226, in values_update
+    r = self.client.request("put", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted.', 'status': 'ABORTED'}
+[2024-01-30 00:37:45,202] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-30 00:48:06,769] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-30 00:48:07,652] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-30 00:58:43,103] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-01-30 00:58:43,701] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-30 00:58:47,062] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-01-30 00:58:47,611] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-30 00:58:48,182] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
