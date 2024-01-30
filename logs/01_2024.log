@@ -16158,3 +16158,25 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-01-30 02:30:06,883] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-01-30 02:30:07,394] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-01-30 02:30:21,033] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-01-30 03:07:00,767] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-01-30 03:10:19,339] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-01-30 03:10:19,983] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-01-30 03:10:22,483] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-01-30 03:10:22,483] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-01-30 03:10:24,743] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-01-30 03:10:24,743] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-01-30 03:13:30,565] 	ERROR 	163 	day_data.py 	<module>() 	Error occurred during Day Data Combined process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-01-30 03:13:31,340] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-01-30 03:14:29,288] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-01-30 03:14:29,288] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-01-30 03:14:51,799] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-01-30 03:14:51,799] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-01-30 03:15:23,011] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-01-30 03:15:23,820] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-01-30 03:23:06,300] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-01-30 03:23:07,107] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-01-30 03:29:01,507] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-01-30 03:29:02,075] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-01-30 03:29:18,352] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-01-30 03:29:18,880] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-01-30 03:29:38,994] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
