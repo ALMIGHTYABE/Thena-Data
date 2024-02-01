@@ -480,3 +480,25 @@
 [2024-02-01 20:29:51,165] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-02-01 20:29:51,716] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-02-01 20:30:01,989] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-02-01 21:04:24,420] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-02-01 21:07:05,105] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-02-01 21:07:05,834] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-02-01 21:07:07,975] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-02-01 21:07:07,975] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-01 21:07:10,957] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-01 21:07:10,957] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-02-01 21:07:14,870] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-02-01 21:07:15,627] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-02-01 21:08:09,609] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-02-01 21:08:09,610] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-01 21:08:33,313] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-01 21:08:33,314] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-02-01 21:08:55,398] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-02-01 21:08:56,216] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-01 21:15:20,890] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-01 21:15:21,708] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-01 21:16:33,393] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-02-01 21:16:33,954] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-01 21:16:44,960] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-01 21:16:45,543] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-02-01 21:16:58,517] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: HTTP Error 502: Bad Gateway
