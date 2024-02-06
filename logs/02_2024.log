@@ -3035,3 +3035,67 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-02-06 15:31:08,586] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-02-06 15:31:09,126] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-02-06 15:31:23,817] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-02-06 16:07:29,959] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-02-06 16:10:23,393] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-02-06 16:10:24,155] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-02-06 16:10:26,334] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-02-06 16:10:26,334] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-06 16:10:28,058] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-06 16:10:28,058] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-02-06 16:10:32,740] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-02-06 16:10:33,485] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-02-06 16:11:32,679] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-02-06 16:11:32,679] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-06 16:11:55,577] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-06 16:11:55,577] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-02-06 16:12:00,656] 	ERROR 	233 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: IncompleteRead(1077382 bytes read)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 556, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 523, in _read_next_chunk_size
+    return int(line, 16)
+ValueError: invalid literal for int() with base 16: b''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 573, in _readall_chunked
+    chunk_left = self._get_chunk_left()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 558, in _get_chunk_left
+    raise IncompleteRead(b'')
+http.client.IncompleteRead: IncompleteRead(0 bytes read)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "pair_data.py", line 204, in <module>
+    df1 = pd.read_csv(pair_data_csv)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 368, in _get_filepath_or_buffer
+    reader = BytesIO(req.read())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 466, in read
+    return self._readall_chunked()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 580, in _readall_chunked
+    raise IncompleteRead(b''.join(value))
+http.client.IncompleteRead: IncompleteRead(1077382 bytes read)
+[2024-02-06 16:12:01,477] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-06 16:18:48,639] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-06 16:18:49,455] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-06 16:19:54,869] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-02-06 16:19:55,441] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-06 16:20:30,206] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-06 16:20:30,751] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-02-06 16:20:41,802] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
