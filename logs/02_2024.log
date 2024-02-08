@@ -3781,3 +3781,5 @@ http.client.IncompleteRead: IncompleteRead(1077382 bytes read)
 [2024-02-07 23:38:25,586] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-02-07 23:38:26,114] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-02-07 23:38:34,626] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-02-08 00:38:21,144] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-02-08 00:40:04,054] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
