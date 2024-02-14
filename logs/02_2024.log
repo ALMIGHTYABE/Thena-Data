@@ -7105,3 +7105,58 @@ http.client.IncompleteRead: IncompleteRead(1077382 bytes read)
 [2024-02-14 07:25:17,519] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-02-14 07:25:18,059] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-02-14 07:25:29,118] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-02-14 08:08:50,824] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-02-14 08:11:40,593] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-02-14 08:11:41,258] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-02-14 08:11:42,612] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-02-14 08:11:42,612] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-14 08:11:44,987] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-14 08:11:44,987] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-02-14 08:11:49,601] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-02-14 08:11:50,370] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-02-14 08:12:39,406] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-02-14 08:12:39,406] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-14 08:13:02,954] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-14 08:13:02,954] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-02-14 08:13:20,026] 	ERROR 	233 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+Traceback (most recent call last):
+  File "pair_data.py", line 223, in <module>
+    set_with_dataframe(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread_dataframe.py", line 371, in set_with_dataframe
+    resp = worksheet.update_cells(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 723, in update_cells
+    data = self.spreadsheet.values_update(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 226, in values_update
+    r = self.client.request("put", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[2024-02-14 08:13:20,927] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-14 08:21:10,103] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-14 08:21:10,929] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-14 08:26:40,588] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-02-14 08:26:41,149] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-14 08:26:45,428] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-02-14 08:26:45,943] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-02-14 08:26:46,340] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
