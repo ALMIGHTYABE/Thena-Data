@@ -7546,3 +7546,25 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-02-15 02:28:22,156] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-02-15 02:28:22,705] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-02-15 02:28:48,336] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-02-15 03:07:06,967] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-02-15 03:10:36,979] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-02-15 03:10:37,617] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-02-15 03:10:41,256] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-02-15 03:10:41,256] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-15 03:10:44,909] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-15 03:10:44,909] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-02-15 03:10:47,824] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-02-15 03:10:48,587] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-02-15 03:11:49,582] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-02-15 03:11:49,582] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-15 03:12:15,712] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-15 03:12:15,713] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-02-15 03:12:40,992] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-02-15 03:12:41,802] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-15 03:21:28,730] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-15 03:21:29,546] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-15 03:29:52,473] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2024-02-15 03:29:53,035] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-15 03:30:15,309] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-02-15 03:30:15,834] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-02-15 03:30:24,238] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
