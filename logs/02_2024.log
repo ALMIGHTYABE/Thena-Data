@@ -7500,3 +7500,5 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-02-14 23:19:30,107] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-02-14 23:19:30,646] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-02-14 23:19:46,824] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-02-15 00:38:53,069] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-02-15 00:40:11,013] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
