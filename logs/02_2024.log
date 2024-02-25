@@ -12841,3 +12841,25 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-02-25 02:36:18,384] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-02-25 02:36:18,914] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-02-25 02:36:30,112] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-02-25 03:07:21,896] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-02-25 03:10:43,485] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-02-25 03:10:44,233] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-02-25 03:10:45,841] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-02-25 03:10:45,841] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-02-25 03:10:47,694] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-02-25 03:10:47,694] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-02-25 03:10:50,733] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-02-25 03:10:51,510] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-02-25 03:11:48,168] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-02-25 03:11:48,168] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-02-25 03:12:11,427] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-02-25 03:12:11,427] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-02-25 03:12:39,978] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-02-25 03:12:40,813] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-02-25 03:21:21,663] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-02-25 03:21:22,486] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-02-25 03:28:46,757] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-02-25 03:28:47,342] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-02-25 03:29:51,528] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: HTTP Error 409: Conflict
+[2024-02-25 03:29:52,059] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-02-25 03:30:14,751] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
