@@ -1,0 +1,22 @@
+[2024-03-01 00:34:19,689] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-01 00:38:47,672] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-01 00:38:48,414] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-01 00:38:51,408] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-01 00:38:51,408] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-01 00:38:53,627] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-01 00:38:53,627] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-01 00:38:56,692] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-01 00:38:57,455] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-01 00:39:43,851] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-01 00:39:43,852] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-01 00:40:08,724] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-01 00:40:08,724] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-01 00:40:40,256] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-01 00:40:41,061] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-01 00:52:41,758] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-01 00:52:42,571] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-01 01:03:12,766] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2024-03-01 01:03:13,327] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-01 01:03:56,729] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-01 01:03:57,260] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-01 01:04:16,132] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
