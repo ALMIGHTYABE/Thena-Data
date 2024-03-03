@@ -1499,3 +1499,25 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-03-03 17:27:07,670] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-03-03 17:27:08,203] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-03-03 17:27:16,593] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-03 18:07:18,195] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-03 18:11:18,211] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-03 18:11:18,773] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-03 18:11:20,648] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-03 18:11:20,648] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-03 18:11:22,328] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-03 18:11:22,328] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-03 18:11:24,884] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-03 18:11:25,646] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-03 18:12:25,462] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-03 18:12:25,462] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-03 18:12:53,151] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-03 18:12:53,151] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-03 18:13:18,417] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-03 18:13:19,219] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-03 18:22:42,933] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-03 18:22:43,736] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-03 18:31:46,505] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-03 18:31:47,072] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-03 18:32:08,976] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-03 18:32:09,500] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-03 18:32:47,518] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
