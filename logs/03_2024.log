@@ -1223,3 +1223,37 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-03-03 05:30:07,899] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-03-03 05:30:08,426] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-03-03 05:30:30,290] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-03 06:08:47,445] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-03 06:12:02,371] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-03 06:12:03,081] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-03 06:12:04,989] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-03 06:12:04,989] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-03 06:12:07,141] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-03 06:12:07,141] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-03 06:12:09,567] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-03 06:12:10,334] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-03 06:13:07,657] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-03 06:13:07,657] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-03 06:13:34,335] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-03 06:13:34,335] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-03 06:14:40,336] 	ERROR 	233 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: {'code': 409, 'message': 'The operation was aborted.', 'status': 'ABORTED'}
+Traceback (most recent call last):
+  File "pair_data.py", line 218, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted.', 'status': 'ABORTED'}
+[2024-03-03 06:14:41,143] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-03 06:22:46,295] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-03 06:22:47,096] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-03 06:28:04,927] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-03-03 06:28:05,482] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-03 06:28:33,746] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-03 06:28:34,273] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-03 06:28:57,586] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
