@@ -1978,3 +1978,5 @@ gspread.exceptions.APIError: <!DOCTYPE html>
   <p><b>502.</b> <ins>That’s an error.</ins>
   <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
 
+[2024-03-04 15:57:00,188] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-04 15:57:00,718] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
