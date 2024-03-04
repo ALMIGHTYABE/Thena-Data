@@ -2008,3 +2008,9 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-03-04 16:59:27,257] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
 [2024-03-04 17:02:30,213] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-04 17:03:19,959] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-04 17:06:11,196] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-04 17:06:13,153] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-04 17:06:13,153] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-04 17:06:13,286] 	ERROR 	126 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: 'data'
+[2024-03-04 17:06:13,286] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-04 17:06:15,907] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
