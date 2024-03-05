@@ -196,6 +196,7 @@ try:
     tvl_df['amountUSD'] = pd.to_numeric(tvl_df['amountUSD'])
     tvl_df["date"] = tvl_df["date"].apply(lambda date: datetime.strftime(date, "%Y-%m-%d"))
     tvl_df.drop(['datetime'], axis=1, inplace=True)
+    tvl_df.sort_values("date", ascending=True, inplace=True)
 
     tvl_df['TVL_inflow'] = tvl_df.apply(lambda row: row['amountUSD'] if row['Tx Type'] == 'Mint' else 0, axis=1)
     tvl_df['TVL_outflow'] = tvl_df.apply(lambda row: row['amountUSD'] if row['Tx Type'] == 'Burn' else 0, axis=1)
