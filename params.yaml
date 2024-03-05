@@ -6,6 +6,10 @@ query:
   fusion_subgraph: https://api.thegraph.com/subgraphs/name/iliaazhel/thena-info
   day_data_fusion_query: {"operationName": "algebraDayDatas", "variables": {"startTime": 1672790400, "skip": 0}, "query": "query algebraDayDatas($startTime: Int!, $skip: Int!) {\n  algebraDayDatas(skip: $skip, where: {date_gt: $startTime}, orderBy: date, orderDirection: asc) {\n    id\n    date\n    volumeUSD\n    feesUSD\n    tvlUSD\n    __typename\n  }\n}\n"}
   pair_data_fusion_query: {"operationName":"pairDayDatasV3","variables":{"pairAddress":"0","skip":0,"startTime":1681948800},"query":"query pairDayDatasV3($pairAddress: Bytes!, $skip: Int!, $startTime: Int!) {\n  poolDayDatas(skip: $skip, orderBy: date, orderDirection: asc, where: {pool: $pairAddress, date_gt: $startTime}) {\n    id\n    date\n    tvlUSD\n    volumeUSD\n    volumeToken0\n    volumeToken1\n    token0Price\n    token1Price\n    feesUSD\n    __typename\n  }\n}"}
+  v1_mint_query: {"operationName": "pairs", "variables": {"skip": 0, "pairAddress": "your_pair_address_here", "startTime": 1704067200}, "query": "query pairs($skip: Int!, $pairAddress: ID!, $startTime: BigInt!) {\n  pairs(where: {id: $pairAddress}) {\n    mints(\n      skip: $skip,\n      where: {timestamp_gt: $startTime, amountUSD_gt: 0}\n      orderBy: timestamp\n      orderDirection: asc\n    ) {\n      transaction {\n        id\n      }\n      timestamp\n      amountUSD\n    }\n  }\n}\n"}
+  v1_burn_query: {"operationName": "pairs", "variables": {"skip": 0, "pairAddress": "your_pair_address_here", "startTime": 1704067200}, "query": "query pairs($skip: Int!, $pairAddress: ID!, $startTime: BigInt!) {\n  pairs(where: {id: $pairAddress}) {\n    burns(\n      skip: $skip,\n      where: {timestamp_gt: $startTime, amountUSD_gt: 0}\n      orderBy: timestamp\n      orderDirection: asc\n    ) {\n      transaction {\n        id\n      }\n      timestamp\n      amountUSD\n    }\n  }\n}\n"}
+  cl_mint_query: {"operationName": "pools", "variables": {"skip": 0, "poolAddress": "your_pool_address_here", "startTime": 1704067200}, "query": "query pools($skip: Int!, $poolAddress: ID!, $startTime: BigInt!) {\n  pools(where: {id: $poolAddress}) {\n    mints(\n      skip: $skip,\n      where: {timestamp_gt: $startTime, amountUSD_gt: 0}\n      orderBy: timestamp\n      orderDirection: asc\n    ) {\n      transaction {\n        id\n      }\n      timestamp\n      amountUSD\n    }\n  }\n}\n"}
+  cl_burn_query: {"operationName": "pools", "variables": {"skip": 0, "poolAddress": "your_pool_address_here", "startTime": 1704067200}, "query": "query pools($skip: Int!, $poolAddress: ID!, $startTime: BigInt!) {\n  pools(where: {id: $poolAddress}) {\n    burns(\n      skip: $skip,\n      where: {timestamp_gt: $startTime, amountUSD_gt: 0}\n      orderBy: timestamp\n      orderDirection: asc\n    ) {\n      transaction {\n        id\n      }\n      timestamp\n      amountUSD\n    }\n  }\n}\n"}
   
 web3:
   provider_url: https://rpc.ankr.com/bsc
@@ -31,9 +35,11 @@ gsheets:
   pair_data_combined_sheet_key: 1aCNjqVqsbAotWAWZyGgJF6c_Mgq9ZvjGXHOrr8vqqMA
   fee_data_sheet_key: 17c078oupcaEXjDt2md64G5FUZzjgNxxIZzSeW51EcTA
   revenue_data_v2_sheet_key: 142nshyWOVwJvYgFakS1jCVP20jxXGP6z1_Tk5bB0WFU
+  tvl_data_sheet_key: 1QZscvxyXvygJgIh-6ynI2Pfm3wdNTiSVHhpFLcPSY28
   
 api:
   price_api: https://api.thena.fi/api/v1/assets
+  fusion_api: https://api.thena.fi/api/v1/fusions
   
 files:
   epoch_data: https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/epoch.csv
@@ -48,3 +54,4 @@ files:
   daily_data_combined: https://docs.google.com/spreadsheets/d/1TDFr8PbFI6MzPPP2sQr6BHbneBk6U3YmZUTbLCVCkJc/export?format=csv
   pair_data_combined: https://docs.google.com/spreadsheets/d/1aCNjqVqsbAotWAWZyGgJF6c_Mgq9ZvjGXHOrr8vqqMA/export?format=csv
   fee_data: https://docs.google.com/spreadsheets/d/17c078oupcaEXjDt2md64G5FUZzjgNxxIZzSeW51EcTA/export?format=csv
+  tvl_data: https://docs.google.com/spreadsheets/d/1QZscvxyXvygJgIh-6ynI2Pfm3wdNTiSVHhpFLcPSY28/export?format=csv
