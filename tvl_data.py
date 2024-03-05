@@ -186,11 +186,16 @@ try:
 
     # Data Manipulation
     tvl_df = pd.concat([v1_df, cl_df], ignore_index=True)
+
+    if tvl_df.empty:
+        raise Exception("Dataframe is empty")
+
     tvl_df['timestamp'] = pd.to_numeric(tvl_df['timestamp'])
     tvl_df['datetime'] = pd.to_datetime(tvl_df['timestamp'], unit='s')
     tvl_df['date'] = pd.to_datetime(tvl_df['timestamp'], unit='s').dt.date
     tvl_df['amountUSD'] = pd.to_numeric(tvl_df['amountUSD'])
     tvl_df["date"] = tvl_df["date"].apply(lambda date: datetime.strftime(date, "%Y-%m-%d"))
+    tvl_df.drop(['datetime'], axis=1, inplace=True)
 
     tvl_df['TVL_inflow'] = tvl_df.apply(lambda row: row['amountUSD'] if row['Tx Type'] == 'Mint' else 0, axis=1)
     tvl_df['TVL_outflow'] = tvl_df.apply(lambda row: row['amountUSD'] if row['Tx Type'] == 'Burn' else 0, axis=1)
@@ -203,6 +208,7 @@ try:
     index_list = list(map(lambda x: x + 2, index_list))
     df_values = tvl_df.values.tolist()
 
+    
     # Write to GSheets
     credentials = os.environ["GKEY"]
     credentials = json.loads(credentials)
