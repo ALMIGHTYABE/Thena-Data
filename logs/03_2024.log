@@ -2649,3 +2649,9 @@ TypeError: Object of type Timestamp is not JSON serializable
 [2024-03-05 19:27:59,849] 	INFO 	178 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-05 19:27:59,849] 	INFO 	185 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-05 19:28:05,016] 	INFO 	229 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-05 19:54:44,896] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-05 19:56:21,375] 	INFO 	98 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-05 19:56:21,375] 	INFO 	112 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-05 19:57:25,622] 	INFO 	178 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-05 19:57:25,622] 	INFO 	185 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-05 19:57:30,052] 	INFO 	230 	tvl_data.py 	<module>() 	TVL Data Combined Ended
