@@ -2637,3 +2637,9 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/encoder.py", line 179, in default
     raise TypeError(f'Object of type {o.__class__.__name__} '
 TypeError: Object of type Timestamp is not JSON serializable
+[2024-03-05 19:16:13,251] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-05 19:17:47,944] 	INFO 	98 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-05 19:17:47,944] 	INFO 	112 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-05 19:18:49,704] 	INFO 	178 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-05 19:18:49,704] 	INFO 	185 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-05 19:18:55,127] 	INFO 	229 	tvl_data.py 	<module>() 	TVL Data Combined Ended
