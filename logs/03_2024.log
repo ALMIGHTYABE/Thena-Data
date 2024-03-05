@@ -2655,3 +2655,25 @@ TypeError: Object of type Timestamp is not JSON serializable
 [2024-03-05 19:57:25,622] 	INFO 	178 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-05 19:57:25,622] 	INFO 	185 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-05 19:57:30,052] 	INFO 	230 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-05 20:07:00,353] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-05 20:11:22,382] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-05 20:11:23,046] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-05 20:11:25,390] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-05 20:11:25,390] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-05 20:11:27,300] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-05 20:11:27,300] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-05 20:11:30,099] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-05 20:11:30,873] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-05 20:12:34,903] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-05 20:12:34,903] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-05 20:13:04,737] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-05 20:13:04,738] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-05 20:13:40,360] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-05 20:13:41,184] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-05 20:28:03,779] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-05 20:28:04,622] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-05 20:38:03,041] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-05 20:38:03,631] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-05 20:38:57,737] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-05 20:38:58,282] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-05 20:39:15,364] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
