@@ -2677,3 +2677,9 @@ TypeError: Object of type Timestamp is not JSON serializable
 [2024-03-05 20:38:57,737] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-03-05 20:38:58,282] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-03-05 20:39:15,364] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-05 20:50:37,941] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-05 20:52:11,060] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-05 20:52:11,060] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-05 20:53:13,156] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-05 20:53:13,156] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-05 20:53:19,281] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
