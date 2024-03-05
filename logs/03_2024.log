@@ -2582,3 +2582,24 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-03-05 18:35:20,385] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
 [2024-03-05 18:35:20,901] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
 [2024-03-05 18:35:37,602] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-05 18:59:13,346] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-05 19:00:41,746] 	INFO 	98 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-05 19:00:41,746] 	INFO 	112 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-05 19:01:41,852] 	INFO 	178 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-05 19:01:41,852] 	INFO 	185 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-05 19:01:45,443] 	ERROR 	225 	tvl_data.py 	<module>() 	Error occurred during TVL Data Combined process. Error: Master
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 335, in worksheet
+    item = finditem(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/utils.py", line 133, in finditem
+    return next(item for item in seq if func(item))
+StopIteration
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "tvl_data.py", line 216, in <module>
+    worksheet1 = gs.worksheet("Master")
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 341, in worksheet
+    raise WorksheetNotFound(title)
+gspread.exceptions.WorksheetNotFound: Master
