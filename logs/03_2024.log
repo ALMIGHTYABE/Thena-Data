@@ -2907,3 +2907,43 @@ TypeError: Object of type Timestamp is not JSON serializable
 [2024-03-06 04:36:23,882] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-06 04:36:23,882] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-06 04:36:31,590] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-06 05:06:31,060] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-06 05:10:15,803] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-06 05:10:16,501] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-06 05:10:18,880] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-06 05:10:18,881] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-06 05:10:20,804] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-06 05:10:20,804] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-06 05:10:24,786] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-06 05:10:25,580] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-06 05:11:10,723] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-06 05:11:10,723] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-06 05:11:32,963] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-06 05:11:32,963] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-06 05:11:50,863] 	ERROR 	233 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "pair_data.py", line 218, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-03-06 05:11:51,697] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-06 05:21:17,604] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-06 05:21:18,415] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-06 05:30:38,163] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-06 05:30:38,739] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-06 05:30:56,883] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-06 05:30:57,415] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-06 05:31:20,199] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-06 05:31:20,733] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-06 05:32:23,495] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-06 05:32:23,495] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-06 05:33:08,487] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-06 05:33:08,487] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-06 05:33:14,087] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
