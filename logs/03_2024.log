@@ -3367,3 +3367,32 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-03-06 20:35:40,656] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-06 20:35:40,656] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-06 20:35:45,284] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-06 21:05:23,568] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-06 21:08:21,660] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-06 21:08:22,368] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-06 21:08:24,747] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-06 21:08:24,748] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-06 21:08:27,166] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-06 21:08:27,167] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-06 21:08:29,832] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-06 21:08:30,604] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-06 21:09:28,248] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-06 21:09:28,248] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-06 21:09:38,373] 	ERROR 	159 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-BIFI, Address: 0xCC0b8D28e7c31555a3889CDc05AF55bfF57c368A, Error: 'data'
+[2024-03-06 21:09:57,066] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-06 21:09:57,066] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-06 21:10:30,556] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-06 21:10:31,379] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-06 21:17:44,891] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-06 21:17:45,710] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-06 21:18:23,372] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-03-06 21:18:23,949] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-06 21:18:43,953] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-06 21:18:44,484] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-06 21:18:58,222] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-06 21:18:58,756] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-06 21:20:19,086] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-06 21:20:19,086] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-06 21:21:22,033] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-06 21:21:22,033] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-06 21:21:27,494] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
