@@ -3452,3 +3452,5 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-03-06 23:24:05,488] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-06 23:24:05,488] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-06 23:24:11,210] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-07 00:31:34,532] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-03-07 00:33:15,177] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
