@@ -3683,3 +3683,31 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-03-07 07:22:38,683] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-07 07:22:38,683] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-07 07:22:44,816] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-07 08:07:14,269] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-07 08:10:32,988] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-07 08:10:33,694] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-07 08:10:36,597] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-07 08:10:36,597] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-07 08:10:39,445] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-07 08:10:39,446] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-07 08:10:42,617] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-07 08:10:43,371] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-07 08:11:44,705] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-07 08:11:44,705] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-07 08:12:17,134] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-07 08:12:17,134] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-07 08:12:52,647] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-07 08:12:53,451] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-07 08:21:07,881] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-07 08:21:08,720] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-07 08:26:19,451] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-03-07 08:26:20,001] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-07 08:29:20,319] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-03-07 08:29:20,844] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-07 08:31:32,778] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-03-07 08:31:33,309] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-07 08:33:01,188] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-07 08:33:01,188] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-07 08:34:10,452] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-07 08:34:10,452] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-07 08:34:16,434] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
