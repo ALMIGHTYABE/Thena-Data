@@ -10157,3 +10157,31 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-03-16 22:34:19,815] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-16 22:34:19,815] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-16 22:34:30,124] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-16 23:06:44,015] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-16 23:09:57,989] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-16 23:09:58,603] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-16 23:10:00,258] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-16 23:10:00,258] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-16 23:10:02,039] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-16 23:10:02,039] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-16 23:10:05,645] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-16 23:10:06,412] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-16 23:11:00,605] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-16 23:11:00,605] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-16 23:11:27,751] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-16 23:11:27,751] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-16 23:12:04,825] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-16 23:12:05,621] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-16 23:20:11,777] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-16 23:20:12,581] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-16 23:25:48,613] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-03-16 23:25:49,169] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-16 23:26:03,713] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-16 23:26:04,238] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-16 23:26:19,421] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-16 23:26:19,956] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-16 23:27:34,837] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-16 23:27:34,837] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-16 23:28:35,198] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-16 23:28:35,198] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-16 23:28:45,004] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
