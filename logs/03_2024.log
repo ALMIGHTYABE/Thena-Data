@@ -9707,3 +9707,33 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-03-16 06:30:44,473] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-16 06:30:44,473] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-16 06:30:56,435] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-16 07:06:38,267] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-16 07:11:07,582] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-16 07:11:08,251] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-16 07:11:11,004] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-16 07:11:11,005] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-16 07:11:13,632] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-16 07:11:13,632] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-16 07:11:17,441] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-16 07:11:18,212] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-16 07:11:42,183] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDC/wUSDR, Address: 0x743e019FB26EF4aB61339fBc07632Ebb175e28ca, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-16 07:12:04,626] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-IDIA/C98, Address: 0xeB6E35fe9f507eb1A35fb048584823652D4D2797, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-16 07:12:13,598] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-16 07:12:13,598] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-16 07:12:43,852] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-16 07:12:43,852] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-16 07:13:07,236] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-16 07:13:08,058] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-16 07:24:13,817] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-16 07:24:14,624] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-16 07:35:07,510] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-16 07:35:08,077] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-16 07:35:21,894] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-16 07:35:22,425] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-16 07:35:33,107] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-16 07:35:33,636] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-16 07:36:51,066] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-16 07:36:51,066] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-16 07:37:51,905] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-16 07:37:51,905] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-16 07:38:02,808] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
