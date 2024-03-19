@@ -130,12 +130,13 @@ try:
     ids_df = pd.read_csv(id_data)
     ids_df = ids_df[ids_df["type"]=="CL"].copy(deep=True)
     ids_df = ids_df[['name', 'algebra_pool', 'type']]
+    ids_df.sort_values('name', ascending=False, inplace=True)
     ids_df.drop_duplicates(subset=['algebra_pool'], keep='first', inplace=True)
-    ids_df["name"] = ids_df["name"].str[:-5]
+    ids_df.loc[ids_df['name'].str.startswith('a'), 'name'] = ids_df.loc[ids_df['name'].str.startswith('a'), 'name'].str[:-5]
     
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(2)
+    twodayago = todayDate - timedelta(40)
     my_time = datetime.min.time()
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
