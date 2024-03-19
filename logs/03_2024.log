@@ -11627,3 +11627,50 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-03-19 02:32:22,424] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-19 02:32:22,424] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-19 02:32:30,496] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-19 03:07:52,751] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-19 03:11:25,626] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-19 03:11:26,478] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-19 03:11:27,820] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-19 03:11:27,820] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-19 03:11:29,707] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-19 03:11:29,707] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-19 03:11:42,122] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-19 03:11:42,887] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-19 03:11:43,120] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDT/FITFI, Address: 0x0348D8fabbcB84069662e454E4f714DcD5d0C412, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:44,239] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-WBNB/stkBNB, Address: 0x091A3f00feFD09e5343FE4d126B14dc896640786, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:44,376] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDT/PENDLE, Address: 0x094B905Cca7B4Afe244B1cB85361d463A280aAF5, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:44,957] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-cpTHE/WBNB, Address: 0x0C32b95142eD07e07b95F6c2EC8Ef05EDb0c4F45, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:45,087] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-frxETH/FRAX, Address: 0x0D8401cBc650e82D1F21A7461efC6409Ef55C4Db, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:45,211] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-DOLA/FRAX, Address: 0x0D9aB02ae2110170B8e83B3ABa4E3aC2398Ab541, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:45,527] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-WBNB/CHAM, Address: 0x0ec098Aa4bC6A31e4f804E653F0488Eb0FEb1a2A, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:45,655] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BUSD/CUSD, Address: 0x0F68c7cCb6a87fe988109A42A446786ddf368eD8, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:46,101] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-MAI/FXS, Address: 0x10F9f7355Fb75C73718Afad8AdBc7BF72c5A0715, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:46,423] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-HAY/USDT, Address: 0x11559edAc1Be1C7B0E50eA64F15e82277D32eC82, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:46,886] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-WBNB/SLM, Address: 0x13660309E0001884d53e86Ea21f1EB1D6E330A05, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:47,467] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-OOE/BUSD, Address: 0x15538fc89447927CfEF14Ff2e5F7d870FeE98330, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:47,771] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDC/PLAY, Address: 0x16184EC3a17285B33c22B6252c2D94Ca54D03341, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:48,069] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-ID/WBNB, Address: 0x1663786974fecF742BdEA32222C96BaE58d0Fc65, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:48,193] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-MAI/WBNB, Address: 0x16b32FfcEc07C8177AE037c69D10234edCfb0a5c, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:48,318] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-DAO/ankrBNB, Address: 0x16DB1226f5a6D6f75649f2250B22717B0F922151, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:48,750] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BNBx/USDT, Address: 0x19420fa1D0E350b5d46a8D3B24Ff2421744eB54E, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:48,881] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-jEUR/BUSD, Address: 0x1960d3548F2031baF05daf558D5D644A580722EA, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:11:49,002] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-sfrxETH/frxETH, Address: 0x1964f694B722045D8cF757e19c9439E38810b5DB, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-19 03:12:47,831] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-19 03:12:47,831] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-19 03:13:16,480] 	INFO 	194 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-19 03:13:16,480] 	INFO 	201 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-19 03:13:56,233] 	INFO 	231 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-19 03:13:57,038] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-19 03:22:32,355] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-19 03:22:33,172] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-19 03:28:54,460] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-03-19 03:28:55,016] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-19 03:29:23,445] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-19 03:29:23,983] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-19 03:29:31,390] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-19 03:29:31,923] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-19 03:30:52,998] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-19 03:30:52,998] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-19 03:31:51,356] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-19 03:31:51,356] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-19 03:31:59,032] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
