@@ -11842,3 +11842,9 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-03-19 09:32:15,589] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-19 09:32:15,589] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-19 09:32:20,439] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-19 10:21:16,881] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-19 10:22:17,150] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-19 10:22:17,150] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-19 10:24:33,849] 	INFO 	195 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-19 10:24:33,849] 	INFO 	202 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-19 10:25:02,217] 	INFO 	232 	pair_data.py 	<module>() 	Pair Data Combined Ended
