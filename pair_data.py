@@ -167,6 +167,7 @@ try:
     pairdata_fusion_df = pd.merge(pairdata_fusion_df, epoch_data[["date", "epoch"]], how="left", on="date")
     pairdata_fusion_df.sort_values("date", ascending=True, inplace=True)
     pairdata_fusion_df["date"] = pairdata_fusion_df["date"].apply(lambda date: datetime.strftime(date, "%Y-%m-%d"))
+    pairdata_fusion_df = pairdata_fusion_df[['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD', '__typename', 'name', 'algebra_pool', 'type',  'epoch', 'fee %', 'feesUSD']]
     
     pairdata_fusion_old = pd.read_csv(pair_data_fusion_csv)
     drop_index = pairdata_fusion_old[pairdata_fusion_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
