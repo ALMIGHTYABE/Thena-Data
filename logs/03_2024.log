@@ -12440,3 +12440,9 @@ KeyError: "['fee %'] not in index"
 [2024-03-20 07:45:04,611] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
 [2024-03-20 07:46:02,479] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-03-20 07:46:15,624] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-20 07:50:17,119] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-20 07:51:10,905] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-20 07:51:10,905] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-20 07:51:34,373] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-20 07:51:34,373] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-20 07:52:11,977] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
