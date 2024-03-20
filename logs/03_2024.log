@@ -12460,3 +12460,5 @@ KeyError: "['fee %'] not in index"
 [2024-03-20 08:06:49,835] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
 [2024-03-20 08:06:49,835] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
 [2024-03-20 08:07:17,706] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-20 08:13:14,086] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-20 08:13:14,567] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
