@@ -12410,3 +12410,19 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-03-20 06:27:25,696] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-20 06:27:25,696] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-20 06:27:35,984] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-20 07:24:25,907] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-20 07:25:07,017] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-20 07:25:07,017] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-20 07:25:25,182] 	ERROR 	198 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: "['fee %'] not in index"
+Traceback (most recent call last):
+  File "pair_data.py", line 170, in <module>
+    pairdata_fusion_df = pairdata_fusion_df[['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD', '__typename', 'name', 'algebra_pool', 'type',  'epoch', 'fee %', 'feesUSD']]
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/frame.py", line 3813, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6070, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 6133, in _raise_if_missing
+    raise KeyError(f"{not_found} not in index")
+KeyError: "['fee %'] not in index"
+[2024-03-20 07:25:25,184] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-20 07:25:54,313] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
