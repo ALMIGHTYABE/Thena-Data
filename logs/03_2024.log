@@ -12882,3 +12882,5 @@ KeyError: "['fee %'] not in index"
 [2024-03-20 23:30:57,831] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-20 23:30:57,831] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-20 23:31:06,223] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-21 00:40:10,555] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-03-21 00:41:44,357] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
