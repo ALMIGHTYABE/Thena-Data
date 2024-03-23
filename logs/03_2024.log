@@ -14314,3 +14314,32 @@ KeyError: "['fee %'] not in index"
 [2024-03-23 03:39:33,151] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-23 03:39:33,152] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-23 03:39:40,020] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-23 04:08:38,916] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-23 04:12:59,044] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-23 04:12:59,834] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-23 04:13:03,954] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-23 04:13:03,954] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-23 04:13:06,218] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-23 04:13:06,218] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-23 04:13:11,334] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-23 04:13:12,104] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-23 04:14:10,447] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-23 04:14:10,447] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-23 04:14:42,221] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-23 04:14:42,221] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-23 04:15:06,356] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-23 04:15:07,168] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-23 04:25:49,996] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-23 04:25:50,816] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-23 04:36:17,722] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-03-23 04:36:18,296] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-23 04:36:33,152] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-23 04:36:33,693] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-23 04:36:50,772] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-23 04:36:51,310] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-23 04:37:31,215] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/USDT, Address: 0x6ce8014488877f91234ef23012193de6bb0009a8, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-23 04:38:07,426] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-23 04:38:07,426] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-23 04:39:05,295] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-23 04:39:05,295] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-23 04:39:13,252] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
