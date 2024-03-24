@@ -15501,3 +15501,36 @@ KeyError: "['fee %'] not in index"
 [2024-03-24 08:33:04,831] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-24 08:33:04,831] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-24 08:33:12,982] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-24 09:07:24,302] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-24 09:12:11,474] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-24 09:12:12,118] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-24 09:12:13,826] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-24 09:12:13,826] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-24 09:12:15,862] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-24 09:12:15,862] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-24 09:12:18,617] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-24 09:12:19,396] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-24 09:13:17,056] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-24 09:13:17,056] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-24 09:13:41,160] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-24 09:13:41,160] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-24 09:14:16,659] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-24 09:14:17,467] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-24 09:21:36,609] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-24 09:21:37,409] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-24 09:22:13,766] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-03-24 09:22:14,326] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-24 09:22:26,419] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-24 09:22:26,951] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-24 09:22:47,834] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-24 09:22:48,365] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-24 09:24:46,286] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/BUSD, Address: 0x6321b57b6fdc14924be480c54e93294617e672ab, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-24 09:24:46,415] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: HBR/THE, Address: 0x825b5b2b8f093250554b77e6d8a3de7f9893391f, Error: 'data'
+[2024-03-24 09:24:46,549] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/FITFI, Address: 0xd523ac2609c3a56f945242cc239e9f47c018bf6b, Error: 'data'
+[2024-03-24 09:25:10,714] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/HBR, Address: 0xa26d4fac88227586e83312a4d2ddae42788f5c2f, Error: 'data'
+[2024-03-24 09:26:11,496] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: MULTI/BUSD, Address: 0xde4cc4446205d1138ecaa48b2cb22b8e06e69bd4, Error: Expecting value: line 1 column 1 (char 0)
+[2024-03-24 09:29:51,975] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-24 09:29:51,976] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-24 09:30:48,200] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-24 09:30:48,200] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-24 09:30:56,041] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
