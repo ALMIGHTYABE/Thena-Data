@@ -18034,3 +18034,33 @@ KeyError: "['fee %'] not in index"
 [2024-03-26 06:29:08,929] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-26 06:29:08,929] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-26 06:29:16,835] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-26 07:06:07,220] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-26 07:06:57,732] 	ERROR 	122 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: 'data'
+[2024-03-26 07:06:58,398] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-26 07:07:26,256] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-26 07:07:26,256] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-26 07:07:28,026] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-26 07:07:28,026] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-26 07:07:29,775] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-26 07:07:30,592] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-26 07:07:47,159] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-IDIA/USDT, Address: 0x0569d7d48255F0ba5D0eAb17DAA9dc32B5108C28, Error: 'data'
+[2024-03-26 07:07:47,288] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-OVN/USDT+, Address: 0x0571e491cBfa2FDb449a329196e01E4fDC9cAF7A, Error: 'data'
+[2024-03-26 07:08:50,174] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-26 07:08:50,175] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-26 07:09:20,634] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-26 07:09:20,634] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-26 07:10:01,216] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-26 07:10:02,050] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-26 07:17:25,304] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-26 07:17:26,134] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-26 07:18:24,567] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-03-26 07:18:25,147] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-26 07:18:35,982] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-26 07:18:36,528] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-26 07:18:45,566] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-26 07:18:46,106] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-26 07:19:59,666] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-26 07:19:59,666] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-26 07:20:52,336] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-26 07:20:52,336] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-26 07:20:58,887] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
