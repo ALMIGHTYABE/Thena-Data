@@ -17667,3 +17667,129 @@ KeyError: "['fee %'] not in index"
 [2024-03-26 03:21:34,473] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-03-26 03:21:34,473] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-03-26 03:21:41,828] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-03-26 04:07:55,466] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-03-26 04:11:40,420] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-03-26 04:11:41,078] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-03-26 04:11:44,038] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-03-26 04:11:44,038] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-03-26 04:11:46,960] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-03-26 04:11:46,960] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-03-26 04:11:50,978] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-03-26 04:11:51,737] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-03-26 04:12:51,403] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-03-26 04:12:51,403] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-03-26 04:13:24,559] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-03-26 04:13:24,560] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-03-26 04:14:05,916] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-03-26 04:14:06,716] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-03-26 04:21:59,953] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-03-26 04:22:00,753] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-03-26 04:26:19,749] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-03-26 04:26:20,297] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-03-26 04:26:39,215] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-03-26 04:26:39,772] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-03-26 04:26:51,913] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-03-26 04:26:52,437] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-03-26 04:27:42,745] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: IDIA/BUSD, Address: 0x3c552e8ac4473222e3d794adecfa432eace85929, Error: 'data'
+[2024-03-26 04:27:42,883] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: HBR/THE, Address: 0x825b5b2b8f093250554b77e6d8a3de7f9893391f, Error: 'data'
+[2024-03-26 04:27:43,023] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/BUSD, Address: 0x6321b57b6fdc14924be480c54e93294617e672ab, Error: 'data'
+[2024-03-26 04:28:02,859] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/FITFI, Address: 0xd523ac2609c3a56f945242cc239e9f47c018bf6b, Error: 'data'
+[2024-03-26 04:28:02,988] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/HBR, Address: 0xa26d4fac88227586e83312a4d2ddae42788f5c2f, Error: 'data'
+[2024-03-26 04:28:03,129] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: PION/BNB, Address: 0x28e5fc8bcf5e569bfcff31cdb2ed909782015b80, Error: 'data'
+[2024-03-26 04:28:03,266] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/BNB, Address: 0x4cd8a94975e275bd327431e2225f3afba73b56d7, Error: 'data'
+[2024-03-26 04:28:03,398] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: C98/CUSD, Address: 0xf4d3afa871f1bb9d5db7f057ed555a4c549b5174, Error: 'data'
+[2024-03-26 04:28:03,531] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: fBOMB/BNB, Address: 0xccdedac1973b6d2542fb1b7ece843b81a9ee7070, Error: 'data'
+[2024-03-26 04:28:12,064] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: MULTI/BUSD, Address: 0xde4cc4446205d1138ecaa48b2cb22b8e06e69bd4, Error: 'data'
+[2024-03-26 04:28:12,194] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/ANKR, Address: 0xe934278276c0274aac95dadb9783f02a27c351ff, Error: 'data'
+[2024-03-26 04:28:12,329] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DOLA/CUSD, Address: 0x7061f52ed4942021924745d454d722e52e057e03, Error: 'data'
+[2024-03-26 04:28:12,466] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XCAD(old)/BUSD, Address: 0x8ddc543cb4be74d8a4979dccfc79c18bdefd2dad, Error: 'data'
+[2024-03-26 04:28:12,598] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BUSD/THE, Address: 0x34b897289fccb43c048b2cea6405e840a129e021, Error: 'data'
+[2024-03-26 04:28:12,737] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/DEI, Address: 0xc092c8ef0909e422a9b7733734d971215f52fc2d, Error: 'data'
+[2024-03-26 04:28:16,427] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FEAR/BUSD, Address: 0x7d46e0498e485ca5e5086e900f14a3fcc8a22ae0, Error: 'data'
+[2024-03-26 04:28:16,553] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: MAI/BUSD, Address: 0xe459556595a224d7f12b45e93138f4a1265ac618, Error: 'data'
+[2024-03-26 04:28:16,683] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNBx/BNB, Address: 0x6c83e45fe3be4a9c12bb28cb5ba4cd210455fb55, Error: 'data'
+[2024-03-26 04:28:16,814] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DEI/BUSD, Address: 0x06589abd54582783142e3d1165722e7e10483de0, Error: 'data'
+[2024-03-26 04:28:16,938] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: OATH(old)/BUSD, Address: 0xc2dc97a4afe061186ad5ca5231f964a97ce305eb, Error: 'data'
+[2024-03-26 04:28:18,556] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETS Alpha/USD+, Address: 0x92573046bd4aba37d875eb45a0a1182ac63d5580, Error: 'data'
+[2024-03-26 04:28:18,683] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: MIX/BNB, Address: 0x0f7d50a2728de6f94b3ac8013031f527572cc9f1, Error: 'data'
+[2024-03-26 04:28:18,819] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/BUSD, Address: 0x93b32a8dfe10e9196403dd111974e325219aec24, Error: 'data'
+[2024-03-26 04:28:19,316] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: fBOMB/CGPT, Address: 0xb072badf1c7c0d679ed204bbae50d9c2f7c6f87f, Error: 'data'
+[2024-03-26 04:28:19,448] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DOLA/BNB, Address: 0xc5856601712e8a74d57cdc7a47fb1b41c1a6fae2, Error: 'data'
+[2024-03-26 04:28:19,741] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/LQDR, Address: 0xec4484c7f7671914e897b1aeb8418fe12e320f21, Error: 'data'
+[2024-03-26 04:28:19,882] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: MAI/BNB, Address: 0x16b32ffcec07c8177ae037c69d10234edcfb0a5c, Error: 'data'
+[2024-03-26 04:28:20,031] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/THE, Address: 0xdaac487bb3a411cb9251794bb7c7b04cb6d1ab26, Error: 'data'
+[2024-03-26 04:28:20,153] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNBx/SD, Address: 0x9698e0c7af13b6cef8017a5c34eb2b3d053c491c, Error: 'data'
+[2024-03-26 04:28:20,283] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/CUSD, Address: 0xad0b947374feb8e21d7cffdfe394d2c59f5e06aa, Error: 'data'
+[2024-03-26 04:28:20,913] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/BNB, Address: 0x307936b725272ec6eb19d4d539207554f31e6231, Error: 'data'
+[2024-03-26 04:28:21,058] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USD+/CUSD, Address: 0x150990b9630ffe2322999e86905536e2e7e8d93f, Error: 'data'
+[2024-03-26 04:28:21,195] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/SLM, Address: 0x13660309e0001884d53e86ea21f1eb1d6e330a05, Error: 'data'
+[2024-03-26 04:28:21,466] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: TAROT(old)/BNB, Address: 0xb2604b72b3aa4af8d0419c736de2d261b40ec755, Error: 'data'
+[2024-03-26 04:28:21,603] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XRP/BNB, Address: 0x29203f0a3c733e9b605717f9b2abfbb140740f58, Error: 'data'
+[2024-03-26 04:28:21,899] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/FRAX, Address: 0x512909b2bcea4348ea3284bd167095dea10f2f40, Error: 'data'
+[2024-03-26 04:28:22,044] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: fBOMB/THE, Address: 0x18c12680aca1a2660adc88751b49bd156f435b3d, Error: 'data'
+[2024-03-26 04:28:22,189] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DAI/MAI, Address: 0xe03e9ecc7d4c45c6985bfb909d9bb3aca5ef18c0, Error: 'data'
+[2024-03-26 04:28:22,315] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: CHAM/THE, Address: 0x761327ad8409da88bd5485487b8f64b9a5295dd4, Error: 'data'
+[2024-03-26 04:28:22,447] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: PRIMAL/BUSD, Address: 0x721f0607e3b3ad025c3f996ef412a62ae461b15f, Error: 'data'
+[2024-03-26 04:28:23,067] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DAO/BUSD, Address: 0xf81b6b8aaad4c37f6f2e8aa9988f28ea8e82bb49, Error: 'data'
+[2024-03-26 04:28:24,007] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/CHAM, Address: 0x0ec098aa4bc6a31e4f804e653f0488eb0feb1a2a, Error: 'data'
+[2024-03-26 04:28:24,475] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/THE, Address: 0xc6376e5452ebd75cd4de8e0d597f66ca38c1fa77, Error: 'data'
+[2024-03-26 04:28:24,612] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/DEUS, Address: 0xc8da40f8a354530f04ce2dde98ebc2960a9ea449, Error: 'data'
+[2024-03-26 04:28:25,305] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/FTM, Address: 0x535aeeab656c0fbb07da64fe4aa3a15dfc6834c8, Error: 'data'
+[2024-03-26 04:28:25,427] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: eTHENA/BNB, Address: 0x9798a3835c8c87bd92803c3a248ae0042fbe4c6c, Error: 'data'
+[2024-03-26 04:28:25,774] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FRAX/CUSD, Address: 0x338ca7ed1d6bede03799a36a6f90e107d24dc6ad, Error: 'data'
+[2024-03-26 04:28:25,904] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/XCAD(old), Address: 0xe2d25a87e97a1016c35f736ea77a4d6bd1919e74, Error: 'data'
+[2024-03-26 04:28:26,352] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/THE, Address: 0x0f8bbc44650bf30f53343c3d2bf5c10356b64bd5, Error: 'data'
+[2024-03-26 04:28:26,478] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: fBOMB/FXS, Address: 0xb36a95de98771d419df5fe51477db738d29c4afe, Error: 'data'
+[2024-03-26 04:28:26,780] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/THE, Address: 0x63db6ba9e512186c2faadacef342fb4a40dc577c, Error: 'data'
+[2024-03-26 04:28:27,097] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FEAR/BNB, Address: 0x899845719b6fbd9c9e16a869ddfcdb0499edc01c, Error: 'data'
+[2024-03-26 04:28:27,372] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: GHNY/THE, Address: 0xf581b44ffd48eb84d984cababe7221f3fc85fbe0, Error: 'data'
+[2024-03-26 04:28:27,993] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: PSTAKE/BUSD, Address: 0x67e51f1de32318f3a27265287ed766839a62cf13, Error: 'data'
+[2024-03-26 04:28:28,279] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/ankrMATIC, Address: 0x372e0fae9dcd0a0b3cf184072b5f2a17a2b53d92, Error: 'data'
+[2024-03-26 04:28:29,678] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/ankrETH, Address: 0x44d1f00e75fd074f6016bb1dc326dccd5d04451b, Error: 'data'
+[2024-03-26 04:28:30,199] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/USDC, Address: 0x618f9eb0e1a698409621f4f487b563529f003643, Error: 'data'
+[2024-03-26 04:28:30,326] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/BNB, Address: 0x1d168c5b5dea1c6da0e9fd9bf4b7607e4e9d8eec, Error: 'data'
+[2024-03-26 04:28:30,454] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: jBRL/BRZ, Address: 0xa0695f78af837f570bcc50f53e58cda300798b65, Error: 'data'
+[2024-03-26 04:28:31,593] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: sfrxETH/frxETH, Address: 0xc2d245919db52ea4d5d269b0c710056639176ead, Error: 'data'
+[2024-03-26 04:28:32,561] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: MATIC/BUSD, Address: 0xeb58a4d07990ff50b9f8289701cbddf9052570b5, Error: 'data'
+[2024-03-26 04:28:32,858] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: TWT/BNB, Address: 0xc4a17162da872640c49cc191759f8b423539c7ea, Error: 'data'
+[2024-03-26 04:28:33,529] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FS/USDT, Address: 0x1f02f41906b4e1909166e542eda61ab2924c5a37, Error: 'data'
+[2024-03-26 04:28:34,460] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/PRIMAL, Address: 0xde72dd50dd0ca9c8c48b04f74c5246b5545969d0, Error: 'data'
+[2024-03-26 04:28:34,899] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: MAI/FXS, Address: 0x10f9f7355fb75c73718afad8adbc7bf72c5a0715, Error: 'data'
+[2024-03-26 04:28:35,028] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FIL/USDT, Address: 0xff755d0c1c5b9051a3617221e10394742679f5a1, Error: 'data'
+[2024-03-26 04:28:35,167] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: HBR/BNB, Address: 0x5134729cd5a5b40336bc3ca71349f2c108718428, Error: 'data'
+[2024-03-26 04:28:35,455] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/dXCAD, Address: 0xda5edbe3f254046cd8cabec6758e0b1122b52d6e, Error: 'data'
+[2024-03-26 04:28:36,208] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/NFTB, Address: 0xc03d86b6685aec46909ea5c54943e2a1238e02ac, Error: 'data'
+[2024-03-26 04:28:36,334] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/THE, Address: 0xa051ef9a6fbea340bb734d022e7b6a3ad9fd9b06, Error: 'data'
+[2024-03-26 04:28:36,475] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: stkBNB/THE, Address: 0x2afed1ca1bc414e123b1c4e30e8f6fc513c8ee72, Error: 'data'
+[2024-03-26 04:28:37,868] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/USD+, Address: 0x1f3ca66c98d682fa1bec31264692dad4f17340bc, Error: 'data'
+[2024-03-26 04:28:37,985] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BUSD/SLM, Address: 0xafd1a0319909d66046ef5c1237470c2ce02edf2a, Error: 'data'
+[2024-03-26 04:28:38,251] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FS/USDC, Address: 0xed6a13a30760c3a3795c5f5d7b6f911a3de0edd9, Error: 'data'
+[2024-03-26 04:28:38,875] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FRAX/FXS, Address: 0x3c9bd1f914d6f0e0cd27a1f77e120c061d1fdbed, Error: 'data'
+[2024-03-26 04:28:39,489] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/pxETH, Address: 0x40d191474b32e04b907698ab4ca2a49221253918, Error: 'data'
+[2024-03-26 04:28:40,099] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/BNB, Address: 0x9c9ead6cfd1ed4dd17cd44eb12229364dd541697, Error: 'data'
+[2024-03-26 04:28:40,541] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/FRAX, Address: 0x8d65dbe7206a768c466073af0ab6d76f9e14fc6d, Error: 'data'
+[2024-03-26 04:28:40,962] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/USD+, Address: 0xbf9dc59a2370f1e11dc34c889c69d56bd7786db6, Error: 'data'
+[2024-03-26 04:28:41,235] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BTCB/multiBTC, Address: 0x2475ff2a7c81da27ea2e08e0d3b0ad01e16225ec, Error: 'data'
+[2024-03-26 04:28:41,826] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNBx/BTCB, Address: 0x64bb2c54dce689078478c6d40dc2a22d3ac25bcc, Error: 'data'
+[2024-03-26 04:28:41,954] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/MIX, Address: 0xc8c8148fc304503941dfffe0b28211472597ab74, Error: 'data'
+[2024-03-26 04:28:42,247] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNBx/ETH, Address: 0xd9bc6271abbe5dd01731b1b9ac2c1cb0ea5be246, Error: 'data'
+[2024-03-26 04:28:42,376] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FIL/BNB, Address: 0x1f06c7e323bc3a5c94bb6b760c128830cdf6adfb, Error: 'data'
+[2024-03-26 04:28:42,511] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/ANKR, Address: 0xa2c2c08afefd3cc69b9aab797dee5a1886388783, Error: 'data'
+[2024-03-26 04:28:42,636] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: THE/FLOKI, Address: 0x82a72d1eecb8fffabbd0073db95d06bac1577e09, Error: 'data'
+[2024-03-26 04:28:43,386] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XCAD(old)/XCAD, Address: 0x97ff96baf308c910e3098b7b9d40b06759a3fabf, Error: 'data'
+[2024-03-26 04:28:43,519] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/SEF, Address: 0x5d5f0b239303024d28f9a75ebd634a9d12513725, Error: 'data'
+[2024-03-26 04:28:43,797] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: GRAIN/BNB, Address: 0xa6da07730d7e9e5732e6483cec67573e00ef45e7, Error: 'data'
+[2024-03-26 04:28:44,581] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/FLOKI, Address: 0x537672472bec1246ee9419e1716e221c9d0c04f6, Error: 'data'
+[2024-03-26 04:28:44,880] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/THE, Address: 0x3575155f5b0eada1e4fda5bc84e2c2c7cef1d9f2, Error: 'data'
+[2024-03-26 04:28:45,162] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/RDNT, Address: 0x8e5d38d9a303dc0f176e689c547a300365d2ab4b, Error: 'data'
+[2024-03-26 04:28:45,298] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/PLAY, Address: 0xb8a85b80a12931fe2a1f5db9295fbdae03616e9b, Error: 'data'
+[2024-03-26 04:28:45,754] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/KOL, Address: 0x74a4f4722a4c105ecb9be131a86d1e0344d4e6aa, Error: 'data'
+[2024-03-26 04:28:45,904] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/PLAY, Address: 0x9938256dd2c6a436233685e910efaa44f6d8e81c, Error: 'data'
+[2024-03-26 04:28:46,472] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DJED/USDC, Address: 0x80551245c562380140668b7df20a7e9c773d21bd, Error: 'data'
+[2024-03-26 04:28:46,601] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/SEC, Address: 0x34915f659f820bee9247956cab4277a632cfa230, Error: 'data'
+[2024-03-26 04:28:48,482] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BTCB/USDC, Address: 0x16348c6e93ac30604555d7fe74347c606e5d520a, Error: 'data'
+[2024-03-26 04:29:20,218] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-03-26 04:29:20,218] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-03-26 04:30:21,035] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-03-26 04:30:21,035] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-03-26 04:30:27,562] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
