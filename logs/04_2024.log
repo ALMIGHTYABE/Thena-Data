@@ -1111,3 +1111,31 @@ Traceback (most recent call last):
   File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
     raise HTTPError(req.full_url, code, msg, hdrs, fp)
 urllib.error.HTTPError: HTTP Error 400: Bad Request
+[2024-04-02 06:08:54,740] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-02 06:12:21,426] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-02 06:12:22,126] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-02 06:12:25,808] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-02 06:12:25,808] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-02 06:12:28,597] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-02 06:12:28,597] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-02 06:12:33,223] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-02 06:12:33,986] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-02 06:13:13,820] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-02 06:13:13,820] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-02 06:13:39,514] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-02 06:13:39,514] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-02 06:14:32,775] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-02 06:14:33,587] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-02 06:23:16,973] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-02 06:23:17,804] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-02 06:29:33,298] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-02 06:29:33,869] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-02 06:29:46,725] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-02 06:29:47,263] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-02 06:29:55,798] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-02 06:29:56,334] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-02 06:30:48,749] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-02 06:30:48,749] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-02 06:31:29,666] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-02 06:31:29,666] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-02 06:31:41,785] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
