@@ -5696,3 +5696,43 @@ KeyError: 'date'
 [2024-04-08 07:20:25,625] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-08 07:20:25,625] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-08 07:20:46,738] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-08 09:09:52,427] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-08 09:12:34,419] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-08 09:12:35,236] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-08 09:12:36,979] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-08 09:12:36,979] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-08 09:12:39,042] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-08 09:12:39,042] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-08 09:12:41,538] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-08 09:12:42,321] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-08 09:13:30,754] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-08 09:13:30,754] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-08 09:13:51,608] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-08 09:13:51,608] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-08 09:14:27,410] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-08 09:14:28,295] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-08 09:19:01,709] 	ERROR 	148 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-08 09:19:02,559] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-08 09:19:02,800] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-08 09:19:03,435] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-08 09:19:16,814] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-08 09:19:17,397] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-08 09:19:36,654] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-08 09:19:37,209] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-08 09:20:50,313] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-08 09:20:50,313] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-08 09:21:52,888] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-08 09:21:52,888] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-08 09:22:05,005] 	ERROR 	227 	tvl_data.py 	<module>() 	Error occurred during TVL Data Combined process. Error: {'code': 400, 'message': "Invalid requests[0].deleteDimension: Cannot delete a row that doesn't exist. Tried to delete row index 67875 but there are only 67875 rows.", 'status': 'INVALID_ARGUMENT'}
+Traceback (most recent call last):
+  File "tvl_data.py", line 220, in <module>
+    worksheet1.delete_rows(index_list[0], index_list[-1])
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 1952, in delete_rows
+    return self.delete_dimension(Dimension.rows, start_index, end_index)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 1933, in delete_dimension
+    return self.spreadsheet.batch_update(body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 131, in batch_update
+    r = self.client.request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 400, 'message': "Invalid requests[0].deleteDimension: Cannot delete a row that doesn't exist. Tried to delete row index 67875 but there are only 67875 rows.", 'status': 'INVALID_ARGUMENT'}
