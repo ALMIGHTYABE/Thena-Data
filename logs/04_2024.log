@@ -6408,3 +6408,41 @@ gspread.exceptions.APIError: {'code': 400, 'message': "Invalid requests[0].delet
 [2024-04-09 10:26:35,400] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-09 10:26:35,400] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-09 10:26:44,438] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-09 11:04:10,941] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-09 11:07:19,772] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-09 11:07:20,428] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-09 11:07:22,897] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-09 11:07:22,897] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-09 11:07:24,819] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-09 11:07:24,819] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-09 11:07:27,250] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-09 11:07:28,019] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-09 11:08:26,114] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-09 11:08:26,114] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-09 11:08:59,502] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-09 11:08:59,503] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-09 11:10:08,454] 	ERROR 	235 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: {'code': 409, 'message': 'The operation was aborted.', 'status': 'ABORTED'}
+Traceback (most recent call last):
+  File "pair_data.py", line 224, in <module>
+    worksheet1.clear()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 1966, in clear
+    return self.spreadsheet.values_clear(absolute_range_name(self.title))
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 163, in values_clear
+    r = self.client.request("post", url)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted.', 'status': 'ABORTED'}
+[2024-04-09 11:10:09,291] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-09 11:17:47,669] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-09 11:17:48,488] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-09 11:18:16,900] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-09 11:18:17,472] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-09 11:18:36,541] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-09 11:18:37,077] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-09 11:18:48,530] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-09 11:18:49,065] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-09 11:20:06,798] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-09 11:20:06,798] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-09 11:21:14,660] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-09 11:21:14,660] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-09 11:21:20,673] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
