@@ -7292,3 +7292,69 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-04-10 17:32:24,577] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-10 17:32:24,577] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-10 17:32:39,381] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-10 18:09:17,486] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-10 18:14:07,920] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-10 18:14:08,604] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-10 18:14:10,557] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-10 18:14:10,557] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-10 18:14:12,078] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-10 18:14:12,078] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-10 18:14:15,502] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-10 18:14:16,272] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-10 18:15:12,250] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-10 18:15:12,250] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-10 18:15:49,899] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-10 18:15:49,899] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-10 18:16:34,468] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-10 18:16:35,276] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-10 18:28:48,736] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-10 18:28:49,550] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-10 18:40:18,104] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-10 18:40:18,709] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-10 18:40:38,444] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-10 18:40:38,978] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-10 18:40:57,954] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-10 18:40:58,488] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-10 18:42:13,645] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-10 18:42:13,645] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-10 18:42:35,701] 	ERROR 	176 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Error: HTTP Error 500: Internal Server Error
+Traceback (most recent call last):
+  File "tvl_data.py", line 114, in <module>
+    thena_ids_df = pd.read_csv(id_data)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 500: Internal Server Error
+[2024-04-10 18:42:35,730] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-10 18:42:35,730] 	ERROR 	227 	tvl_data.py 	<module>() 	Error occurred during TVL Data Combined process. Error: name 'cl_df' is not defined
+Traceback (most recent call last):
+  File "tvl_data.py", line 184, in <module>
+    tvl_df = pd.concat([v1_df, cl_df], ignore_index=True)
+NameError: name 'cl_df' is not defined
