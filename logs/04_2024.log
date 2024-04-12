@@ -8430,3 +8430,31 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-04-12 08:29:57,702] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-12 08:29:57,702] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-12 08:30:16,335] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-12 09:07:56,913] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-12 09:11:20,763] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-12 09:11:21,428] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-12 09:11:23,489] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-12 09:11:23,489] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-12 09:11:24,901] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-12 09:11:24,901] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-12 09:11:29,687] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-12 09:11:30,502] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-12 09:12:10,902] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-12 09:12:10,902] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-12 09:12:37,249] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-12 09:12:37,249] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-12 09:13:15,895] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-12 09:13:16,754] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-12 09:21:25,314] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-12 09:21:26,131] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-12 09:27:44,267] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-12 09:27:44,826] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-12 09:27:58,998] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: IncompleteRead(651346 bytes read)
+[2024-04-12 09:27:59,529] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-12 09:28:14,484] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-12 09:28:15,022] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-12 09:29:09,829] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-12 09:29:09,830] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-12 09:30:01,318] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-12 09:30:01,318] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-12 09:30:18,649] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
