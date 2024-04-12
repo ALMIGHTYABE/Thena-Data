@@ -8682,3 +8682,34 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-04-12 17:25:41,763] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-12 17:25:41,763] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-12 17:25:48,280] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-12 18:06:58,151] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-12 18:10:48,657] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-12 18:10:49,326] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-12 18:10:50,668] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-12 18:10:50,668] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-12 18:10:52,545] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-12 18:10:52,545] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-12 18:10:55,895] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-12 18:10:56,670] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-12 18:11:50,072] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-12 18:11:50,073] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-12 18:12:22,974] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-12 18:12:22,975] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-12 18:12:59,853] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-12 18:13:00,657] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-12 18:22:15,563] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-12 18:22:16,409] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-12 18:31:12,837] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-12 18:31:13,390] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-12 18:31:28,229] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-12 18:31:28,750] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-12 18:31:49,298] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-12 18:31:49,821] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-12 18:32:35,823] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: NGL/USDT, Address: 0xd949476184b9c94ed2130e8175d4139654ce2339, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-12 18:32:36,092] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XCAD(old)/THE, Address: 0x3a569cef2c6445d198f90d3d87dbfa3c7977ceb2, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-12 18:32:36,744] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/BNB, Address: 0x9c9ead6cfd1ed4dd17cd44eb12229364dd541697, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-12 18:33:29,663] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-12 18:33:29,663] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-12 18:34:42,556] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-12 18:34:42,556] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-12 18:34:49,590] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
