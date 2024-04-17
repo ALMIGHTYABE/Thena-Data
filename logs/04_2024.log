@@ -12093,3 +12093,35 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-04-17 18:36:45,730] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-17 18:36:45,730] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-17 18:37:00,463] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-17 19:03:44,609] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-17 19:11:15,937] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-17 19:11:16,671] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-17 19:11:18,540] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-17 19:11:18,540] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-17 19:11:19,943] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-17 19:11:19,943] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-17 19:11:22,118] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-17 19:11:22,896] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-17 19:12:34,169] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-17 19:12:34,169] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-17 19:13:08,310] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-17 19:13:08,310] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-17 19:13:42,143] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-17 19:13:43,030] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-17 19:27:47,281] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-17 19:27:48,114] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-17 19:40:18,469] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-04-17 19:40:19,034] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-17 19:40:31,654] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-17 19:40:32,229] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-17 19:40:43,865] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-17 19:40:44,410] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-17 19:41:57,557] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-17 19:41:57,557] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-17 19:42:44,213] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/THE, Address: 0x98a0004b8e9fe161369528a2e07de56c15a27d76, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-17 19:42:45,311] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/BNB, Address: 0xd405b976ac01023c9064024880999fc450a8668b, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-17 19:42:45,732] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: GHNY/BNB, Address: 0xcc3aec37005fcc95288bfb046e5ae789cc322099, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-17 19:42:45,825] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/DEUS, Address: 0x6a524c7328eb652248d1a3786f9db0e74ca961f0, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-17 19:43:30,219] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-17 19:43:30,219] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-17 19:43:50,981] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
