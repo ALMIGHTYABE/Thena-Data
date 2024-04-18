@@ -12240,3 +12240,5 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-04-17 23:36:59,970] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-17 23:36:59,970] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-17 23:37:11,660] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-18 00:39:14,465] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-04-18 00:41:00,485] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
