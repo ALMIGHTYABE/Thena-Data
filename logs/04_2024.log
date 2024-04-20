@@ -13644,3 +13644,32 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-04-20 02:45:44,584] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-20 02:45:44,584] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-20 02:45:54,271] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-20 03:08:45,949] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-20 03:12:05,662] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-20 03:12:06,395] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-20 03:12:07,543] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-20 03:12:07,543] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-20 03:12:09,472] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-20 03:12:09,472] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-20 03:12:11,252] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-20 03:12:12,016] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-20 03:13:03,593] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-20 03:13:03,593] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-20 03:13:57,649] 	ERROR 	160 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCASH-USDT, Address: 0x45F1Fdb00fB78174196Fa109A27Cdbd07f67F85e, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-20 03:14:22,894] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-20 03:14:22,894] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-20 03:15:04,865] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-20 03:15:05,712] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-20 03:22:49,519] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-20 03:22:50,334] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-20 03:25:42,833] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-20 03:25:43,398] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-20 03:25:57,188] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-20 03:25:57,724] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-20 03:26:16,389] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-20 03:26:16,917] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-20 03:27:28,840] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-20 03:27:28,840] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-20 03:30:09,609] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-20 03:30:09,609] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-20 03:30:19,063] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
