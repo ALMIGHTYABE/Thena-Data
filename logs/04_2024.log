@@ -15361,3 +15361,34 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-04-22 14:34:57,917] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-22 14:34:57,917] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-22 14:35:06,287] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-22 15:07:14,383] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-22 15:10:27,156] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-22 15:10:27,826] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-22 15:10:30,191] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-22 15:10:30,191] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-22 15:10:32,195] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-22 15:10:32,195] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-22 15:10:35,335] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-22 15:10:36,097] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-22 15:11:35,837] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-CHAM/BUSD, Address: 0xDf63A43aEFb5c1Aa4040a3a121d2a8C00EeBE7d8, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 15:11:35,963] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-DAI/MAI, Address: 0xe03e9EcC7d4C45c6985bfB909D9Bb3ACa5Ef18c0, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 15:11:36,568] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-FEAR/THE, Address: 0xE3CDC7b8ed63F9D1eF2D964c062AC51d9c99a89a, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-22 15:11:48,072] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-22 15:11:48,072] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-22 15:12:22,095] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-22 15:12:22,095] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-22 15:13:01,775] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-22 15:13:02,591] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-22 15:20:20,191] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-22 15:20:21,000] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-22 15:23:59,438] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-22 15:23:59,987] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-22 15:24:12,819] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-22 15:24:13,349] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-22 15:24:33,058] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-22 15:24:33,588] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-22 15:25:47,112] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-22 15:25:47,112] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-22 15:26:52,197] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-22 15:26:52,198] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-22 15:27:00,254] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
