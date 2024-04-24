@@ -16503,3 +16503,32 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-04-24 07:06:36,567] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-24 07:06:36,567] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-24 07:06:47,609] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-24 08:10:12,858] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-24 08:14:09,846] 	ERROR 	122 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-24 08:14:10,753] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-24 08:14:53,778] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-24 08:14:53,778] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-24 08:14:56,216] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-24 08:14:56,216] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-24 08:14:59,100] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-24 08:14:59,896] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-24 08:25:00,046] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-WBNB/CHAM, Address: 0x0ec098Aa4bC6A31e4f804E653F0488Eb0FEb1a2A, Error: HTTPSConnectionPool(host='api.thegraph.com', port=443): Read timed out. (read timeout=60)
+[2024-04-24 08:30:37,682] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-24 08:30:37,682] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-24 08:30:54,269] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-24 08:30:54,269] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-24 08:31:23,761] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-24 08:31:24,634] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-24 08:39:44,015] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-24 08:39:44,857] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-24 08:44:42,225] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-24 08:44:42,860] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-24 08:45:37,411] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-24 08:45:37,967] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-24 08:46:08,920] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-24 08:46:09,460] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-24 08:47:01,911] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-24 08:47:01,911] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-24 08:47:52,010] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-24 08:47:52,010] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-24 08:48:20,760] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
