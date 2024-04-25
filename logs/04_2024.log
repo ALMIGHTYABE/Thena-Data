@@ -17291,3 +17291,46 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-04-25 12:40:36,086] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-25 12:40:36,086] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-25 12:40:49,838] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-25 13:04:59,263] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-25 13:08:18,891] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-25 13:08:19,637] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-25 13:08:21,673] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-25 13:08:21,673] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-25 13:08:41,342] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-25 13:08:41,342] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-25 13:08:46,615] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-25 13:08:47,371] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-25 13:09:07,247] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-PSTAKE/BUSD, Address: 0x67e51F1DE32318f3a27265287ed766839A62Cf13, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:09,970] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BTCB/multiBTC, Address: 0x706458510e841970F96061F43DAD4F654F06157f, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:18,226] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDT/DEI, Address: 0x9d49bc4092C9FA2aA29B2AFC2723F9Ca97dC9374, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:19,570] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-GRAIN/WBNB, Address: 0xa6Da07730D7E9E5732E6483ceC67573e00ef45E7, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:21,536] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-WBNB/PLAY, Address: 0xb8A85b80A12931FE2A1f5dB9295FBdAe03616E9b, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:22,483] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-ETH/XCAD, Address: 0xbAEC5fce623cf6556038eE22C8267B8e6647CC97, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:22,742] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDC/BUSD, Address: 0xbb6CD6EfFB4861971Af675ca5fb8964873bdab2d, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:24,212] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-liveThe/THE, Address: 0xc1c87706CBd554F4e936579d277E337Ea84461bA, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:24,471] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-OATH/BUSD, Address: 0xc2dc97A4afE061186Ad5Ca5231f964a97Ce305eb, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:24,725] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-TWT/WBNB, Address: 0xC4A17162da872640c49cC191759F8B423539c7Ea, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:25,985] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-WBNB/DEUS, Address: 0xC8Da40f8A354530F04CE2dDe98Ebc2960a9eA449, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:31,743] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDC/MIX, Address: 0xE9993F367d6C37d4EE853344731FDd1012bAF272, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:32,824] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-FS/USDC, Address: 0xeD6A13A30760C3a3795C5F5d7b6F911a3de0edD9, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:34,236] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-USDT/FS, Address: 0xf68C4Ff2eed4E47B683b38aA74D7AD05AD3a303F, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:09:40,509] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-25 13:09:40,509] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-25 13:09:41,301] 	ERROR 	160 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aXCAD-WBNB, Address: 0xe2624920C88b470B78EFAdfdE51Dd0E2C841934B, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-25 13:10:07,732] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-25 13:10:07,733] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-25 13:10:48,016] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-25 13:10:48,849] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-25 13:17:34,733] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-25 13:17:35,545] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-25 13:17:47,685] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-25 13:17:48,238] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-25 13:17:59,682] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-25 13:18:00,221] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-25 13:18:12,328] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-25 13:18:12,859] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-25 13:19:24,941] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-25 13:19:24,941] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-25 13:20:49,400] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-25 13:20:49,400] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-25 13:21:13,613] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
