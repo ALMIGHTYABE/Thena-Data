@@ -16953,3 +16953,5 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-04-24 23:30:49,397] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-24 23:30:49,397] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-24 23:31:03,549] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-25 00:42:40,803] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-04-25 00:43:48,798] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
