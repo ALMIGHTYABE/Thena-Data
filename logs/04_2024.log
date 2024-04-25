@@ -17475,3 +17475,32 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-04-25 18:42:24,104] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-25 18:42:24,104] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-25 18:42:41,322] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-25 19:06:07,992] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-25 19:10:15,522] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-25 19:10:16,160] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-25 19:10:17,624] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-25 19:10:17,624] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-25 19:10:19,556] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-25 19:10:19,556] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-25 19:10:23,105] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-25 19:10:23,866] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-25 19:11:23,324] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-25 19:11:23,324] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-25 19:12:00,308] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-25 19:12:00,308] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-25 19:12:42,222] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-25 19:12:43,019] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-25 19:22:40,843] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-25 19:22:41,649] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-25 19:32:09,936] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2024-04-25 19:32:10,502] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-25 19:32:40,492] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-25 19:32:41,025] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-25 19:32:52,477] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-25 19:32:53,006] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-25 19:34:11,196] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-25 19:34:11,196] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-25 19:34:19,269] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: weETH/ETH, Address: nan, Error: Out of range float values are not JSON compliant
+[2024-04-25 19:35:40,277] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-25 19:35:40,277] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-25 19:35:59,458] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
