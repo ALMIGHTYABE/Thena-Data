@@ -17919,3 +17919,32 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-04-26 06:22:45,383] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-26 06:22:45,383] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-26 06:22:54,993] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-26 07:07:50,543] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-26 07:11:30,868] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-26 07:11:31,483] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-26 07:11:33,515] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-26 07:11:33,515] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-26 07:11:35,564] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-26 07:11:35,564] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-26 07:11:38,106] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-26 07:11:38,858] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-26 07:12:19,622] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-26 07:12:19,622] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-26 07:12:51,428] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-26 07:12:51,428] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-26 07:13:16,125] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-26 07:13:16,926] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-26 07:22:03,369] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-04-26 07:22:04,163] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-26 07:29:30,771] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-26 07:29:31,318] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-26 07:29:50,604] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-26 07:29:51,132] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-26 07:30:03,772] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-26 07:30:04,295] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-26 07:30:57,896] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-26 07:30:57,896] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-26 07:31:36,126] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: XCAD/BUSD, Address: 0x0cd7f0d5478fefe59f2b9f5aba623706f2924e77, Error: Expecting value: line 1 column 1 (char 0)
+[2024-04-26 07:31:59,068] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-26 07:31:59,068] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-26 07:32:09,847] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
