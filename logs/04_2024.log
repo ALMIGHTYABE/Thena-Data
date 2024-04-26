@@ -17977,3 +17977,31 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-04-26 08:22:03,642] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-26 08:22:03,642] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-26 08:22:10,218] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-26 09:07:52,181] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-26 09:10:36,843] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-26 09:10:37,558] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-26 09:10:39,424] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-26 09:10:39,424] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-26 09:10:41,143] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-26 09:10:41,143] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-26 09:10:44,044] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-26 09:10:44,834] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-26 09:11:38,686] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-26 09:11:38,687] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-26 09:12:11,309] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-26 09:12:11,309] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-26 09:12:44,726] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-26 09:12:45,560] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-26 09:19:07,002] 	ERROR 	148 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-26 09:19:07,934] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-26 09:19:08,305] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-26 09:19:08,906] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-26 09:19:20,168] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-26 09:19:20,746] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-26 09:19:29,405] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-26 09:19:29,973] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-26 09:20:40,568] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-04-26 09:20:40,568] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-26 09:21:53,338] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-04-26 09:21:53,338] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-26 09:22:02,176] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
