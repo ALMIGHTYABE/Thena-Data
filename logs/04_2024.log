@@ -19764,3 +19764,43 @@ gspread.exceptions.APIError: {'code': 409, 'message': 'The operation was aborted
 [2024-04-28 23:31:49,323] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-04-28 23:31:49,323] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-04-28 23:32:01,429] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-04-29 00:32:19,493] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-29 00:36:44,472] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-29 00:36:45,232] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-29 00:36:47,769] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-29 00:36:47,770] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-29 00:36:49,499] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-29 00:36:49,499] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-29 00:36:52,395] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-29 00:36:53,222] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-29 00:37:41,426] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-29 00:37:41,426] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-29 00:38:09,471] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-29 00:38:09,471] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-29 00:38:50,426] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-29 00:38:51,287] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-29 00:49:55,243] 	ERROR 	148 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'data'
+[2024-04-29 00:49:56,097] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-29 01:00:25,488] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'data'
+[2024-04-29 01:00:26,096] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-29 01:00:42,655] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-29 01:00:43,216] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-29 01:00:52,131] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-29 01:00:52,693] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-29 01:00:52,765] 	ERROR 	99 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Error: 'data'
+Traceback (most recent call last):
+  File "tvl_data.py", line 40, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[['symbol', 'type', 'address']]
+KeyError: 'data'
+[2024-04-29 01:00:52,765] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-29 01:00:52,872] 	ERROR 	176 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Error: name 'ids_df' is not defined
+Traceback (most recent call last):
+  File "tvl_data.py", line 118, in <module>
+    ids_cl_df = ids_df[(ids_df['type'] != 'Volatile') & (ids_df['type'] != 'Stable')]
+NameError: name 'ids_df' is not defined
+[2024-04-29 01:00:52,872] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-29 01:00:52,872] 	ERROR 	227 	tvl_data.py 	<module>() 	Error occurred during TVL Data Combined process. Error: name 'v1_df' is not defined
+Traceback (most recent call last):
+  File "tvl_data.py", line 184, in <module>
+    tvl_df = pd.concat([v1_df, cl_df], ignore_index=True)
+NameError: name 'v1_df' is not defined
