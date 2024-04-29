@@ -19924,3 +19924,43 @@ Traceback (most recent call last):
   File "tvl_data.py", line 184, in <module>
     tvl_df = pd.concat([v1_df, cl_df], ignore_index=True)
 NameError: name 'v1_df' is not defined
+[2024-04-29 04:08:44,807] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-04-29 04:12:07,345] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-04-29 04:12:07,912] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-04-29 04:12:09,572] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-04-29 04:12:09,573] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-04-29 04:12:11,212] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-04-29 04:12:11,213] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-04-29 04:12:13,655] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-04-29 04:12:14,432] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-04-29 04:13:08,269] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-04-29 04:13:08,269] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-04-29 04:13:41,010] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-04-29 04:13:41,010] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-04-29 04:14:25,451] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-04-29 04:14:26,278] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-04-29 04:22:47,210] 	ERROR 	148 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: 'data'
+[2024-04-29 04:22:48,048] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-04-29 04:26:42,151] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-04-29 04:26:42,712] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-04-29 04:27:12,535] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-04-29 04:27:13,071] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-04-29 04:27:25,350] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-04-29 04:27:25,885] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-04-29 04:27:26,020] 	ERROR 	99 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Error: 'data'
+Traceback (most recent call last):
+  File "tvl_data.py", line 40, in <module>
+    ids_df = pd.json_normalize(response.json()['data'])[['symbol', 'type', 'address']]
+KeyError: 'data'
+[2024-04-29 04:27:26,020] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-04-29 04:27:26,061] 	ERROR 	176 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Error: name 'ids_df' is not defined
+Traceback (most recent call last):
+  File "tvl_data.py", line 118, in <module>
+    ids_cl_df = ids_df[(ids_df['type'] != 'Volatile') & (ids_df['type'] != 'Stable')]
+NameError: name 'ids_df' is not defined
+[2024-04-29 04:27:26,061] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-04-29 04:27:26,061] 	ERROR 	227 	tvl_data.py 	<module>() 	Error occurred during TVL Data Combined process. Error: name 'v1_df' is not defined
+Traceback (most recent call last):
+  File "tvl_data.py", line 184, in <module>
+    tvl_df = pd.concat([v1_df, cl_df], ignore_index=True)
+NameError: name 'v1_df' is not defined
