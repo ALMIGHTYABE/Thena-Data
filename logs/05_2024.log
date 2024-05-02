@@ -1172,3 +1172,43 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-05-02 17:39:06,817] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-02 17:39:06,817] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-02 17:39:16,777] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-02 18:08:28,501] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-05-02 18:12:40,185] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-05-02 18:12:40,785] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-05-02 18:12:43,870] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-05-02 18:12:43,870] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-02 18:12:47,368] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-02 18:12:47,369] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-05-02 18:12:50,676] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-05-02 18:12:51,462] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-05-02 18:13:57,831] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-05-02 18:13:57,831] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-02 18:14:35,435] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-02 18:14:35,435] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-05-02 18:15:15,012] 	ERROR 	235 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+Traceback (most recent call last):
+  File "pair_data.py", line 225, in <module>
+    set_with_dataframe(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread_dataframe.py", line 371, in set_with_dataframe
+    resp = worksheet.update_cells(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 723, in update_cells
+    data = self.spreadsheet.values_update(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 226, in values_update
+    r = self.client.request("put", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountered.', 'status': 'INTERNAL'}
+[2024-05-02 18:15:15,971] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-02 18:25:42,333] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-02 18:25:43,143] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-02 18:35:32,536] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2024-05-02 18:35:33,124] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-02 18:35:39,308] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-05-02 18:35:39,841] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-05-02 18:35:40,324] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-05-02 18:35:40,856] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-05-02 18:37:10,226] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-05-02 18:37:10,227] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-05-02 18:38:23,536] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-05-02 18:38:23,537] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-05-02 18:38:42,549] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
