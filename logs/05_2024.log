@@ -2195,3 +2195,75 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-05-04 05:28:57,778] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-04 05:28:57,778] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-04 05:29:12,286] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-04 06:08:07,432] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-05-04 06:11:49,621] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-05-04 06:11:50,193] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-05-04 06:11:51,802] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-05-04 06:11:51,802] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-04 06:11:53,463] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-04 06:11:53,464] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-05-04 06:11:55,785] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-05-04 06:11:56,547] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-05-04 06:12:36,245] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-05-04 06:12:36,245] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-04 06:13:41,564] 	ERROR 	198 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "pair_data.py", line 172, in <module>
+    pairdata_fusion_old = pd.read_csv(pair_data_fusion_csv)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 363, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 265, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 563, in error
+    result = self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 755, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 531, in open
+    response = meth(req, response)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 640, in http_response
+    response = self.parent.error(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 569, in error
+    return self._call_chain(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 502, in _call_chain
+    result = func(*args)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/urllib/request.py", line 649, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+[2024-05-04 06:13:41,600] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-05-04 06:14:11,756] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-05-04 06:14:12,560] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-04 06:23:14,759] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-04 06:23:15,562] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-04 06:30:10,252] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-05-04 06:30:10,809] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-04 06:30:25,339] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-04 06:30:25,868] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-05-04 06:30:36,409] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-05-04 06:30:36,938] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-05-04 06:31:29,581] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-05-04 06:31:29,581] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-05-04 06:32:16,554] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-05-04 06:32:16,554] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-05-04 06:32:34,476] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
