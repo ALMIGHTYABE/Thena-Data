@@ -5494,3 +5494,32 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
 [2024-05-08 20:27:45,284] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-08 20:27:45,284] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-08 20:27:59,106] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-08 21:08:31,562] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-05-08 21:13:07,631] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-05-08 21:13:08,458] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-05-08 21:13:10,593] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-05-08 21:13:10,593] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-08 21:13:12,327] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-08 21:13:12,327] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-05-08 21:13:15,914] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-05-08 21:13:16,752] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-05-08 21:14:18,158] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-05-08 21:14:18,158] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-08 21:14:53,620] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-08 21:14:53,620] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-05-08 21:15:35,984] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-05-08 21:15:36,884] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-08 21:27:00,153] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-08 21:27:01,075] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-08 21:37:24,081] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-05-08 21:37:24,677] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-08 21:37:46,589] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-08 21:37:47,143] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-05-08 21:38:15,619] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-05-08 21:38:16,174] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-05-08 21:39:38,862] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-05-08 21:39:38,862] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-05-08 21:42:16,597] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: AITECH/BNB, Address: 0x0485f8cdc8c15bdf180d1ded90c3ce1275deaa20, Error: 'data'
+[2024-05-08 21:42:31,323] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-05-08 21:42:31,324] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-05-08 21:42:47,126] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
