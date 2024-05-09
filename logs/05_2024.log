@@ -5579,3 +5579,5 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
 [2024-05-08 23:38:29,626] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-08 23:38:29,627] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-08 23:38:45,296] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-09 00:41:02,170] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-05-09 00:42:36,997] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
