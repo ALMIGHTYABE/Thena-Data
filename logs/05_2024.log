@@ -6353,3 +6353,32 @@ urllib.error.HTTPError: HTTP Error 400: Bad Request
 [2024-05-10 03:35:03,875] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-10 03:35:03,875] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-10 03:35:15,106] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-10 04:08:26,063] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-05-10 04:12:12,114] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-05-10 04:12:12,932] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-05-10 04:12:14,913] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-05-10 04:12:14,913] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-10 04:12:16,481] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-10 04:12:16,482] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-05-10 04:12:18,700] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-05-10 04:12:19,467] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-05-10 04:13:17,620] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-05-10 04:13:17,620] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-10 04:13:48,604] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-10 04:13:48,604] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-05-10 04:14:17,016] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-05-10 04:14:17,834] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-10 04:23:24,335] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-10 04:23:25,155] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-10 04:32:06,353] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
+[2024-05-10 04:32:06,913] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-10 04:32:19,286] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-10 04:32:19,819] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-05-10 04:32:29,417] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-05-10 04:32:29,953] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-05-10 04:33:21,963] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DAO/THE, Address: 0x71eadcb77a5b3b7749e08f52c595761d821c4638, Error: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+[2024-05-10 04:33:49,216] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-05-10 04:33:49,216] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-05-10 04:34:47,537] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-05-10 04:34:47,537] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-05-10 04:34:54,241] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
