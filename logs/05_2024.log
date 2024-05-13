@@ -8696,3 +8696,32 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-05-13 13:43:12,707] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-13 13:43:12,708] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-13 13:43:22,307] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-13 14:06:58,533] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-05-13 14:10:11,990] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-05-13 14:10:12,719] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-05-13 14:10:15,505] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-05-13 14:10:15,505] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-13 14:10:18,368] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-13 14:10:18,368] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-05-13 14:10:21,262] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-05-13 14:10:22,048] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-05-13 14:11:16,320] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-05-13 14:11:16,320] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-13 14:11:46,280] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-13 14:11:46,280] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-05-13 14:12:32,411] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-05-13 14:12:33,241] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-13 14:20:15,237] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-13 14:20:16,172] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-13 14:23:21,964] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-05-13 14:23:22,531] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-13 14:23:34,469] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-13 14:23:35,013] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-05-13 14:23:51,293] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-05-13 14:23:51,844] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-05-13 14:25:04,612] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-05-13 14:25:04,613] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-05-13 14:25:18,519] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: SolvBTC/BTCB, Address: nan, Error: Out of range float values are not JSON compliant
+[2024-05-13 14:26:00,018] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-05-13 14:26:00,018] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-05-13 14:26:10,227] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
