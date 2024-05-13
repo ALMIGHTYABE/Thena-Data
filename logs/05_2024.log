@@ -8639,3 +8639,31 @@ gspread.exceptions.APIError: {'code': 500, 'message': 'Internal error encountere
 [2024-05-13 11:31:25,679] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-13 11:31:25,679] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-13 11:31:35,750] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-13 12:12:38,299] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-05-13 12:15:32,593] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-05-13 12:15:33,213] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-05-13 12:15:35,409] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-05-13 12:15:35,409] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-13 12:15:37,411] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-13 12:15:37,411] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-05-13 12:15:40,238] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-05-13 12:15:41,052] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-05-13 12:16:37,509] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-05-13 12:16:37,509] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-13 12:17:07,844] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-13 12:17:07,844] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-05-13 12:17:41,165] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-05-13 12:17:42,018] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-13 12:24:31,073] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-13 12:24:32,010] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-13 12:25:09,615] 	ERROR 	137 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-05-13 12:25:10,204] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-13 12:25:20,296] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-13 12:25:20,842] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-05-13 12:26:08,216] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: HTTP Error 409: Conflict
+[2024-05-13 12:26:08,757] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-05-13 12:27:20,102] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-05-13 12:27:20,102] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-05-13 12:28:14,220] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-05-13 12:28:14,220] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-05-13 12:28:21,834] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
