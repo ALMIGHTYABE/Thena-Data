@@ -14432,3 +14432,32 @@ http.client.IncompleteRead: IncompleteRead(4682302 bytes read)
 [2024-05-22 01:02:35,242] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-22 01:02:35,242] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-22 01:02:45,175] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-22 01:48:46,323] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-05-22 01:53:14,484] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-05-22 01:53:15,187] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-05-22 01:53:17,162] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-05-22 01:53:17,162] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-22 01:53:19,343] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-22 01:53:19,344] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-05-22 01:53:21,890] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-05-22 01:53:22,680] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-05-22 01:54:26,956] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-05-22 01:54:26,956] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-22 01:55:04,949] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-22 01:55:04,949] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-05-22 01:55:33,272] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-05-22 01:55:34,164] 	INFO 	38 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-22 02:06:19,720] 	INFO 	146 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-22 02:06:20,515] 	INFO 	38 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-22 02:16:38,474] 	INFO 	135 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-05-22 02:16:39,036] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-22 02:16:51,932] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-22 02:16:52,467] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-05-22 02:17:00,983] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-05-22 02:17:01,519] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-05-22 02:17:38,645] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/USD+, Address: 0x1f3ca66c98d682fa1bec31264692dad4f17340bc, Error: Expecting value: line 1 column 1 (char 0)
+[2024-05-22 02:18:31,251] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-05-22 02:18:31,251] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-05-22 02:19:36,881] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-05-22 02:19:36,881] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-05-22 02:19:48,006] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
