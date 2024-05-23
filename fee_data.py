@@ -87,6 +87,8 @@ try:
             print(f"Error occurred while fetching fees from {rpc_endpoint}: {e}")
 
     fee_df = pd.DataFrame(fees_list)
+    if fee_df.empty:
+        raise Exception("Dataframe is empty")
     fee_df["address"] = fee_df["address"].apply(str.lower)
 
     # Pull Prices
