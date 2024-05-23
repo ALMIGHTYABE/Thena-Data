@@ -87,6 +87,9 @@ try:
             print(f"Error occurred while fetching bribes from {rpc_endpoint}: {e}")
 
     bribe_df = pd.DataFrame(bribes_list)
+    if bribe_df.empty:
+        raise Exception("Dataframe is empty")
+    
     bribe_df["address"] = bribe_df["address"].apply(str.lower)
 
     # Pull Prices
