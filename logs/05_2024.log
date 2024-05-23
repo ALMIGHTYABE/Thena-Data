@@ -15448,3 +15448,5 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-05-23 12:41:54,731] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-23 12:41:54,731] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-23 12:42:06,264] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-23 13:43:04,438] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-23 14:09:40,083] 	ERROR 	142 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: 'address'
