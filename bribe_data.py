@@ -29,6 +29,7 @@ try:
     subgraph = config["query"]["subgraph"]
     id_data = config["files"]["id_data"]
     provider_url = config["web3"]["provider_url"]
+    provider_urls = config["web3"]["provider_urls"]
     bribe_abi = config["web3"]["bribe_abi"]
     epoch_csv = config["files"]["epoch_data"]
     price_api = config["api"]["price_api"]
@@ -59,27 +60,31 @@ try:
     epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0] - 1
 
     # Pull Bribes Web3
-    validation.METHODS_TO_VALIDATE = []
-    w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 60}))
-
-    bribes_list = []
-    for name, bribe_ca in zip(ids_df["name"], ids_df["bribe_ca"]):
-        if bribe_ca == "0x0000000000000000000000000000000000000000":
-            pass
-        else:
-            contract_address = bribe_ca
-            contract_instance = w3.eth.contract(address=contract_address, abi=bribe_abi)
-
-            rewardsListLength = contract_instance.functions.rewardsListLength().call()
-
-            rewardTokens = []
-            for reward_num in range(rewardsListLength):
-                rewardTokens.append(contract_instance.functions.rewardTokens(reward_num).call())
-
-            for reward_addy in rewardTokens:
-                rewarddata = contract_instance.functions.rewardData(reward_addy, timestamp).call()
-                if rewarddata[1] > 0:
-                    bribes_list.append({"name": name, "bribes": rewarddata[1], "address": reward_addy})
+    for rpc_endpoint in provider_urls:
+        try:
+            validation.METHODS_TO_VALIDATE = []
+            w3 = Web3(Web3.HTTPProvider(rpc_endpoint, request_kwargs={"timeout": 60}))
+        
+            bribes_list = []
+            for name, bribe_ca in zip(ids_df["name"], ids_df["bribe_ca"]):
+                if bribe_ca == "0x0000000000000000000000000000000000000000":
+                    pass
+                else:
+                    contract_address = bribe_ca
+                    contract_instance = w3.eth.contract(address=contract_address, abi=bribe_abi)
+        
+                    rewardsListLength = contract_instance.functions.rewardsListLength().call()
+        
+                    rewardTokens = []
+                    for reward_num in range(rewardsListLength):
+                        rewardTokens.append(contract_instance.functions.rewardTokens(reward_num).call())
+        
+                    for reward_addy in rewardTokens:
+                        rewarddata = contract_instance.functions.rewardData(reward_addy, timestamp).call()
+                        if rewarddata[1] > 0:
+                            bribes_list.append({"name": name, "bribes": rewarddata[1], "address": reward_addy})
+        except Exception as e:
+            print(f"Error occurred while fetching bribes from {rpc_endpoint}: {e}")
 
     bribe_df = pd.DataFrame(bribes_list)
     bribe_df["address"] = bribe_df["address"].apply(str.lower)
