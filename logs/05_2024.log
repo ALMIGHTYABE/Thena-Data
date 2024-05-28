@@ -17383,3 +17383,39 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-05-28 11:22:23,807] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-05-28 11:22:23,807] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-05-28 11:22:37,176] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-05-28 12:12:58,041] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-05-28 12:15:44,275] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-05-28 12:15:45,165] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-05-28 12:15:47,297] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-05-28 12:15:47,297] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-05-28 12:15:50,197] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-05-28 12:15:50,197] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-05-28 12:15:53,188] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-05-28 12:15:53,975] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-05-28 12:16:36,577] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-05-28 12:16:36,577] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-05-28 12:17:01,454] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-05-28 12:17:01,454] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-05-28 12:17:50,793] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-05-28 12:17:51,615] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-05-28 12:53:06,393] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-05-28 12:53:07,235] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-05-28 13:27:13,006] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-05-28 13:27:13,651] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-05-28 13:27:25,815] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-05-28 13:27:26,424] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-05-28 13:27:39,754] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-05-28 13:27:40,354] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-05-28 13:28:36,108] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-05-28 13:28:36,108] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-05-28 13:29:38,312] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-05-28 13:29:38,313] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-05-28 13:33:44,930] 	ERROR 	227 	tvl_data.py 	<module>() 	Error occurred during TVL Data Combined process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "tvl_data.py", line 223, in <module>
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 150, in values_append
+    r = self.client.request("post", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
