@@ -642,3 +642,43 @@
 [2024-06-02 15:07:44,585] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-02 15:07:44,585] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-02 15:07:55,487] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-02 16:08:10,686] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-02 16:12:39,960] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-02 16:12:40,677] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-02 16:12:42,732] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-02 16:12:42,733] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-02 16:12:45,403] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-02 16:12:45,403] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-02 16:12:47,753] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-02 16:12:48,533] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-02 16:13:23,140] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-02 16:13:23,140] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-02 16:14:05,858] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-02 16:14:05,858] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-02 16:17:16,159] 	ERROR 	235 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+Traceback (most recent call last):
+  File "pair_data.py", line 220, in <module>
+    gs = gc.open_by_key(sheetkey)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 170, in open_by_key
+    return Spreadsheet(self, {"id": key})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 34, in __init__
+    metadata = self.fetch_sheet_metadata()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 254, in fetch_sheet_metadata
+    r = self.client.request("get", url, params=params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-06-02 16:17:16,988] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-02 16:46:53,941] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-02 16:46:54,758] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-02 17:14:40,317] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-02 17:14:40,915] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-02 17:14:54,001] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-02 17:14:54,557] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-02 17:15:03,844] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-02 17:15:04,402] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-02 17:15:58,416] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-02 17:15:58,416] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-02 17:16:41,996] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-02 17:16:41,996] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-02 17:16:51,707] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
