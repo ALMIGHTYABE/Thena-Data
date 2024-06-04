@@ -1466,3 +1466,197 @@ gspread.exceptions.APIError: {'code': 503, 'message': 'The service is currently 
 [2024-06-04 21:11:38,717] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-04 21:11:38,717] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-04 21:11:48,490] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-04 22:06:49,739] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-04 22:11:44,479] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-04 22:11:45,185] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-04 22:11:47,196] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-04 22:11:47,196] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-04 22:11:49,050] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-04 22:11:49,050] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-04 22:11:52,952] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-04 22:11:53,764] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-04 22:12:31,319] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-04 22:12:31,319] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-04 22:12:57,548] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-04 22:12:57,548] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-04 22:13:37,941] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-04 22:13:38,807] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-04 22:43:43,972] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-04 22:43:44,805] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-04 23:13:01,897] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-04 23:13:02,525] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-04 23:13:14,419] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-04 23:13:15,007] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-04 23:13:23,465] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-04 23:13:24,057] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-04 23:14:09,484] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-04 23:14:09,484] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-04 23:14:09,653] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: weETH/ETH, Address: 0xc0e1c9fec0d8888039095da014382d027f27069d, Error: 'data'
+[2024-06-04 23:14:09,724] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/OOE, Address: 0x3401cf94c6f81347b426df1d0f6269b7a24feb2e, Error: 'data'
+[2024-06-04 23:14:09,786] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: LTC/BNB, Address: 0x320e85137bb10157bb8bbb22a912d516f8296cb5, Error: 'data'
+[2024-06-04 23:14:09,866] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/XVS, Address: 0x0748fb34bcb68d2c055cdfcb9f5bcb3549fcb456, Error: 'data'
+[2024-06-04 23:14:09,957] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: FIL/BNB, Address: 0x17661065fbc18e782a259db2022bc23bc74bd942, Error: 'data'
+[2024-06-04 23:14:10,034] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/THE, Address: 0x51bd5e6d3da9064d59bcaa5a76776560ab42ceb8, Error: 'data'
+[2024-06-04 23:14:10,107] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: DAO/ankrBNB, Address: 0x11c92ded470a50c96d2e5effedc890cd4bd2502e, Error: 'data'
+[2024-06-04 23:14:10,203] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/RDNT, Address: 0x09547029e78413571c79791654667c4c4d3322d6, Error: 'data'
+[2024-06-04 23:14:10,268] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/OATH(old), Address: 0x055557c6606f7b0d34e617653c447f079b0b0a73, Error: 'data'
+[2024-06-04 23:14:10,353] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/USDT, Address: 0x3a8b7e833793ab906403238853db34bd3231508d, Error: 'data'
+[2024-06-04 23:14:10,428] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BTCB/BNB, Address: 0x6b67112aa7b45e8cdc0a93b8d66a6a36e68ae8e5, Error: 'data'
+[2024-06-04 23:14:10,488] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: FTM/BNB, Address: 0xf6814792050ccd1c603d8a95468d6d9587ecbdaf, Error: 'data'
+[2024-06-04 23:14:10,556] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/BNB, Address: 0xf2a4e4261fcdfbb891bcf703640fbe713c6cd0fe, Error: 'data'
+[2024-06-04 23:14:10,646] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/THE, Address: 0x1335ffc90516b022425dbcfe4ea3610aa45f6c3e, Error: 'data'
+[2024-06-04 23:14:10,778] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: lisUSD/BNB, Address: 0xbf121d987f9635ed6d2f7bb957fbbe163bdea0e0, Error: 'data'
+[2024-06-04 23:14:10,838] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: stkBNB/THE, Address: 0xf1b7007694dbcba004db73473cca3c5add3803e4, Error: 'data'
+[2024-06-04 23:14:10,900] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: stERN/ERN, Address: 0xcb2b3d8239759b4ad1dfe6392bc39dee4f23303b, Error: 'data'
+[2024-06-04 23:14:10,964] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: GRAIN/BNB, Address: 0x1f060be9d1d3bd3acc5392ac066c6b437780abe0, Error: 'data'
+[2024-06-04 23:14:11,035] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: AITECH/BNB, Address: 0x0485f8cdc8c15bdf180d1ded90c3ce1275deaa20, Error: 'data'
+[2024-06-04 23:14:11,101] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/XCAD, Address: 0x0d305d7227151d3a480abc68a4ec3d40d3788ccb, Error: 'data'
+[2024-06-04 23:14:11,175] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/USDC, Address: 0x1b9a1120a17617d8ec4dc80b921a9a1c50caef7d, Error: 'data'
+[2024-06-04 23:14:11,247] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: OKSE/BNB, Address: 0x088c568dc3123fc40dd153918125ee27027dd6e7, Error: 'data'
+[2024-06-04 23:14:11,319] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: slisBNB/BNB, Address: 0xa07bbf09b48e8d219774ac9b92622f5260a9c9f4, Error: 'data'
+[2024-06-04 23:14:11,441] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/TON, Address: 0xd6f0ba7ec72ff3974b02c18ed1fc33da77434d41, Error: 'data'
+[2024-06-04 23:14:11,523] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/BNB, Address: 0x1123e75b71019962cd4d21b0f3018a6412edb63c, Error: 'data'
+[2024-06-04 23:14:11,580] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: CGPT/BUSD, Address: 0x8731bb0202deb31a93b3178b674e51c3cc49b285, Error: 'data'
+[2024-06-04 23:14:11,643] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/BNB, Address: 0xd405b976ac01023c9064024880999fc450a8668b, Error: 'data'
+[2024-06-04 23:14:11,707] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/RDNT, Address: 0x0f28ae1eea69dda12bc89419f7e8552dd191c98e, Error: 'data'
+[2024-06-04 23:14:11,778] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/BNB, Address: 0x2f6c6e00e517944ee5efe310cd0b98a3fc61cb98, Error: 'data'
+[2024-06-04 23:14:11,860] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/stkBNB, Address: 0x84b78452a97c5afda1400943333f691448069a29, Error: 'data'
+[2024-06-04 23:14:11,923] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ID/BNB, Address: 0xb66566fd115caf17633504a5165a319f17d9f096, Error: 'data'
+[2024-06-04 23:14:11,997] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/FLOKI, Address: 0x5135c813d5f9d3624221b3bdbac805339fa5a591, Error: 'data'
+[2024-06-04 23:14:12,062] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/LQDR, Address: 0x19934ce0f772ec67873bbd1127f173e6c79856a3, Error: 'data'
+[2024-06-04 23:14:12,143] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/THE, Address: 0x98a0004b8e9fe161369528a2e07de56c15a27d76, Error: 'data'
+[2024-06-04 23:14:12,204] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/FRAX, Address: 0x8ab8fd902039a48e51735452b1f97c93cb034e80, Error: 'data'
+[2024-06-04 23:14:12,267] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: DOGE/BNB, Address: 0xff4840a06708e53b620e2670295265029fa72a78, Error: 'data'
+[2024-06-04 23:14:12,327] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: MULTI/BNB, Address: 0x972e8be53425dbcaf3446c7ac130adb48ba3e125, Error: 'data'
+[2024-06-04 23:14:12,403] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: lisUSD/frxETH, Address: 0xf8a4cdf9efc4b9b38eaa6e27ee281cb2111fa664, Error: 'data'
+[2024-06-04 23:14:12,475] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/XCAD, Address: 0xfb0e434eba0a467cd3f47cec5de63f4385861ea3, Error: 'data'
+[2024-06-04 23:14:12,532] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/MATIC, Address: 0x775cac1c1b47250121291934d15912efb69213e9, Error: 'data'
+[2024-06-04 23:14:12,617] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: GHNY/BNB, Address: 0xcc3aec37005fcc95288bfb046e5ae789cc322099, Error: 'data'
+[2024-06-04 23:14:12,681] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/DEUS, Address: 0x6a524c7328eb652248d1a3786f9db0e74ca961f0, Error: 'data'
+[2024-06-04 23:14:12,754] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/EDU, Address: 0x4bd39cfb05545c4238316da69ecada1b4caabc05, Error: 'data'
+[2024-06-04 23:14:12,841] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: DAO/BUSD, Address: 0x604a99f4c5e46add74dba10c21b5e26374a1162f, Error: 'data'
+[2024-06-04 23:14:12,901] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ANKR, Address: 0x90d43f6e920ab9500ae0473d6f67a95126ca4091, Error: 'data'
+[2024-06-04 23:14:12,975] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: XCAD/BUSD, Address: 0x0cd7f0d5478fefe59f2b9f5aba623706f2924e77, Error: 'data'
+[2024-06-04 23:14:13,040] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/rBNB, Address: 0x3cad1cba60f695ec7fa522ec486f55d77c270b18, Error: 'data'
+[2024-06-04 23:14:13,124] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: wUSDR/USDC, Address: 0x3f8062cf591a918bc3b183fa241ec49efbd30e2b, Error: 'data'
+[2024-06-04 23:14:13,194] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: XCAD/BNB, Address: 0xe2624920c88b470b78efadfde51dd0e2c841934b, Error: 'data'
+[2024-06-04 23:14:13,263] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/USDT, Address: 0xa60a504d92a1c95bda729c3f745b361ca822d6dd, Error: 'data'
+[2024-06-04 23:14:13,338] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: TWT/BNB, Address: 0x1a2a83deab03dc7110080e7f83df7ffe36681289, Error: 'data'
+[2024-06-04 23:14:13,402] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/ankrETH, Address: 0xc9df4ae113fa7cb67ce1779cb1560d1f43c2d373, Error: 'data'
+[2024-06-04 23:14:13,471] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: jBRL/USDC, Address: 0xd63bba6078a328b93758cc7556e21d3380397d41, Error: 'data'
+[2024-06-04 23:14:13,546] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: lisUSD/USDT, Address: 0x5b0baf66718caabda49a4af32eb455c3b99b5821, Error: 'data'
+[2024-06-04 23:14:13,615] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: sfrxETH/frxETH, Address: 0xd9e98a73102391b3d7d1d94c0c58541abf99a14f, Error: 'data'
+[2024-06-04 23:14:13,710] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/ANKR, Address: 0xc8cbf9b12552c0b85fc368aa530cc31e00526e2f, Error: 'data'
+[2024-06-04 23:14:13,772] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: frxETH/FRAX, Address: 0x3cadd2f6a964d262b5dd5e7169c284b465336f0e, Error: 'data'
+[2024-06-04 23:14:13,829] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: lisUSD/FRAX, Address: 0x30f8542ede13c68c5b4ed2922401c8ba63d88e59, Error: 'data'
+[2024-06-04 23:14:13,904] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/THE, Address: 0x059edc38a9ef11a64fbecc2c30c991ecca51d962, Error: 'data'
+[2024-06-04 23:14:13,971] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/ETH, Address: 0x6b32e9178a6670dc9b19a74fe5080c54ea5347c7, Error: 'data'
+[2024-06-04 23:14:14,038] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/ankrETH, Address: 0xa31fdad356065d3e244ac33c2e7901fff7e8aaec, Error: 'data'
+[2024-06-04 23:14:14,098] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: FRAX/ERN, Address: 0x1c2d4f310aea872c5bd55790d2d78ca7b31992a3, Error: 'data'
+[2024-06-04 23:14:14,187] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BTCB/stkBNB, Address: 0x16736fdab466f69e11ba5fc294be17d2fb8c3b02, Error: 'data'
+[2024-06-04 23:14:14,252] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ARKEN/BNB, Address: 0xcb995dae5238c1e08c7289b335c80ed8d129a46b, Error: 'data'
+[2024-06-04 23:14:14,309] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: EQB/frxETH, Address: 0xe6385768234224cf79d84c390e346d43bc812824, Error: 'data'
+[2024-06-04 23:14:14,378] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: frxETH/wBETH, Address: 0x3bc0fc25ad4456cdd4e4805ed89ec0d80db5e2c4, Error: 'data'
+[2024-06-04 23:14:14,437] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: LVL/BNB, Address: 0x011077b8199cab999e895aed7f8a78755a678106, Error: 'data'
+[2024-06-04 23:14:14,493] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ERN/OATH(old), Address: 0xd20c7c2693c3bf844f84dfa03012a6c07032c5a6, Error: 'data'
+[2024-06-04 23:14:14,568] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/stkBNB, Address: 0x8b41d72def3867e19f2285b45da655e24928018f, Error: 'data'
+[2024-06-04 23:14:14,633] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/USDT, Address: 0xc1716bea36140fa08476742d80cb28cecd492a6f, Error: 'data'
+[2024-06-04 23:14:14,706] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: EQB/BNB, Address: 0x89217690eb025ef16124316f4a7884c13b30fb6f, Error: 'data'
+[2024-06-04 23:14:14,765] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: CSIX/USDT, Address: 0xc9fd6de6e25de1b0e18b1e7eeb19b3d391614ff5, Error: 'data'
+[2024-06-04 23:14:14,844] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDC/wUSDR(v3), Address: 0xcbde6c4f202ecc13267fd53913bc44b4dd6ef998, Error: 'data'
+[2024-06-04 23:14:14,941] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/frxETH, Address: 0x733a0b28e4d7f2cb421730c4e4e26f2adce3d240, Error: 'data'
+[2024-06-04 23:14:15,015] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/BTE, Address: 0x9d49003383ab126c563ae2b7d545db003e657f53, Error: 'data'
+[2024-06-04 23:14:15,084] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/BIFI, Address: 0xcc0b8d28e7c31555a3889cdc05af55bff57c368a, Error: 'data'
+[2024-06-04 23:14:15,145] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: FIL/ankrBNB, Address: 0xe6a2a77ca6b6c51103fbca83d3f171a920df42b4, Error: 'data'
+[2024-06-04 23:14:15,209] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: frxETH/BNB, Address: 0x6eb8a743723216a0de043c554c85e447b0d59e2e, Error: 'data'
+[2024-06-04 23:14:15,295] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: PNP/BNB, Address: 0x187784bc6812b056f4a54d84cdc98075f2d2eec6, Error: 'data'
+[2024-06-04 23:14:15,387] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: OATH/ERN, Address: 0xdf5751bbef0241878852253f8541a02c3cbc2dd1, Error: 'data'
+[2024-06-04 23:14:15,457] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: wUSDR/DOLA, Address: 0xdb6bff81311c5c4f72668d9c4c8a5e2cb4584a82, Error: 'data'
+[2024-06-04 23:14:15,543] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/LINK, Address: 0x643d9573c78599c8451a90794d34dd1aab0663cd, Error: 'data'
+[2024-06-04 23:14:15,645] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/ERN, Address: 0xc7426dce489e6b2d580fd480ef72d57e5d7643f5, Error: 'data'
+[2024-06-04 23:14:15,705] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/DUSD, Address: 0xcf4cf048d0c754a71d559296ac1ccc9aeb0b25be, Error: 'data'
+[2024-06-04 23:14:15,770] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/BTCB, Address: 0xe6bb969ee786e1a42c179eb11a5038640304cb4c, Error: 'data'
+[2024-06-04 23:14:15,848] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/PENDLE, Address: 0x8e3ae967604dc4b4ba676e6d34ac603fb07fc921, Error: 'data'
+[2024-06-04 23:14:15,907] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: axlLqdr/BNB, Address: 0x8171e3aa02f684bd4e8e04dad286451318cf27a9, Error: 'data'
+[2024-06-04 23:14:16,010] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNBx/BTCB, Address: 0x1a0a28d2217503f29f5579c16d8783bd7b9c8c93, Error: 'data'
+[2024-06-04 23:14:16,073] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: TWT/ankrBNB, Address: 0x80c264189dd38f4fa5d6e424c1bf879b3b176076, Error: 'data'
+[2024-06-04 23:14:16,139] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/ERN, Address: 0x8dcdf3cbd3a588a2e2fb607bdc9180e4fefa583b, Error: 'data'
+[2024-06-04 23:14:16,207] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ID/ankrBNB, Address: 0x1d56cbcc160d9f5fe56ba184bdb847dc209f7243, Error: 'data'
+[2024-06-04 23:14:16,271] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: frxETH/RDNT, Address: 0x403e786b4168ec718e2e6cb4fa874aade73d54f0, Error: 'data'
+[2024-06-04 23:14:16,337] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/USDV, Address: 0x739e561786c920d025d57ed99be5d4eca3458e3e, Error: 'data'
+[2024-06-04 23:14:16,405] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: CASH/USDT, Address: 0x45f1fdb00fb78174196fa109a27cdbd07f67f85e, Error: 'data'
+[2024-06-04 23:14:16,499] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/AST, Address: 0x35f0c646a85675f31cfcd1e04d955cd2ce93e3c7, Error: 'data'
+[2024-06-04 23:14:16,564] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BTCB/FRAX, Address: 0xa4cf2a122e22bddaee91d9f3f086b07dce5cf805, Error: 'data'
+[2024-06-04 23:14:16,633] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/BTCB, Address: 0x1f9b1a3ddedbf47b96c65f29c0586b678de2623b, Error: 'data'
+[2024-06-04 23:14:16,706] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/inETH, Address: 0x52e3e02b5961292c388a1fae1ce4ead724d4e806, Error: 'data'
+[2024-06-04 23:14:16,764] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ICHI, Address: 0xc7db746edd16bbde9a75aa6114400709041da561, Error: 'data'
+[2024-06-04 23:14:16,837] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: WBNB/SOL, Address: 0x1b932598da273069e1878e4a1505b6f833462210, Error: 'data'
+[2024-06-04 23:14:16,911] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/PLAY, Address: 0xa7aba8136c5758b47312233c684547b651fcf775, Error: 'data'
+[2024-06-04 23:14:16,977] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/USDV, Address: 0xbf5e6e3c88c88cf6b17327f57a61a3a997f13a3b, Error: 'data'
+[2024-06-04 23:14:17,052] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ABOND, Address: 0x44aa475ed44dda30f4fb81a0eec7c44aed01c7c0, Error: 'data'
+[2024-06-04 23:14:17,126] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: FRAX/USDC, Address: 0xe1ad12b9f713710a8fff593eb1c6e5f82d3c0b3e, Error: 'data'
+[2024-06-04 23:14:17,188] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: TON/ICHI, Address: 0xbfef6077508c8e1fdf9cea269f646fa37650fba5, Error: 'data'
+[2024-06-04 23:14:17,256] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ADA, Address: 0x203f134156f3fcb2125d7e9c3e705879c786cada, Error: 'data'
+[2024-06-04 23:14:17,319] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ERN, Address: 0xc609daa86ff43f34eef52c468cbc4934ef8d2502, Error: 'data'
+[2024-06-04 23:14:17,385] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/HBR, Address: 0x8b8a362116f5f632b81e85e347846590bb4be2a4, Error: 'data'
+[2024-06-04 23:14:17,451] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: OATH/BNB, Address: 0x8929e532e551c82f5736aa18c78440691bc542d9, Error: 'data'
+[2024-06-04 23:14:17,511] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/DUSD, Address: 0xf96269e2af44e45f53ce8bba9a280e3db7e54d62, Error: 'data'
+[2024-06-04 23:14:17,584] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/FRAX, Address: 0x82437afe50b21d6910498706dd4fc7b6567e03eb, Error: 'data'
+[2024-06-04 23:14:17,654] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: frxETH/ETH, Address: 0x2a8e116756c79da4205eb8252ffc4a5cd667b0c1, Error: 'data'
+[2024-06-04 23:14:17,726] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: eTHENA/BNB, Address: 0x7cefcea15158df116534c75f2f677d4d1f077028, Error: 'data'
+[2024-06-04 23:14:17,794] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ORBS/BNB, Address: 0x130348553b3dea5d65767dc390eff257f9a9181d, Error: 'data'
+[2024-06-04 23:14:17,856] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/ABOND, Address: 0xfceb85127b09cc17f9a97a22c314d79b55f84f9f, Error: 'data'
+[2024-06-04 23:14:17,923] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: XRP/BNB, Address: 0x52ddb7bd7ca73a20b6334cc08fcaca9906992a15, Error: 'data'
+[2024-06-04 23:14:18,003] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ABOND/ICHI, Address: 0x28b23d6ad0e440a37994eb49dc0b62dbcdea99a9, Error: 'data'
+[2024-06-04 23:14:18,077] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDV/BNB, Address: 0xab3790c5fab8aff0a41640eb2c7b280289c657e5, Error: 'data'
+[2024-06-04 23:14:18,150] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/SNS, Address: 0x37cbdbb97c34ba577adbfbb80b517cd6cab636e8, Error: 'data'
+[2024-06-04 23:14:18,212] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: SolvBTC/BTCB, Address: 0x575a951ad021d4297ac125be88ee4620652d5c12, Error: 'data'
+[2024-06-04 23:14:18,272] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ALGB, Address: 0x9545d5399e50a8d9b9be239bd7117b5655a9a45d, Error: 'data'
+[2024-06-04 23:14:18,333] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BKN/USDT, Address: 0xb7ed8551546bff15f7103318d465ef81d79bc67e, Error: 'data'
+[2024-06-04 23:14:18,402] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/UNI, Address: 0x117e96887b20d4db40df85fa2b7302ca0d63c5e3, Error: 'data'
+[2024-06-04 23:14:18,468] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/XVS, Address: 0x06dc242b1987b46c1e8dd44d1cb203139cf09edf, Error: 'data'
+[2024-06-04 23:14:18,468] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-04 23:14:18,468] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-04 23:14:22,628] 	ERROR 	227 	tvl_data.py 	<module>() 	Error occurred during TVL Data Combined process. Error: IncompleteRead(13776532 bytes read)
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 556, in _get_chunk_left
+    chunk_left = self._read_next_chunk_size()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 523, in _read_next_chunk_size
+    return int(line, 16)
+ValueError: invalid literal for int() with base 16: b''
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 573, in _readall_chunked
+    chunk_left = self._get_chunk_left()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 558, in _get_chunk_left
+    raise IncompleteRead(b'')
+http.client.IncompleteRead: IncompleteRead(0 bytes read)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "tvl_data.py", line 202, in <module>
+    tvl_data_old = pd.read_csv(tvl_data_csv)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 713, in get_handle
+    ioargs = _get_filepath_or_buffer(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/pandas/io/common.py", line 368, in _get_filepath_or_buffer
+    reader = BytesIO(req.read())
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 466, in read
+    return self._readall_chunked()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/http/client.py", line 580, in _readall_chunked
+    raise IncompleteRead(b''.join(value))
+http.client.IncompleteRead: IncompleteRead(13776532 bytes read)
