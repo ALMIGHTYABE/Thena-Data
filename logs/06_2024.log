@@ -2036,3 +2036,31 @@ KeyError: 'date'
 [2024-06-05 15:14:20,152] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-05 15:14:20,152] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-05 15:14:39,348] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-05 16:08:26,464] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-05 16:13:43,180] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-05 16:13:43,988] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-05 16:13:45,509] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-05 16:13:45,509] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-05 16:13:47,083] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-05 16:13:47,083] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-05 16:13:50,057] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-05 16:13:50,846] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-05 16:14:48,250] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-05 16:14:48,250] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-05 16:15:23,388] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-05 16:15:23,388] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-05 16:16:13,462] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-05 16:16:14,305] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-05 16:44:23,639] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-05 16:44:24,478] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-05 17:11:51,696] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-05 17:11:52,301] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-05 17:15:08,416] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: {'code': 503, 'message': 'The service is currently unavailable.', 'status': 'UNAVAILABLE'}
+[2024-06-05 17:15:08,984] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-05 17:15:32,117] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-05 17:15:32,684] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-05 17:16:48,281] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-05 17:16:48,281] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-05 17:18:01,439] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-05 17:18:01,439] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-05 17:18:28,896] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
