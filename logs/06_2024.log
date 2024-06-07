@@ -2516,3 +2516,31 @@ KeyError: 'date'
 [2024-06-07 01:43:17,443] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-07 01:43:17,443] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-07 01:43:34,711] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-07 01:54:22,817] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-07 01:58:35,852] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-07 01:58:36,607] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-07 01:58:38,317] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-07 01:58:38,317] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-07 01:58:40,410] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-07 01:58:40,410] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-07 01:58:43,036] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-07 01:58:43,854] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-07 01:59:35,360] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-07 01:59:35,360] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-07 02:00:22,921] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-07 02:00:22,921] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-07 02:01:03,754] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-07 02:01:04,620] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-07 02:27:23,613] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-07 02:27:24,458] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-07 02:52:55,896] 	ERROR 	144 	fee_data.py 	<module>() 	Error occurred during Fee Data process. Error: Dataframe is empty
+[2024-06-07 02:52:56,519] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-07 02:53:10,096] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-07 02:53:10,659] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-07 02:53:33,405] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-07 02:53:33,975] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-07 02:54:42,462] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-07 02:54:42,462] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-07 02:55:43,020] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-07 02:55:43,020] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-07 02:55:58,234] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
