@@ -4309,3 +4309,35 @@ KeyError: 'date'
 [2024-06-11 14:35:15,425] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-11 14:35:15,426] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-11 14:35:28,210] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-11 15:07:13,566] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-11 15:13:03,554] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-11 15:13:04,241] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-11 15:13:06,242] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-11 15:13:06,242] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-11 15:13:08,880] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-11 15:13:08,881] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-11 15:13:10,984] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-11 15:13:11,867] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-11 15:14:14,270] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-11 15:14:14,270] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-11 15:15:03,054] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-11 15:15:03,054] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-11 15:15:44,899] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-11 15:15:45,860] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-11 15:50:55,728] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-11 15:50:56,684] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-11 16:19:59,015] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-11 16:19:59,721] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-11 16:20:10,632] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-11 16:20:11,256] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-11 16:20:18,610] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-11 16:20:19,224] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-11 16:21:45,063] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-11 16:21:45,063] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-11 16:21:57,817] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/BNB, Address: 0xd405b976ac01023c9064024880999fc450a8668b, Error: Expecting value: line 1 column 1 (char 0)
+[2024-06-11 16:22:09,609] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: AITECH/BNB, Address: 0x0485f8cdc8c15bdf180d1ded90c3ce1275deaa20, Error: Expecting value: line 1 column 1 (char 0)
+[2024-06-11 16:22:20,475] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: MULTI/BNB, Address: 0x972e8be53425dbcaf3446c7ac130adb48ba3e125, Error: Expecting value: line 1 column 1 (char 0)
+[2024-06-11 16:22:22,453] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: DAO/BUSD, Address: 0x604a99f4c5e46add74dba10c21b5e26374a1162f, Error: Expecting value: line 1 column 1 (char 0)
+[2024-06-11 16:23:01,764] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-11 16:23:01,764] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-11 16:23:19,031] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
