@@ -4425,3 +4425,31 @@ KeyError: 'date'
 [2024-06-11 23:09:28,116] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-11 23:09:28,116] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-11 23:09:45,586] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-12 01:54:06,599] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-12 01:57:10,140] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-12 01:57:10,904] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-12 01:57:15,162] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-12 01:57:15,162] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-12 01:57:18,666] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-12 01:57:18,666] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-12 01:57:23,872] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-12 01:57:24,671] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-12 01:58:13,541] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-12 01:58:13,542] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-12 01:58:45,063] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-12 01:58:45,063] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-12 01:59:29,909] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-12 01:59:30,737] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-12 02:36:13,863] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-12 02:36:14,711] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-12 03:04:46,256] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-12 03:04:46,866] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-12 03:04:47,684] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-06-12 03:04:48,245] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-12 03:04:48,678] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-06-12 03:04:49,238] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-12 03:05:59,236] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-12 03:05:59,237] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-12 03:07:02,231] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-12 03:07:02,231] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-12 03:07:13,904] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
