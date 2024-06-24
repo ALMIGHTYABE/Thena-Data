@@ -9315,3 +9315,50 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-06-24 15:15:40,502] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-24 15:15:40,502] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-24 15:15:56,631] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-24 16:08:37,865] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-24 16:13:35,112] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-24 16:13:35,780] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-24 16:13:37,149] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-24 16:13:37,150] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-24 16:13:38,712] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-24 16:13:38,712] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-24 16:13:41,308] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-24 16:13:42,136] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-24 16:14:24,645] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-24 16:14:24,645] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-24 16:15:05,052] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-24 16:15:05,052] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-24 16:16:02,916] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-24 16:16:03,751] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-24 16:48:48,369] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-24 16:48:49,249] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-24 17:20:01,117] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-24 17:20:01,725] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-24 17:20:15,013] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-24 17:20:15,585] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-24 17:20:23,928] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-24 17:20:24,500] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-24 17:20:42,729] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: IDIA/C98, Address: 0xeb6e35fe9f507eb1a35fb048584823652d4d2797, Error: 'data'
+[2024-06-24 17:20:43,735] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: THE/FLOKI, Address: 0x82a72d1eecb8fffabbd0073db95d06bac1577e09, Error: 'data'
+[2024-06-24 17:20:43,865] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: IPAD/BUSD, Address: 0xc54f536ff19ffce40a82cca2903b1d7d48af69e4, Error: 'data'
+[2024-06-24 17:20:44,123] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FITFI/BNB, Address: 0xd9f88f54a73b37463fb8f15ece98e0d1dcdcaab6, Error: 'data'
+[2024-06-24 17:20:44,166] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BTCB/GHNY, Address: 0x7b00238cda460127e4d2cd6ce59155aab2a5342d, Error: 'data'
+[2024-06-24 17:20:45,524] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: GHNY/THE, Address: 0xf581b44ffd48eb84d984cababe7221f3fc85fbe0, Error: 'data'
+[2024-06-24 17:20:45,849] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: JRT/BNB, Address: 0x4dbcf190cbdf69f3b013da6fbb911943237ab913, Error: 'data'
+[2024-06-24 17:21:01,999] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/BUSD, Address: 0x483653bcf3a10d9a1c334ce16a19471a614f4385, Error: 'data'
+[2024-06-24 17:21:02,944] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/pxETH, Address: 0x40d191474b32e04b907698ab4ca2a49221253918, Error: 'data'
+[2024-06-24 17:21:02,987] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XCAD(old)/BTCB, Address: 0xd9f7096625b65ac37c09d05c1c4548edfcce9fbe, Error: 'data'
+[2024-06-24 17:21:03,236] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: LQDR/THE, Address: 0xb33d77159ea381176ab1eb11475fd65912d83728, Error: 'data'
+[2024-06-24 17:21:03,513] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: IDIA/BNB, Address: 0x57818b471ab3b7bdd558cfa0d5bc6ab35534aac7, Error: 'data'
+[2024-06-24 17:21:04,168] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: qTHE/THE, Address: 0xced2490a69aed204e7a10e4aa10dddce5224287d, Error: 'data'
+[2024-06-24 17:21:09,760] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XCAD(old)/XCAD, Address: 0x97ff96baf308c910e3098b7b9d40b06759a3fabf, Error: 'data'
+[2024-06-24 17:21:12,810] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/HBR, Address: 0xa26d4fac88227586e83312a4d2ddae42788f5c2f, Error: 'data'
+[2024-06-24 17:21:12,810] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-24 17:21:12,810] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-24 17:22:02,769] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ERN, Address: 0xc609daa86ff43f34eef52c468cbc4934ef8d2502, Error: 'data'
+[2024-06-24 17:22:02,923] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/AST, Address: 0x35f0c646a85675f31cfcd1e04d955cd2ce93e3c7, Error: 'data'
+[2024-06-24 17:22:03,932] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BTCB/FRAX, Address: 0xa4cf2a122e22bddaee91d9f3f086b07dce5cf805, Error: 'data'
+[2024-06-24 17:22:04,938] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/XCAD, Address: 0x0d305d7227151d3a480abc68a4ec3d40d3788ccb, Error: 'data'
+[2024-06-24 17:22:14,941] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-24 17:22:14,942] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-24 17:22:32,496] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
