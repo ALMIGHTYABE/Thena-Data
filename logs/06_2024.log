@@ -10333,3 +10333,98 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-06-25 13:12:29,428] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-25 13:12:29,428] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-25 13:12:44,685] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-25 14:07:04,174] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-25 14:12:23,353] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-25 14:12:23,999] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-25 14:12:25,896] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-25 14:12:25,896] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-25 14:12:28,444] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-25 14:12:28,444] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-25 14:12:32,084] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-25 14:12:32,921] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-25 14:13:30,888] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-25 14:13:30,888] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-25 14:14:19,185] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-25 14:14:19,185] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-25 14:14:38,159] 	ERROR 	235 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+Traceback (most recent call last):
+  File "pair_data.py", line 225, in <module>
+    set_with_dataframe(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread_dataframe.py", line 371, in set_with_dataframe
+    resp = worksheet.update_cells(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/worksheet.py", line 723, in update_cells
+    data = self.spreadsheet.values_update(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 226, in values_update
+    r = self.client.request("put", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 92, in request
+    raise APIError(response)
+gspread.exceptions.APIError: <!DOCTYPE html>
+<html lang=en>
+  <meta charset=utf-8>
+  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width">
+  <title>Error 502 (Server Error)!!1</title>
+  <style>
+    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}
+  </style>
+  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>
+  <p><b>502.</b> <ins>That’s an error.</ins>
+  <p>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.  <ins>That’s all we know.</ins>
+
+[2024-06-25 14:14:39,145] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-25 14:43:49,660] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-25 14:43:50,479] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-25 15:12:15,528] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-25 15:12:16,129] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-25 15:12:16,662] 	ERROR 	74 	revenue_data.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-06-25 15:12:17,231] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-25 15:12:17,842] 	ERROR 	88 	revenue_data_v2.py 	<module>() 	Error occurred during Revenue Data process. Error: No columns to parse from file
+[2024-06-25 15:12:18,407] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-25 15:12:43,847] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/FTM, Address: 0x535aeeab656c0fbb07da64fe4aa3a15dfc6834c8, Error: 'data'
+[2024-06-25 15:12:44,760] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XCAD(old)/THE, Address: 0x3a569cef2c6445d198f90d3d87dbfa3c7977ceb2, Error: 'data'
+[2024-06-25 15:12:44,825] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/USD+, Address: 0xea9abc7ad420bda7dd42fea3c4acd058902a5845, Error: 'data'
+[2024-06-25 15:12:49,714] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: GHNY/THE, Address: 0xf581b44ffd48eb84d984cababe7221f3fc85fbe0, Error: 'data'
+[2024-06-25 15:12:53,469] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FS/USDT, Address: 0x1f02f41906b4e1909166e542eda61ab2924c5a37, Error: 'data'
+[2024-06-25 15:12:53,955] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: liveTHE/THE, Address: 0x3765476bffe43cf4c0656bf3a7529c54ae247056, Error: 'data'
+[2024-06-25 15:12:54,508] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: TWT/BNB, Address: 0xc4a17162da872640c49cc191759f8b423539c7ea, Error: 'data'
+[2024-06-25 15:12:59,373] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DOGE/BNB, Address: 0x37487428a2cff3e21f9d9452b4f6759cc23e4805, Error: 'data'
+[2024-06-25 15:13:03,181] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: jBRL/BNB, Address: 0xf019759f450c8a1c8cfd4e9ecd34e09f72d7fae5, Error: 'data'
+[2024-06-25 15:13:03,400] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/ERN, Address: 0x3666f5900e50870e2f84b9a7a26a1ec68adea8bb, Error: 'data'
+[2024-06-25 15:13:04,213] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: NGL/USDT, Address: 0xd949476184b9c94ed2130e8175d4139654ce2339, Error: 'data'
+[2024-06-25 15:13:10,339] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNBx/THE, Address: 0xbb25dd702471adb5d40df0f382586cb5cbf49bd2, Error: 'data'
+[2024-06-25 15:13:11,955] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ABOND/BNB, Address: 0x7868245cae5834b32b40cee01f1b536ad75c7d09, Error: 'data'
+[2024-06-25 15:13:12,786] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FRAX/sFRAX, Address: 0xd46da49357a3c9da115b3bf20b31b2cf3e5de58b, Error: 'data'
+[2024-06-25 15:13:12,851] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FITFI/BUSD, Address: 0xcae2c0d6937671490d3bce4c21d57ff313f407eb, Error: 'data'
+[2024-06-25 15:13:13,534] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/pxETH, Address: 0x40d191474b32e04b907698ab4ca2a49221253918, Error: 'data'
+[2024-06-25 15:13:14,149] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: LQDR/THE, Address: 0xb33d77159ea381176ab1eb11475fd65912d83728, Error: 'data'
+[2024-06-25 15:13:14,809] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: AVAX/ABOND, Address: 0x8d090796078653dc0b7d7d51e89b54b6a723b344, Error: 'data'
+[2024-06-25 15:13:15,582] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: qTHE/THE, Address: 0xced2490a69aed204e7a10e4aa10dddce5224287d, Error: 'data'
+[2024-06-25 15:13:18,163] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/LIQ(old), Address: 0x0a65af66c963e04d28c1497066362dacb91dd1a0, Error: 'data'
+[2024-06-25 15:13:19,679] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/XCAD, Address: 0xbaec5fce623cf6556038ee22c8267b8e6647cc97, Error: 'data'
+[2024-06-25 15:13:22,031] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: LIBERA/BUSD, Address: 0x4dafe1e55f4d45da38902d3e621999c07e527d41, Error: 'data'
+[2024-06-25 15:13:22,087] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/MIX, Address: 0xeebdb610ef49ad004344bb18cc3cfd3552040589, Error: 'data'
+[2024-06-25 15:13:22,318] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNBx/BTCB, Address: 0x64bb2c54dce689078478c6d40dc2a22d3ac25bcc, Error: 'data'
+[2024-06-25 15:13:23,287] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BTCB/multiBTC, Address: 0x2475ff2a7c81da27ea2e08e0d3b0ad01e16225ec, Error: 'data'
+[2024-06-25 15:13:23,532] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XCAD(old)/XCAD, Address: 0x97ff96baf308c910e3098b7b9d40b06759a3fabf, Error: 'data'
+[2024-06-25 15:13:23,858] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: LVL/BNB, Address: 0xea3f8926fa9ead0b4b05569ad21fd1dcea06b1d4, Error: 'data'
+[2024-06-25 15:13:24,098] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/RDNT, Address: 0x8e5d38d9a303dc0f176e689c547a300365d2ab4b, Error: 'data'
+[2024-06-25 15:13:27,749] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: fBOMB/CGPT, Address: 0xb072badf1c7c0d679ed204bbae50d9c2f7c6f87f, Error: 'data'
+[2024-06-25 15:13:28,093] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-25 15:13:28,094] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-25 15:13:54,002] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ALGB, Address: 0x9545d5399e50a8d9b9be239bd7117b5655a9a45d, Error: 'data'
+[2024-06-25 15:14:11,324] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/ankrETH, Address: 0xa31fdad356065d3e244ac33c2e7901fff7e8aaec, Error: 'data'
+[2024-06-25 15:14:14,280] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ankrBNB/USDT, Address: 0xc1716bea36140fa08476742d80cb28cecd492a6f, Error: 'data'
+[2024-06-25 15:14:14,822] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: CSIX/USDT, Address: 0xc9fd6de6e25de1b0e18b1e7eeb19b3d391614ff5, Error: 'data'
+[2024-06-25 15:14:15,983] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: wUSDR/DOLA, Address: 0xdb6bff81311c5c4f72668d9c4c8a5e2cb4584a82, Error: 'data'
+[2024-06-25 15:14:37,486] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-25 15:14:37,486] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-25 15:14:52,076] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
