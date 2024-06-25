@@ -10233,3 +10233,37 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-06-25 09:21:12,069] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-25 09:21:12,069] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-25 09:21:22,024] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-25 10:07:47,891] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-25 10:11:41,630] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-25 10:11:42,333] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-25 10:11:44,095] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-25 10:11:44,095] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-25 10:11:46,279] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-25 10:11:46,279] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-25 10:11:48,623] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-25 10:11:49,416] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-25 10:12:10,767] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-MORE/USDT, Address: 0x8540CF27FF440E2f53A13819c4788578658f6F83, Error: 'data'
+[2024-06-25 10:12:12,317] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-TAROT/BUSD, Address: 0x928FE97eEe1f921D80F25DC2EeA1dF280704fD03, Error: 'data'
+[2024-06-25 10:12:12,362] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-HAY/BUSD, Address: 0x93B32a8dfE10e9196403dd111974E325219aec24, Error: 'data'
+[2024-06-25 10:12:12,404] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-DAO/WBNB, Address: 0x948c553D8c25Ad7bD034086F0AaE9a9D3c028B90, Error: 'data'
+[2024-06-25 10:12:18,110] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDC/USD+, Address: 0xbF9dC59A2370f1E11Dc34c889C69d56BD7786db6, Error: 'data'
+[2024-06-25 10:12:34,135] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-25 10:12:34,135] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-25 10:13:10,505] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-25 10:13:10,505] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-25 10:13:56,504] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-25 10:13:57,344] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-25 10:38:02,113] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-25 10:38:02,936] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-25 11:00:46,373] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-25 11:00:46,998] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-25 11:01:03,291] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-25 11:01:03,857] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-25 11:01:27,837] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-25 11:01:28,402] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-25 11:02:13,661] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: wUSDR/USDC, Address: 0xa99c4051069b774102d6d215c6a9ba69bd616e6a, Error: 'data'
+[2024-06-25 11:02:26,877] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-25 11:02:26,878] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-25 11:03:23,899] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-25 11:03:23,899] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-25 11:03:37,798] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
