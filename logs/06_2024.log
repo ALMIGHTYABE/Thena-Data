@@ -9797,3 +9797,36 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-06-25 01:34:16,148] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-25 01:34:16,149] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-25 01:34:30,990] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-25 01:54:21,709] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-25 01:59:00,429] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-25 01:59:01,216] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-25 01:59:02,999] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-25 01:59:02,999] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-25 01:59:04,703] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-25 01:59:04,703] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-25 01:59:06,896] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-25 01:59:07,694] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-25 01:59:15,946] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-SnBNB/WBNB, Address: 0x2351D89B26A1cEA6dcf88fF1AD15C9D9BabBB02e, Error: 'data'
+[2024-06-25 01:59:39,231] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-ETS Alpha/BUSD, Address: 0xb23a34cc853E47D8bfd148Baf066B6F1541571c9, Error: 'data'
+[2024-06-25 02:00:00,024] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-25 02:00:00,024] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-25 02:00:34,773] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-25 02:00:34,773] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-25 02:01:13,892] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-25 02:01:14,741] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-25 02:28:49,024] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-25 02:28:49,870] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-25 02:54:33,541] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-25 02:54:34,134] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-25 02:54:45,128] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-25 02:54:45,701] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-25 02:55:03,900] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-25 02:55:04,471] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-25 02:55:17,475] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DOLA/CUSD, Address: 0x7061f52ed4942021924745d454d722e52e057e03, Error: 'data'
+[2024-06-25 02:55:50,417] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDV/USDT, Address: 0x97c4decba0438a4b6f871561963fc41b222dfa10, Error: 'data'
+[2024-06-25 02:56:06,888] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/RDNT, Address: 0xda57e73e5a2fa00c5c6b660454c1950dcb03e958, Error: 'data'
+[2024-06-25 02:56:08,419] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-25 02:56:08,419] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-25 02:57:04,441] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-25 02:57:04,442] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-25 02:57:18,653] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
