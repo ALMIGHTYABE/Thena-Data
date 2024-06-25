@@ -10039,3 +10039,49 @@ gspread.exceptions.APIError: <!DOCTYPE html>
 [2024-06-25 07:02:11,689] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-06-25 07:02:11,689] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-06-25 07:02:26,344] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-06-25 07:07:17,056] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-06-25 07:10:49,231] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-06-25 07:10:49,951] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-06-25 07:10:51,680] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-06-25 07:10:51,680] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-06-25 07:10:53,337] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-06-25 07:10:53,337] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-06-25 07:10:55,594] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-06-25 07:10:56,383] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-06-25 07:11:13,799] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BTCB/multiBTC, Address: 0x706458510e841970F96061F43DAD4F654F06157f, Error: 'data'
+[2024-06-25 07:11:15,895] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-USDC/BUSD, Address: 0x7e61c053527A7Af0c700aD9D2C8207E386273222, Error: 'data'
+[2024-06-25 07:11:22,362] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-LQDR/THE, Address: 0xb33d77159EA381176ab1Eb11475fd65912d83728, Error: 'data'
+[2024-06-25 07:11:23,501] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-BNBx/THE, Address: 0xBB25DD702471aDb5d40df0f382586Cb5CBf49Bd2, Error: 'data'
+[2024-06-25 07:11:31,936] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: sAMM-HAY/WBNB, Address: 0xF0e87ccE713110763B1D68A6EAFaf3046D1F59e3, Error: 'data'
+[2024-06-25 07:11:32,764] 	ERROR 	66 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Pair: vAMM-DAO/BUSD, Address: 0xF81b6B8aAaD4c37F6F2E8Aa9988f28ea8E82Bb49, Error: 'data'
+[2024-06-25 07:11:40,087] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-06-25 07:11:40,087] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-06-25 07:12:21,804] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-06-25 07:12:21,804] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-06-25 07:12:50,853] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-06-25 07:12:51,681] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-06-25 07:35:40,773] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-06-25 07:35:41,589] 	INFO 	39 	fee_data.py 	<module>() 	Fee Data Started
+[2024-06-25 07:57:50,665] 	INFO 	142 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-06-25 07:57:51,246] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-06-25 07:58:01,191] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-06-25 07:58:01,748] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-06-25 07:58:23,763] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-06-25 07:58:24,318] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-06-25 07:58:41,829] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNBx/USDT, Address: 0x19420fa1d0e350b5d46a8d3b24ff2421744eb54e, Error: 'data'
+[2024-06-25 07:58:42,648] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/FTM, Address: 0x535aeeab656c0fbb07da64fe4aa3a15dfc6834c8, Error: 'data'
+[2024-06-25 07:58:42,687] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/FRAX, Address: 0x512909b2bcea4348ea3284bd167095dea10f2f40, Error: 'data'
+[2024-06-25 07:58:43,815] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: IDIA/C98, Address: 0xeb6e35fe9f507eb1a35fb048584823652d4d2797, Error: 'data'
+[2024-06-25 07:58:44,409] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/LQDR, Address: 0x89590bfdf3c5e052a27d5727fe1fd17d3026f41d, Error: 'data'
+[2024-06-25 07:58:44,671] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: IPAD/BUSD, Address: 0xc54f536ff19ffce40a82cca2903b1d7d48af69e4, Error: 'data'
+[2024-06-25 07:58:45,627] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USD+/CUSD, Address: 0x150990b9630ffe2322999e86905536e2e7e8d93f, Error: 'data'
+[2024-06-25 07:59:02,060] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: frxETH/FRAX, Address: 0x0d8401cbc650e82d1f21a7461efc6409ef55c4db, Error: 'data'
+[2024-06-25 07:59:03,720] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: PION/BNB, Address: 0xdc1e387fc2697f3737ee197712bfef9e1101ccd5, Error: 'data'
+[2024-06-25 07:59:04,613] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/BUSD, Address: 0x483653bcf3a10d9a1c334ce16a19471a614f4385, Error: 'data'
+[2024-06-25 07:59:08,831] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: HBR/BNB, Address: 0x5134729cd5a5b40336bc3ca71349f2c108718428, Error: 'data'
+[2024-06-25 07:59:18,226] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-06-25 07:59:18,226] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-06-25 08:00:01,834] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/USDV, Address: 0xbf5e6e3c88c88cf6b17327f57a61a3a997f13a3b, Error: 'data'
+[2024-06-25 08:00:14,903] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-06-25 08:00:14,903] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-06-25 08:00:32,540] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
