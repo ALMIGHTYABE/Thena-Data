@@ -25198,3 +25198,5 @@ Traceback (most recent call last):
   File "tvl_data.py", line 187, in <module>
     raise Exception("Dataframe is empty")
 Exception: Dataframe is empty
+[2024-06-27 00:43:56,033] 	INFO 	27 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-06-27 00:45:20,182] 	INFO 	99 	emissions_data.py 	<module>() 	Emissions Data Ended
