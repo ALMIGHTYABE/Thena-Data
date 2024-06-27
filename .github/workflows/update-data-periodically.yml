@@ -29,7 +29,6 @@ jobs:
           python day_data.py
           python pair_data.py
           python bribe_data.py
-          python fee_data.py
           python revenue_data.py
           python revenue_data_v2.py
           python tvl_data.py
