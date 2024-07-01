@@ -1637,3 +1637,44 @@
 [2024-07-01 22:45:34,775] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-07-01 22:45:34,775] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-07-01 22:45:46,815] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-07-01 23:07:23,253] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-07-01 23:11:20,796] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-07-01 23:11:21,366] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-07-01 23:11:23,316] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-07-01 23:11:23,316] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-07-01 23:11:24,859] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-07-01 23:11:24,859] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-07-01 23:11:28,005] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-07-01 23:11:28,782] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-07-01 23:12:38,709] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-07-01 23:12:38,710] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-07-01 23:13:19,071] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-07-01 23:13:19,071] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-07-01 23:13:49,625] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-07-01 23:13:50,441] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-07-01 23:39:00,721] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-07-01 23:39:01,289] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-07-01 23:39:12,320] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-07-01 23:39:12,871] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-07-01 23:39:28,468] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-07-01 23:39:29,020] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-07-01 23:40:55,286] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USD+/BUSD, Address: 0xe6eab9b5b0a27866f30091dc76afe1ffe70a8507, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:55,440] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/MIX, Address: 0xc8c8148fc304503941dfffe0b28211472597ab74, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:55,602] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BTCB/multiBTC, Address: 0x2475ff2a7c81da27ea2e08e0d3b0ad01e16225ec, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:55,753] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: XCAD(old)/XCAD, Address: 0x97ff96baf308c910e3098b7b9d40b06759a3fabf, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:55,913] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/liveTHE, Address: 0xfd27b64c01b8dfadd906450887c5dfca0cc95f14, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:56,072] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: LVL/BNB, Address: 0xea3f8926fa9ead0b4b05569ad21fd1dcea06b1d4, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:56,227] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/RDNT, Address: 0x8e5d38d9a303dc0f176e689c547a300365d2ab4b, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:56,393] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNBx/ETH, Address: 0xd9bc6271abbe5dd01731b1b9ac2c1cb0ea5be246, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:56,543] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/wUSDR(v3), Address: 0x219c2219371cbd8cc64bf97d38d1f39ed90ebdb7, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:56,692] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ankrBNB/DUSD, Address: 0xc47df29c6454c2206e54657f4716ec91558bc67c, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:56,853] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/AST, Address: 0xa9c1fe3b78a5d613b2dbc5764c893d4e9593a833, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:57,002] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/BTCB, Address: 0x1ebdf6e38ae6461ef5c8e97346a02934ba6fad84, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:57,154] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/LIQ, Address: 0xdf26702b1a510bc6860b2a1df11219f216b91445, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:57,306] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DUSD/BNB, Address: 0xdd0118f593c91ef5fa40c34d5687654c215c3d98, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:40:57,456] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/RDNT, Address: 0xda57e73e5a2fa00c5c6b660454c1950dcb03e958, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 23:41:07,199] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-07-01 23:41:07,199] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-07-01 23:42:15,436] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-07-01 23:42:15,437] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-07-01 23:42:27,089] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
