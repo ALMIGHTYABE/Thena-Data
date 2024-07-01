@@ -810,3 +810,30 @@
 [2024-07-01 10:51:05,102] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-07-01 10:51:05,102] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-07-01 10:51:12,918] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-07-01 11:06:29,020] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-07-01 11:10:58,535] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-07-01 11:10:59,239] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-07-01 11:11:01,082] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-07-01 11:11:01,083] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-07-01 11:11:02,448] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-07-01 11:11:02,448] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-07-01 11:11:05,488] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-07-01 11:11:06,284] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-07-01 11:12:12,553] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-07-01 11:12:12,553] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-07-01 11:12:48,043] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-07-01 11:12:48,043] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-07-01 11:13:24,597] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-07-01 11:13:25,441] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-07-01 11:39:08,780] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-07-01 11:39:09,366] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-07-01 11:39:38,170] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-07-01 11:39:38,732] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-07-01 11:39:49,872] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-07-01 11:39:50,428] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-07-01 11:41:52,816] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-07-01 11:41:52,816] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-07-01 11:43:08,171] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BKN/USDT, Address: 0xb7ed8551546bff15f7103318d465ef81d79bc67e, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-01 11:43:08,171] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-07-01 11:43:08,171] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-07-01 11:43:23,589] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
