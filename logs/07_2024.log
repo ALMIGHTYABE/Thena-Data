@@ -6171,3 +6171,61 @@ KeyError: 'date'
 [2024-07-04 04:52:24,748] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-07-04 04:52:24,748] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-07-04 04:52:34,024] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-07-04 05:09:05,560] 	INFO 	23 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-07-04 05:12:08,137] 	INFO 	120 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-07-04 05:12:08,863] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-07-04 05:12:10,714] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-07-04 05:12:10,714] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-07-04 05:12:13,151] 	INFO 	124 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-07-04 05:12:13,151] 	INFO 	131 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-07-04 05:12:17,508] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-07-04 05:12:18,302] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-07-04 05:13:22,495] 	INFO 	111 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-07-04 05:13:22,495] 	INFO 	127 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-07-04 05:13:58,587] 	INFO 	196 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-07-04 05:13:58,587] 	INFO 	203 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-07-04 05:14:22,526] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-07-04 05:14:23,394] 	INFO 	39 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-07-04 05:47:20,001] 	INFO 	154 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-07-04 05:47:20,593] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-07-04 05:47:39,048] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-07-04 05:47:39,615] 	INFO 	24 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-07-04 05:47:55,013] 	INFO 	86 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-07-04 05:47:55,578] 	INFO 	36 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-07-04 05:49:16,240] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: fBOMB/CGPT, Address: 0xb072badf1c7c0d679ed204bbae50d9c2f7c6f87f, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:16,416] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/HBR, Address: 0xa26d4fac88227586e83312a4d2ddae42788f5c2f, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:16,559] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDC/BUSD, Address: 0x7e61c053527a7af0c700ad9d2c8207e386273222, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:16,705] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/BUSD, Address: 0x6321b57b6fdc14924be480c54e93294617e672ab, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:16,853] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/CHAM, Address: 0x972291c293a2ee6c7397017a6412035976e4326c, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:16,989] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/BUSD, Address: 0x483653bcf3a10d9a1c334ce16a19471a614f4385, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:17,127] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: ETH/BNB, Address: 0x1d168c5b5dea1c6da0e9fd9bf4b7607e4e9d8eec, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:17,276] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BUSD/THE, Address: 0x34b897289fccb43c048b2cea6405e840a129e021, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:17,417] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BTCB/BNB, Address: 0xd328d129e46f9b978416599913102e8cd64593f3, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:17,551] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/THE, Address: 0x63db6ba9e512186c2faadacef342fb4a40dc577c, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:17,686] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: DEI/BUSD, Address: 0x06589abd54582783142e3d1165722e7e10483de0, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:17,831] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: IDIA/BUSD, Address: 0x3c552e8ac4473222e3d794adecfa432eace85929, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:17,986] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/DEUS, Address: 0xc8da40f8a354530f04ce2dde98ebc2960a9ea449, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:18,125] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: USDT/BNB, Address: 0x6be6a437a1172e6c220246ecb3a92a45af9f0cbc, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:18,286] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/BUSD, Address: 0x93b32a8dfe10e9196403dd111974e325219aec24, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:18,417] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/stkBNB, Address: 0x2b3510f57365aa17bff8e6360ea67c136175dc6d, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:18,564] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FITFI/BUSD, Address: 0xcae2c0d6937671490d3bce4c21d57ff313f407eb, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:18,717] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FRAX/BUSD, Address: 0x7fcfe6b06c1f6aad14884ba24a7f315c1c0c2cef, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:18,855] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: GHNY/BNB, Address: 0xa97e46dc17e2b678e5f049a2670fae000b57f05e, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:18,992] 	ERROR 	93 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: TAROT(old)/BNB, Address: 0xb2604b72b3aa4af8d0419c736de2d261b40ec755, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:49:18,992] 	INFO 	97 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-07-04 05:49:18,992] 	INFO 	111 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-07-04 05:50:19,562] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/inETH, Address: 0x52e3e02b5961292c388a1fae1ce4ead724d4e806, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:19,721] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: USDT/ABOND, Address: 0xfceb85127b09cc17f9a97a22c314d79b55f84f9f, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:19,862] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/OATH, Address: 0x8929e532e551c82f5736aa18c78440691bc542d9, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:20,010] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: HBR/USDT, Address: 0x8b8a362116f5f632b81e85e347846590bb4be2a4, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:20,152] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: ETH/InwbETH, Address: 0x1833de7f417952f54d465cf699f367bd94cd0d59, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:20,288] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/ICHI, Address: 0xc7db746edd16bbde9a75aa6114400709041da561, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:20,446] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: FRAX/USDC, Address: 0xe1ad12b9f713710a8fff593eb1c6e5f82d3c0b3e, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:20,580] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: TON/ICHI, Address: 0xbfef6077508c8e1fdf9cea269f646fa37650fba5, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:20,727] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: eTHENA/BNB, Address: 0x7cefcea15158df116534c75f2f677d4d1f077028, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:20,889] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: XRP/BNB, Address: 0x52ddb7bd7ca73a20b6334cc08fcaca9906992a15, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:21,030] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BNB/UNI, Address: 0x117e96887b20d4db40df85fa2b7302ca0d63c5e3, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:21,182] 	ERROR 	170 	tvl_data.py 	<module>() 	Error occurred during TVL Data Fusion process. Pair: BKN/USDT, Address: 0xb7ed8551546bff15f7103318d465ef81d79bc67e, Error: Expecting value: line 1 column 1 (char 0)
+[2024-07-04 05:50:21,183] 	INFO 	174 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-07-04 05:50:21,183] 	INFO 	181 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-07-04 05:50:33,375] 	INFO 	225 	tvl_data.py 	<module>() 	TVL Data Combined Ended
