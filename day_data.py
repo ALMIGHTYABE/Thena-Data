@@ -92,7 +92,7 @@ try:
     
     # Request
     day_data_fusion_query["variables"]["startTime"] = timestamp
-    subgraph.replace("[api-key]", GRAPH_KEY)
+    subgraph = subgraph.replace("[api-key]", GRAPH_KEY)
     response = requests.post(url=subgraph, json=day_data_fusion_query)
     try:
         data = response.json()["data"]["fusionDayDatas"]
