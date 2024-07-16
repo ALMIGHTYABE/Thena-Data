@@ -99,6 +99,7 @@ try:
     except:
         logger.info(response.json())
     day_data_fusion_df = pd.DataFrame(data)
+    day_data_fusion_df = day_data_fusion_df[['id', 'date', 'volumeUSD', 'feesUSD', 'tvlUSD', '__typename']]
     day_data_fusion_df["date"] = day_data_fusion_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
     day_data_fusion_df["date"] = day_data_fusion_df["date"].apply(lambda date: datetime.strftime(date, "%Y-%m-%d"))
     
