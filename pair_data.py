@@ -42,7 +42,7 @@ try:
     
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(2)
+    twodayago = todayDate - timedelta(12)
     my_time = datetime.min.time()
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
@@ -117,6 +117,7 @@ except Exception as e:
 try:
     # Params Data
     subgraph = config["query"]["fusion_subgraph"]
+    GRAPH_KEY = os.environ["GRAPH_KEY"]
     id_data = config["files"]["id_data"]
     pair_data_fusion_query = config["query"]["pair_data_fusion_query"]
     epoch_daily_csv = config["files"]["epoch_daily_data"]
@@ -136,7 +137,7 @@ try:
     
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(2)
+    twodayago = todayDate - timedelta(12)
     my_time = datetime.min.time()
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
@@ -150,9 +151,11 @@ try:
         try:
             pair_data_fusion_query["variables"]["pairAddress"] = contract_address.lower()
             pair_data_fusion_query["variables"]["startTime"] = timestamp
+            subgraph = subgraph.replace("[api-key]", GRAPH_KEY)
             response = requests.post(subgraph, json=pair_data_fusion_query, timeout=60)
             data = response.json()["data"]["poolDayDatas"]
             df = pd.json_normalize(data)
+            df = df[['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD', '__typename']]
             df["name"] = name
             pairdata_fusion_df = pd.concat([pairdata_fusion_df, df], axis=0, ignore_index=True)
             pairdata_fusion_df.reset_index(drop=True, inplace=True)
