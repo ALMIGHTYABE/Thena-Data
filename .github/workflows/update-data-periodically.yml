@@ -24,6 +24,7 @@ jobs:
       - name: Run Script
         env:
           GKEY: ${{ secrets.GKEY }}
+          GRAPH_KEY: ${{ secrets.GRAPH_KEY }}
         run: |
           python id_data_v2.py
           python day_data.py
