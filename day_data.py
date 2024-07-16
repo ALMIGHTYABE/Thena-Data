@@ -79,6 +79,7 @@ try:
 
     # Params Data
     subgraph = config["query"]["fusion_subgraph"]
+    GRAPH_KEY = os.environ["GRAPH_KEY"]
     day_data_fusion_query = config["query"]["day_data_fusion_query"]
     daily_data_fusion_csv = config["files"]["daily_data_fusion"]
     
@@ -91,6 +92,7 @@ try:
     
     # Request
     day_data_fusion_query["variables"]["startTime"] = timestamp
+    subgraph.replace("[api-key]", GRAPH_KEY)
     response = requests.post(url=subgraph, json=day_data_fusion_query)
     data = response.json()["data"]["fusionDayDatas"]
     day_data_fusion_df = pd.DataFrame(data)
