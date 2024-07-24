@@ -42,7 +42,7 @@ config = read_params(params_path)
     
 #     # Today and 2 Day Ago
 #     todayDate = datetime.utcnow()
-#     twodayago = todayDate - timedelta(12)
+#     twodayago = todayDate - timedelta(30)
 #     my_time = datetime.min.time()
 #     my_datetime = datetime.combine(twodayago, my_time)
 #     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
@@ -137,7 +137,7 @@ try:
     
     # Today and 2 Day Ago
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(12)
+    twodayago = todayDate - timedelta(30)
     my_time = datetime.min.time()
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
