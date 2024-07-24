@@ -135,7 +135,7 @@ try:
     for symbol, address in zip(ids_cl_df['symbol'], ids_cl_df['algebra_pool']):
         try:
             # Skip
-            if contract_address.lower() in addresses_to_skip:
+            if address.lower() in addresses_to_skip:
                 continue
             # Mints
             cl_mint_query["variables"]["poolAddress"] = address
