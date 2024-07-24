@@ -22,6 +22,7 @@ jobs:
       - name: Run Script
         env:
           GKEY: ${{ secrets.GKEY }}
+          GRAPH_KEY: ${{ secrets.GRAPH_KEY }}
         run: |
           python tvl_data.py
       - name: Commit and Push Changes
