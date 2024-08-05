@@ -1985,3 +1985,5 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
 [2024-08-05 15:04:02,030] 	INFO 	204 	pair_data.py 	<module>() 	Pair Data Fusion Ended
 [2024-08-05 15:04:02,030] 	INFO 	211 	pair_data.py 	<module>() 	Pair Data Combined Started
 [2024-08-05 15:04:32,841] 	INFO 	241 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-08-05 15:09:35,316] 	INFO 	24 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-08-05 15:09:46,992] 	INFO 	72 	revenue_data.py 	<module>() 	Revenue Data Ended
