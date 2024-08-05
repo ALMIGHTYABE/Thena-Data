@@ -1852,3 +1852,53 @@ KeyError: 'date'
 [2024-08-05 14:25:14,159] 	INFO 	182 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
 [2024-08-05 14:25:14,159] 	INFO 	189 	tvl_data.py 	<module>() 	TVL Data Combined Started
 [2024-08-05 14:25:28,521] 	INFO 	233 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-08-05 20:02:40,304] 	INFO 	37 	pair_data.py 	<module>() 	Pair Data Started
+[2024-08-05 20:06:56,140] 	ERROR 	113 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Projects\Thena\Thena-Data\Thena-Data\pair_data.py", line 96, in <module>
+    credentials = json.loads(credentials)
+  File "C:\Users\Admin\miniconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Admin\miniconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Admin\miniconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2024-08-05 20:06:56,148] 	INFO 	128 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-08-05 20:06:56,917] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: astERN-ERN, Address: 0xcB2B3d8239759b4ad1dFe6392Bc39DEe4F23303B, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:06:59,289] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aXCAD-WBNB, Address: 0xe2624920C88b470B78EFAdfdE51Dd0E2C841934B, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:00,537] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-USDC, Address: 0x3f8062cf591a918Bc3B183fa241ec49efBd30e2b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:04,709] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-RBNB, Address: 0x3cAd1CBA60f695Ec7FA522Ec486f55D77C270b18, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:06,095] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-LQDR, Address: 0x19934Ce0f772EC67873Bbd1127f173e6c79856a3, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:09,482] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-BIFI, Address: 0xCC0b8D28e7c31555a3889CDc05AF55bfF57c368A, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:13,348] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-PLAY, Address: 0xa7aBA8136C5758B47312233C684547B651FCF775, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:17,312] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-ERN, Address: 0x8DCDF3CbD3a588a2e2FB607BdC9180e4FefA583b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:32,519] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aHAY-FRAX, Address: 0x30F8542ede13c68c5B4ed2922401c8BA63d88e59, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:37,857] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRAX-ERN, Address: 0x1C2D4F310aeA872C5BD55790D2D78Ca7B31992a3, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:39,195] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-inETH, Address: 0x52e3e02B5961292C388A1faE1ce4EaD724D4E806, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:49,785] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCASH-USDT, Address: 0x45F1Fdb00fB78174196Fa109A27Cdbd07f67F85e, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:07:55,617] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-ERN, Address: 0xc7426Dce489E6b2d580Fd480Ef72D57e5d7643f5, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:08:19,237] 	ERROR 	167 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: DEShare 2862, Address: 0xA547a2E5D256b08644425029Fec0aCdb634388F7, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-05 20:08:24,562] 	ERROR 	205 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Projects\Thena\Thena-Data\Thena-Data\pair_data.py", line 188, in <module>
+    credentials = json.loads(credentials)
+  File "C:\Users\Admin\miniconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Admin\miniconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Admin\miniconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2024-08-05 20:08:24,563] 	INFO 	210 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-08-05 20:08:32,454] 	ERROR 	242 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "C:\Users\Admin\Documents\Projects\Thena\Thena-Data\Thena-Data\pair_data.py", line 222, in <module>
+    credentials = json.loads(credentials)
+  File "C:\Users\Admin\miniconda3\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\Admin\miniconda3\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\Admin\miniconda3\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
