@@ -155,7 +155,8 @@ try:
                 continue
             pair_data_fusion_query["variables"]["pairAddress"] = contract_address.lower()
             pair_data_fusion_query["variables"]["startTime"] = timestamp
-            subgraph = subgraph.replace("[api-key]", GRAPH_KEY)
+            if "[api-key]" in subgraph:
+                subgraph = subgraph.replace("[api-key]", GRAPH_KEY)
             response = requests.post(subgraph, json=pair_data_fusion_query, timeout=5)
             data = response.json()["data"]["poolDayDatas"]
             df = pd.json_normalize(data)
