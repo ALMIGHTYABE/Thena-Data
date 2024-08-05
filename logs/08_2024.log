@@ -1902,3 +1902,9 @@ Traceback (most recent call last):
   File "C:\Users\Admin\miniconda3\lib\json\decoder.py", line 355, in raw_decode
     raise JSONDecodeError("Expecting value", s, err.value) from None
 json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[2024-08-05 14:41:56,948] 	INFO 	26 	day_data.py 	<module>() 	Day Data Started
+[2024-08-05 14:41:58,784] 	INFO 	72 	day_data.py 	<module>() 	Day Data Ended
+[2024-08-05 14:41:58,784] 	INFO 	78 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-08-05 14:42:00,785] 	INFO 	130 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-08-05 14:42:00,785] 	INFO 	137 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-08-05 14:42:04,329] 	INFO 	167 	day_data.py 	<module>() 	Day Data Combined Ended
