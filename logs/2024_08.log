@@ -1,0 +1,29 @@
+[2024-08-15 01:59:06,477] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 01:59:06,478] 	ERROR 	73 	id_data_v3.py 	<module>() 	Error occurred during ID Data process. Error: [Errno 2] No such file or directory: 'old_data'
+[2024-08-15 01:59:06,478] 	ERROR 	74 	id_data_v3.py 	<module>() 	Type: <class 'FileNotFoundError'>, File: id_data_v3.py, Line: 33
+[2024-08-15 01:59:24,242] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 01:59:24,243] 	ERROR 	73 	id_data_v3.py 	<module>() 	Error occurred during ID Data process. Error: [Errno 2] No such file or directory: 'old_data'
+[2024-08-15 01:59:24,243] 	ERROR 	74 	id_data_v3.py 	<module>() 	Type: <class 'FileNotFoundError'>, File: id_data_v3.py, Line: 33
+[2024-08-15 01:59:43,713] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 01:59:46,137] 	ERROR 	73 	id_data_v3.py 	<module>() 	Error occurred during ID Data process. Error: 'DataFrame' object has no attribute 'type'
+[2024-08-15 01:59:46,137] 	ERROR 	74 	id_data_v3.py 	<module>() 	Type: <class 'AttributeError'>, File: id_data_v3.py, Line: 44
+[2024-08-15 02:05:45,027] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 02:05:46,965] 	ERROR 	73 	id_data_v3.py 	<module>() 	Error occurred during ID Data process. Error: 'DataFrame' object has no attribute 'type'
+[2024-08-15 02:05:46,965] 	ERROR 	74 	id_data_v3.py 	<module>() 	Type: <class 'AttributeError'>, File: id_data_v3.py, Line: 44
+[2024-08-15 02:07:11,647] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 02:08:38,345] 	INFO 	69 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-08-15 02:59:41,185] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 02:59:44,231] 	INFO 	69 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-08-15 04:08:30,176] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 04:08:32,063] 	ERROR 	72 	id_data_v3.py 	<module>() 	Error occurred during ID Data process. Error: 'DataFrame' object has no attribute 'type_y'
+[2024-08-15 04:08:32,063] 	ERROR 	73 	id_data_v3.py 	<module>() 	Type: <class 'AttributeError'>, File: id_data_v3.py, Line: 47
+[2024-08-15 04:10:59,424] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 04:11:01,649] 	INFO 	68 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-08-15 04:11:30,176] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 04:11:32,399] 	INFO 	69 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-08-15 04:13:15,904] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 04:13:17,712] 	INFO 	69 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-08-15 20:54:38,141] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 20:54:40,657] 	INFO 	69 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-08-15 20:58:48,531] 	INFO 	23 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-15 20:58:50,495] 	INFO 	69 	id_data_v3.py 	<module>() 	ID Data Ended
