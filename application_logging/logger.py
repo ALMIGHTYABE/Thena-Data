@@ -3,7 +3,7 @@ from datetime import datetime
 import os
 LOG_DIR = "logs"
 TODAY = datetime.now()
-LOGNAME = str(TODAY.strftime("%m")) + "_" + str(TODAY.year)
+LOGNAME = str(TODAY.year) + "_" + str(TODAY.strftime("%m"))
 
 def get_log_file_name():
     return f"{LOGNAME}.log"
