@@ -6,17 +6,10 @@ import itertools
 from web3 import Web3
 from web3.middleware import validation
 import os, sys
+from utils.helpers import read_params
 
 # Params
-params_path = "params.yaml"
-
-
-def read_params(config_path):
-    with open(config_path) as yaml_file:
-        config = yaml.safe_load(yaml_file)
-    return config
-
-
+params_path = 'params.yaml'
 config = read_params(params_path)
 
 try:
@@ -64,6 +57,8 @@ try:
     cl_df.loc[:, 'algebra_pool'] = algebra_pool
     id_df.loc[cl_df.index, 'algebra_pool'] = cl_df['algebra_pool']
     duplicate_new_names = id_df[id_df.duplicated(subset='new_name', keep=False)]
+    web3 = Web3(Web3.HTTPProvider(provider_urls[0], request_kwargs={'timeout': 2}))
+    id_df['address'] = id_df['address'].apply(lambda x: web3.toChecksumAddress(x))
     id_df.loc[duplicate_new_names.index, 'new_name'] = (duplicate_new_names['new_name'] + " " + duplicate_new_names['address'].str[-4:])
 
     id_df.to_csv("data/ids_data_v3.csv", index=False)
@@ -72,5 +67,4 @@ try:
 except Exception as e:
     exc_type, exc_obj, exc_tb = sys.exc_info()
     fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-    logger.error("Error occurred during ID Data process. Error: %s" % e)
-    logger.error(f"Type: {exc_type}, File: {fname}, Line: {exc_tb.tb_lineno}")
+    logger.error("Error occurred during ID Data process. Error: %s" % e, exc_info=True)
