@@ -38,6 +38,7 @@ gsheets:
   revenue_data_sheet_key: 1UShBZolQOux_WVIUChwE2JWyYWtVR1NlpX5bqT3_HCA
   revenue_data_v2_sheet_key: 142nshyWOVwJvYgFakS1jCVP20jxXGP6z1_Tk5bB0WFU
   tvl_data_sheet_key: 1QZscvxyXvygJgIh-6ynI2Pfm3wdNTiSVHhpFLcPSY28
+  fee_tvl_data_sheet_key: 14aqGmGTE4DCLk6TfgcLMHzANrMeeBXlye_LXmdc2TLQ
   
 api:
   price_api: https://api.thena.fi/api/v1/assets
@@ -47,6 +48,7 @@ files:
   epoch_data: https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/epoch.csv
   epoch_daily_data: https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/epoch_daily.csv
   id_data: https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/ids_data_v2.csv
+  new_id_data: https://raw.githubusercontent.com/ALMIGHTYABE/Thena-Data/main/data/ids_data_v3.csv
   daily_data: https://docs.google.com/spreadsheets/d/1g6MRebRn_kI1Pm4-7cuRYhAwmWVtqPV_CeWaPlf-1Ao/export?format=csv
   daily_data_fusion: https://docs.google.com/spreadsheets/d/1cE9gN2DkEVVe9nSQ06kntdyC0la7gmUmLYxWD2vfmc0/export?format=csv
   daily_data_combined: https://docs.google.com/spreadsheets/d/1TDFr8PbFI6MzPPP2sQr6BHbneBk6U3YmZUTbLCVCkJc/export?format=csv
@@ -57,6 +59,8 @@ files:
   fee_data: https://docs.google.com/spreadsheets/d/17c078oupcaEXjDt2md64G5FUZzjgNxxIZzSeW51EcTA/export?format=csv
   emissions_data: https://docs.google.com/spreadsheets/d/1bAUAPu5XhXcxAhBbO33TupX8Q25smE7c4ArZjnAlUGY/export?format=csv  
   tvl_data: https://docs.google.com/spreadsheets/d/1QZscvxyXvygJgIh-6ynI2Pfm3wdNTiSVHhpFLcPSY28/export?format=csv
+  revenue_data_v2: https://docs.google.com/spreadsheets/d/142nshyWOVwJvYgFakS1jCVP20jxXGP6z1_Tk5bB0WFU/export?format=csv
+  fee_tvl_data: https://docs.google.com/spreadsheets/d/14aqGmGTE4DCLk6TfgcLMHzANrMeeBXlye_LXmdc2TLQ/export?format=csv
 
 delta:
   day_data: 2
