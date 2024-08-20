@@ -114,7 +114,6 @@ try:
 
     fee_df = fee_df.groupby(by="name")["fee_amount"].sum().reset_index()
     fee_df["epoch"] = epoch
-    print(fee_df)
 
     # Rewriting current Epoch's Fee Data
     feeor = pd.read_csv(fee_csv)
