@@ -160,7 +160,6 @@ try:
                 return 'Defi Edge'
             else:
                 return 'Gamma'
-        return None  # If 'type' is not 'CL', you can set a default value
 
     # Create the new column 'ALM Type'
     ids_df['ALM Type'] = ids_df.apply(alm_type, axis=1)
