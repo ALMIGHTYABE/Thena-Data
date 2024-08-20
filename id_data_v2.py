@@ -139,14 +139,13 @@ try:
             logger.error("Error occurred during ID Data process. Pool: %s Error: %s" % (algebra_pool, e), exc_info=True)
             algebra_names.append(None)
 
-    ids_df['algebra_name'] = ids_df['name']        
     for pool, name in zip(filtered_pools, algebra_names):
         algebra_df.loc[algebra_df['algebra_pool'] == pool, 'algebra_name'] = name
         ids_df.loc[ids_df['algebra_pool'] == pool, 'algebra_name'] = name
 
     # Name Fix and ALM Type
     def replace_names(row):
-        if row['name'].startswith('IV-') or row['name'].startswith('DEShare'):
+        if row['type'] == 'CL':
             return f"{row['algebra_name']} {row['address'][-4:]}"
         return row['name']
 
