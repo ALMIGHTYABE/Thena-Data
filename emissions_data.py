@@ -9,18 +9,10 @@ import jmespath
 import gspread
 from web3 import Web3
 from web3.middleware import validation
-
+from utils.helpers import read_params
 
 # Params
-params_path = "params.yaml"
-
-
-def read_params(config_path):
-    with open(config_path) as yaml_file:
-        config = yaml.safe_load(yaml_file)
-    return config
-
-
+params_path = 'params.yaml'
 config = read_params(params_path)
 
 try:
