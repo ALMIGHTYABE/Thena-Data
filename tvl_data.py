@@ -13,6 +13,7 @@ from utils.helpers import read_params
 # Params
 params_path = 'params.yaml'
 config = read_params(params_path)
+daydelta = config['delta']['day_data']
 
 # V1
 try:
