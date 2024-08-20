@@ -109,28 +109,28 @@ try:
     bribe_df.to_csv('bribe.csv', index=False)
 
     # Rewriting current Epoch's Bribe Data
-    # bribor = pd.read_csv(bribe_csv)
-    # drop_index = bribor[bribor["epoch"] == epoch].index
-    # index_list = drop_index.to_list()
-    # index_list = list(map(lambda x: x + 2, index_list))
-    # df_values = bribe_df.values.tolist()
+    bribor = pd.read_csv(bribe_csv)
+    drop_index = bribor[bribor["epoch"] == epoch].index
+    index_list = drop_index.to_list()
+    index_list = list(map(lambda x: x + 2, index_list))
+    df_values = bribe_df.values.tolist()
 
-    # # Write to GSheets
-    # credentials = os.environ["GKEY"]
-    # credentials = json.loads(credentials)
-    # gc = gspread.service_account_from_dict(credentials)
+    # Write to GSheets
+    credentials = os.environ["GKEY"]
+    credentials = json.loads(credentials)
+    gc = gspread.service_account_from_dict(credentials)
 
-    # # Open a google sheet
-    # sheetkey = config["gsheets"]["bribe_data_sheet_key"]
-    # gs = gc.open_by_key(sheetkey)
+    # Open a google sheet
+    sheetkey = config["gsheets"]["bribe_data_sheet_key"]
+    gs = gc.open_by_key(sheetkey)
 
-    # # Select a work sheet from its name
-    # worksheet1 = gs.worksheet("Master")
-    # if index_list != []:
-    #     worksheet1.delete_rows(index_list[0], index_list[-1])
+    # Select a work sheet from its name
+    worksheet1 = gs.worksheet("Master")
+    if index_list != []:
+        worksheet1.delete_rows(index_list[0], index_list[-1])
 
-    # # Append to Worksheet
-    # gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+    # Append to Worksheet
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
 
     logger.info("Bribe Data Ended")
 except Exception as e:
