@@ -74,7 +74,6 @@ try:
                     rewarddata = contract_instance.functions.rewardData(reward_addy, timestamp).call()
                     if rewarddata[1] > 0:
                         bribes_list.append({"name": name, "bribes": rewarddata[1], "address": reward_addy})
-                print(name)
                 break
             except Exception as e:
                 print(f"Error occurred while fetching bribes from {rpc_endpoint} for {name}: {e}")
@@ -107,7 +106,6 @@ try:
 
     bribe_df = bribe_df.groupby(by="name")["bribe_amount"].sum().reset_index()
     bribe_df["epoch"] = epoch
-    print(bribe_df)
     bribe_df.to_csv('bribe.csv', index=False)
 
     # Rewriting current Epoch's Bribe Data
