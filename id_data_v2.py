@@ -138,7 +138,8 @@ try:
         except Exception as e:
             logger.error("Error occurred during ID Data process. Pool: %s Error: %s" % (algebra_pool, e), exc_info=True)
             algebra_names.append(None)
-            
+
+    ids_df['algebra_name'] = ids_df['name']        
     for pool, name in zip(filtered_pools, algebra_names):
         algebra_df.loc[algebra_df['algebra_pool'] == pool, 'algebra_name'] = name
         ids_df.loc[ids_df['algebra_pool'] == pool, 'algebra_name'] = name
