@@ -144,14 +144,11 @@ try:
         ids_df.loc[ids_df['algebra_pool'] == pool, 'algebra_name'] = name
 
     # Name Fix and ALM Type
-    ids_df['new_name'] = ids_df['name']
     def replace_names(row):
-        if row['new_name'].startswith('IV-') or row['new_name'].startswith('DEShare'):
+        if row['name'].startswith('IV-') or row['name'].startswith('DEShare'):
             return f"{row['algebra_name']} {row['address'][-4:]}"
-        return row['new_name']
-    ids_df['new_name'] = ids_df.apply(replace_names, axis=1)
+        return row['name']
 
-    ids_df['ALM Type'] = ids_df['type']
     def alm_type(row):
         if row['type'] == 'CL':
             if row['name'].startswith('IV-'):
@@ -160,8 +157,9 @@ try:
                 return 'Defi Edge'
             else:
                 return 'Gamma'
+        return row['type']
 
-    # Create the new column 'ALM Type'
+    ids_df['new_name'] = ids_df.apply(replace_names, axis=1)
     ids_df['ALM Type'] = ids_df.apply(alm_type, axis=1)
 
     ids_df.to_csv("data/ids_data_v2.csv", index=False)
