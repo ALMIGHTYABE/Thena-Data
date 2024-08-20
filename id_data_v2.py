@@ -169,4 +169,4 @@ try:
 
     logger.info("ID Data Ended")
 except Exception as e:
-    logger.error("Error occurred during ID Data process. Error: %s" % e)
+    logger.error("Error occurred during ID Data process. Error: %s" % e, exc_info=True)
