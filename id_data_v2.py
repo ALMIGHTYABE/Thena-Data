@@ -160,7 +160,7 @@ try:
         return row['type']
 
     ids_df['new_name'] = ids_df.apply(replace_names, axis=1)
-    ids_df['ALM Type'] = ids_df.apply(alm_type, axis=1)
+    ids_df['alm_type'] = ids_df.apply(alm_type, axis=1)
 
     ids_df.to_csv("data/ids_data_v2.csv", index=False)
     algebra_df.to_csv("data/algebra_data.csv", index=False)
