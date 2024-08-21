@@ -55,7 +55,7 @@ try:
     fees_list = []
     for name, fee_ca in zip(ids_df["name"], ids_df["fee_ca"]):
         if fee_ca == "0x0000000000000000000000000000000000000000":
-            pass
+            continue
         for rpc_endpoint in provider_urls:
             try:
                 w3 = Web3(Web3.HTTPProvider(rpc_endpoint, request_kwargs={"timeout": 5}))
