@@ -29,7 +29,7 @@ daydelta = config['delta']['day_data']
 try:
     # Params Data
     subgraph = config["query"]["subgraph"]
-    id_data = config["files"]["id_data"]
+    id_data = config["files"]["new_id_data"]
     pair_data_query = config["query"]["pair_data_query"]
     epoch_daily_csv = config["files"]["epoch_daily_data"]
     pair_data_csv = config["files"]["pair_data"]
@@ -120,7 +120,7 @@ try:
     # Params Data
     subgraph = config["query"]["fusion_subgraph"]
     GRAPH_KEY = os.environ["GRAPH_KEY"]
-    id_data = config["files"]["id_data"]
+    id_data = config["files"]["new_id_data"]
     pair_data_fusion_query = config["query"]["pair_data_fusion_query"]
     epoch_daily_csv = config["files"]["epoch_daily_data"]
     pair_data_fusion_csv = config["files"]["pair_data_fusion"]
@@ -148,7 +148,7 @@ try:
     validation.METHODS_TO_VALIDATE = []
     w3 = Web3(Web3.HTTPProvider(provider_url, request_kwargs={"timeout": 5}))
     
-    addresses_to_skip = ["0x055557c6606f7b0d34e617653c447f079b0b0a73","0x90d43f6e920ab9500ae0473d6f67a95126ca4091","0x739e561786c920d025d57ed99be5d4eca3458e3e","0x7b879963ae083732f4514d564f4e4613e24e1f67","0x35f0c646a85675f31cfcd1e04d955cd2ce93e3c7","0x80c264189dd38f4fa5d6e424c1bf879b3b176076","0x130348553b3dea5d65767dc390eff257f9a9181d","0x088c568dc3123fc40dd153918125ee27027dd6e7","0x972e8be53425dbcaf3446c7ac130adb48ba3e125","0x1d56cbcc160d9f5fe56ba184bdb847dc209f7243","0xcc3aec37005fcc95288bfb046e5ae789cc322099","0x3cadd2f6a964d262b5dd5e7169c284b465336f0e","0xe6a2a77ca6b6c51103fbca83d3f171a920df42b4","0x1833de7f417952f54d465cf699f367bd94cd0d59","0xfb0e434eba0a467cd3f47cec5de63f4385861ea3","0xd20c7c2693c3bf844f84dfa03012a6c07032c5a6","0x604a99f4c5e46add74dba10c21b5e26374a1162f","0x16736fdab466f69e11ba5fc294be17d2fb8c3b02","0x0f28ae1eea69dda12bc89419f7e8552dd191c98e","0x733a0b28e4d7f2cb421730c4e4e26f2adce3d240","0x636f0d14e7f5f32a9a3773104d8608d561191a54","0x73a2b0fde4f8f8a2800fddcfd967a70b4b594abd","0xea66ad96abdb89cb28116f9e204e97a824cdff5b"]
+    addresses_to_skip = ["0x055557c6606f7b0d34e617653c447f079b0b0a73","0x90d43f6e920ab9500ae0473d6f67a95126ca4091","0x7b879963ae083732f4514d564f4e4613e24e1f67","0x35f0c646a85675f31cfcd1e04d955cd2ce93e3c7","0x80c264189dd38f4fa5d6e424c1bf879b3b176076","0x088c568dc3123fc40dd153918125ee27027dd6e7","0x972e8be53425dbcaf3446c7ac130adb48ba3e125","0x1d56cbcc160d9f5fe56ba184bdb847dc209f7243","0xcc3aec37005fcc95288bfb046e5ae789cc322099","0x3cadd2f6a964d262b5dd5e7169c284b465336f0e","0xe6a2a77ca6b6c51103fbca83d3f171a920df42b4","0x1833de7f417952f54d465cf699f367bd94cd0d59","0xfb0e434eba0a467cd3f47cec5de63f4385861ea3","0xd20c7c2693c3bf844f84dfa03012a6c07032c5a6","0x604a99f4c5e46add74dba10c21b5e26374a1162f","0x16736fdab466f69e11ba5fc294be17d2fb8c3b02","0x0f28ae1eea69dda12bc89419f7e8552dd191c98e","0x733a0b28e4d7f2cb421730c4e4e26f2adce3d240","0x636f0d14e7f5f32a9a3773104d8608d561191a54","0x73a2b0fde4f8f8a2800fddcfd967a70b4b594abd","0xea66ad96abdb89cb28116f9e204e97a824cdff5b"]
 
     pairdata_fusion_df = pd.DataFrame()
     for name, contract_address in zip(ids_df["name"], ids_df["algebra_pool"]):
@@ -256,4 +256,3 @@ try:
     logger.info("Pair Data Combined Ended")
 except Exception as e:
     logger.error("Error occurred during Pair Data Combined process. Error: %s" % e, exc_info=True)
-
