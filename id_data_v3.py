@@ -28,8 +28,7 @@ try:
     # New Data
     data = requests.get(url=fusion_api).json()['data']
     id_df_new = pd.json_normalize(data)[['symbol', 'address', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
-    id_df_new = id_df_new[['address', 'type']]
-    id_df_new.columns = ['address', 'new_type']
+    id_df_new = id_df_new[['address']]
     id_df_new['address'] = id_df_new['address'].str.lower()
 
     # Merged Data & Processing
