@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import numpy as np
 import yaml
 import json
 import os
@@ -14,15 +13,6 @@ from utils.helpers import read_params
 
 # Params
 params_path = 'params.yaml'
-config = read_params(params_path)
-
-
-def read_params(config_path):
-    with open(config_path) as yaml_file:
-        config = yaml.safe_load(yaml_file)
-    return config
-
-
 config = read_params(params_path)
 
 try:

@@ -1,6 +1,5 @@
 import requests
 import pandas as pd
-import yaml
 import json
 import os
 from datetime import datetime, timezone
