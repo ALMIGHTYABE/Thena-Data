@@ -2821,3 +2821,5 @@ NameError: name 'v1_df' is not defined
 [2024-08-21 20:54:22,464] 	INFO 	256 	pair_data.py 	<module>() 	Pair Data Combined Ended
 [2024-08-21 23:10:37,517] 	INFO 	15 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-08-21 23:10:52,769] 	INFO 	63 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-08-21 23:13:06,877] 	INFO 	15 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-08-21 23:13:19,396] 	INFO 	77 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
