@@ -25,7 +25,7 @@ try:
     ids_df = pd.read_csv(id_data)
     pair_df = pd.read_csv(pair_data)
     bribe_df = pd.read_csv(bribe_data)
-    emissions_df = pd.read_csv(emissions_data)
+    emissions_df = pd.read_csv(emissions_data, thousands=r',')
 
     # Data Wrangling
     bribe_df = bribe_df.merge(ids_df[['name', 'new_name', 'alm_type']], how='left', on='name')
