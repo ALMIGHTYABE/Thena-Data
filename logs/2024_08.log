@@ -3268,3 +3268,5 @@ NameError: name 'v1_df' is not defined
 [2024-08-22 19:01:41,643] 	INFO 	226 	tvl_data.py 	<module>() 	TVL Data Combined Ended
 [2024-08-22 19:01:42,311] 	INFO 	26 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
 [2024-08-22 19:01:48,389] 	INFO 	62 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
+[2024-08-22 21:26:01,842] 	INFO 	16 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-08-22 21:26:12,921] 	INFO 	77 	revenue_data.py 	<module>() 	Revenue Data Ended
