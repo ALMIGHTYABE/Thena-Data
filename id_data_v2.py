@@ -61,6 +61,10 @@ try:
         index = ids_df[ids_df["address"] == pool].index
         ids_df.loc[index, "name"] = ids_df.loc[index, "name"].values[0] + " OLD"
 
+    # Duplicates
+    duplicate_names = ids_df[ids_df['name'].duplicated(keep=False)]
+    ids_df.loc[duplicate_names.index, 'name'] = (duplicate_names['name'] + " " + duplicate_names['address'].str[-4:])
+
     # Solidly Pools
     contract_instance = w3.eth.contract(address=ve_contract, abi=voter_abi)
     gauges = []
