@@ -7302,3 +7302,62 @@ requests.exceptions.InvalidJSONError: Out of range float values are not JSON com
 [2024-08-23 21:50:47,433] 	INFO 	226 	tvl_data.py 	<module>() 	TVL Data Combined Ended
 [2024-08-23 21:50:48,114] 	INFO 	26 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
 [2024-08-23 21:50:53,362] 	INFO 	62 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
+[2024-08-23 22:10:59,187] 	INFO 	14 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-08-23 22:13:34,145] 	INFO 	163 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-08-23 22:13:34,890] 	INFO 	14 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-23 22:13:35,702] 	INFO 	40 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-08-23 22:13:36,401] 	INFO 	18 	day_data.py 	<module>() 	Day Data Started
+[2024-08-23 22:13:38,804] 	INFO 	64 	day_data.py 	<module>() 	Day Data Ended
+[2024-08-23 22:13:38,804] 	INFO 	70 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-08-23 22:13:40,611] 	INFO 	123 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-08-23 22:13:40,611] 	INFO 	130 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-08-23 22:13:45,415] 	INFO 	160 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-08-23 22:13:46,224] 	INFO 	30 	pair_data.py 	<module>() 	Pair Data Started
+[2024-08-23 22:14:35,222] 	INFO 	104 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-08-23 22:14:35,222] 	INFO 	121 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-08-23 22:14:35,432] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: astERN-ERN, Address: 0xcB2B3d8239759b4ad1dFe6392Bc39DEe4F23303B, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:36,382] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-USDC, Address: 0x3f8062cf591a918Bc3B183fa241ec49efBd30e2b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:36,574] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-DOLA, Address: 0xdB6BfF81311C5C4F72668D9C4c8a5E2CB4584A82, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:37,543] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-RBNB, Address: 0x3cAd1CBA60f695Ec7FA522Ec486f55D77C270b18, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:38,789] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-BIFI, Address: 0xCC0b8D28e7c31555a3889CDc05AF55bfF57c368A, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:39,224] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-USDV, Address: 0x739e561786C920D025d57eD99be5D4EcA3458E3E, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:40,039] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-PLAY, Address: 0xa7aBA8136C5758B47312233C684547B651FCF775, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:40,973] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-ERN, Address: 0x8DCDF3CbD3a588a2e2FB607BdC9180e4FefA583b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:42,098] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aSolvBTC-BTCB, Address: 0x575A951aD021d4297ac125Be88eE4620652D5C12, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:43,248] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aORBS-WBNB, Address: 0x130348553b3dEA5d65767Dc390eFF257F9a9181d, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:43,434] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aOATH-ERN, Address: 0xDF5751BBEf0241878852253F8541A02c3Cbc2dd1, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:44,016] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aJBRL-USDC, Address: 0xd63bBA6078a328b93758Cc7556e21D3380397D41, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:44,220] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aID-WBNB, Address: 0xB66566fD115CAf17633504A5165a319F17D9F096, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:45,162] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aGRAIN-WBNB, Address: 0x1f060bE9D1D3Bd3ACC5392aC066C6B437780ABe0, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:46,146] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRAX-ERN, Address: 0x1C2D4F310aeA872C5BD55790D2D78Ca7B31992a3, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:46,723] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-inETH, Address: 0x52e3e02B5961292C388A1faE1ce4EaD724D4E806, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:49,851] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCASH-USDT, Address: 0x45F1Fdb00fB78174196Fa109A27Cdbd07f67F85e, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:51,386] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-ERN, Address: 0xc7426Dce489E6b2d580Fd480Ef72D57e5d7643f5, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:54,213] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-8-THE a082, Address: 0x8929E532E551c82f5736aa18C78440691BC542D9, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:56,287] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-14-THE B802, Address: 0x8b8a362116f5F632B81e85e347846590bB4Be2A4, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:14:56,472] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-11-THE 2ff5, Address: 0xe1Ad12B9f713710a8FFF593eB1c6E5F82d3C0b3E, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 22:15:03,328] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-08-23 22:15:03,329] 	INFO 	204 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-08-23 22:15:11,873] 	INFO 	247 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-08-23 22:15:12,730] 	INFO 	30 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-08-23 22:26:03,893] 	INFO 	133 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-08-23 22:26:04,744] 	INFO 	31 	fee_data.py 	<module>() 	Fee Data Started
+[2024-08-23 22:43:25,952] 	INFO 	132 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-08-23 22:43:26,563] 	INFO 	16 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-08-23 22:43:41,684] 	INFO 	77 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-08-23 22:43:42,265] 	INFO 	15 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-08-23 22:43:56,265] 	INFO 	79 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-08-23 22:43:56,848] 	INFO 	28 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-08-23 22:45:27,586] 	ERROR 	85 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: lisUSD/BUSD, Address: 0x93b32a8dfe10e9196403dd111974e325219aec24, Error: Expecting value: line 1 column 1 (char 0)
+[2024-08-23 22:45:27,897] 	ERROR 	85 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: BNB/stkBNB, Address: 0x2b3510f57365aa17bff8e6360ea67c136175dc6d, Error: Expecting value: line 1 column 1 (char 0)
+[2024-08-23 22:45:28,041] 	ERROR 	85 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FITFI/BUSD, Address: 0xcae2c0d6937671490d3bce4c21d57ff313f407eb, Error: Expecting value: line 1 column 1 (char 0)
+[2024-08-23 22:45:28,184] 	ERROR 	85 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: FRAX/BUSD, Address: 0x7fcfe6b06c1f6aad14884ba24a7f315c1c0c2cef, Error: Expecting value: line 1 column 1 (char 0)
+[2024-08-23 22:45:28,326] 	ERROR 	85 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: GHNY/BNB, Address: 0xa97e46dc17e2b678e5f049a2670fae000b57f05e, Error: Expecting value: line 1 column 1 (char 0)
+[2024-08-23 22:45:28,467] 	ERROR 	85 	tvl_data.py 	<module>() 	Error occurred during TVL Data process. Pair: TAROT(old)/BNB, Address: 0xb2604b72b3aa4af8d0419c736de2d261b40ec755, Error: Expecting value: line 1 column 1 (char 0)
+[2024-08-23 22:45:28,467] 	INFO 	89 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-08-23 22:45:28,467] 	INFO 	104 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-08-23 22:46:39,547] 	INFO 	175 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-08-23 22:46:39,548] 	INFO 	182 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-08-23 22:46:57,128] 	INFO 	226 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-08-23 22:46:57,920] 	INFO 	26 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
+[2024-08-23 22:47:03,730] 	INFO 	62 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
