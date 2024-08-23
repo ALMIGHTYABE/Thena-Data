@@ -6924,3 +6924,122 @@ KeyError: "['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD',
 [2024-08-23 17:56:09,468] 	INFO 	226 	tvl_data.py 	<module>() 	TVL Data Combined Ended
 [2024-08-23 17:56:10,224] 	INFO 	26 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
 [2024-08-23 17:56:15,115] 	INFO 	62 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
+[2024-08-23 18:15:30,580] 	INFO 	14 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-08-23 18:22:23,841] 	INFO 	163 	id_data_v2.py 	<module>() 	ID Data Ended
+[2024-08-23 18:22:24,648] 	INFO 	14 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-08-23 18:22:25,060] 	INFO 	40 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-08-23 18:22:25,703] 	INFO 	18 	day_data.py 	<module>() 	Day Data Started
+[2024-08-23 18:22:27,546] 	INFO 	64 	day_data.py 	<module>() 	Day Data Ended
+[2024-08-23 18:22:27,546] 	INFO 	70 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-08-23 18:22:29,039] 	INFO 	123 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-08-23 18:22:29,039] 	INFO 	130 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-08-23 18:22:32,006] 	INFO 	160 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-08-23 18:22:32,859] 	INFO 	30 	pair_data.py 	<module>() 	Pair Data Started
+[2024-08-23 18:23:20,632] 	ERROR 	106 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: Out of range float values are not JSON compliant
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 510, in prepare_body
+    body = complexjson.dumps(json, allow_nan=False)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "pair_data.py", line 102, in <module>
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 150, in values_append
+    r = self.client.request("post", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 79, in request
+    response = getattr(self.session, method)(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/google/auth/transport/requests.py", line 538, in request
+    response = super(AuthorizedSession, self).request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 370, in prepare
+    self.prepare_body(data, files, json)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 512, in prepare_body
+    raise InvalidJSONError(ve, request=self)
+requests.exceptions.InvalidJSONError: Out of range float values are not JSON compliant
+[2024-08-23 18:23:20,737] 	INFO 	121 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-08-23 18:23:20,872] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: astERN-ERN, Address: 0xcB2B3d8239759b4ad1dFe6392Bc39DEe4F23303B, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:21,937] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-USDC, Address: 0x3f8062cf591a918Bc3B183fa241ec49efBd30e2b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:22,043] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-DOLA, Address: 0xdB6BfF81311C5C4F72668D9C4c8a5E2CB4584A82, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:22,684] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-RBNB, Address: 0x3cAd1CBA60f695Ec7FA522Ec486f55D77C270b18, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:23,373] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-BIFI, Address: 0xCC0b8D28e7c31555a3889CDc05AF55bfF57c368A, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:23,643] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-USDV, Address: 0x739e561786C920D025d57eD99be5D4EcA3458E3E, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:24,307] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-PLAY, Address: 0xa7aBA8136C5758B47312233C684547B651FCF775, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:24,846] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-ERN, Address: 0x8DCDF3CbD3a588a2e2FB607BdC9180e4FefA583b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:25,583] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aSolvBTC-BTCB, Address: 0x575A951aD021d4297ac125Be88eE4620652D5C12, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:26,417] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aORBS-WBNB, Address: 0x130348553b3dEA5d65767Dc390eFF257F9a9181d, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:26,532] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aOATH-ERN, Address: 0xDF5751BBEf0241878852253F8541A02c3Cbc2dd1, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:26,915] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aJBRL-USDC, Address: 0xd63bBA6078a328b93758Cc7556e21D3380397D41, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:27,021] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aID-WBNB, Address: 0xB66566fD115CAf17633504A5165a319F17D9F096, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:27,688] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aGRAIN-WBNB, Address: 0x1f060bE9D1D3Bd3ACC5392aC066C6B437780ABe0, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:28,253] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRAX-ERN, Address: 0x1C2D4F310aeA872C5BD55790D2D78Ca7B31992a3, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:28,877] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-inETH, Address: 0x52e3e02B5961292C388A1faE1ce4EaD724D4E806, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:30,665] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCASH-USDT, Address: 0x45F1Fdb00fB78174196Fa109A27Cdbd07f67F85e, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:31,678] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-ERN, Address: 0xc7426Dce489E6b2d580Fd480Ef72D57e5d7643f5, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:33,488] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-8-THE a082, Address: 0x8929E532E551c82f5736aa18C78440691BC542D9, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:34,755] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-14-THE B802, Address: 0x8b8a362116f5F632B81e85e347846590bB4Be2A4, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:34,910] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-11-THE 2ff5, Address: 0xe1Ad12B9f713710a8FFF593eB1c6E5F82d3C0b3E, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-08-23 18:23:41,804] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-08-23 18:23:41,804] 	INFO 	204 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-08-23 18:23:49,908] 	ERROR 	249 	pair_data.py 	<module>() 	Error occurred during Pair Data Combined process. Error: Out of range float values are not JSON compliant
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 510, in prepare_body
+    body = complexjson.dumps(json, allow_nan=False)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "pair_data.py", line 245, in <module>
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 150, in values_append
+    r = self.client.request("post", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 79, in request
+    response = getattr(self.session, method)(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/google/auth/transport/requests.py", line 538, in request
+    response = super(AuthorizedSession, self).request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 370, in prepare
+    self.prepare_body(data, files, json)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 512, in prepare_body
+    raise InvalidJSONError(ve, request=self)
+requests.exceptions.InvalidJSONError: Out of range float values are not JSON compliant
+[2024-08-23 18:23:50,816] 	INFO 	30 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-08-23 18:39:11,348] 	INFO 	133 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-08-23 18:39:12,272] 	INFO 	31 	fee_data.py 	<module>() 	Fee Data Started
+[2024-08-23 18:54:02,247] 	INFO 	132 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-08-23 18:54:02,919] 	INFO 	16 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-08-23 18:54:20,484] 	INFO 	77 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-08-23 18:54:21,095] 	INFO 	15 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-08-23 18:54:33,067] 	INFO 	79 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-08-23 18:54:33,667] 	INFO 	28 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-08-23 18:56:09,510] 	INFO 	89 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-08-23 18:56:09,510] 	INFO 	104 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-08-23 18:56:53,516] 	INFO 	175 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-08-23 18:56:53,516] 	INFO 	182 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-08-23 18:57:08,492] 	INFO 	226 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-08-23 18:57:09,224] 	INFO 	26 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
+[2024-08-23 18:57:14,538] 	INFO 	62 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
