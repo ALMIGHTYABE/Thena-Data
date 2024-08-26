@@ -205,26 +205,23 @@ try:
 
     # Params Data
     pair_data_combined_csv = config['files']['pair_data_combined']
+    id_data = config["files"]["id_data"]
+    pair_data_csv = config["files"]["pair_data"]
+    pair_data_fusion_csv = config["files"]["pair_data_fusion"]
 
     # Data Manipulation
     ids_df = pd.read_csv(id_data)
-    df1 = pairdata_df.copy(deep=True)
-    df2 = pairdata_fusion_df.copy(deep=True)
+    df1 = pd.read_csv(pair_data_csv)
+    df2 = pd.read_csv(pair_data_fusion_csv)
     df2['fee %'] = 0
     df2 = df2[['id', 'date', 'volumeToken0', 'volumeToken1', 'volumeUSD', 'tvlUSD', '__typename', 'name', 'algebra_pool', 'type',  'epoch', 'fee %', 'feesUSD']]
     df2.columns = ['id', 'date', 'dailyVolumeToken0', 'dailyVolumeToken1', 'dailyVolumeUSD', 'reserveUSD', '__typename', 'name', 'address', 'type', 'epoch', 'fee %', 'fee']
     pairdata_combined_df = pd.concat([df1, df2], ignore_index=True, axis=0)
-    pairdata_combined_df = pairdata_combined_df.merge(ids_df[['address', 'algebra_name', 'alm_type']], on='address', how='left')
+    pairdata_combined_df = pairdata_combined_df.merge(ids_df[['address', 'algebra_name']], on='address', how='left')
     algebra_name_map = ids_df.drop_duplicates('algebra_pool').set_index('algebra_pool')['algebra_name']
-    alm_type_map = ids_df.drop_duplicates('algebra_pool').set_index('algebra_pool')['alm_type']
     pairdata_combined_df['algebra_name'] = np.where(pairdata_combined_df['address'].isin(ids_df['algebra_pool']), pairdata_combined_df['address'].map(algebra_name_map), pairdata_combined_df['algebra_name'])
-    pairdata_combined_df['alm_type'] = np.where(pairdata_combined_df['address'].isin(ids_df['algebra_pool']), pairdata_combined_df['address'].map(alm_type_map), pairdata_combined_df['alm_type'])
     pairdata_combined_df['algebra_name'] = np.where(pairdata_combined_df['type'].isin(['vAMM', 'sAMM']), pairdata_combined_df['name'], pairdata_combined_df['algebra_name'])
 
-    pairdata_combined_old = pd.read_csv(pair_data_combined_csv)
-    drop_index = pairdata_combined_old[pairdata_combined_old['date']>datetime.fromtimestamp(timestamp).strftime(format='%Y-%m-%d')].index
-    index_list = drop_index.to_list()
-    index_list = list(map(lambda x: x + 2, index_list))
     df_values = pairdata_combined_df.values.tolist()
 
     # Write to GSheets
@@ -238,11 +235,14 @@ try:
 
     # Select a work sheet from its name
     worksheet1 = gs.worksheet("Master")
-    if index_list != []:
-        worksheet1.delete_rows(index_list[0], index_list[-1])
-
-    # Append to Worksheet
-    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+    worksheet1.clear()
+    set_with_dataframe(
+        worksheet=worksheet1,
+        dataframe=pairdata_combined_df,
+        include_index=False,
+        include_column_header=True,
+        resize=True,
+    )
 
     logger.info("Pair Data Combined Ended")
 except Exception as e:
