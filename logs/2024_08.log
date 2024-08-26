@@ -13542,3 +13542,5 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 [2024-08-26 10:52:07,020] 	INFO 	247 	pair_data.py 	<module>() 	Pair Data Combined Ended
 [2024-08-26 11:04:02,855] 	INFO 	16 	revenue_data.py 	<module>() 	Revenue Data Started
 [2024-08-26 11:04:16,088] 	INFO 	77 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-08-26 11:07:43,012] 	INFO 	15 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-08-26 11:07:54,142] 	INFO 	79 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
