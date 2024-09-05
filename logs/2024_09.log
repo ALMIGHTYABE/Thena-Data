@@ -10347,3 +10347,5 @@ Traceback (most recent call last):
     self._reader = parsers.TextReader(src, **kwds)
   File "pandas/_libs/parsers.pyx", line 554, in pandas._libs.parsers.TextReader.__cinit__
 pandas.errors.EmptyDataError: No columns to parse from file
+[2024-09-05 00:49:24,042] 	INFO 	18 	emissions_data.py 	<module>() 	Emissions Data Started
+[2024-09-05 00:50:43,923] 	INFO 	90 	emissions_data.py 	<module>() 	Emissions Data Ended
