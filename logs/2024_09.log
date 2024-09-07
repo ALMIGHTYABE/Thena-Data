@@ -16610,3 +16610,93 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 [2024-09-07 18:35:30,469] 	INFO 	226 	tvl_data.py 	<module>() 	TVL Data Combined Ended
 [2024-09-07 18:35:31,211] 	INFO 	26 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
 [2024-09-07 18:35:36,410] 	INFO 	62 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
+[2024-09-07 19:09:54,808] 	INFO 	14 	id_data_v2.py 	<module>() 	ID Data Started
+[2024-09-07 19:10:01,438] 	ERROR 	165 	id_data_v2.py 	<module>() 	Error occurred during ID Data process. Error: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+Traceback (most recent call last):
+  File "id_data_v2.py", line 53, in <module>
+    names.append({"name": contract_instance.functions.symbol().call(), "address": address})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 970, in call
+    return call_contract_function(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/contract.py", line 1525, in call_contract_function
+    return_data = web3.eth.call(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/module.py", line 57, in caller
+    result = w3.manager.request_blocking(method_str,
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 197, in request_blocking
+    response = self._make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/manager.py", line 150, in _make_request
+    return request_func(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/gas_price_strategy.py", line 90, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/attrdict.py", line 33, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/formatting.py", line 94, in middleware
+    response = make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/buffered_gas_estimate.py", line 40, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/middleware/exception_retry_request.py", line 105, in middleware
+    return make_request(method, params)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/providers/rpc.py", line 88, in make_request
+    raw_response = make_post_request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/web3/_utils/request.py", line 113, in make_post_request
+    response.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://rpc.ankr.com/bsc
+[2024-09-07 19:10:02,183] 	INFO 	14 	id_data_v3.py 	<module>() 	ID Data Started
+[2024-09-07 19:10:04,110] 	INFO 	40 	id_data_v3.py 	<module>() 	ID Data Ended
+[2024-09-07 19:10:04,738] 	INFO 	18 	day_data.py 	<module>() 	Day Data Started
+[2024-09-07 19:10:06,878] 	INFO 	64 	day_data.py 	<module>() 	Day Data Ended
+[2024-09-07 19:10:06,878] 	INFO 	70 	day_data.py 	<module>() 	Day Data Fusion Started
+[2024-09-07 19:10:08,900] 	INFO 	123 	day_data.py 	<module>() 	Day Data Fusion Ended
+[2024-09-07 19:10:08,900] 	INFO 	130 	day_data.py 	<module>() 	Day Data Combined Started
+[2024-09-07 19:10:11,988] 	INFO 	160 	day_data.py 	<module>() 	Day Data Combined Ended
+[2024-09-07 19:10:12,803] 	INFO 	30 	pair_data.py 	<module>() 	Pair Data Started
+[2024-09-07 19:11:00,133] 	INFO 	104 	pair_data.py 	<module>() 	Pair Data Ended
+[2024-09-07 19:11:00,133] 	INFO 	121 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2024-09-07 19:11:00,372] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: astERN-ERN, Address: 0xcB2B3d8239759b4ad1dFe6392Bc39DEe4F23303B, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:01,012] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aXCAD-WBNB, Address: 0xe2624920C88b470B78EFAdfdE51Dd0E2C841934B, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:01,427] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWUSDR-USDC, Address: 0x3f8062cf591a918Bc3B183fa241ec49efBd30e2b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:02,708] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-RBNB, Address: 0x3cAd1CBA60f695Ec7FA522Ec486f55D77C270b18, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:03,132] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-LQDR, Address: 0x19934Ce0f772EC67873Bbd1127f173e6c79856a3, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:04,009] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-BIFI, Address: 0xCC0b8D28e7c31555a3889CDc05AF55bfF57c368A, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:04,458] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-USDV, Address: 0x739e561786C920D025d57eD99be5D4EcA3458E3E, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:05,269] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-PLAY, Address: 0xa7aBA8136C5758B47312233C684547B651FCF775, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:06,934] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDC-WUSDR, Address: 0xcbdE6C4f202eCc13267fD53913bc44B4Dd6eF998, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:08,791] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aORBS-WBNB, Address: 0x130348553b3dEA5d65767Dc390eFF257F9a9181d, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:09,595] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aJBRL-USDC, Address: 0xd63bBA6078a328b93758Cc7556e21D3380397D41, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:09,790] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aID-WBNB, Address: 0xB66566fD115CAf17633504A5165a319F17D9F096, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:10,614] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aHAY-FRAX, Address: 0x30F8542ede13c68c5B4ed2922401c8BA63d88e59, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:10,813] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aGRAIN-WBNB, Address: 0x1f060bE9D1D3Bd3ACC5392aC066C6B437780ABe0, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:11,832] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRAX-ERN, Address: 0x1C2D4F310aeA872C5BD55790D2D78Ca7B31992a3, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:12,443] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-inETH, Address: 0x52e3e02B5961292C388A1faE1ce4EaD724D4E806, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:14,718] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aDAO-ankrBNB, Address: 0x11C92deD470A50C96d2e5EFfEdc890cd4bd2502e, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:15,515] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCASH-USDT, Address: 0x45F1Fdb00fB78174196Fa109A27Cdbd07f67F85e, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:17,154] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-ERN, Address: 0xc7426Dce489E6b2d580Fd480Ef72D57e5d7643f5, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:22,557] 	ERROR 	161 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-11-THE 2ff5, Address: 0xe1Ad12B9f713710a8FFF593eB1c6E5F82d3C0b3E, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2024-09-07 19:11:31,652] 	INFO 	197 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2024-09-07 19:11:31,653] 	INFO 	204 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2024-09-07 19:12:07,384] 	INFO 	247 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2024-09-07 19:12:08,272] 	INFO 	30 	bribe_data.py 	<module>() 	Bribe Data Started
+[2024-09-07 19:19:30,475] 	INFO 	133 	bribe_data.py 	<module>() 	Bribe Data Ended
+[2024-09-07 19:19:31,322] 	INFO 	31 	fee_data.py 	<module>() 	Fee Data Started
+[2024-09-07 19:26:40,407] 	INFO 	132 	fee_data.py 	<module>() 	Fee Data Ended
+[2024-09-07 19:26:41,020] 	INFO 	16 	revenue_data.py 	<module>() 	Revenue Data Started
+[2024-09-07 19:26:53,914] 	INFO 	77 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2024-09-07 19:26:54,491] 	INFO 	15 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2024-09-07 19:27:08,482] 	INFO 	79 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2024-09-07 19:27:09,060] 	INFO 	28 	tvl_data.py 	<module>() 	TVL Data Started
+[2024-09-07 19:29:21,930] 	INFO 	89 	tvl_data.py 	<module>() 	TVL Data Ended
+[2024-09-07 19:29:21,930] 	INFO 	104 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2024-09-07 19:30:17,807] 	INFO 	175 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2024-09-07 19:30:17,808] 	INFO 	182 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2024-09-07 19:30:28,660] 	INFO 	226 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2024-09-07 19:30:29,444] 	INFO 	26 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
+[2024-09-07 19:30:35,591] 	INFO 	62 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
