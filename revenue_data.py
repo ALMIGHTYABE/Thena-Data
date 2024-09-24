@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 import json
 import os
+import time
 from application_logging.logger import logger
 import gspread
 from gspread_dataframe import set_with_dataframe
@@ -61,18 +62,32 @@ try:
 
     # Open a google sheet
     sheetkey = config["gsheets"]["revenue_data_sheet_key"]
-    gs = gc.open_by_key(sheetkey)
 
-    # Select a work sheet from its name
-    worksheet1 = gs.worksheet("Master")
-    worksheet1.clear()
-    set_with_dataframe(
-        worksheet=worksheet1,
-        dataframe=final_df,
-        include_index=False,
-        include_column_header=True,
-        resize=True,
-    )
+    retries, delay = 3, 30
+    for attempt in range(retries):
+        try:
+            gs = gc.open_by_key(sheetkey)
+            # Select a work sheet from its name
+            worksheet1 = gs.worksheet("Master")
+            worksheet1.clear()
+            # Add to Worksheet
+            set_with_dataframe(
+                worksheet=worksheet1,
+                dataframe=final_df,
+                include_index=False,
+                include_column_header=True,
+                resize=True,
+            )
+            logger.error("Data successfully added to Google Sheets.")
+            break  # Break the loop if successful
+        except Exception as e:
+            logger.error(f"Error occurred: {e}")
+            if attempt < retries - 1:
+                logger.error(f"Retrying in {delay} seconds... (Attempt {attempt + 2}/{retries})")
+                time.sleep(delay)  # Wait before retrying
+            else:
+                logger.error("All retries failed.")
+                raise  # Re-raise the exception if retries are exhausted
 
     logger.info("Revenue Data Ended")
 except Exception as e:

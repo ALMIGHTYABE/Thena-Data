@@ -2,6 +2,7 @@ import requests
 import pandas as pd
 import json
 import os
+import time
 from datetime import datetime, timezone
 from dateutil.relativedelta import relativedelta, TH
 from application_logging.logger import logger
@@ -74,7 +75,7 @@ try:
                         bribes_list.append({"name": name, "bribes": rewarddata[1], "address": reward_addy})
                 break
             except Exception as e:
-                print(f"Error occurred while fetching bribes from {rpc_endpoint} for {name}: {e}")
+                logger.error(f"Error occurred while fetching bribes from {rpc_endpoint} for {name}: {e}")
 
     bribe_df = pd.DataFrame(bribes_list)
     if bribe_df.empty:
@@ -127,8 +128,22 @@ try:
     if index_list != []:
         worksheet1.delete_rows(index_list[0], index_list[-1])
 
-    # Append to Worksheet
-    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+    retries, delay = 3, 30
+    for attempt in range(retries):
+        try:
+            gs = gc.open_by_key(sheetkey)
+            # Append to Worksheet
+            gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+            logger.error("Data successfully appended to Google Sheets.")
+            break  # Break the loop if successful
+        except Exception as e:
+            logger.error(f"Error occurred: {e}")
+            if attempt < retries - 1:
+                logger.error(f"Retrying in {delay} seconds... (Attempt {attempt + 2}/{retries})")
+                time.sleep(delay)  # Wait before retrying
+            else:
+                logger.error("All retries failed.")
+                raise  # Re-raise the exception if retries are exhausted
 
     logger.info("Bribe Data Ended")
 except Exception as e:
