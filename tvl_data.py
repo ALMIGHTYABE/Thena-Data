@@ -18,6 +18,7 @@ daydelta = config['delta']['day_data']
 # V1
 try:
     # Params Data
+    id_data = config["files"]["id_data"]
     fusion_api = config["api"]["fusion_api"]
     v1_subgraph = config["query"]["subgraph"]
     v1_mint_query = config["query"]["v1_mint_query"]
@@ -29,8 +30,8 @@ try:
     logger.info("TVL Data Started")
 
     # Get address data
-    response = requests.get('https://api.thena.fi/api/v1/fusions')
-    ids_df = pd.json_normalize(response.json()['data'])[['symbol', 'type', 'address']]
+    ids_df = pd.read_csv(id_data)
+    ids_df = ids_df[['name', 'type', 'address']]
     ids_df.reset_index(inplace=True, drop=True)
     
     # Today and 2 Day Ago
@@ -40,13 +41,13 @@ try:
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
 
-    ids_v1_df = ids_df[(ids_df['type'] == 'Volatile') | (ids_df['type'] == 'Stable')]
+    ids_v1_df = ids_df[(ids_df['type'] == 'vAMM') | (ids_df['type'] == 'sAMM')]
 
     v1_df = pd.DataFrame()
-    for symbol, address, pool_type in zip(ids_v1_df['symbol'], ids_v1_df['address'], ids_v1_df['type']):
+    for symbol, address, pool_type in zip(ids_v1_df['name'], ids_v1_df['address'], ids_v1_df['type']):
         try:
             # Mints
-            v1_mint_query["variables"]["pairAddress"] = address
+            v1_mint_query["variables"]["pairAddress"] = address.lower()
             v1_mint_query["variables"]["startTime"] = timestamp
             for i in itertools.count(0, 100):
                 v1_mint_query["variables"]["skip"] = i
