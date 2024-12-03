@@ -26,7 +26,12 @@ try:
     id_df_old['address'] = id_df_old['address'].str.lower()
 
     # New Data
-    data = requests.get(url=fusion_api).json()['data']
+    headers = {
+    'User-Agent': 'GitHub Actions Bot',
+    'Accept': 'application/json'
+    }
+
+    data = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True).json()['data']
     id_df_new = pd.json_normalize(data)[['symbol', 'address', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
     id_df_new = id_df_new[['address']]
     id_df_new['address'] = id_df_new['address'].str.lower()
