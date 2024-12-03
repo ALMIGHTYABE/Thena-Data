@@ -33,7 +33,7 @@ jobs:
           python fee_data.py
           python revenue_data.py
           python revenue_data_v2.py
-          python tvl_data.py
+          # python tvl_data.py
           python fee_tvl_data.py
       - name: Commit and Push Changes
         run: |

@@ -94,90 +94,90 @@ except Exception as e:
     logger.error("Error occurred during TVL Data process. Error: %s" % e, exc_info=True)
     
    
-# Fusion
-try:
-    # Params Data
-    id_data = config["files"]["id_data"]
-    cl_subgraph = config["query"]["fusion_subgraph"]
-    GRAPH_KEY = os.environ["GRAPH_KEY"]
-    cl_mint_query = config["query"]["cl_mint_query"]
-    cl_burn_query = config["query"]["cl_burn_query"]
+# # Fusion
+# try:
+#     # Params Data
+#     id_data = config["files"]["id_data"]
+#     cl_subgraph = config["query"]["fusion_subgraph"]
+#     GRAPH_KEY = os.environ["GRAPH_KEY"]
+#     cl_mint_query = config["query"]["cl_mint_query"]
+#     cl_burn_query = config["query"]["cl_burn_query"]
 
-    # Pulling TVL Data
-    logger.info("TVL Data Fusion Started")
+#     # Pulling TVL Data
+#     logger.info("TVL Data Fusion Started")
 
-    # Request and Edit ID Data
-    ids_cl_df = pd.read_csv(id_data)
-    ids_cl_df = ids_cl_df[ids_cl_df['type'] == 'CL']
-    ids_cl_df.drop_duplicates(subset=['algebra_pool'], keep='first', inplace=True)
-    ids_cl_df['address'] = ids_cl_df['address'].str.lower()
-    ids_cl_df['algebra_pool'] = ids_cl_df['algebra_pool'].str.lower()
-    ids_cl_df = ids_cl_df[['algebra_name', 'address', 'algebra_pool']]
+#     # Request and Edit ID Data
+#     ids_cl_df = pd.read_csv(id_data)
+#     ids_cl_df = ids_cl_df[ids_cl_df['type'] == 'CL']
+#     ids_cl_df.drop_duplicates(subset=['algebra_pool'], keep='first', inplace=True)
+#     ids_cl_df['address'] = ids_cl_df['address'].str.lower()
+#     ids_cl_df['algebra_pool'] = ids_cl_df['algebra_pool'].str.lower()
+#     ids_cl_df = ids_cl_df[['algebra_name', 'address', 'algebra_pool']]
     
-    # Today and 2 Day Ago
-    todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(daydelta)
-    my_time = datetime.min.time()
-    my_datetime = datetime.combine(twodayago, my_time)
-    timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
+#     # Today and 2 Day Ago
+#     todayDate = datetime.utcnow()
+#     twodayago = todayDate - timedelta(daydelta)
+#     my_time = datetime.min.time()
+#     my_datetime = datetime.combine(twodayago, my_time)
+#     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
 
-    if "[api-key]" in cl_subgraph:
-        cl_subgraph = cl_subgraph.replace("[api-key]", GRAPH_KEY)
+#     if "[api-key]" in cl_subgraph:
+#         cl_subgraph = cl_subgraph.replace("[api-key]", GRAPH_KEY)
 
-    addresses_to_skip = ["0x055557c6606f7b0d34e617653c447f079b0b0a73","0x90d43f6e920ab9500ae0473d6f67a95126ca4091","0x739e561786c920d025d57ed99be5d4eca3458e3e","0x7b879963ae083732f4514d564f4e4613e24e1f67","0x35f0c646a85675f31cfcd1e04d955cd2ce93e3c7","0x80c264189dd38f4fa5d6e424c1bf879b3b176076","0x130348553b3dea5d65767dc390eff257f9a9181d","0x088c568dc3123fc40dd153918125ee27027dd6e7","0x972e8be53425dbcaf3446c7ac130adb48ba3e125","0x1d56cbcc160d9f5fe56ba184bdb847dc209f7243","0xcc3aec37005fcc95288bfb046e5ae789cc322099","0x3cadd2f6a964d262b5dd5e7169c284b465336f0e","0xe6a2a77ca6b6c51103fbca83d3f171a920df42b4","0x1833de7f417952f54d465cf699f367bd94cd0d59","0xfb0e434eba0a467cd3f47cec5de63f4385861ea3","0xd20c7c2693c3bf844f84dfa03012a6c07032c5a6","0x604a99f4c5e46add74dba10c21b5e26374a1162f","0x16736fdab466f69e11ba5fc294be17d2fb8c3b02","0x0f28ae1eea69dda12bc89419f7e8552dd191c98e","0x733a0b28e4d7f2cb421730c4e4e26f2adce3d240","0x636f0d14e7f5f32a9a3773104d8608d561191a54","0x73a2b0fde4f8f8a2800fddcfd967a70b4b594abd","0xea66ad96abdb89cb28116f9e204e97a824cdff5b"]
+#     addresses_to_skip = ["0x055557c6606f7b0d34e617653c447f079b0b0a73","0x90d43f6e920ab9500ae0473d6f67a95126ca4091","0x739e561786c920d025d57ed99be5d4eca3458e3e","0x7b879963ae083732f4514d564f4e4613e24e1f67","0x35f0c646a85675f31cfcd1e04d955cd2ce93e3c7","0x80c264189dd38f4fa5d6e424c1bf879b3b176076","0x130348553b3dea5d65767dc390eff257f9a9181d","0x088c568dc3123fc40dd153918125ee27027dd6e7","0x972e8be53425dbcaf3446c7ac130adb48ba3e125","0x1d56cbcc160d9f5fe56ba184bdb847dc209f7243","0xcc3aec37005fcc95288bfb046e5ae789cc322099","0x3cadd2f6a964d262b5dd5e7169c284b465336f0e","0xe6a2a77ca6b6c51103fbca83d3f171a920df42b4","0x1833de7f417952f54d465cf699f367bd94cd0d59","0xfb0e434eba0a467cd3f47cec5de63f4385861ea3","0xd20c7c2693c3bf844f84dfa03012a6c07032c5a6","0x604a99f4c5e46add74dba10c21b5e26374a1162f","0x16736fdab466f69e11ba5fc294be17d2fb8c3b02","0x0f28ae1eea69dda12bc89419f7e8552dd191c98e","0x733a0b28e4d7f2cb421730c4e4e26f2adce3d240","0x636f0d14e7f5f32a9a3773104d8608d561191a54","0x73a2b0fde4f8f8a2800fddcfd967a70b4b594abd","0xea66ad96abdb89cb28116f9e204e97a824cdff5b"]
     
-    cl_df = pd.DataFrame()
-    for symbol, address in zip(ids_cl_df['algebra_name'], ids_cl_df['algebra_pool']):
-        try:
-            # Skip
-            if address.lower() in addresses_to_skip:
-                continue
-            # Mints
-            cl_mint_query["variables"]["poolAddress"] = address
-            cl_mint_query["variables"]["startTime"] = timestamp
-            for i in itertools.count(0, 100):
-                cl_mint_query["variables"]["skip"] = i
-                response = requests.post(cl_subgraph, json=cl_mint_query)
-                data_mint = response.json()['data']['pools']
+#     cl_df = pd.DataFrame()
+#     for symbol, address in zip(ids_cl_df['algebra_name'], ids_cl_df['algebra_pool']):
+#         try:
+#             # Skip
+#             if address.lower() in addresses_to_skip:
+#                 continue
+#             # Mints
+#             cl_mint_query["variables"]["poolAddress"] = address
+#             cl_mint_query["variables"]["startTime"] = timestamp
+#             for i in itertools.count(0, 100):
+#                 cl_mint_query["variables"]["skip"] = i
+#                 response = requests.post(cl_subgraph, json=cl_mint_query)
+#                 data_mint = response.json()['data']['pools']
 
-                # Checking if empty data
-                if not data_mint or data_mint[0]['mints'] == []:
-                    break
-                else:
-                    df = pd.json_normalize(data_mint[0]['mints'])
-                    df['Tx Type'] = 'Mint'
-                    df['Pool Name'] = symbol
-                    df['Pool Address'] = address
-                    df['Pool Type'] = 'CL'
-                    cl_df = pd.concat([cl_df, df], axis=0, ignore_index=True)
+#                 # Checking if empty data
+#                 if not data_mint or data_mint[0]['mints'] == []:
+#                     break
+#                 else:
+#                     df = pd.json_normalize(data_mint[0]['mints'])
+#                     df['Tx Type'] = 'Mint'
+#                     df['Pool Name'] = symbol
+#                     df['Pool Address'] = address
+#                     df['Pool Type'] = 'CL'
+#                     cl_df = pd.concat([cl_df, df], axis=0, ignore_index=True)
 
-            # Burns
-            cl_burn_query["variables"]["poolAddress"] = address
-            cl_burn_query["variables"]["startTime"] = timestamp
-            for i in itertools.count(0, 100):
-                cl_burn_query["variables"]["skip"] = i
-                response = requests.post(cl_subgraph, json=cl_burn_query)
-                data_burn = response.json()['data']['pools']
+#             # Burns
+#             cl_burn_query["variables"]["poolAddress"] = address
+#             cl_burn_query["variables"]["startTime"] = timestamp
+#             for i in itertools.count(0, 100):
+#                 cl_burn_query["variables"]["skip"] = i
+#                 response = requests.post(cl_subgraph, json=cl_burn_query)
+#                 data_burn = response.json()['data']['pools']
 
-                # Checking if empty data
-                if not data_burn or data_burn[0]['burns'] == []:
-                    break
-                else:
-                    df = pd.json_normalize(data_burn[0]['burns'])
-                    df['Tx Type'] = 'Burn'
-                    df['Pool Name'] = symbol
-                    df['Pool Address'] = address
-                    df['Pool Type'] = 'CL'
-                    cl_df = pd.concat([cl_df, df], axis=0, ignore_index=True)
-        except Exception as e:
-            logger.error("Error occurred during TVL Data Fusion process. Pair: %s, Address: %s, Error: %s" % (symbol, address, e))
+#                 # Checking if empty data
+#                 if not data_burn or data_burn[0]['burns'] == []:
+#                     break
+#                 else:
+#                     df = pd.json_normalize(data_burn[0]['burns'])
+#                     df['Tx Type'] = 'Burn'
+#                     df['Pool Name'] = symbol
+#                     df['Pool Address'] = address
+#                     df['Pool Type'] = 'CL'
+#                     cl_df = pd.concat([cl_df, df], axis=0, ignore_index=True)
+#         except Exception as e:
+#             logger.error("Error occurred during TVL Data Fusion process. Pair: %s, Address: %s, Error: %s" % (symbol, address, e))
 
-    cl_df.reset_index(drop=True, inplace=True)
-    cl_df = cl_df[['timestamp', 'amountUSD', 'transaction.id', 'Tx Type', 'Pool Name', 'Pool Address', 'Pool Type']]
+#     cl_df.reset_index(drop=True, inplace=True)
+#     cl_df = cl_df[['timestamp', 'amountUSD', 'transaction.id', 'Tx Type', 'Pool Name', 'Pool Address', 'Pool Type']]
 
-    logger.info("TVL Data Fusion Ended")
-except Exception as e:
-    logger.error("Error occurred during TVL Data Fusion process. Error: %s" % e, exc_info=True)
+#     logger.info("TVL Data Fusion Ended")
+# except Exception as e:
+#     logger.error("Error occurred during TVL Data Fusion process. Error: %s" % e, exc_info=True)
     
     
     # Combined
