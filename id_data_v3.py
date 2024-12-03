@@ -27,8 +27,8 @@ try:
 
     # New Data
     headers = {
-    'User-Agent': 'GitHub Actions Bot',
-    'Accept': 'application/json'
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+        'Accept': 'application/json',
     }
 
     data = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True).json()['data']
