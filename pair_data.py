@@ -21,7 +21,7 @@ daydelta = config['delta']['day_data']
 try:
     # Params Data
     subgraph = config["query"]["subgraph"]
-    id_data = config["files"]["new_id_data"]
+    id_data = config["files"]["id_data"]
     pair_data_query = config["query"]["pair_data_query"]
     epoch_daily_csv = config["files"]["epoch_daily_data"]
     pair_data_csv = config["files"]["pair_data"]
@@ -126,7 +126,7 @@ except Exception as e:
 #     # Params Data
 #     subgraph = config["query"]["fusion_subgraph"]
 #     GRAPH_KEY = os.environ["GRAPH_KEY"]
-#     id_data = config["files"]["new_id_data"]
+#     id_data = config["files"]["id_data"]
 #     pair_data_fusion_query = config["query"]["pair_data_fusion_query"]
 #     epoch_daily_csv = config["files"]["epoch_daily_data"]
 #     pair_data_fusion_csv = config["files"]["pair_data_fusion"]
