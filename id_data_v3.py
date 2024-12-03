@@ -31,7 +31,11 @@ try:
         'Accept': 'application/json',
     }
 
-    data = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True).json()['data']
+    # data = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True).json()['data']
+    response = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True)
+    print(f"Response Status Code: {response.status_code}")
+    print(f"Response Content: {response.text}")
+
     id_df_new = pd.json_normalize(data)[['symbol', 'address', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
     id_df_new = id_df_new[['address']]
     id_df_new['address'] = id_df_new['address'].str.lower()
