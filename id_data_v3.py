@@ -33,6 +33,7 @@ try:
 
     # Merged Data & Processing
     id_df = pd.merge(id_df_old, id_df_new, how='right', on='address')
+    id_df = id_df[id_df['type'].notna()]
     web3 = Web3(Web3.HTTPProvider(provider_urls[0], request_kwargs={'timeout': 2}))
     id_df['address'] = id_df['address'].apply(lambda x: web3.toChecksumAddress(x))
     id_df.to_csv("data/ids_data_v3.csv", index=False)
