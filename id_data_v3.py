@@ -27,15 +27,14 @@ try:
 
     # New Data
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': 'application/json',
+        "Host": "example.com",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
+        "Accept-Encoding": "gzip, deflate, br",
+        "Connection": "keep-alive"
     }
 
-    # data = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True).json()['data']
-    response = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True)
-    print(f"Response Status Code: {response.status_code}")
-    print(f"Response Content: {response.text}")
-
+    data = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True).json()['data']
     id_df_new = pd.json_normalize(data)[['symbol', 'address', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
     id_df_new = id_df_new[['address']]
     id_df_new['address'] = id_df_new['address'].str.lower()
