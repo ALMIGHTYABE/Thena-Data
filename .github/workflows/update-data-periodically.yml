@@ -27,7 +27,6 @@ jobs:
           GRAPH_KEY: ${{ secrets.GRAPH_KEY }}
         run: |
           python id_data_v2.py
-          python id_data_v3.py
           python day_data.py
           python pair_data.py
           python bribe_data.py
