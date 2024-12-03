@@ -108,7 +108,7 @@ try:
 
     # Request and Edit ID Data
     ids_cl_df = pd.read_csv(id_data)
-    ids_cl_df = ids_df[ids_df['type'] == 'CL']
+    ids_cl_df = ids_cl_df[ids_cl_df['type'] == 'CL']
     ids_cl_df.drop_duplicates(subset=['algebra_pool'], keep='first', inplace=True)
     ids_cl_df['address'] = ids_cl_df['address'].str.lower()
     ids_cl_df['algebra_pool'] = ids_cl_df['algebra_pool'].str.lower()
