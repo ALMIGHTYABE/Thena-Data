@@ -35,6 +35,7 @@ try:
     response = requests.post(url=subgraph, json=day_data_query)
     data = response.json()["data"]["dayDatas"]
     day_data_df = pd.DataFrame(data)
+    day_data_df = day_data_df[['id', 'date', 'totalVolumeUSD', 'dailyVolumeUSD', 'dailyVolumeETH', 'totalLiquidityUSD', 'totalLiquidityETH', '__typename']]
     day_data_df["date"] = day_data_df["date"].apply(lambda timestamp: datetime.utcfromtimestamp(timestamp).date())
     day_data_df["date"] = day_data_df["date"].apply(lambda date: datetime.strftime(date, "%Y-%m-%d"))
     
