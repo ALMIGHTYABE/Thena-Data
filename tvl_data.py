@@ -87,7 +87,7 @@ try:
             logger.error("Error occurred during TVL Data process. Pair: %s, Address: %s, Error: %s" % (symbol, address, e))
 
     v1_df.reset_index(drop=True, inplace=True)
-    v1_df = v1_df[['timestamp', 'amountUSD', 'transaction.id', 'Tx Type', 'Pool Name', 'Pool Address', 'Pool Type', 'date', 'TVL_inflow', 'TVL_outflow', 'TVL_change']]
+    v1_df = v1_df[['timestamp', 'amountUSD', 'transaction.id', 'Tx Type', 'Pool Name', 'Pool Address', 'Pool Type']]
 
     logger.info("TVL Data Ended")
 except Exception as e:
@@ -173,7 +173,7 @@ try:
             logger.error("Error occurred during TVL Data Fusion process. Pair: %s, Address: %s, Error: %s" % (symbol, address, e))
 
     cl_df.reset_index(drop=True, inplace=True)
-    cl_df = cl_df[['timestamp', 'amountUSD', 'transaction.id', 'Tx Type', 'Pool Name', 'Pool Address', 'Pool Type', 'date', 'TVL_inflow', 'TVL_outflow', 'TVL_change']]
+    cl_df = cl_df[['timestamp', 'amountUSD', 'transaction.id', 'Tx Type', 'Pool Name', 'Pool Address', 'Pool Type']]
 
     logger.info("TVL Data Fusion Ended")
 except Exception as e:
