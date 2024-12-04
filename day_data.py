@@ -104,7 +104,7 @@ try:
         subgraph = subgraph.replace("[api-key]", GRAPH_KEY)
     response = requests.post(url=subgraph, json=day_data_fusion_query)
     try:
-        data = response.json()["data"]["fusionDayDatas"]
+        data = response.json()["data"]["fusionDayData"]
     except:
         logger.info(response.json())
     day_data_fusion_df = pd.DataFrame(data)
