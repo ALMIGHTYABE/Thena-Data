@@ -35,7 +35,7 @@ try:
     grouped_df['Fee/TVL'] = grouped_df['fee']/grouped_df['Average TVL']
     grouped_df.reset_index(inplace=True)
     grouped_df.sort_values("epoch", ascending=True, inplace=True)
-    grouped_df = grouped_df[grouped_df['epoch']>=current_epoch-2]
+    grouped_df = grouped_df[grouped_df['epoch']>=current_epoch-10]
 
     fee_tvl_data_old = pd.read_csv(fee_tvl_data_csv)
     drop_index = fee_tvl_data_old[fee_tvl_data_old['epoch']>=current_epoch-2].index
