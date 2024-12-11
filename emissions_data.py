@@ -32,12 +32,12 @@ try:
     todayDate = datetime.utcnow()
     my_time = datetime.min.time()
     my_datetime = datetime.combine(todayDate, my_time)
-    timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
+    timestamp = int(1733356800)
     print("Today's date:", my_datetime, timestamp)
 
     # Read Epoch Data
     epoch_data = pd.read_csv(epoch_csv)
-    epoch = epoch_data[epoch_data["timestamp"] == 1733356800]["epoch"].values[0]
+    epoch = epoch_data[epoch_data["timestamp"] == timestamp]["epoch"].values[0]
 
     # Read IDS Data
     ids_df = pd.read_csv(id_data)
