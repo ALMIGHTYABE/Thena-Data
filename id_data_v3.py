@@ -26,22 +26,13 @@ try:
     id_df_old['address'] = id_df_old['address'].str.lower()
 
     # New Data
-    headers = {
-        "Host": "example.com",
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
-        "Accept-Encoding": "gzip, deflate, br",
-        "Connection": "keep-alive"
-    }
-
-    data = requests.get(url=fusion_api, headers=headers, timeout=10, verify=True).json()['data']
+    data = requests.get(url=fusion_api).json()['data']
     id_df_new = pd.json_normalize(data)[['symbol', 'address', 'type', 'gauge.address', 'gauge.fee', 'gauge.bribe']]
     id_df_new = id_df_new[['address']]
     id_df_new['address'] = id_df_new['address'].str.lower()
 
     # Merged Data & Processing
     id_df = pd.merge(id_df_old, id_df_new, how='right', on='address')
-    id_df = id_df[id_df['type'].notna()]
     web3 = Web3(Web3.HTTPProvider(provider_urls[0], request_kwargs={'timeout': 2}))
     id_df['address'] = id_df['address'].apply(lambda x: web3.toChecksumAddress(x))
     id_df.to_csv("data/ids_data_v3.csv", index=False)
