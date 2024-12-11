@@ -202,6 +202,7 @@ try:
     tvl_df['TVL_outflow'] = tvl_df.apply(lambda row: row['amountUSD'] if row['Tx Type'] == 'Burn' else 0, axis=1)
     tvl_df['TVL_change'] = tvl_df.apply(lambda row: row['amountUSD'] if row['Tx Type'] == 'Mint' else -row['amountUSD'], axis=1)   
 
+    tvl_df = [['timestamp', 'amountUSD', 'transaction.id', 'Tx Type', 'Pool Name', 'Pool Address', 'Pool Type', 'TVL_inflow', 'TVL_outflow', 'TVL_change']]
 
     tvl_data_old = pd.read_csv(tvl_data_csv)
     drop_index = tvl_data_old[tvl_data_old['timestamp']>=timestamp].index
