@@ -18,7 +18,7 @@ config = read_params(params_path)
 try:
     # Params Data
     subgraph = config["query"]["subgraph"]
-    id_data = config["files"]["id_data"]
+    id_data = config["files"]["new_id_data"]
     provider_url = config["web3"]["provider_url"]
     provider_urls = config["web3"]["provider_urls"]
     bribe_abi = config["web3"]["bribe_abi"]

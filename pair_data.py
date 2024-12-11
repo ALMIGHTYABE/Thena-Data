@@ -21,7 +21,7 @@ daydelta = config['delta']['day_data']
 try:
     # Params Data
     subgraph = config["query"]["subgraph"]
-    id_data = config["files"]["id_data"]
+    id_data = config["files"]["new_id_data"]
     pair_data_query = config["query"]["pair_data_query"]
     epoch_daily_csv = config["files"]["epoch_daily_data"]
     pair_data_csv = config["files"]["pair_data"]
