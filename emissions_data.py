@@ -32,7 +32,7 @@ try:
     todayDate = datetime.utcnow()
     my_time = datetime.min.time()
     my_datetime = datetime.combine(todayDate, my_time)
-    timestamp = int(1733356800)
+    timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
     print("Today's date:", my_datetime, timestamp)
 
     # Read Epoch Data
