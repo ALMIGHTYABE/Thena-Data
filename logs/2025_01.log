@@ -11169,3 +11169,117 @@ requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: http
 [2025-01-02 05:28:26,520] 	INFO 	27 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
 [2025-01-02 05:28:34,222] 	ERROR 	66 	fee_tvl_data.py 	<module>() 	Data successfully appended to Google Sheets.
 [2025-01-02 05:28:34,222] 	INFO 	77 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
+[2025-01-02 06:18:44,869] 	INFO 	14 	id_data_v2.py 	<module>() 	ID Data Started
+[2025-01-02 06:23:45,890] 	INFO 	163 	id_data_v2.py 	<module>() 	ID Data Ended
+[2025-01-02 06:23:46,659] 	INFO 	14 	id_data_v3.py 	<module>() 	ID Data Started
+[2025-01-02 06:23:47,299] 	INFO 	40 	id_data_v3.py 	<module>() 	ID Data Ended
+[2025-01-02 06:23:48,042] 	INFO 	19 	day_data.py 	<module>() 	Day Data Started
+[2025-01-02 06:23:51,050] 	ERROR 	69 	day_data.py 	<module>() 	Data successfully appended to Google Sheets.
+[2025-01-02 06:23:51,050] 	INFO 	80 	day_data.py 	<module>() 	Day Data Ended
+[2025-01-02 06:23:51,050] 	INFO 	86 	day_data.py 	<module>() 	Day Data Fusion Started
+[2025-01-02 06:23:51,229] 	INFO 	109 	day_data.py 	<module>() 	{'data': {'fusionDayDatas': [{'__typename': 'FusionDayData', 'date': 1735603200, 'feesUSD': '65353.58282985954428509353178028683', 'id': '20088', 'tvlUSD': '39325659.96911573681759210876192861', 'volumeUSD': '113182044.9196591909369692131971525'}, {'__typename': 'FusionDayData', 'date': 1735689600, 'feesUSD': '39380.60864699890340130258060718677', 'id': '20089', 'tvlUSD': '39632185.75854413222824546494404545', 'volumeUSD': '86101732.50768472005799786946259713'}, {'__typename': 'FusionDayData', 'date': 1735776000, 'feesUSD': '16952.8200527079030107855495929019', 'id': '20090', 'tvlUSD': '40241291.46529961686692323832715787', 'volumeUSD': '44778576.897785069657811833759507'}]}}
+[2025-01-02 06:23:51,231] 	ERROR 	156 	day_data.py 	<module>() 	Error occurred during Day Data Fusion process. Error: "['volumeUSD', 'feesUSD', 'tvlUSD'] not in index"
+[2025-01-02 06:23:51,231] 	INFO 	161 	day_data.py 	<module>() 	Day Data Combined Started
+[2025-01-02 06:23:56,056] 	ERROR 	194 	day_data.py 	<module>() 	Data successfully added to Google Sheets.
+[2025-01-02 06:23:56,056] 	INFO 	205 	day_data.py 	<module>() 	Day Data Combined Ended
+[2025-01-02 06:23:56,894] 	INFO 	31 	pair_data.py 	<module>() 	Pair Data Started
+[2025-01-02 06:25:05,841] 	ERROR 	111 	pair_data.py 	<module>() 	Error occurred: Out of range float values are not JSON compliant
+[2025-01-02 06:25:05,841] 	ERROR 	113 	pair_data.py 	<module>() 	Retrying in 30 seconds... (Attempt 2/3)
+[2025-01-02 06:25:35,982] 	ERROR 	111 	pair_data.py 	<module>() 	Error occurred: Out of range float values are not JSON compliant
+[2025-01-02 06:25:35,983] 	ERROR 	113 	pair_data.py 	<module>() 	Retrying in 30 seconds... (Attempt 3/3)
+[2025-01-02 06:26:06,252] 	ERROR 	111 	pair_data.py 	<module>() 	Error occurred: Out of range float values are not JSON compliant
+[2025-01-02 06:26:06,252] 	ERROR 	116 	pair_data.py 	<module>() 	All retries failed.
+[2025-01-02 06:26:06,252] 	ERROR 	121 	pair_data.py 	<module>() 	Error occurred during Pair Data process. Error: Out of range float values are not JSON compliant
+Traceback (most recent call last):
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 510, in prepare_body
+    body = complexjson.dumps(json, allow_nan=False)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+ValueError: Out of range float values are not JSON compliant
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "pair_data.py", line 107, in <module>
+    gs.values_append("Master", {"valueInputOption": "USER_ENTERED"}, {"values": df_values})
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/spreadsheet.py", line 150, in values_append
+    r = self.client.request("post", url, params=params, json=body)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/gspread/client.py", line 79, in request
+    response = getattr(self.session, method)(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/google/auth/transport/requests.py", line 537, in request
+    response = super(AuthorizedSession, self).request(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/sessions.py", line 484, in prepare_request
+    p.prepare(
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 370, in prepare
+    self.prepare_body(data, files, json)
+  File "/opt/hostedtoolcache/Python/3.8.18/x64/lib/python3.8/site-packages/requests/models.py", line 512, in prepare_body
+    raise InvalidJSONError(ve, request=self)
+requests.exceptions.InvalidJSONError: Out of range float values are not JSON compliant
+[2025-01-02 06:26:06,313] 	INFO 	136 	pair_data.py 	<module>() 	Pair Data Fusion Started
+[2025-01-02 06:26:07,525] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ajEUR-USDC, Address: 0x85B0533848E2a97069e2a5937fa927cA9133AF97, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:07,671] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: ajCHF-USDC, Address: 0x786C5B03C7A0a88A4cE6860a0D4aB2a1a0864e57, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:07,963] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aankrBNB-DUSD, Address: 0xf96269E2af44e45f53cE8BBa9a280E3db7e54d62, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:08,280] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aXCAD-WBNB, Address: 0xe2624920C88b470B78EFAdfdE51Dd0E2C841934B, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:09,831] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-STKBNB, Address: 0x84b78452A97C5afDa1400943333F691448069A29, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:10,417] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-RBNB, Address: 0x3cAd1CBA60f695Ec7FA522Ec486f55D77C270b18, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:11,583] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-EDU, Address: 0x4bD39cfb05545c4238316dA69eCadA1b4CaABC05, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:12,342] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aWBNB-BIFI, Address: 0xCC0b8D28e7c31555a3889CDc05AF55bfF57c368A, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:12,721] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-USDV, Address: 0x739e561786C920D025d57eD99be5D4EcA3458E3E, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:14,150] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-ERN, Address: 0x8DCDF3CbD3a588a2e2FB607BdC9180e4FefA583b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:14,340] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDT-DUSD, Address: 0xCf4cf048d0c754A71d559296aC1ccc9aeb0b25Be, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:14,657] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aUSDC-WUSDR, Address: 0xcbdE6C4f202eCc13267fD53913bc44B4Dd6eF998, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:15,964] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aORBS-WBNB, Address: 0x130348553b3dEA5d65767Dc390eFF257F9a9181d, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:16,135] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aOATH-ERN, Address: 0xDF5751BBEf0241878852253F8541A02c3Cbc2dd1, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:16,939] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aJBRL-USDC, Address: 0xd63bBA6078a328b93758Cc7556e21D3380397D41, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:17,125] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aID-WBNB, Address: 0xB66566fD115CAf17633504A5165a319F17D9F096, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:17,982] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aGRAIN-WBNB, Address: 0x1f060bE9D1D3Bd3ACC5392aC066C6B437780ABe0, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:18,755] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aFRAX-ERN, Address: 0x1C2D4F310aeA872C5BD55790D2D78Ca7B31992a3, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:19,257] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aETH-inETH, Address: 0x52e3e02B5961292C388A1faE1ce4EaD724D4E806, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:21,742] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aCASH-USDT, Address: 0x45F1Fdb00fB78174196Fa109A27Cdbd07f67F85e, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:22,926] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aBNBX-ETH, Address: 0x6B32E9178a6670dc9b19a74FE5080C54ea5347C7, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:23,702] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aARKEN-WBNB, Address: 0xCB995DaE5238c1e08C7289b335c80ED8d129A46b, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:24,030] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: aANKRBNB-USDT, Address: 0xc1716bEa36140Fa08476742d80cb28CEcD492A6F, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:25,534] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-8-THE a082, Address: 0x8929E532E551c82f5736aa18C78440691BC542D9, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:26,962] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-36-THE Bc6a, Address: 0xFd60A2B164C86751Df65c8cf895F7b07e5A48C35, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:28,057] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: IV-11-THE 2ff5, Address: 0xe1Ad12B9f713710a8FFF593eB1c6E5F82d3C0b3E, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:28,416] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: DEShare A2bB, Address: 0x9545d5399E50a8d9B9bE239BD7117b5655a9A45D, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:28,561] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: DEShare 638a, Address: 0xaB3790c5FaB8AFf0A41640Eb2c7b280289c657E5, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:28,915] 	ERROR 	176 	pair_data.py 	<module>() 	Error occurred during Pair Data Fusion process. Pair: DEShare 31eD, Address: 0x37CbdBb97C34ba577ADbFbB80b517cD6caB636E8, Error: "None of [Index(['id', 'date', 'tvlUSD', 'volumeUSD', 'volumeToken0', 'volumeToken1',\n       'token0Price', 'token1Price', 'feesUSD', '__typename'],\n      dtype='object')] are in the [columns]"
+[2025-01-02 06:26:38,856] 	ERROR 	215 	pair_data.py 	<module>() 	Data successfully appended to Google Sheets.
+[2025-01-02 06:26:38,856] 	INFO 	226 	pair_data.py 	<module>() 	Pair Data Fusion Ended
+[2025-01-02 06:26:38,856] 	INFO 	233 	pair_data.py 	<module>() 	Pair Data Combined Started
+[2025-01-02 06:27:22,206] 	ERROR 	279 	pair_data.py 	<module>() 	Data successfully added to Google Sheets.
+[2025-01-02 06:27:22,207] 	INFO 	290 	pair_data.py 	<module>() 	Pair Data Combined Ended
+[2025-01-02 06:27:23,125] 	INFO 	31 	bribe_data.py 	<module>() 	Bribe Data Started
+[2025-01-02 06:27:51,952] 	ERROR 	78 	bribe_data.py 	<module>() 	Error occurred while fetching bribes from https://rpc.ankr.com/bsc for nan: Address nan must be provided as a string
+[2025-01-02 06:27:51,958] 	ERROR 	78 	bribe_data.py 	<module>() 	Error occurred while fetching bribes from https://binance.llamarpc.com for nan: Address nan must be provided as a string
+[2025-01-02 06:27:51,966] 	ERROR 	78 	bribe_data.py 	<module>() 	Error occurred while fetching bribes from https://bsc.meowrpc.com for nan: Address nan must be provided as a string
+[2025-01-02 06:27:51,973] 	ERROR 	78 	bribe_data.py 	<module>() 	Error occurred while fetching bribes from https://bsc-dataseed.bnbchain.org for nan: Address nan must be provided as a string
+[2025-01-02 06:27:52,009] 	ERROR 	78 	bribe_data.py 	<module>() 	Error occurred while fetching bribes from https://bsc-dataseed1.defibit.io for nan: Address nan must be provided as a string
+[2025-01-02 06:27:52,016] 	ERROR 	78 	bribe_data.py 	<module>() 	Error occurred while fetching bribes from https://bsc-dataseed1.ninicoin.io for nan: Address nan must be provided as a string
+[2025-01-02 06:27:52,023] 	ERROR 	78 	bribe_data.py 	<module>() 	Error occurred while fetching bribes from https://bsc.rpc.blxrbdn.com for nan: Address nan must be provided as a string
+[2025-01-02 06:39:43,944] 	ERROR 	150 	bribe_data.py 	<module>() 	Error occurred during Bribe Data process. Error: Dataframe is empty
+[2025-01-02 06:39:44,574] 	INFO 	17 	revenue_data.py 	<module>() 	Revenue Data Started
+[2025-01-02 06:40:14,618] 	ERROR 	81 	revenue_data.py 	<module>() 	Data successfully added to Google Sheets.
+[2025-01-02 06:40:14,618] 	INFO 	92 	revenue_data.py 	<module>() 	Revenue Data Ended
+[2025-01-02 06:40:15,224] 	INFO 	16 	revenue_data_v2.py 	<module>() 	Revenue Data Started
+[2025-01-02 06:40:28,090] 	ERROR 	83 	revenue_data_v2.py 	<module>() 	Data successfully added to Google Sheets.
+[2025-01-02 06:40:28,090] 	INFO 	94 	revenue_data_v2.py 	<module>() 	Revenue Data Ended
+[2025-01-02 06:40:28,709] 	INFO 	29 	tvl_data.py 	<module>() 	TVL Data Started
+[2025-01-02 06:43:12,552] 	INFO 	91 	tvl_data.py 	<module>() 	TVL Data Ended
+[2025-01-02 06:43:12,552] 	INFO 	106 	tvl_data.py 	<module>() 	TVL Data Fusion Started
+[2025-01-02 06:44:16,001] 	INFO 	178 	tvl_data.py 	<module>() 	TVL Data Fusion Ended
+[2025-01-02 06:44:16,001] 	INFO 	185 	tvl_data.py 	<module>() 	TVL Data Combined Started
+[2025-01-02 06:44:24,081] 	ERROR 	233 	tvl_data.py 	<module>() 	Data successfully appended to Google Sheets.
+[2025-01-02 06:44:24,082] 	INFO 	244 	tvl_data.py 	<module>() 	TVL Data Combined Ended
+[2025-01-02 06:44:24,904] 	INFO 	27 	fee_tvl_data.py 	<module>() 	Fee TVL Data Started
+[2025-01-02 06:44:34,078] 	ERROR 	66 	fee_tvl_data.py 	<module>() 	Data successfully appended to Google Sheets.
+[2025-01-02 06:44:34,078] 	INFO 	77 	fee_tvl_data.py 	<module>() 	Fee TVL Data Ended
