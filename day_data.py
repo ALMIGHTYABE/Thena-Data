@@ -93,7 +93,7 @@ try:
     
     # Date Stuff
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(daydelta)
+    twodayago = todayDate - timedelta(70)
     my_time = datetime.min.time()
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
@@ -104,7 +104,7 @@ try:
         subgraph = subgraph.replace("[api-key]", GRAPH_KEY)
     response = requests.post(url=subgraph, json=day_data_fusion_query)
     try:
-        data = response.json()["data"]["fusionDayData"]
+        data = response.json()["data"]["fusionDayDatas"]
     except:
         logger.info(response.json())
     day_data_fusion_df = pd.DataFrame(data)
@@ -120,6 +120,8 @@ try:
     day_data_fusion_df['__typename'] = 'Fusion'
     df_values = day_data_fusion_df.values.tolist()
     
+    day_data_fusion_df.to_csv("fusion_data.csv", index=False)
+
     # Write to GSheets
     credentials = os.environ["GKEY"]
     credentials = json.loads(credentials)
