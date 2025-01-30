@@ -93,7 +93,7 @@ try:
     
     # Date Stuff
     todayDate = datetime.utcnow()
-    twodayago = todayDate - timedelta(70)
+    twodayago = todayDate - timedelta(daydelta)
     my_time = datetime.min.time()
     my_datetime = datetime.combine(twodayago, my_time)
     timestamp = int(my_datetime.replace(tzinfo=timezone.utc).timestamp())
