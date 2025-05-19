@@ -30,6 +30,7 @@ try:
 
     # Get address data
     response = requests.get('https://api.thena.fi/api/v1/fusions')
+    logger.info(f"Response status code: {response.status_code}")
     ids_df = pd.json_normalize(response.json()['data'])[['symbol', 'type', 'address']]
     ids_df.reset_index(inplace=True, drop=True)
     
