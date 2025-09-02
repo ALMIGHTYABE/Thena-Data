@@ -1,7 +1,7 @@
 name: Update Emissions Data
 on:
-  schedule:
-    - cron: '0 0 * * THU'
+  # schedule:
+  #   - cron: '0 0 * * THU'
   workflow_dispatch:
 
 jobs:
@@ -32,4 +32,5 @@ jobs:
           git config --local user.name "GitHub Actions"
           git add logs
           git commit -m "Updated Emissions Data on `date` with GitHub Actions" || echo "No Changes to Commit"
+
           git push origin main || echo "No Changes to Commit"
